@@ -56,8 +56,8 @@ public class Saioa extends JDialog {
 		passwordField.setBounds(100, 172, 249, 26);
 		contentPanel.add(passwordField);
 		
-		JButton btnNewButton = new JButton("Login");
-		btnNewButton.setBounds(165, 236, 89, 23);
-		contentPanel.add(btnNewButton);
+		JButton bLogin = new JButton("Login");
+		bLogin.setBounds(165, 236, 89, 23);
+		contentPanel.add(bLogin);
 	}
 }
