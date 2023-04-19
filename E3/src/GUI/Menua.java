@@ -2,7 +2,7 @@ package GUI;
 
 import java.awt.*;
 import javax.swing.*;
-import javax.swing.border.EmptyBorder;
+import javax.swing.border.*;
 
 public class Menua extends JFrame {
 
@@ -29,11 +29,43 @@ public class Menua extends JFrame {
 	 */
 	public Menua() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 672, 447);
+		
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+		
+		JMenuItem mBezero = new JMenuItem("Bezeroak");
+		menuBar.add(mBezero);
+		
+		JMenuItem mBiltegi = new JMenuItem("Biltegiak");
+		menuBar.add(mBiltegi);
+		
+		JMenuItem mBuleari = new JMenuItem("Bulegariak");
+		menuBar.add(mBuleari);
+		
+		JMenuItem mSaltz = new JMenuItem("Saltzaileak");
+		menuBar.add(mSaltz);
+		
+		JMenuItem mEsk = new JMenuItem("Eskariak");
+		menuBar.add(mEsk);
+		
+		JMenuItem mKok = new JMenuItem("Kokalekuak");
+		menuBar.add(mKok);
+		
+		JMenuItem mProd = new JMenuItem("Produktuak");
+		menuBar.add(mProd);
+		
+		JMenuItem mInb = new JMenuItem("Inbentario");
+		menuBar.add(mInb);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JButton bItxi = new JButton("Saioa Itxi");
+		bItxi.setBounds(452, 300, 142, 34);
+		contentPane.add(bItxi);
 	}
 
 }
