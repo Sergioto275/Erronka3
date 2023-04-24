@@ -32,9 +32,8 @@ public class conexioa{
     		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
     		  st.setString(1, erab);
     		  ResultSet rt = st.executeQuery();
-    		  while(rt.next()) {
-    			  s = new Saltzailea(rt.getString("IZENA"),rt.getString("ABIZENA"),rt.getString("ID"),rt.getString("EMAILA"),rt.getString("KONTRATAZIO_DATA"),rt.getString("TELEFONOA"),rt.getString("ID_NAGUSI"),rt.getString("ERABILTZAILEA"),rt.getString("PASAHITZA"));
-    		  }
+    		  rt.next();
+    		  s = new Saltzailea(rt.getString("IZENA"),rt.getString("ABIZENA"),rt.getString("ID"),rt.getString("EMAILA"),rt.getString("KONTRATAZIO_DATA"),rt.getString("TELEFONOA"),rt.getString("ID_NAGUSI"),rt.getString("ERABILTZAILEA"),rt.getString("PASAHITZA"));
     		  rt.close();
     		  st.close();
     		  this.c.close();

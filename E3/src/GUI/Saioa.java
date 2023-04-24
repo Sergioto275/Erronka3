@@ -37,7 +37,7 @@ public class Saioa extends JDialog {
 		setBounds(100, 100, 431, 321);
 		getContentPane().setLayout(new BorderLayout());
 	    setLocationRelativeTo(null);
-		panel.setBorder(new EmptyBorder(5, 5, 5, 5));
+		panel.setBorder(new EmptyBorder(0, 0, 0, 0));
 		getContentPane().add(panel, BorderLayout.CENTER);
 		panel.setLayout(null);
 		{
