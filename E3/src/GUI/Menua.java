@@ -3,35 +3,26 @@ package GUI;
 import java.awt.*;
 import javax.swing.*;
 import javax.swing.border.*;
+
+import DB.*;
+
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class Menua extends JFrame {
 
 	private JPanel contentPane;
-
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Menua frame = new Menua();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
+	private Saltzailea s;
 
 	/**
 	 * Create the frame.
 	 */
-	public Menua() {
+	public Menua(Saltzailea s) {
+		this.s = s;
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 672, 447);
+		setVisible(true);
+	    setLocationRelativeTo(null);
 		
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
@@ -69,23 +60,4 @@ public class Menua extends JFrame {
 		bItxi.setBounds(452, 300, 142, 34);
 		contentPane.add(bItxi);
 	}
-	private static void addPopup(Component component, final JPopupMenu popup) {
-		component.addMouseListener(new MouseAdapter() {
-			public void mousePressed(MouseEvent e) {
-				if (e.isPopupTrigger()) {
-					showMenu(e);
-				}
-			}
-			public void mouseReleased(MouseEvent e) {
-				if (e.isPopupTrigger()) {
-					showMenu(e);
-				}
-			}
-			private void showMenu(MouseEvent e) {
-				popup.show(e.getComponent(), e.getX(), e.getY());
-			}
-		});
-	}
 }
-
-//putito
