@@ -13,6 +13,10 @@ public class Menua extends JFrame {
 
 	private JPanel contentPane;
 	private Saltzailea s;
+	
+	public static void main(String[] args) {
+		Menua m = new Menua(null);
+	}
 
 	/**
 	 * Create the frame.
@@ -21,13 +25,19 @@ public class Menua extends JFrame {
 		this.s = s;
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 672, 447);
-		setVisible(true);
 	    setLocationRelativeTo(null);
+		setVisible(true);
 		
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 		
 		JMenuItem mBezero = new JMenuItem("Bezeroak");
+		mBezero.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				BezeroGUI bezeroa = new BezeroGUI();
+			}
+		});
 		menuBar.add(mBezero);
 		
 		JMenuItem mBiltegi = new JMenuItem("Biltegiak");
@@ -57,6 +67,14 @@ public class Menua extends JFrame {
 		contentPane.setLayout(null);
 		
 		JButton bItxi = new JButton("Saioa Itxi");
+		bItxi.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				Saioa saioa = new Saioa();
+			}
+		});
+		bItxi.setBorder(new BevelBorder(BevelBorder.RAISED, null, null, null, null));
 		bItxi.setBounds(452, 300, 142, 34);
 		contentPane.add(bItxi);
 	}

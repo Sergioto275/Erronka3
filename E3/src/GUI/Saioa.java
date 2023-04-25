@@ -9,6 +9,8 @@ import conexioa.conexioa;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class Saioa extends JDialog {
 
@@ -21,13 +23,7 @@ public class Saioa extends JDialog {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
-		try {
 			Saioa dialog = new Saioa();
-			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-			dialog.setVisible(true);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 	}
 
 	/**
@@ -37,22 +33,26 @@ public class Saioa extends JDialog {
 		setBounds(100, 100, 431, 321);
 		getContentPane().setLayout(new BorderLayout());
 	    setLocationRelativeTo(null);
+		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+		setVisible(true);
 		panel.setBorder(new EmptyBorder(0, 0, 0, 0));
 		getContentPane().add(panel, BorderLayout.CENTER);
 		panel.setLayout(null);
 		{
 			txtErabil = new JTextField();
-			txtErabil.setBounds(100, 112, 249, 26);
+			txtErabil.setBounds(120, 112, 229, 26);
 			panel.add(txtErabil);
 			txtErabil.setColumns(10);
 		}
 		
 		JLabel lblErabiltzailea = new JLabel("Erabiltzailea :");
-		lblErabiltzailea.setBounds(29, 112, 74, 26);
+		lblErabiltzailea.setFont(new Font("Times New Roman", Font.BOLD, 15));
+		lblErabiltzailea.setBounds(23, 112, 106, 26);
 		panel.add(lblErabiltzailea);
 		
 		JLabel lblPasahitza = new JLabel("Pasahitza :");
-		lblPasahitza.setBounds(39, 172, 64, 26);
+		lblPasahitza.setFont(new Font("Times New Roman", Font.BOLD, 15));
+		lblPasahitza.setBounds(43, 171, 86, 26);
 		panel.add(lblPasahitza);
 		
 		JLabel lblNewLabel_1_1 = new JLabel("Saioa Ireki");
@@ -61,10 +61,11 @@ public class Saioa extends JDialog {
 		panel.add(lblNewLabel_1_1);
 		
 		passwordField = new JPasswordField();
-		passwordField.setBounds(100, 172, 249, 26);
+		passwordField.setBounds(120, 172, 229, 26);
 		panel.add(passwordField);
 		
 		JButton bLogin = new JButton("Login");
+		bLogin.setBorder(new BevelBorder(BevelBorder.RAISED, null, null, null, null));
 		bLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				conexioa c = new conexioa("jdbc:oracle:thin:@//localhost:1521/XEPDB1","E2","E2");
@@ -77,7 +78,18 @@ public class Saioa extends JDialog {
 				}
 			}
 		});
-		bLogin.setBounds(165, 236, 89, 23);
+		bLogin.setBounds(292, 237, 89, 23);
 		panel.add(bLogin);
+		
+		JButton bAmaitu = new JButton("Amaitu");
+		bAmaitu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+			}
+		});
+		bAmaitu.setBorder(new BevelBorder(BevelBorder.RAISED, null, null, null, null));
+		bAmaitu.setBounds(23, 237, 89, 23);
+		panel.add(bAmaitu);
 	}
 }

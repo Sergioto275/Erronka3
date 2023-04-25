@@ -43,4 +43,24 @@ public class conexioa{
     	  }
     	  return s;
       }
+      
+      public BezeroDB bezeroKontsulta() {
+    	  BezeroDB bdb = new BezeroDB();
+    	  try {
+    		  Statement st = this.c.createStatement();
+    		  String kontsulta = "SELECT * FROM BEZERO B, BEZERO_TELEFONO BT WHERE B.ID = BT.ID_BEZERO ORDER BY B.ID ASC";
+    		  ResultSet rt = st.executeQuery(kontsulta);
+    		  while(rt.next()) {
+    			  Bezeroa b = new Bezeroa(rt.getString("IZENA"),rt.getString("ABIZENA"),rt.getString("HELBIDEA"),rt.getString("ID"),rt.getString("EMAILA"),rt.getString("ZENBAKIA"));
+    			  bdb.addBezero(b);
+    		  }
+    		  rt.close();
+    		  st.close();
+    		  this.c.close();
+    	  }catch(Exception e) {
+    		  String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
+    	  }
+    	  return bdb;
+      }
 }
