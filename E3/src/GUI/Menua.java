@@ -61,7 +61,7 @@ public class Menua extends JFrame {
 		JMenuItem mInb = new JMenuItem("Inbentario");
 		menuBar.add(mInb);
 		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setBorder(new EmptyBorder(0, 0, 0, 0));
 
 		setContentPane(contentPane);
 		contentPane.setLayout(null);

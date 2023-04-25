@@ -1,19 +1,12 @@
 package GUI;
 
 import java.awt.Color;
-import java.awt.Component;
-import java.awt.Font;
-import java.awt.Image;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.net.URL;
-import java.util.Arrays;
+import java.awt.*;
+import java.awt.event.*;
 
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-import javax.swing.JTable;
-import javax.swing.border.BevelBorder;
-import javax.swing.table.TableCellRenderer;
+import javax.swing.*;
+import javax.swing.border.*;
+import javax.swing.table.*;
 
 public class DTable extends JTable{
 	public DTable() {
@@ -24,17 +17,16 @@ public class DTable extends JTable{
         Object value = getModel().getValueAt(row, col);
         JLabel gorde = new JLabel("Gorde");
 		gorde.setBackground(Color.green);
-		gorde.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+		gorde.setBorder(javax.swing.BorderFactory.createLineBorder(Color.green,2,true));
 		JLabel ezabatu = new JLabel("Ezabatu");
-		ezabatu.setBorder(new BevelBorder(3));
-		ezabatu.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+		ezabatu.setBorder(javax.swing.BorderFactory.createLineBorder(Color.red,2,true));
 		ezabatu.setBackground(Color.red);
         super.setDefaultRenderer(Object.class, new imgTabla());
-        if (super.getColumnName(col).equals("Gorde")) { 
+        if (super.getColumnName(col).equals(" ")) { 
         	super.setValueAt(gorde,row,col);
         	comp.setBackground(Color.green);
         } else {
-        	if(super.getColumnName(col).equals("Ezabatu")) {
+        	if(super.getColumnName(col).equals("  ")) {
             	super.setValueAt(ezabatu,row,col);
             	comp.setBackground(Color.red);
         	}

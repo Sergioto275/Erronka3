@@ -49,7 +49,7 @@ public class BezeroGUI extends JDialog {
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
 		contentPanel.setLayout(null);
-		modelo = new DefaultTableModel(null,new String[] {"ID", "IZENA", "ABIZENA", "HELBIDEA", "EMAIL", "TELEFONOA", "Gorde", "Ezabatu"}) {
+		modelo = new DefaultTableModel(null,new String[] {"ID", "IZENA", "ABIZENA", "HELBIDEA", "EMAIL", "TELEFONOA", " ", "  "}) {
 				boolean[] columnEditables = new boolean[] {
 					true, true, true, true, true, true, false, false
 				};
@@ -64,10 +64,10 @@ public class BezeroGUI extends JDialog {
 		table.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(table.getColumnName(table.getSelectedColumn()).equals("Gorde")) {
+				if(table.getColumnName(table.getSelectedColumn()).equals(" ")) {
 					System.out.println("Gorde");
 				}else {
-					if(table.getColumnName(table.getSelectedColumn()).equals("Ezabatu")) {
+					if(table.getColumnName(table.getSelectedColumn()).equals("  ")) {
 						System.out.println("Ezabatu");
 					}
 				}
