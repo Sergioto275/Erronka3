@@ -66,7 +66,16 @@ public class Menua extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton bItxi = new JButton("Saioa Itxi");
+		ImageIcon at1 = new ImageIcon("imagenes\\salir1.png");
+		ImageIcon at2 = new ImageIcon("imagenes\\salir2.png");
+	    at1 = new ImageIcon(at1.getImage().getScaledInstance(60,60,Image.SCALE_DEFAULT));
+	    at2 = new ImageIcon(at2.getImage().getScaledInstance(90,105,Image.SCALE_DEFAULT));
+	    ImageIcon at3 = new ImageIcon(at1.getImage().getScaledInstance(90,105,Image.SCALE_DEFAULT));
+		JButton bItxi = new JButton();
+		bItxi.setContentAreaFilled(false);
+		bItxi.setRolloverIcon(at3);
+		bItxi.setPressedIcon(at2);
+		bItxi.setIcon(at1);
 		bItxi.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -74,8 +83,8 @@ public class Menua extends JFrame {
 				Saioa saioa = new Saioa();
 			}
 		});
-		bItxi.setBorder(new BevelBorder(BevelBorder.RAISED, null, null, null, null));
-		bItxi.setBounds(452, 300, 142, 34);
+		bItxi.setBorder(new EmptyBorder(0, 0, 0, 0));
+		bItxi.setBounds(496, 242, 150, 127);
 		contentPane.add(bItxi);
 	}
 }

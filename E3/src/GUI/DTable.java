@@ -15,20 +15,18 @@ public class DTable extends JTable{
 	public Component prepareRenderer(TableCellRenderer renderer, int row, int col) {
         Component comp = super.prepareRenderer(renderer, row, col);
         Object value = getModel().getValueAt(row, col);
-        JLabel gorde = new JLabel("Gorde");
+        JButton gorde = new JButton("Gorde");
 		gorde.setBackground(Color.green);
-		gorde.setBorder(javax.swing.BorderFactory.createLineBorder(Color.green,2,true));
-		JLabel ezabatu = new JLabel("Ezabatu");
-		ezabatu.setBorder(javax.swing.BorderFactory.createLineBorder(Color.red,2,true));
+		gorde.setBorder(new RoundedBorder(40));
+		JButton ezabatu = new JButton("Ezabatu");
+		ezabatu.setBorder(javax.swing.BorderFactory.createLineBorder(Color.black,2,true));
 		ezabatu.setBackground(Color.red);
         super.setDefaultRenderer(Object.class, new imgTabla());
         if (super.getColumnName(col).equals(" ")) { 
         	super.setValueAt(gorde,row,col);
-        	comp.setBackground(Color.green);
         } else {
         	if(super.getColumnName(col).equals("  ")) {
             	super.setValueAt(ezabatu,row,col);
-            	comp.setBackground(Color.red);
         	}
         }
         return comp;

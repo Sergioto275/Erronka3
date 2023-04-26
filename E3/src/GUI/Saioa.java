@@ -35,24 +35,25 @@ public class Saioa extends JDialog {
 	    setLocationRelativeTo(null);
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 		setVisible(true);
+		panel.setBackground(Color.LIGHT_GRAY);
 		panel.setBorder(new EmptyBorder(0, 0, 0, 0));
 		getContentPane().add(panel, BorderLayout.CENTER);
 		panel.setLayout(null);
 		{
 			txtErabil = new JTextField();
-			txtErabil.setBounds(120, 112, 229, 26);
+			txtErabil.setBounds(120, 97, 229, 26);
 			panel.add(txtErabil);
 			txtErabil.setColumns(10);
 		}
 		
 		JLabel lblErabiltzailea = new JLabel("Erabiltzailea :");
 		lblErabiltzailea.setFont(new Font("Times New Roman", Font.BOLD, 15));
-		lblErabiltzailea.setBounds(23, 112, 106, 26);
+		lblErabiltzailea.setBounds(23, 97, 106, 26);
 		panel.add(lblErabiltzailea);
 		
 		JLabel lblPasahitza = new JLabel("Pasahitza :");
 		lblPasahitza.setFont(new Font("Times New Roman", Font.BOLD, 15));
-		lblPasahitza.setBounds(43, 171, 86, 26);
+		lblPasahitza.setBounds(43, 156, 86, 26);
 		panel.add(lblPasahitza);
 		
 		JLabel lblNewLabel_1_1 = new JLabel("Saioa Ireki");
@@ -61,11 +62,25 @@ public class Saioa extends JDialog {
 		panel.add(lblNewLabel_1_1);
 		
 		passwordField = new JPasswordField();
-		passwordField.setBounds(120, 172, 229, 26);
+		passwordField.setBounds(120, 157, 229, 26);
 		panel.add(passwordField);
-		
-		JButton bLogin = new JButton("Login");
-		bLogin.setBorder(new BevelBorder(BevelBorder.RAISED, null, null, null, null));
+		ImageIcon ap1 = new ImageIcon("imagenes\\apagar1.png");
+		ImageIcon ap2 = new ImageIcon("imagenes\\apagar2.png");
+	    ap1 = new ImageIcon(ap1.getImage().getScaledInstance(40,40,Image.SCALE_DEFAULT));
+	    ap2 = new ImageIcon(ap2.getImage().getScaledInstance(60,60,Image.SCALE_DEFAULT));
+	    ImageIcon ap3 = new ImageIcon(ap1.getImage().getScaledInstance(60,60,Image.SCALE_DEFAULT));
+	    ImageIcon in1 = new ImageIcon("imagenes\\inicio_sesion1.png");
+		ImageIcon in2 = new ImageIcon("imagenes\\inicio_sesion2.png");
+	    in1 = new ImageIcon(in1.getImage().getScaledInstance(60,60,Image.SCALE_DEFAULT));
+	    in2 = new ImageIcon(in2.getImage().getScaledInstance(80,77,Image.SCALE_DEFAULT));
+	    ImageIcon in3 = new ImageIcon(in1.getImage().getScaledInstance(80,77,Image.SCALE_DEFAULT));
+		JButton bLogin = new JButton("");
+		bLogin.setAlignmentX(Component.CENTER_ALIGNMENT);
+		bLogin.setContentAreaFilled(false);
+		bLogin.setRolloverIcon(in3);
+		bLogin.setPressedIcon(in2);
+		bLogin.setIcon(in1);
+		bLogin.setBorder(new EmptyBorder(0, 0, 0, 0));
 		bLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				conexioa c = new conexioa("jdbc:oracle:thin:@//localhost:1521/XEPDB1","E2","E2");
@@ -78,18 +93,25 @@ public class Saioa extends JDialog {
 				}
 			}
 		});
-		bLogin.setBounds(292, 237, 89, 23);
+		bLogin.setBounds(269, 194, 146, 88);
 		panel.add(bLogin);
 		
-		JButton bAmaitu = new JButton("Amaitu");
+		JButton bAmaitu = new JButton();
+		bAmaitu.setVerticalTextPosition(SwingConstants.BOTTOM);
+		bAmaitu.setHorizontalTextPosition(SwingConstants.CENTER);
+		bAmaitu.setContentAreaFilled(false);
+		bAmaitu.setBackground(Color.LIGHT_GRAY);
 		bAmaitu.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				dispose();
 			}
 		});
-		bAmaitu.setBorder(new BevelBorder(BevelBorder.RAISED, null, null, null, null));
-		bAmaitu.setBounds(23, 237, 89, 23);
+		bAmaitu.setRolloverIcon(ap3);
+		bAmaitu.setPressedIcon(ap2);
+		bAmaitu.setIcon(ap1);
+		bAmaitu.setBorder(new EmptyBorder(0, 0, 0, 0));
+		bAmaitu.setBounds(0, 199, 106, 83);
 		panel.add(bAmaitu);
 	}
 }

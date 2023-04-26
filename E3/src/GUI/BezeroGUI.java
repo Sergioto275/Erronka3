@@ -16,8 +16,10 @@ import conexioa.conexioa;
 import javax.swing.JScrollPane;
 import javax.swing.JLabel;
 import java.awt.Font;
+import java.awt.Image;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.ImageIcon;
 
 public class BezeroGUI extends JDialog {
 
@@ -44,8 +46,9 @@ public class BezeroGUI extends JDialog {
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 	    setLocationRelativeTo(null);
 		setVisible(true);
-		setBounds(100, 100, 859, 452);
+		setBounds(100, 100, 896, 498);
 		getContentPane().setLayout(new BorderLayout());
+		contentPanel.setBackground(Color.LIGHT_GRAY);
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
 		contentPanel.setLayout(null);
@@ -58,7 +61,7 @@ public class BezeroGUI extends JDialog {
 				}};
 		taulaInfo();
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(83, 89, 668, 247);
+		scrollPane.setBounds(77, 63, 705, 283);
 		contentPanel.add(scrollPane);
 		table = new DTable();
 		table.addMouseListener(new MouseAdapter() {
@@ -77,21 +80,40 @@ public class BezeroGUI extends JDialog {
 		table.setModel(modelo);
 		JLabel lBezero = new JLabel("Bezeroak");
 		lBezero.setFont(new Font("Times New Roman", Font.BOLD, 30));
-		lBezero.setBounds(340, 11, 132, 48);
+		lBezero.setBounds(364, 11, 132, 48);
 		contentPanel.add(lBezero);
 		
-		JButton bAtzera = new JButton("Atzera");
+		ImageIcon at1 = new ImageIcon("imagenes\\atras1.png");
+		ImageIcon at2 = new ImageIcon("imagenes\\atras2.png");
+	    at1 = new ImageIcon(at1.getImage().getScaledInstance(40,40,Image.SCALE_DEFAULT));
+	    at2 = new ImageIcon(at2.getImage().getScaledInstance(60,63,Image.SCALE_DEFAULT));
+	    ImageIcon at3 = new ImageIcon(at1.getImage().getScaledInstance(60,63,Image.SCALE_DEFAULT));
+		JButton bAtzera = new JButton("");
+		bAtzera.setContentAreaFilled(false);
+		bAtzera.setRolloverIcon(at3);
+		bAtzera.setPressedIcon(at2);
+		bAtzera.setIcon(at1);
 		bAtzera.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				dispose();
 			}
 		});
-		bAtzera.setBounds(679, 365, 89, 23);
+		bAtzera.setBounds(717, 357, 132, 91);
 		contentPanel.add(bAtzera);
-		
-		JButton bTxertatu = new JButton("Txertatu");
-		bTxertatu.setBounds(71, 365, 89, 23);
+		ImageIcon insert1 = new ImageIcon("imagenes\\insertar1.png");
+		ImageIcon insert2 = new ImageIcon("imagenes\\insertar2.png");
+	    insert1 = new ImageIcon(insert1.getImage().getScaledInstance(60,60,Image.SCALE_DEFAULT));
+	    insert2 = new ImageIcon(insert2.getImage().getScaledInstance(80,80,Image.SCALE_DEFAULT));
+	    ImageIcon insert3 = new ImageIcon(insert1.getImage().getScaledInstance(80,80,Image.SCALE_DEFAULT));
+		JButton bTxertatu = new JButton("");
+		bTxertatu.setContentAreaFilled(false);
+		bTxertatu.setBorder(new EmptyBorder(0, 0, 0, 0));
+		bTxertatu.setBackground(Color.LIGHT_GRAY);
+		bTxertatu.setRolloverIcon(insert3);
+		bTxertatu.setPressedIcon(insert2);
+		bTxertatu.setIcon(insert1);
+		bTxertatu.setBounds(10, 357, 132, 102);
 		contentPanel.add(bTxertatu);
 	}
 	
