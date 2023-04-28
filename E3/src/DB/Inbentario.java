@@ -2,21 +2,21 @@ package DB;
 
 
 public class Inbentario {
-	private String biltegi_izena;
+	private int biltegi_id;
 	private int stock_kop;
 	
-	public Inbentario(String biltegi_izena, int stock_kop) {
+	public Inbentario(int biltegi_izena, int stock_kop) {
 		super();
-		this.biltegi_izena = biltegi_izena;
+		this.biltegi_id = biltegi_izena;
 		this.stock_kop = stock_kop;
 	}
 	
-	public String getBiltegi_izena() {
-		return biltegi_izena;
+	public int getBiltegi_izena() {
+		return biltegi_id;
 	}
 	
-	public void setBiltegi_izena(String biltegi_izena) {
-		this.biltegi_izena = biltegi_izena;
+	public void setBiltegi_izena(int biltegi_izena) {
+		this.biltegi_id = biltegi_izena;
 	}
 	
 	public int getStock_kop() {
@@ -29,7 +29,7 @@ public class Inbentario {
 	
 	@Override
 	public String toString() {
-		return "Inbentario [biltegi_izena=" + biltegi_izena + ", stock_kop=" + stock_kop + "]";
+		return "Inbentario [biltegi_izena=" + biltegi_id + ", stock_kop=" + stock_kop + "]";
 	}
 	
 	

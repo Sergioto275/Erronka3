@@ -6,13 +6,13 @@ public class Bezeroa {
 	private String izena;
 	private String abizena;
 	private String helbidea;
-	private String id;
+	private int id;
 	private String email;
 	private String telefonoa;
 	
 	public Bezeroa() {}
 	
-	public Bezeroa(String izena, String abizena, String helbidea, String id, String email, String telefonoa) {
+	public Bezeroa(String izena, String abizena, String helbidea, int id, String email, String telefonoa) {
 		this.izena = izena;
 		this.abizena = abizena;
 		this.helbidea = helbidea;
@@ -45,11 +45,11 @@ public class Bezeroa {
 		this.helbidea = helbidea;
 	}
 
-	public String getId() {
+	public int getId() {
 		return this.id;
 	}
 
-	public void setId(String nan) {
+	public void setId(int nan) {
 		this.id = nan;
 	}
 

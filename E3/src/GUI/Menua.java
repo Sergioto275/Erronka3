@@ -26,7 +26,6 @@ public class Menua extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 672, 447);
 	    setLocationRelativeTo(null);
-		setVisible(true);
 		
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
@@ -56,6 +55,12 @@ public class Menua extends JFrame {
 		menuBar.add(mKok);
 		
 		JMenuItem mProd = new JMenuItem("Produktuak");
+		mProd.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				ProduktuGUI bezeroa = new ProduktuGUI();
+			}
+		});
 		menuBar.add(mProd);
 		
 		JMenuItem mInb = new JMenuItem("Inbentario");
@@ -86,5 +91,6 @@ public class Menua extends JFrame {
 		bItxi.setBorder(new EmptyBorder(0, 0, 0, 0));
 		bItxi.setBounds(496, 242, 150, 127);
 		contentPane.add(bItxi);
+		setVisible(true);
 	}
 }

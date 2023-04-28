@@ -34,7 +34,6 @@ public class Saioa extends JDialog {
 		getContentPane().setLayout(new BorderLayout());
 	    setLocationRelativeTo(null);
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-		setVisible(true);
 		panel.setBackground(Color.LIGHT_GRAY);
 		panel.setBorder(new EmptyBorder(0, 0, 0, 0));
 		getContentPane().add(panel, BorderLayout.CENTER);
@@ -83,7 +82,7 @@ public class Saioa extends JDialog {
 		bLogin.setBorder(new EmptyBorder(0, 0, 0, 0));
 		bLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				conexioa c = new conexioa("jdbc:oracle:thin:@//localhost:1521/XEPDB1","E2","E2");
+				conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 				s = c.erabiltzaileKontsulta(txtErabil.getText());
 				if(passwordField.getText().equals(s.getPasahitza())) {
 					Menua m = new Menua(s);
@@ -113,5 +112,6 @@ public class Saioa extends JDialog {
 		bAmaitu.setBorder(new EmptyBorder(0, 0, 0, 0));
 		bAmaitu.setBounds(0, 199, 106, 83);
 		panel.add(bAmaitu);
+		setVisible(true);
 	}
 }
