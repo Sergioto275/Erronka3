@@ -294,5 +294,55 @@ public class conexioa{
     	  }
       }
 //ESKARIAK ----------------------------------------------------------------------------------------------------------------------------------------------
-
+      public EskariDB eskariKontsulta() {
+    	  EskariDB edb = new EskariDB();
+    	  try {
+    		  Statement st = this.c.createStatement();
+    		  String kontsulta = "SELECT E.ID, E.ID_BEZERO, EG.DESKRIBAPENA, E.ID_SALTZAILE, TO_CHAR(E.ESKAERA_DATA,'YYYY/MM/DD') AS ESKAERA_DATA FROM ESKARI E, ESKARI_EGOERA EG WHERE E.ID_EGOERA = EG.ID ORDER BY E.ID ASC";
+    		  ResultSet rt = st.executeQuery(kontsulta);
+    		  while(rt.next()) {
+    			  Eskaria e = new Eskaria(rt.getInt("ID"),rt.getInt("ID_BEZERO"),rt.getInt("ID_SALTZAILE"),rt.getString("DESKRIBAPENA"),rt.getString("ESKAERA_DATA"),null);
+    			  edb.addEskaria(e);
+    		  }
+    		  rt.close();
+    		  st.close();
+    		  this.c.close();
+    	  }catch(Exception e) {
+    		  String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
+    	  }
+    	  return edb;
+      }
+      
+      public void eskariDelete(int id) {
+    	  try {
+    		  String Kontsulta = "DELETE FROM ESKARI WHERE ID = ?";
+    		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
+    		  st.setInt(1, id);
+    		  st.executeUpdate();
+    		  st.close();
+    		  this.c.close();
+    	  }catch(Exception e) {
+              String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+    	  }
+      }
+      
+      public void eskariUpdate(int id, int id_bez, int id_saltzaile, String data, String deskribapena) {
+    	  try {
+    		  String Kontsulta = "UPDATE ESKARI SET ID_BEZERO = ?, ID_SALTZAILE = ?, ESKAERA_DATA = ?, ID_EGOERA = (SELECT ID FROM ESKARI_EGOERA WHERE DESKRIBAPENA = ?) WHERE ID = ?";
+    		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
+    		  st.setInt(1, id_bez);
+    		  st.setInt(2, id_saltzaile);
+    		  st.setString(3, data);
+    		  st.setString(4, deskribapena);
+    		  st.setInt(5, id);
+    		  st.executeUpdate();
+    		  st.close();
+    		  this.c.close();
+    	  }catch(Exception e) {
+              String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+    	  }
+      }
 }
