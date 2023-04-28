@@ -13,7 +13,7 @@ public class Produktu {
 		
 		public Produktu() {}
 
-		public Produktu(int id, String kategoria, String izena, String deskribapena, double balioa, double salneurria) {
+		public Produktu(int id,String izena, String deskribapena, double balioa, double salneurria, String kategoria, Inbentario[] inbentario) {
 			super();
 			this.id = id;
 			this.kategoria = kategoria;
@@ -21,10 +21,10 @@ public class Produktu {
 			this.deskribapena = deskribapena;
 			this.balioa = balioa;
 			this.salneurria = salneurria;
-			this.inbentario = new Inbentario[0];
+			this.inbentario = inbentario;
 		}
 
-		public int getProd_kodea() {
+		public int getId() {
 			return this.id;
 		}
 

@@ -6,17 +6,17 @@ public class Bezeroa {
 	private String izena;
 	private String abizena;
 	private String helbidea;
-	private String id;
+	private int id;
 	private String email;
-	private String[] telefonoa;
+	private String telefonoa;
 	
 	public Bezeroa() {}
 	
-	public Bezeroa(String izena, String abizena, String helbidea, String nan, String email, String[] telefonoa) {
+	public Bezeroa(String izena, String abizena, String helbidea, int id, String email, String telefonoa) {
 		this.izena = izena;
 		this.abizena = abizena;
 		this.helbidea = helbidea;
-		this.id = nan;
+		this.id = id;
 		this.email = email;
 		this.telefonoa = telefonoa;
 	}
@@ -45,11 +45,11 @@ public class Bezeroa {
 		this.helbidea = helbidea;
 	}
 
-	public String getId() {
+	public int getId() {
 		return this.id;
 	}
 
-	public void setId(String nan) {
+	public void setId(int nan) {
 		this.id = nan;
 	}
 
@@ -61,18 +61,18 @@ public class Bezeroa {
 		this.email = email;
 	}
 
-	public String[] getTelefonoa() {
+	public String getTelefonoa() {
 		return this.telefonoa;
 	}
 
-	public void setTelefonoa(String[] telefonoa) {
+	public void setTelefonoa(String telefonoa) {
 		this.telefonoa = telefonoa;
 	}
 
 	@Override
 	public String toString() {
 		return "Bezeroa [izena=" + this.izena + ", abizena=" + this.abizena + ", helbidea=" + this.helbidea + ", Id=" + this.id
-				+ ", email=" + this.email + ", telefonoa=" + Arrays.toString(this.telefonoa) + "]";
+				+ ", email=" + this.email + ", telefonoa=" + this.telefonoa + "]";
 	}
 	
 	
