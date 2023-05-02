@@ -129,7 +129,7 @@ public class InbentarioGUI extends JDialog {
 					if(table.getColumnName(table.getSelectedColumn()).equals("   ")) {
 						try{
 							conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
-							int idBiltegi = (int)(table.getValueAt(table.getSelectedRow(), 0));
+							int idBiltegi = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 0));
 							c.inbentarioDelete(prodId,idBiltegi);
 							modelo.removeRow(table.getSelectedRow());
 				            JOptionPane.showMessageDialog(null,"Hilara ezabatu da","EZABAKETA",JOptionPane.INFORMATION_MESSAGE);

@@ -56,7 +56,7 @@ public class BezeroGUI extends JDialog {
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
 		contentPanel.setLayout(null);
-		modelo = new DefaultTableModel(null,new String[] {"ID", "IZENA", "ABIZENA", "HELBIDEA", "EMAIL", "TELEFONOA", " ", "  "}) {
+		modelo = new DefaultTableModel(null,new String[] {"ID", "IZENA", "ABIZENA", "HELBIDEA", "EMAIL", "TELEFONOA", " ", "   "}) {
 				boolean[] columnEditables = new boolean[] {
 					false, true, true, true, true, true, false, false
 				};
@@ -68,14 +68,14 @@ public class BezeroGUI extends JDialog {
 		scrollPane.setBounds(77, 63, 705, 283);
 		contentPanel.add(scrollPane);
 		table = new DTable();
+		table.setRowHeight(25);
 		table.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				System.out.println(table.getSelectedColumn());
 				if(table.getColumnName(table.getSelectedColumn()).equals(" ")) {
 					try {
 					conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
-					int id = (int)(table.getValueAt(table.getSelectedRow(), 0));
+					int id = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 0));
 					String izena = (String)(table.getValueAt(table.getSelectedRow(), 1));
 					String abizena = (String)(table.getValueAt(table.getSelectedRow(), 2));
 					String helbidea = (String)(table.getValueAt(table.getSelectedRow(), 3));
@@ -88,10 +88,10 @@ public class BezeroGUI extends JDialog {
 						JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
 					}
 				}else {
-					if(table.getColumnName(table.getSelectedColumn()).equals("  ")) {
+					if(table.getColumnName(table.getSelectedColumn()).equals("   ")) {
 						try {
 							conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
-							int id = (int)(table.getValueAt(table.getSelectedRow(), 0));
+							int id = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 0));
 							c.bezeroDelete(id);
 							modelo.removeRow(table.getSelectedRow());
 				            JOptionPane.showMessageDialog(null,"Hilara ezabatu da","EZABAKETA",JOptionPane.INFORMATION_MESSAGE);

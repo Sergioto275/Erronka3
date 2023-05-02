@@ -27,28 +27,24 @@ import javax.swing.JScrollPane;
 import java.awt.Font;
 import java.awt.Image;
 
-public class EskariGUI extends JDialog {
+public class eskInfoGUI extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
 	private JTable table;
 	private DefaultTableModel modelo;
 	private EskariDB edb;
+	private int eskId;
 
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
-		try {
-			EskariGUI dialog = new EskariGUI();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
+
 
 	/**
 	 * Create the dialog.
 	 */
-	public EskariGUI() {
+	public eskInfoGUI(int id) {
+		this.eskId = id;
 		setBounds(100, 100, 897, 498);
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 		getContentPane().setLayout(new BorderLayout());
@@ -61,20 +57,6 @@ public class EskariGUI extends JDialog {
 	    insert1 = new ImageIcon(insert1.getImage().getScaledInstance(60,60,Image.SCALE_DEFAULT));
 	    insert2 = new ImageIcon(insert2.getImage().getScaledInstance(80,80,Image.SCALE_DEFAULT));
 	    ImageIcon insert3 = new ImageIcon(insert1.getImage().getScaledInstance(80,80,Image.SCALE_DEFAULT));
-		JButton bTxertatu = new JButton("");
-		bTxertatu.setContentAreaFilled(false);
-		bTxertatu.setBorder(new EmptyBorder(0, 0, 0, 0));
-		bTxertatu.setBackground(Color.LIGHT_GRAY);
-		bTxertatu.setRolloverIcon(insert3);
-		bTxertatu.setPressedIcon(insert2);
-		bTxertatu.setIcon(insert1);
-		bTxertatu.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				eskTxertatuGUI p = new eskTxertatuGUI(modelo);
-			}
-		});
-		bTxertatu.setBounds(10, 341, 118, 107);
-		contentPanel.add(bTxertatu);
 		
 		ImageIcon at1 = new ImageIcon("imagenes\\atras1.png");
 		ImageIcon at2 = new ImageIcon("imagenes\\atras2.png");
@@ -95,18 +77,18 @@ public class EskariGUI extends JDialog {
 		bAtzera.setBounds(740, 362, 112, 86);
 		contentPanel.add(bAtzera);
 		
-		JLabel lblEskariak = new JLabel("Eskariak");
-		lblEskariak.setFont(new Font("Comic Sans MS", Font.BOLD, 30));
-		lblEskariak.setBounds(361, 11, 167, 65);
-		contentPanel.add(lblEskariak);
+		JLabel lblProduktu = new JLabel("Produktuak");
+		lblProduktu.setFont(new Font("Comic Sans MS", Font.BOLD, 30));
+		lblProduktu.setBounds(361, 11, 167, 65);
+		contentPanel.add(lblProduktu);
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(81, 108, 715, 207);
 		contentPanel.add(scrollPane);
 		
-		modelo = new DefaultTableModel(null,new String[] {"ID", "ID BEZERO", "EGOERA", "ID SALTZAILE", "DATA", "  ", " ", "   "}) {
+		modelo = new DefaultTableModel(null,new String[] {"ID","ID_PRODUKTU","KOPURUA","SALNEURRIA"," ", "   "}) {
 			boolean[] columnEditables = new boolean[] {
-				false, true, true, true, true, false, false, false
+				false, true, true, true, false, false
 			};
 			public boolean isCellEditable(int row, int column) {
 				return columnEditables[column];
@@ -115,7 +97,6 @@ public class EskariGUI extends JDialog {
 		table.setRowHeight(25);
 		taulaInfo();
 		table.setModel(modelo);
-		table.getColumnModel().getColumn(5).setPreferredWidth(20);
 		scrollPane.setViewportView(table);
 		table.addMouseListener(new MouseAdapter() {
 			@Override
@@ -124,15 +105,13 @@ public class EskariGUI extends JDialog {
 					try {
 						conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 						int id = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 0));
-						int id_bez = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 1));
-						int id_saltzaile = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 3));
-						String data = (String)(table.getValueAt(table.getSelectedRow(), 4).toString());
-						String deskribapena = (String)(table.getValueAt(table.getSelectedRow(), 4).toString());
-						c.eskariUpdate(id,id_bez,id_saltzaile,data,deskribapena);
+						int idProd = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 1));
+						int kopurua = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 2));
+						Double salneurria = Double.parseDouble(""+table.getValueAt(table.getSelectedRow(), 3));
+						c.eskariInfoUpdate(eskId,id, idProd, kopurua, salneurria);
 			            JOptionPane.showMessageDialog(null,"Hilara eguneratu da","EGUNERAKETA",JOptionPane.INFORMATION_MESSAGE);
 					}catch(Exception ex) {
 						String mensaje = ""+e;
-						System.out.println(mensaje);
 			            JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
 					}
 				}else {
@@ -140,17 +119,12 @@ public class EskariGUI extends JDialog {
 						try{
 							conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 							int id = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 0));
-							c.eskariDelete(id);
+							c.eskariInfoDelete(eskId,id);
 							modelo.removeRow(table.getSelectedRow());
 				            JOptionPane.showMessageDialog(null,"Hilara ezabatu da","EZABAKETA",JOptionPane.INFORMATION_MESSAGE);
 						}catch(Exception ex) {
 							String mensaje = ""+e;
 				            JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
-						}
-					}else {
-						if(table.getColumnName(table.getSelectedColumn()).equals("  ")) {
-							int index = (int)(table.getValueAt(table.getSelectedRow(), 0));
-							eskInfoGUI inb = new eskInfoGUI(index);
 						}
 					}
 				}
@@ -162,9 +136,8 @@ public class EskariGUI extends JDialog {
 	public void taulaInfo() {
 		conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 		edb = c.eskariKontsulta();
-		for(int i=0;i<edb.getEskariList().length;i++) {
-			modelo.addRow(new Object[] {edb.getEskariList()[i].getId(),edb.getEskariList()[i].getBezero_izena(),edb.getEskariList()[i].getEgoera(),edb.getEskariList()[i].getSaltzaile_izena(),edb.getEskariList()[i].getData(),null,null,null});
+		for(int i=0;i<edb.getEskariList()[this.eskId].getProduktu_kop().length;i++) {
+			modelo.addRow(new Object[] {edb.getEskariList()[this.eskId].getProduktu_kop()[i].getId(),edb.getEskariList()[this.eskId].getProduktu_kop()[i].getIdProd(),edb.getEskariList()[this.eskId].getProduktu_kop()[i].getKopurua(),edb.getEskariList()[this.eskId].getProduktu_kop()[i].getSalneurria(),null,null});
 		}
 	}
-	
 }

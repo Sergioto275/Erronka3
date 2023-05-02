@@ -128,7 +128,6 @@ public class ProduktuGUI extends JDialog {
 						double balioa = Double.valueOf(table.getValueAt(table.getSelectedRow(), 3).toString());
 						double salneurria = Double.valueOf(table.getValueAt(table.getSelectedRow(), 4).toString());
 						String kategoria = (String)(table.getValueAt(table.getSelectedRow(), 5));
-						System.out.println(id+" "+izena+" "+deskribapena+" "+balioa+" "+salneurria+" "+kategoria);
 						c.produktuUpdate(id,izena,deskribapena,balioa,salneurria,kategoria);
 			            JOptionPane.showMessageDialog(null,"Hilara eguneratu da","EGUNERAKETA",JOptionPane.INFORMATION_MESSAGE);
 					}catch(Exception ex) {
@@ -139,13 +138,17 @@ public class ProduktuGUI extends JDialog {
 					if(table.getColumnName(table.getSelectedColumn()).equals("   ")) {
 						try{
 							conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
-							int id = (int)(table.getValueAt(table.getSelectedRow(), 0));
+							System.out.println("1");
+							table.updateUI();
+							int id = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 0));
+							System.out.println("2");
 							c.produktuDelete(id);
 							modelo.removeRow(table.getSelectedRow());
 				            JOptionPane.showMessageDialog(null,"Hilara ezabatu da","EZABAKETA",JOptionPane.INFORMATION_MESSAGE);
 						}catch(Exception ex) {
 							String mensaje = ""+e;
-				            JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+							System.out.println(mensaje);
+				            JOptionPane.showMessageDialog(null, mensaje,"HAU DA",JOptionPane.WARNING_MESSAGE);        
 						}
 					}else {
 						if(table.getColumnName(table.getSelectedColumn()).equals("  ")) {

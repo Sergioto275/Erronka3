@@ -293,6 +293,7 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
     	  }
       }
+      
 //ESKARIAK ----------------------------------------------------------------------------------------------------------------------------------------------
       public EskariDB eskariKontsulta() {
     	  EskariDB edb = new EskariDB();
@@ -301,7 +302,7 @@ public class conexioa{
     		  String kontsulta = "SELECT E.ID, E.ID_BEZERO, EG.DESKRIBAPENA, E.ID_SALTZAILE, TO_CHAR(E.ESKAERA_DATA,'YYYY/MM/DD') AS ESKAERA_DATA FROM ESKARI E, ESKARI_EGOERA EG WHERE E.ID_EGOERA = EG.ID ORDER BY E.ID ASC";
     		  ResultSet rt = st.executeQuery(kontsulta);
     		  while(rt.next()) {
-    			  Eskaria e = new Eskaria(rt.getInt("ID"),rt.getInt("ID_BEZERO"),rt.getInt("ID_SALTZAILE"),rt.getString("DESKRIBAPENA"),rt.getString("ESKAERA_DATA"),null);
+    			  Eskaria e = new Eskaria(rt.getInt("ID"),rt.getInt("ID_BEZERO"),rt.getInt("ID_SALTZAILE"),rt.getString("DESKRIBAPENA"),rt.getString("ESKAERA_DATA"),eskariInfoKontsulta(rt.getInt("ID")));
     			  edb.addEskaria(e);
     		  }
     		  rt.close();
@@ -312,6 +313,27 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
     	  return edb;
+      }
+      
+      public Eskari_Info[] eskariInfoKontsulta(int idEsk) {
+    	  Eskari_Info[] esk = new Eskari_Info[0];
+    	  try {
+    		  String kontsulta = "SELECT ID_LERRO, ID_PRODUKTU, KOPURUA, SALNEURRIA FROM ESKARI_LERRO WHERE ID_ESKARI = ? ORDER BY ID_LERRO ASC";
+    		  PreparedStatement st = this.c.prepareStatement(kontsulta);
+    		  st.setInt(1,idEsk);
+    		  ResultSet rt = st.executeQuery();
+    		  while(rt.next()) {
+    			  Eskari_Info e = new Eskari_Info(rt.getInt("ID_LERRO"),rt.getInt("ID_PRODUKTU"),rt.getInt("KOPURUA"),rt.getDouble("SALNEURRIA"));
+    			  esk = Arrays.copyOf(esk, esk.length+1);
+    			  esk[esk.length-1]= e;
+    		  }
+    		  rt.close();
+    		  st.close();
+    	  }catch(Exception e) {
+    		  String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
+    	  }
+    	  return esk;
       }
       
       public void eskariDelete(int id) {
@@ -330,12 +352,83 @@ public class conexioa{
       
       public void eskariUpdate(int id, int id_bez, int id_saltzaile, String data, String deskribapena) {
     	  try {
-    		  String Kontsulta = "UPDATE ESKARI SET ID_BEZERO = ?, ID_SALTZAILE = ?, ESKAERA_DATA = ?, ID_EGOERA = (SELECT ID FROM ESKARI_EGOERA WHERE DESKRIBAPENA = ?) WHERE ID = ?";
+    		  String Kontsulta = "UPDATE ESKARI SET ID_BEZERO = ?, ID_SALTZAILE = ?, ESKAERA_DATA = TO_DATE(?,'YYYY/MM/DD'), ID_EGOERA = (SELECT ID FROM ESKARI_EGOERA WHERE DESKRIBAPENA = ?) WHERE ID = ?";
     		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
     		  st.setInt(1, id_bez);
     		  st.setInt(2, id_saltzaile);
     		  st.setString(3, data);
     		  st.setString(4, deskribapena);
+    		  st.setInt(5, id);
+    		  st.executeUpdate();
+    		  st.close();
+    		  this.c.close();
+    	  }catch(Exception e) {
+              String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+    	  }
+      }
+      
+      public void eskariInsert(int id, int id_bez, int id_saltzaile, String data, String deskribapena) {
+    	  try {
+    		  String Kontsulta = "INSERT INTO ESKARI SELECT ?,?,ID,?,TO_DATE(?,'YYYY/MM/DD') FROM ESKARI_EGOERA WHERE DESKRIBAPENA = ?";
+    		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
+    		  st.setInt(1, id);
+    		  st.setInt(2, id_bez);
+    		  st.setInt(3, id_saltzaile);
+    		  st.setString(4, data);
+    		  st.setString(5, deskribapena);
+    		  st.executeUpdate();
+    		  st.close();
+    		  this.c.close();
+    	  }catch(Exception e) {
+              String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+    	  }
+      }
+      
+      public String[] eskariEgKontsulta() {
+    	  String[] i = new String[0];
+    	  try {
+    		  String kontsulta = "SELECT DESKRIBAPENA FROM ESKARI_EGOERA ORDER BY ID";
+    		  Statement st = this.c.createStatement();
+    		  ResultSet rt = st.executeQuery(kontsulta);
+    		  while(rt.next()) {
+    			  String eg = rt.getString("DESKRIBAPENA");
+    			  i = Arrays.copyOf(i, i.length+1);
+    			  i[i.length-1]=eg;
+    		  }
+    		  rt.close();
+    		  st.close();
+    	  }catch(Exception e) {
+    		  String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
+    	  }
+    	  return i;
+      }
+      
+      public void eskariInfoDelete(int idEsk,int id) {
+    	  try {
+    		  String Kontsulta = "DELETE FROM ESKARI_LERRO WHERE ID_ESKARI = ? AND ID_LERRO = ?";
+    		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
+    		  st.setInt(1, idEsk);
+    		  st.setInt(1, id);
+    		  st.executeUpdate();
+    		  st.close();
+    		  this.c.close();
+    	  }catch(Exception e) {
+              String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+    	  }
+      }
+      
+      public void eskariInfoUpdate(int idEsk,int id, int idProd, int kopurua, Double salneurria) {
+    	  try {
+    		  String Kontsulta = "UPDATE ESKARI_LERRO SET ID_PRODUKTU = ?, SALNEURRIA = ?,KOPURUA = ? WHERE ID_ESKARI = ? AND ID_LERRO = ?";
+    		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
+    		  st.setInt(1,idProd);
+    		  st.setDouble(2, salneurria);
+    		  st.setInt(3, kopurua);
+    		  st.setInt(4, idEsk);
     		  st.setInt(5, id);
     		  st.executeUpdate();
     		  st.close();
