@@ -49,10 +49,13 @@ public class Menua extends JFrame {
 		menuBar.add(mSaltz);
 		
 		JMenuItem mEsk = new JMenuItem("Eskariak");
+		mEsk.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				EskariGUI bezeroa = new EskariGUI();
+			}
+		});
 		menuBar.add(mEsk);
-		
-		JMenuItem mKok = new JMenuItem("Kokalekuak");
-		menuBar.add(mKok);
 		
 		JMenuItem mProd = new JMenuItem("Produktuak");
 		mProd.addMouseListener(new MouseAdapter() {
@@ -62,9 +65,7 @@ public class Menua extends JFrame {
 			}
 		});
 		menuBar.add(mProd);
-		
-		JMenuItem mInb = new JMenuItem("Inbentario");
-		menuBar.add(mInb);
+
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(0, 0, 0, 0));
 
