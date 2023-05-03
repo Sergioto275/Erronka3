@@ -70,11 +70,15 @@ public class Saioa extends JDialog {
 	    ImageIcon ap3 = new ImageIcon(ap1.getImage().getScaledInstance(60,60,Image.SCALE_DEFAULT));
 	    ImageIcon in1 = new ImageIcon("imagenes\\inicio_sesion1.png");
 		ImageIcon in2 = new ImageIcon("imagenes\\inicio_sesion2.png");
-	    in1 = new ImageIcon(in1.getImage().getScaledInstance(60,60,Image.SCALE_DEFAULT));
-	    in2 = new ImageIcon(in2.getImage().getScaledInstance(80,77,Image.SCALE_DEFAULT));
-	    ImageIcon in3 = new ImageIcon(in1.getImage().getScaledInstance(80,77,Image.SCALE_DEFAULT));
+	    in1 = new ImageIcon(in1.getImage().getScaledInstance(40,40,Image.SCALE_DEFAULT));
+	    in2 = new ImageIcon(in2.getImage().getScaledInstance(60,60,Image.SCALE_DEFAULT));
+	    ImageIcon in3 = new ImageIcon(in1.getImage().getScaledInstance(60,60,Image.SCALE_DEFAULT));
 		JButton bLogin = new JButton("");
-		bLogin.setAlignmentX(Component.CENTER_ALIGNMENT);
+		bLogin.setHorizontalTextPosition(SwingConstants.LEFT);
+		bLogin.setVerticalTextPosition(SwingConstants.TOP);
+		bLogin.setHorizontalAlignment(SwingConstants.LEFT);
+		bLogin.setFocusTraversalPolicyProvider(true);
+		bLogin.setVerticalAlignment(SwingConstants.TOP);
 		bLogin.setContentAreaFilled(false);
 		bLogin.setRolloverIcon(in3);
 		bLogin.setPressedIcon(in2);
@@ -92,7 +96,7 @@ public class Saioa extends JDialog {
 				}
 			}
 		});
-		bLogin.setBounds(269, 194, 146, 88);
+		bLogin.setBounds(320, 211, 65, 60);
 		panel.add(bLogin);
 		
 		JButton bAmaitu = new JButton();
@@ -112,6 +116,11 @@ public class Saioa extends JDialog {
 		bAmaitu.setBorder(new EmptyBorder(0, 0, 0, 0));
 		bAmaitu.setBounds(0, 199, 106, 83);
 		panel.add(bAmaitu);
+		
+		JButton visible = new JButton("New button");
+		visible.setBounds(359, 159, 21, 23);
+		panel.add(visible);
+		visible.addActionListener(e -> passwordField.setVisible(true));
 		setVisible(true);
 	}
 }

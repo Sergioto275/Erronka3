@@ -11,6 +11,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 
+import DB.EskariDB;
 import DB.Inbentario;
 import DB.ProduktuDB;
 import conexioa.conexioa;
@@ -26,19 +27,19 @@ import javax.swing.JScrollPane;
 import java.awt.Font;
 import java.awt.Image;
 
-public class ProduktuGUI extends JDialog {
+public class EskariGUI extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
 	private JTable table;
 	private DefaultTableModel modelo;
-	private ProduktuDB pdb;
+	private EskariDB edb;
 
 	/**
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
 		try {
-			ProduktuGUI dialog = new ProduktuGUI();
+			EskariGUI dialog = new EskariGUI();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -47,7 +48,7 @@ public class ProduktuGUI extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	public ProduktuGUI() {
+	public EskariGUI() {
 		setBounds(100, 100, 897, 498);
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 		getContentPane().setLayout(new BorderLayout());
@@ -69,7 +70,7 @@ public class ProduktuGUI extends JDialog {
 		bTxertatu.setIcon(insert1);
 		bTxertatu.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				prodTxertatuGUI p = new prodTxertatuGUI(modelo);
+				eskTxertatuGUI p = new eskTxertatuGUI(modelo);
 			}
 		});
 		bTxertatu.setBounds(10, 341, 118, 107);
@@ -94,18 +95,18 @@ public class ProduktuGUI extends JDialog {
 		bAtzera.setBounds(740, 362, 112, 86);
 		contentPanel.add(bAtzera);
 		
-		JLabel lblProduktu = new JLabel("Produktuak");
-		lblProduktu.setFont(new Font("Comic Sans MS", Font.BOLD, 30));
-		lblProduktu.setBounds(361, 11, 167, 65);
-		contentPanel.add(lblProduktu);
+		JLabel lblEskariak = new JLabel("Eskariak");
+		lblEskariak.setFont(new Font("Comic Sans MS", Font.BOLD, 30));
+		lblEskariak.setBounds(361, 11, 167, 65);
+		contentPanel.add(lblEskariak);
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(81, 108, 715, 207);
 		contentPanel.add(scrollPane);
 		
-		modelo = new DefaultTableModel(null,new String[] {"ID", "IZENA", "DESKRIBAPENA", "BALIOA", "SALNEURRIA", "KATEGORIA","  ", " ", "   "}) {
+		modelo = new DefaultTableModel(null,new String[] {"ID", "ID BEZERO", "EGOERA", "ID SALTZAILE", "DATA", "  ", " ", "   "}) {
 			boolean[] columnEditables = new boolean[] {
-				false, true, true, true, true, true, false, false, false
+				false, true, true, true, true, false, false, false
 			};
 			public boolean isCellEditable(int row, int column) {
 				return columnEditables[column];
@@ -114,7 +115,7 @@ public class ProduktuGUI extends JDialog {
 		table.setRowHeight(25);
 		taulaInfo();
 		table.setModel(modelo);
-		table.getColumnModel().getColumn(6).setPreferredWidth(20);
+		table.getColumnModel().getColumn(5).setPreferredWidth(20);
 		scrollPane.setViewportView(table);
 		table.addMouseListener(new MouseAdapter() {
 			@Override
@@ -123,37 +124,33 @@ public class ProduktuGUI extends JDialog {
 					try {
 						conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 						int id = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 0));
-						String izena = (String)(table.getValueAt(table.getSelectedRow(), 1));
-						String deskribapena = (String)(table.getValueAt(table.getSelectedRow(), 2));
-						double balioa = Double.valueOf(table.getValueAt(table.getSelectedRow(), 3).toString());
-						double salneurria = Double.valueOf(table.getValueAt(table.getSelectedRow(), 4).toString());
-						String kategoria = (String)(table.getValueAt(table.getSelectedRow(), 5));
-						c.produktuUpdate(id,izena,deskribapena,balioa,salneurria,kategoria);
+						int id_bez = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 1));
+						int id_saltzaile = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 3));
+						String data = (String)(table.getValueAt(table.getSelectedRow(), 4).toString());
+						String deskribapena = (String)(table.getValueAt(table.getSelectedRow(), 4).toString());
+						c.eskariUpdate(id,id_bez,id_saltzaile,data,deskribapena);
 			            JOptionPane.showMessageDialog(null,"Hilara eguneratu da","EGUNERAKETA",JOptionPane.INFORMATION_MESSAGE);
 					}catch(Exception ex) {
 						String mensaje = ""+e;
+						System.out.println(mensaje);
 			            JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
 					}
 				}else {
 					if(table.getColumnName(table.getSelectedColumn()).equals("   ")) {
 						try{
 							conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
-							System.out.println("1");
-							table.updateUI();
 							int id = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 0));
-							System.out.println("2");
-							c.produktuDelete(id);
+							c.eskariDelete(id);
 							modelo.removeRow(table.getSelectedRow());
 				            JOptionPane.showMessageDialog(null,"Hilara ezabatu da","EZABAKETA",JOptionPane.INFORMATION_MESSAGE);
 						}catch(Exception ex) {
 							String mensaje = ""+e;
-							System.out.println(mensaje);
-				            JOptionPane.showMessageDialog(null, mensaje,"HAU DA",JOptionPane.WARNING_MESSAGE);        
+				            JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
 						}
 					}else {
 						if(table.getColumnName(table.getSelectedColumn()).equals("  ")) {
 							int index = (int)(table.getValueAt(table.getSelectedRow(), 0));
-							InbentarioGUI inb = new InbentarioGUI(index);
+							eskInfoGUI inb = new eskInfoGUI(index);
 						}
 					}
 				}
@@ -164,19 +161,10 @@ public class ProduktuGUI extends JDialog {
 	
 	public void taulaInfo() {
 		conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
-		pdb = c.produktuKontsulta();
-		for(int i=0;i<pdb.getProduktuList().length;i++) {
-			modelo.addRow(new Object[] {pdb.getProduktuList()[i].getId(),pdb.getProduktuList()[i].getIzena(),pdb.getProduktuList()[i].getDeskribapena(),pdb.getProduktuList()[i].getBalioa(),pdb.getProduktuList()[i].getUneko_salneurria(),pdb.getProduktuList()[i].getKategoria(),null,null,null});
+		edb = c.eskariKontsulta();
+		for(int i=0;i<edb.getEskariList().length;i++) {
+			modelo.addRow(new Object[] {edb.getEskariList()[i].getId(),edb.getEskariList()[i].getBezero_izena(),edb.getEskariList()[i].getEgoera(),edb.getEskariList()[i].getSaltzaile_izena(),edb.getEskariList()[i].getData(),null,null,null});
 		}
 	}
 	
-	public int index(int id) {
-		int x = 0;
-		for(int i=0;i<pdb.getProduktuList().length;i++) {
-			if(id == pdb.getProduktuList()[i].getId()) {
-				x=i;
-			}
-		}
-		return x;
-	}
 }
