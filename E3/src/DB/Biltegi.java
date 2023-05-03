@@ -2,7 +2,7 @@ package DB;
 
 
 public class Biltegi {
-	private String id;
+	private int id;
 	private String izena;
 	private String helbidea;
 	private String kontinentea;
@@ -14,7 +14,7 @@ public class Biltegi {
 	
 	public Biltegi () {}
 
-	public Biltegi(String id, String izena, String helbidea, String kontinentea, String herrialde, String probintzia,
+	public Biltegi(int id, String izena, String helbidea, String kontinentea, String herrialde, String probintzia,
 			String udalerria, String postakodea) {
 		super();
 		this.id = id;
@@ -27,11 +27,11 @@ public class Biltegi {
 		this.postakodea = postakodea;
 	}
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
