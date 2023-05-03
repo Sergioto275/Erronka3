@@ -31,6 +31,7 @@ public class Menua extends JFrame {
 		setJMenuBar(menuBar);
 		
 		JMenuItem mBezero = new JMenuItem("Bezeroak");
+		mBezero.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mBezero.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -40,15 +41,19 @@ public class Menua extends JFrame {
 		menuBar.add(mBezero);
 		
 		JMenuItem mBiltegi = new JMenuItem("Biltegiak");
+		mBiltegi.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		menuBar.add(mBiltegi);
 		
 		JMenuItem mBuleari = new JMenuItem("Bulegariak");
+		mBuleari.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		menuBar.add(mBuleari);
 		
 		JMenuItem mSaltz = new JMenuItem("Saltzaileak");
+		mSaltz.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		menuBar.add(mSaltz);
 		
 		JMenuItem mEsk = new JMenuItem("Eskariak");
+		mEsk.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mEsk.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -58,6 +63,7 @@ public class Menua extends JFrame {
 		menuBar.add(mEsk);
 		
 		JMenuItem mProd = new JMenuItem("Produktuak");
+		mProd.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mProd.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -78,6 +84,12 @@ public class Menua extends JFrame {
 	    at2 = new ImageIcon(at2.getImage().getScaledInstance(90,105,Image.SCALE_DEFAULT));
 	    ImageIcon at3 = new ImageIcon(at1.getImage().getScaledInstance(90,105,Image.SCALE_DEFAULT));
 		JButton bItxi = new JButton();
+		bItxi.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		bItxi.setHorizontalAlignment(SwingConstants.LEFT);
+		bItxi.setFocusTraversalPolicyProvider(true);
+		bItxi.setHorizontalTextPosition(SwingConstants.RIGHT);
+		bItxi.setVerticalTextPosition(SwingConstants.TOP);
+		bItxi.setVerticalAlignment(SwingConstants.TOP);
 		bItxi.setContentAreaFilled(false);
 		bItxi.setRolloverIcon(at3);
 		bItxi.setPressedIcon(at2);
@@ -90,7 +102,7 @@ public class Menua extends JFrame {
 			}
 		});
 		bItxi.setBorder(new EmptyBorder(0, 0, 0, 0));
-		bItxi.setBounds(496, 242, 150, 127);
+		bItxi.setBounds(531, 245, 91, 98);
 		contentPane.add(bItxi);
 		setVisible(true);
 	}
