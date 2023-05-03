@@ -1,0 +1,773 @@
+<?xml version="1.0"?>
+<bulegariak>
+    <bulegaria id="107">
+        <lanpostua id="1">Public Accountant</lanpostua>
+        <izena>Summer</izena>
+        <abizena>Payne</abizena>
+        <emaila>summer.payne@example.com</emaila>
+        <telefonoa>515.123.8181</telefonoa>
+        <kontratazio_data>07/06/16</kontratazio_data>
+        <id_nagusi>106</id_nagusi>
+        <abatar>thumb-6.png</abatar>
+    </bulegaria>
+    <bulegaria id="106">
+        <lanpostua id="2">Accounting Manager</lanpostua>
+        <izena>Rose</izena>
+        <abizena>Stephens</abizena>
+        <emaila>rose.stephens@example.com</emaila>
+        <telefonoa>515.123.8080</telefonoa>
+        <kontratazio_data>07/06/16</kontratazio_data>
+        <id_nagusi>2</id_nagusi>
+        <abatar>thumb-2.png</abatar>
+    </bulegaria>
+    <bulegaria id="101">
+        <lanpostua id="3">Administration Assistant</lanpostua>
+        <izena>Annabelle</izena>
+        <abizena>Dunn</abizena>
+        <emaila>annabelle.dunn@example.com</emaila>
+        <telefonoa>515.123.4444</telefonoa>
+        <kontratazio_data>17/09/16</kontratazio_data>
+        <id_nagusi>2</id_nagusi>
+        <abatar>thumb-1.png</abatar>
+    </bulegaria>
+    <bulegaria id="1">
+        <lanpostua id="4">President</lanpostua>
+        <izena>Tommy</izena>
+        <abizena>Bailey</abizena>
+        <emaila>tommy.bailey@example.com</emaila>
+        <telefonoa>515.123.4567</telefonoa>
+        <kontratazio_data>17/06/16</kontratazio_data>
+        <id_nagusi />
+        <abatar>thumb-5.png</abatar>
+    </bulegaria>
+    <bulegaria id="3">
+        <lanpostua id="5">Administration Vice President</lanpostua>
+        <izena>Blake</izena>
+        <abizena>Cooper</abizena>
+        <emaila>blake.cooper@example.com</emaila>
+        <telefonoa>515.123.4569</telefonoa>
+        <kontratazio_data>13/01/16</kontratazio_data>
+        <id_nagusi>1</id_nagusi>
+        <abatar>thumb-6.png</abatar>
+    </bulegaria>
+    <bulegaria id="2">
+        <lanpostua id="5">Administration Vice President</lanpostua>
+        <izena>Jude</izena>
+        <abizena>Rivera</abizena>
+        <emaila>jude.rivera@example.com</emaila>
+        <telefonoa>515.123.4568</telefonoa>
+        <kontratazio_data>21/09/16</kontratazio_data>
+        <id_nagusi>1</id_nagusi>
+        <abatar>thumb-1.png</abatar>
+    </bulegaria>
+    <bulegaria id="11">
+        <lanpostua id="6">Accountant</lanpostua>
+        <izena>Tyler</izena>
+        <abizena>Ramirez</abizena>
+        <emaila>tyler.ramirez@example.com</emaila>
+        <telefonoa>515.124.4269</telefonoa>
+        <kontratazio_data>28/09/16</kontratazio_data>
+        <id_nagusi>9</id_nagusi>
+        <abatar>thumb-5.png</abatar>
+    </bulegaria>
+    <bulegaria id="10">
+        <lanpostua id="6">Accountant</lanpostua>
+        <izena>Ryan</izena>
+        <abizena>Gray</abizena>
+        <emaila>ryan.gray@example.com</emaila>
+        <telefonoa>515.124.4169</telefonoa>
+        <kontratazio_data>16/08/16</kontratazio_data>
+        <id_nagusi>9</id_nagusi>
+        <abatar>thumb-3.png</abatar>
+    </bulegaria>
+    <bulegaria id="14">
+        <lanpostua id="6">Accountant</lanpostua>
+        <izena>Elliot</izena>
+        <abizena>Brooks</abizena>
+        <emaila>elliTIENDA.brooks@example.com</emaila>
+        <telefonoa>515.124.4567</telefonoa>
+        <kontratazio_data>07/12/16</kontratazio_data>
+        <id_nagusi>9</id_nagusi>
+        <abatar>thumb-6.png</abatar>
+    </bulegaria>
+    <bulegaria id="12">
+        <lanpostua id="6">Accountant</lanpostua>
+        <izena>Elliott</izena>
+        <abizena>James</abizena>
+        <emaila>elliott.james@example.com</emaila>
+        <telefonoa>515.124.4369</telefonoa>
+        <kontratazio_data>30/09/16</kontratazio_data>
+        <id_nagusi>9</id_nagusi>
+        <abatar>thumb-2.png</abatar>
+    </bulegaria>
+    <bulegaria id="13">
+        <lanpostua id="6">Accountant</lanpostua>
+        <izena>Albert</izena>
+        <abizena>Watson</abizena>
+        <emaila>albert.watson@example.com</emaila>
+        <telefonoa>515.124.4469</telefonoa>
+        <kontratazio_data>07/03/16</kontratazio_data>
+        <id_nagusi>9</id_nagusi>
+        <abatar>thumb-3.png</abatar>
+    </bulegaria>
+    <bulegaria id="9">
+        <lanpostua id="7">Finance Manager</lanpostua>
+        <izena>Mohammad</izena>
+        <abizena>Peterson</abizena>
+        <emaila>mohammad.peterson@example.com</emaila>
+        <telefonoa>515.124.4569</telefonoa>
+        <kontratazio_data>17/08/16</kontratazio_data>
+        <id_nagusi>2</id_nagusi>
+        <abatar>thumb-2.png</abatar>
+    </bulegaria>
+    <bulegaria id="104">
+        <lanpostua id="8">Human Resources Representative</lanpostua>
+        <izena>Harper</izena>
+        <abizena>Spencer</abizena>
+        <emaila>harper.spencer@example.com</emaila>
+        <telefonoa>515.123.7777</telefonoa>
+        <kontratazio_data>07/06/16</kontratazio_data>
+        <id_nagusi>2</id_nagusi>
+        <abatar>thumb-6.png</abatar>
+    </bulegaria>
+    <bulegaria id="4">
+        <lanpostua id="9">Programmer</lanpostua>
+        <izena>Louie</izena>
+        <abizena>Richardson</abizena>
+        <emaila>louie.richardson@example.com</emaila>
+        <telefonoa>590.423.4567</telefonoa>
+        <kontratazio_data>03/01/16</kontratazio_data>
+        <id_nagusi>3</id_nagusi>
+        <abatar>thumb-2.png</abatar>
+    </bulegaria>
+    <bulegaria id="5">
+        <lanpostua id="9">Programmer</lanpostua>
+        <izena>Nathan</izena>
+        <abizena>Cox</abizena>
+        <emaila>nathan.cox@example.com</emaila>
+        <telefonoa>590.423.4568</telefonoa>
+        <kontratazio_data>21/05/16</kontratazio_data>
+        <id_nagusi>4</id_nagusi>
+        <abatar>thumb-1.png</abatar>
+    </bulegaria>
+    <bulegaria id="8">
+        <lanpostua id="9">Programmer</lanpostua>
+        <izena>Bobby</izena>
+        <abizena>Torres</abizena>
+        <emaila>bobby.torres@example.com</emaila>
+        <telefonoa>590.423.5567</telefonoa>
+        <kontratazio_data>07/02/16</kontratazio_data>
+        <id_nagusi>4</id_nagusi>
+        <abatar>thumb-1.png</abatar>
+    </bulegaria>
+    <bulegaria id="7">
+        <lanpostua id="9">Programmer</lanpostua>
+        <izena>Charles</izena>
+        <abizena>Ward</abizena>
+        <emaila>charles.ward@example.com</emaila>
+        <telefonoa>590.423.4560</telefonoa>
+        <kontratazio_data>05/02/16</kontratazio_data>
+        <id_nagusi>4</id_nagusi>
+        <abatar>thumb-2.png</abatar>
+    </bulegaria>
+    <bulegaria id="6">
+        <lanpostua id="9">Programmer</lanpostua>
+        <izena>Gabriel</izena>
+        <abizena>Howard</abizena>
+        <emaila>gabriel.howard@example.com</emaila>
+        <telefonoa>590.423.4569</telefonoa>
+        <kontratazio_data>25/06/16</kontratazio_data>
+        <id_nagusi>4</id_nagusi>
+        <abatar>thumb-4.png</abatar>
+    </bulegaria>
+    <bulegaria id="102">
+        <lanpostua id="10">Marketing Manager</lanpostua>
+        <izena>Emma</izena>
+        <abizena>Perkins</abizena>
+        <emaila>emma.perkins@example.com</emaila>
+        <telefonoa>515.123.5555</telefonoa>
+        <kontratazio_data>17/02/16</kontratazio_data>
+        <id_nagusi>1</id_nagusi>
+        <abatar>thumb-6.png</abatar>
+    </bulegaria>
+    <bulegaria id="103">
+        <lanpostua id="11">Marketing Representative</lanpostua>
+        <izena>Amelie</izena>
+        <abizena>Hudson</abizena>
+        <emaila>amelie.hudson@example.com</emaila>
+        <telefonoa>603.123.6666</telefonoa>
+        <kontratazio_data>17/08/16</kontratazio_data>
+        <id_nagusi>102</id_nagusi>
+        <abatar>thumb-2.png</abatar>
+    </bulegaria>
+    <bulegaria id="105">
+        <lanpostua id="12">Public Relations Representative</lanpostua>
+        <izena>Gracie</izena>
+        <abizena>Gardner</abizena>
+        <emaila>gracie.gardner@example.com</emaila>
+        <telefonoa>515.123.8888</telefonoa>
+        <kontratazio_data>07/06/16</kontratazio_data>
+        <id_nagusi>2</id_nagusi>
+        <abatar>thumb-2.png</abatar>
+    </bulegaria>
+    <bulegaria id="17">
+        <lanpostua id="13">Purchasing Clerk</lanpostua>
+        <izena>Frederick</izena>
+        <abizena>Price</abizena>
+        <emaila>frederick.price@example.com</emaila>
+        <telefonoa>515.127.4563</telefonoa>
+        <kontratazio_data>24/12/16</kontratazio_data>
+        <id_nagusi>47</id_nagusi>
+        <abatar>thumb-4.png</abatar>
+    </bulegaria>
+    <bulegaria id="16">
+        <lanpostua id="13">Purchasing Clerk</lanpostua>
+        <izena>Alex</izena>
+        <abizena>Sanders</abizena>
+        <emaila>alex.sanders@example.com</emaila>
+        <telefonoa>515.127.4562</telefonoa>
+        <kontratazio_data>18/05/16</kontratazio_data>
+        <id_nagusi>47</id_nagusi>
+        <abatar>thumb-2.png</abatar>
+    </bulegaria>
+    <bulegaria id="18">
+        <lanpostua id="13">Purchasing Clerk</lanpostua>
+        <izena>Ollie</izena>
+        <abizena>Bennett</abizena>
+        <emaila>ollie.bennett@example.com</emaila>
+        <telefonoa>515.127.4564</telefonoa>
+        <kontratazio_data>24/07/16</kontratazio_data>
+        <id_nagusi>47</id_nagusi>
+        <abatar>thumb-1.png</abatar>
+    </bulegaria>
+    <bulegaria id="19">
+        <lanpostua id="13">Purchasing Clerk</lanpostua>
+        <izena>Louis</izena>
+        <abizena>Wood</abizena>
+        <emaila>louis.wood@example.com</emaila>
+        <telefonoa>515.127.4565</telefonoa>
+        <kontratazio_data>15/11/16</kontratazio_data>
+        <id_nagusi>47</id_nagusi>
+        <abatar>thumb-4.png</abatar>
+    </bulegaria>
+    <bulegaria id="20">
+        <lanpostua id="13">Purchasing Clerk</lanpostua>
+        <izena>Dexter</izena>
+        <abizena>Barnes</abizena>
+        <emaila>dexter.barnes@example.com</emaila>
+        <telefonoa>515.127.4566</telefonoa>
+        <kontratazio_data>10/08/16</kontratazio_data>
+        <id_nagusi>47</id_nagusi>
+        <abatar>thumb-1.png</abatar>
+    </bulegaria>
+    <bulegaria id="15">
+        <lanpostua id="14">Purchasing Manager</lanpostua>
+        <izena>Rory</izena>
+        <abizena>Kelly</abizena>
+        <emaila>rory.kelly@example.com</emaila>
+        <telefonoa>515.127.4561</telefonoa>
+        <kontratazio_data>07/12/16</kontratazio_data>
+        <id_nagusi>1</id_nagusi>
+        <abatar>thumb-3.png</abatar>
+    </bulegaria>
+    <bulegaria id="49">
+        <lanpostua id="15">Sales Manager</lanpostua>
+        <izena>Isabella</izena>
+        <abizena>Cole</abizena>
+        <emaila>isabella.cole@example.com</emaila>
+        <telefonoa>011.44.1344.619268</telefonoa>
+        <kontratazio_data>15/10/16</kontratazio_data>
+        <id_nagusi>1</id_nagusi>
+        <abatar>thumb-5.png</abatar>
+    </bulegaria>
+    <bulegaria id="48">
+        <lanpostua id="15">Sales Manager</lanpostua>
+        <izena>Jessica</izena>
+        <abizena>Woods</abizena>
+        <emaila>jessica.woods@example.com</emaila>
+        <telefonoa>011.44.1344.429278</telefonoa>
+        <kontratazio_data>10/03/16</kontratazio_data>
+        <id_nagusi>1</id_nagusi>
+        <abatar>thumb-1.png</abatar>
+    </bulegaria>
+    <bulegaria id="47">
+        <lanpostua id="15">Sales Manager</lanpostua>
+        <izena>Ella</izena>
+        <abizena>Wallace</abizena>
+        <emaila>ella.wallace@example.com</emaila>
+        <telefonoa>011.44.1344.467268</telefonoa>
+        <kontratazio_data>05/01/16</kontratazio_data>
+        <id_nagusi>1</id_nagusi>
+        <abatar>thumb-1.png</abatar>
+    </bulegaria>
+    <bulegaria id="46">
+        <lanpostua id="15">Sales Manager</lanpostua>
+        <izena>Ava</izena>
+        <abizena>Sullivan</abizena>
+        <emaila>ava.sullivan@example.com</emaila>
+        <telefonoa>011.44.1344.429268</telefonoa>
+        <kontratazio_data>01/10/16</kontratazio_data>
+        <id_nagusi>1</id_nagusi>
+        <abatar>thumb-2.png</abatar>
+    </bulegaria>
+    <bulegaria id="50">
+        <lanpostua id="15">Sales Manager</lanpostua>
+        <izena>Mia</izena>
+        <abizena>West</abizena>
+        <emaila>mia.west@example.com</emaila>
+        <telefonoa>011.44.1344.429018</telefonoa>
+        <kontratazio_data>29/01/16</kontratazio_data>
+        <id_nagusi>1</id_nagusi>
+        <abatar>thumb-3.png</abatar>
+    </bulegaria>
+    <bulegaria id="85">
+        <lanpostua id="17">Shipping Clerk</lanpostua>
+        <izena>Holly</izena>
+        <abizena>Shaw</abizena>
+        <emaila>holly.shaw@example.com</emaila>
+        <telefonoa>650.509.1876</telefonoa>
+        <kontratazio_data>27/01/16</kontratazio_data>
+        <id_nagusi>22</id_nagusi>
+        <abatar>thumb-3.png</abatar>
+    </bulegaria>
+    <bulegaria id="86">
+        <lanpostua id="17">Shipping Clerk</lanpostua>
+        <izena>Emilia</izena>
+        <abizena>Holmes</abizena>
+        <emaila>emilia.holmes@example.com</emaila>
+        <telefonoa>650.509.2876</telefonoa>
+        <kontratazio_data>20/02/16</kontratazio_data>
+        <id_nagusi>22</id_nagusi>
+        <abatar>thumb-1.png</abatar>
+    </bulegaria>
+    <bulegaria id="87">
+        <lanpostua id="17">Shipping Clerk</lanpostua>
+        <izena>Molly</izena>
+        <abizena>Rice</abizena>
+        <emaila>molly.rice@example.com</emaila>
+        <telefonoa>650.509.3876</telefonoa>
+        <kontratazio_data>24/06/16</kontratazio_data>
+        <id_nagusi>22</id_nagusi>
+        <abatar>thumb-6.png</abatar>
+    </bulegaria>
+    <bulegaria id="88">
+        <lanpostua id="17">Shipping Clerk</lanpostua>
+        <izena>Ellie</izena>
+        <abizena>Robertson</abizena>
+        <emaila>ellie.robertson@example.com</emaila>
+        <telefonoa>650.509.4876</telefonoa>
+        <kontratazio_data>07/02/16</kontratazio_data>
+        <id_nagusi>22</id_nagusi>
+        <abatar>thumb-3.png</abatar>
+    </bulegaria>
+    <bulegaria id="89">
+        <lanpostua id="17">Shipping Clerk</lanpostua>
+        <izena>Jasmine</izena>
+        <abizena>Hunt</abizena>
+        <emaila>jasmine.hunt@example.com</emaila>
+        <telefonoa>650.505.1876</telefonoa>
+        <kontratazio_data>14/06/16</kontratazio_data>
+        <id_nagusi>23</id_nagusi>
+        <abatar>thumb-3.png</abatar>
+    </bulegaria>
+    <bulegaria id="90">
+        <lanpostua id="17">Shipping Clerk</lanpostua>
+        <izena>Eliza</izena>
+        <abizena>Black</abizena>
+        <emaila>eliza.black@example.com</emaila>
+        <telefonoa>650.505.2876</telefonoa>
+        <kontratazio_data>13/08/16</kontratazio_data>
+        <id_nagusi>23</id_nagusi>
+        <abatar>thumb-4.png</abatar>
+    </bulegaria>
+    <bulegaria id="91">
+        <lanpostua id="17">Shipping Clerk</lanpostua>
+        <izena>Lilly</izena>
+        <abizena>Daniels</abizena>
+        <emaila>lilly.daniels@example.com</emaila>
+        <telefonoa>650.505.3876</telefonoa>
+        <kontratazio_data>11/07/16</kontratazio_data>
+        <id_nagusi>23</id_nagusi>
+        <abatar>thumb-1.png</abatar>
+    </bulegaria>
+    <bulegaria id="92">
+        <lanpostua id="17">Shipping Clerk</lanpostua>
+        <izena>Abigail</izena>
+        <abizena>Palmer</abizena>
+        <emaila>abigail.palmer@example.com</emaila>
+        <telefonoa>650.505.4876</telefonoa>
+        <kontratazio_data>19/12/16</kontratazio_data>
+        <id_nagusi>23</id_nagusi>
+        <abatar>thumb-4.png</abatar>
+    </bulegaria>
+    <bulegaria id="93">
+        <lanpostua id="17">Shipping Clerk</lanpostua>
+        <izena>Georgia</izena>
+        <abizena>Mills</abizena>
+        <emaila>georgia.mills@example.com</emaila>
+        <telefonoa>650.501.1876</telefonoa>
+        <kontratazio_data>04/02/16</kontratazio_data>
+        <id_nagusi>24</id_nagusi>
+        <abatar>thumb-6.png</abatar>
+    </bulegaria>
+    <bulegaria id="94">
+        <lanpostua id="17">Shipping Clerk</lanpostua>
+        <izena>Maisie</izena>
+        <abizena>Nichols</abizena>
+        <emaila>maisie.nichols@example.com</emaila>
+        <telefonoa>650.501.2876</telefonoa>
+        <kontratazio_data>03/03/16</kontratazio_data>
+        <id_nagusi>24</id_nagusi>
+        <abatar>thumb-1.png</abatar>
+    </bulegaria>
+    <bulegaria id="95">
+        <lanpostua id="17">Shipping Clerk</lanpostua>
+        <izena>Eleanor</izena>
+        <abizena>Grant</abizena>
+        <emaila>eleanor.grant@example.com</emaila>
+        <telefonoa>650.501.3876</telefonoa>
+        <kontratazio_data>01/07/16</kontratazio_data>
+        <id_nagusi>24</id_nagusi>
+        <abatar>thumb-3.png</abatar>
+    </bulegaria>
+    <bulegaria id="96">
+        <lanpostua id="17">Shipping Clerk</lanpostua>
+        <izena>Hannah</izena>
+        <abizena>Knight</abizena>
+        <emaila>hannah.knight@example.com</emaila>
+        <telefonoa>650.501.4876</telefonoa>
+        <kontratazio_data>17/03/16</kontratazio_data>
+        <id_nagusi>24</id_nagusi>
+        <abatar>thumb-4.png</abatar>
+    </bulegaria>
+    <bulegaria id="97">
+        <lanpostua id="17">Shipping Clerk</lanpostua>
+        <izena>Harriet</izena>
+        <abizena>Ferguson</abizena>
+        <emaila>harriet.ferguson@example.com</emaila>
+        <telefonoa>650.507.9811</telefonoa>
+        <kontratazio_data>24/04/16</kontratazio_data>
+        <id_nagusi>25</id_nagusi>
+        <abatar>thumb-3.png</abatar>
+    </bulegaria>
+    <bulegaria id="98">
+        <lanpostua id="17">Shipping Clerk</lanpostua>
+        <izena>Amber</izena>
+        <abizena>Rose</abizena>
+        <emaila>amber.rose@example.com</emaila>
+        <telefonoa>650.507.9822</telefonoa>
+        <kontratazio_data>23/05/16</kontratazio_data>
+        <id_nagusi>25</id_nagusi>
+        <abatar>thumb-2.png</abatar>
+    </bulegaria>
+    <bulegaria id="99">
+        <lanpostua id="17">Shipping Clerk</lanpostua>
+        <izena>Bella</izena>
+        <abizena>Stone</abizena>
+        <emaila>bella.stone@example.com</emaila>
+        <telefonoa>650.507.9833</telefonoa>
+        <kontratazio_data>21/06/16</kontratazio_data>
+        <id_nagusi>25</id_nagusi>
+        <abatar>thumb-4.png</abatar>
+    </bulegaria>
+    <bulegaria id="100">
+        <lanpostua id="17">Shipping Clerk</lanpostua>
+        <izena>Thea</izena>
+        <abizena>Hawkins</abizena>
+        <emaila>thea.hawkins@example.com</emaila>
+        <telefonoa>650.507.9844</telefonoa>
+        <kontratazio_data>13/01/16</kontratazio_data>
+        <id_nagusi>25</id_nagusi>
+        <abatar>thumb-5.png</abatar>
+    </bulegaria>
+    <bulegaria id="81">
+        <lanpostua id="17">Shipping Clerk</lanpostua>
+        <izena>Lola</izena>
+        <abizena>Ramos</abizena>
+        <emaila>lola.ramos@example.com</emaila>
+        <telefonoa>650.507.9876</telefonoa>
+        <kontratazio_data>24/01/16</kontratazio_data>
+        <id_nagusi>21</id_nagusi>
+        <abatar>thumb-2.png</abatar>
+    </bulegaria>
+    <bulegaria id="82">
+        <lanpostua id="17">Shipping Clerk</lanpostua>
+        <izena>Willow</izena>
+        <abizena>Reyes</abizena>
+        <emaila>willow.reyes@example.com</emaila>
+        <telefonoa>650.507.9877</telefonoa>
+        <kontratazio_data>23/02/16</kontratazio_data>
+        <id_nagusi>21</id_nagusi>
+        <abatar>thumb-2.png</abatar>
+    </bulegaria>
+    <bulegaria id="83">
+        <lanpostua id="17">Shipping Clerk</lanpostua>
+        <izena>Ivy</izena>
+        <abizena>Burns</abizena>
+        <emaila>ivy.burns@example.com</emaila>
+        <telefonoa>650.507.9878</telefonoa>
+        <kontratazio_data>21/06/16</kontratazio_data>
+        <id_nagusi>21</id_nagusi>
+        <abatar>thumb-6.png</abatar>
+    </bulegaria>
+    <bulegaria id="84">
+        <lanpostua id="17">Shipping Clerk</lanpostua>
+        <izena>Erin</izena>
+        <abizena>Gordon</abizena>
+        <emaila>erin.gordon@example.com</emaila>
+        <telefonoa>650.507.9879</telefonoa>
+        <kontratazio_data>03/02/16</kontratazio_data>
+        <id_nagusi>21</id_nagusi>
+        <abatar>thumb-2.png</abatar>
+    </bulegaria>
+    <bulegaria id="33">
+        <lanpostua id="18">Stock Clerk</lanpostua>
+        <izena>Reggie</izena>
+        <abizena>Simmons</abizena>
+        <emaila>reggie.simmons@example.com</emaila>
+        <telefonoa>650.124.8234</telefonoa>
+        <kontratazio_data>10/04/16</kontratazio_data>
+        <id_nagusi>22</id_nagusi>
+        <abatar>thumb-1.png</abatar>
+    </bulegaria>
+    <bulegaria id="44">
+        <lanpostua id="18">Stock Clerk</lanpostua>
+        <izena>Emily</izena>
+        <abizena>Hamilton</abizena>
+        <emaila>emily.hamilton@example.com</emaila>
+        <telefonoa>650.121.2874</telefonoa>
+        <kontratazio_data>15/03/16</kontratazio_data>
+        <id_nagusi>25</id_nagusi>
+        <abatar>thumb-2.png</abatar>
+    </bulegaria>
+    <bulegaria id="43">
+        <lanpostua id="18">Stock Clerk</lanpostua>
+        <izena>Olivia</izena>
+        <abizena>Ford</abizena>
+        <emaila>olivia.ford@example.com</emaila>
+        <telefonoa>650.121.2994</telefonoa>
+        <kontratazio_data>29/01/16</kontratazio_data>
+        <id_nagusi>25</id_nagusi>
+        <abatar>thumb-3.png</abatar>
+    </bulegaria>
+    <bulegaria id="42">
+        <lanpostua id="18">Stock Clerk</lanpostua>
+        <izena>Amelia</izena>
+        <abizena>Myers</abizena>
+        <emaila>amelia.myers@example.com</emaila>
+        <telefonoa>650.121.8009</telefonoa>
+        <kontratazio_data>17/10/16</kontratazio_data>
+        <id_nagusi>25</id_nagusi>
+        <abatar>thumb-2.png</abatar>
+    </bulegaria>
+    <bulegaria id="41">
+        <lanpostua id="18">Stock Clerk</lanpostua>
+        <izena>Connor</izena>
+        <abizena>Hayes</abizena>
+        <emaila>connor.hayes@example.com</emaila>
+        <telefonoa>650.121.1834</telefonoa>
+        <kontratazio_data>06/04/16</kontratazio_data>
+        <id_nagusi>24</id_nagusi>
+        <abatar>thumb-3.png</abatar>
+    </bulegaria>
+    <bulegaria id="26">
+        <lanpostua id="18">Stock Clerk</lanpostua>
+        <izena>Leon</izena>
+        <abizena>Powell</abizena>
+        <emaila>leon.powell@example.com</emaila>
+        <telefonoa>650.124.1214</telefonoa>
+        <kontratazio_data>16/07/16</kontratazio_data>
+        <id_nagusi>21</id_nagusi>
+        <abatar>thumb-5.png</abatar>
+    </bulegaria>
+    <bulegaria id="27">
+        <lanpostua id="18">Stock Clerk</lanpostua>
+        <izena>Kai</izena>
+        <abizena>Long</abizena>
+        <emaila>kai.long@example.com</emaila>
+        <telefonoa>650.124.1224</telefonoa>
+        <kontratazio_data>28/09/16</kontratazio_data>
+        <id_nagusi>21</id_nagusi>
+        <abatar>thumb-6.png</abatar>
+    </bulegaria>
+    <bulegaria id="28">
+        <lanpostua id="18">Stock Clerk</lanpostua>
+        <izena>Aaron</izena>
+        <abizena>Patterson</abizena>
+        <emaila>aaron.patterson@example.com</emaila>
+        <telefonoa>650.124.1334</telefonoa>
+        <kontratazio_data>14/01/16</kontratazio_data>
+        <id_nagusi>21</id_nagusi>
+        <abatar>thumb-6.png</abatar>
+    </bulegaria>
+    <bulegaria id="29">
+        <lanpostua id="18">Stock Clerk</lanpostua>
+        <izena>Roman</izena>
+        <abizena>Hughes</abizena>
+        <emaila>roman.hughes@example.com</emaila>
+        <telefonoa>650.124.1434</telefonoa>
+        <kontratazio_data>08/03/16</kontratazio_data>
+        <id_nagusi>21</id_nagusi>
+        <abatar>thumb-6.png</abatar>
+    </bulegaria>
+    <bulegaria id="30">
+        <lanpostua id="18">Stock Clerk</lanpostua>
+        <izena>Austin</izena>
+        <abizena>Flores</abizena>
+        <emaila>austin.flores@example.com</emaila>
+        <telefonoa>650.124.5234</telefonoa>
+        <kontratazio_data>20/08/16</kontratazio_data>
+        <id_nagusi>22</id_nagusi>
+        <abatar>thumb-6.png</abatar>
+    </bulegaria>
+    <bulegaria id="31">
+        <lanpostua id="18">Stock Clerk</lanpostua>
+        <izena>Ellis</izena>
+        <abizena>Washington</abizena>
+        <emaila>ellis.washington@example.com</emaila>
+        <telefonoa>650.124.6234</telefonoa>
+        <kontratazio_data>30/10/16</kontratazio_data>
+        <id_nagusi>22</id_nagusi>
+        <abatar>thumb-4.png</abatar>
+    </bulegaria>
+    <bulegaria id="32">
+        <lanpostua id="18">Stock Clerk</lanpostua>
+        <izena>Jamie</izena>
+        <abizena>Butler</abizena>
+        <emaila>jamie.butler@example.com</emaila>
+        <telefonoa>650.124.7234</telefonoa>
+        <kontratazio_data>16/02/16</kontratazio_data>
+        <id_nagusi>22</id_nagusi>
+        <abatar>thumb-2.png</abatar>
+    </bulegaria>
+    <bulegaria id="45">
+        <lanpostua id="18">Stock Clerk</lanpostua>
+        <izena>Isla</izena>
+        <abizena>Graham</abizena>
+        <emaila>isla.graham@example.com</emaila>
+        <telefonoa>650.121.2004</telefonoa>
+        <kontratazio_data>09/07/16</kontratazio_data>
+        <id_nagusi>25</id_nagusi>
+        <abatar>thumb-4.png</abatar>
+    </bulegaria>
+    <bulegaria id="34">
+        <lanpostua id="18">Stock Clerk</lanpostua>
+        <izena>Seth</izena>
+        <abizena>Foster</abizena>
+        <emaila>seth.foster@example.com</emaila>
+        <telefonoa>650.127.1934</telefonoa>
+        <kontratazio_data>14/06/16</kontratazio_data>
+        <id_nagusi>23</id_nagusi>
+        <abatar>thumb-6.png</abatar>
+    </bulegaria>
+    <bulegaria id="35">
+        <lanpostua id="18">Stock Clerk</lanpostua>
+        <izena>Carter</izena>
+        <abizena>Gonzales</abizena>
+        <emaila>carter.gonzales@example.com</emaila>
+        <telefonoa>650.127.1834</telefonoa>
+        <kontratazio_data>26/08/16</kontratazio_data>
+        <id_nagusi>23</id_nagusi>
+        <abatar>thumb-6.png</abatar>
+    </bulegaria>
+    <bulegaria id="36">
+        <lanpostua id="18">Stock Clerk</lanpostua>
+        <izena>Felix</izena>
+        <abizena>Bryant</abizena>
+        <emaila>felix.bryant@example.com</emaila>
+        <telefonoa>650.127.1734</telefonoa>
+        <kontratazio_data>12/12/16</kontratazio_data>
+        <id_nagusi>23</id_nagusi>
+        <abatar>thumb-5.png</abatar>
+    </bulegaria>
+    <bulegaria id="37">
+        <lanpostua id="18">Stock Clerk</lanpostua>
+        <izena>Ibrahim</izena>
+        <abizena>Alexander</abizena>
+        <emaila>ibrahim.alexander@example.com</emaila>
+        <telefonoa>650.127.1634</telefonoa>
+        <kontratazio_data>06/02/16</kontratazio_data>
+        <id_nagusi>23</id_nagusi>
+        <abatar>thumb-2.png</abatar>
+    </bulegaria>
+    <bulegaria id="38">
+        <lanpostua id="18">Stock Clerk</lanpostua>
+        <izena>Sonny</izena>
+        <abizena>Russell</abizena>
+        <emaila>sonny.russell@example.com</emaila>
+        <telefonoa>650.121.1234</telefonoa>
+        <kontratazio_data>14/07/16</kontratazio_data>
+        <id_nagusi>24</id_nagusi>
+        <abatar>thumb-6.png</abatar>
+    </bulegaria>
+    <bulegaria id="39">
+        <lanpostua id="18">Stock Clerk</lanpostua>
+        <izena>Kian</izena>
+        <abizena>Griffin</abizena>
+        <emaila>kian.griffin@example.com</emaila>
+        <telefonoa>650.121.2034</telefonoa>
+        <kontratazio_data>26/10/16</kontratazio_data>
+        <id_nagusi>24</id_nagusi>
+        <abatar>thumb-3.png</abatar>
+    </bulegaria>
+    <bulegaria id="40">
+        <lanpostua id="18">Stock Clerk</lanpostua>
+        <izena>Caleb</izena>
+        <abizena>Diaz</abizena>
+        <emaila>caleb.diaz@example.com</emaila>
+        <telefonoa>650.121.2019</telefonoa>
+        <kontratazio_data>12/02/16</kontratazio_data>
+        <id_nagusi>24</id_nagusi>
+        <abatar>thumb-3.png</abatar>
+    </bulegaria>
+    <bulegaria id="25">
+        <lanpostua id="19">Stock Manager</lanpostua>
+        <izena>Ronnie</izena>
+        <abizena>Perry</abizena>
+        <emaila>ronnie.perry@example.com</emaila>
+        <telefonoa>650.123.5234</telefonoa>
+        <kontratazio_data>16/11/16</kontratazio_data>
+        <id_nagusi>1</id_nagusi>
+        <abatar>thumb-2.png</abatar>
+    </bulegaria>
+    <bulegaria id="24">
+        <lanpostua id="19">Stock Manager</lanpostua>
+        <izena>Callum</izena>
+        <abizena>Jenkins</abizena>
+        <emaila>callum.jenkins@example.com</emaila>
+        <telefonoa>650.123.4234</telefonoa>
+        <kontratazio_data>10/10/16</kontratazio_data>
+        <id_nagusi>1</id_nagusi>
+        <abatar>thumb-6.png</abatar>
+    </bulegaria>
+    <bulegaria id="23">
+        <lanpostua id="19">Stock Manager</lanpostua>
+        <izena>Jackson</izena>
+        <abizena>Coleman</abizena>
+        <emaila>jackson.coleman@example.com</emaila>
+        <telefonoa>650.123.3234</telefonoa>
+        <kontratazio_data>01/05/16</kontratazio_data>
+        <id_nagusi>1</id_nagusi>
+        <abatar>thumb-1.png</abatar>
+    </bulegaria>
+    <bulegaria id="22">
+        <lanpostua id="19">Stock Manager</lanpostua>
+        <izena>Liam</izena>
+        <abizena>Henderson</abizena>
+        <emaila>liam.henderson@example.com</emaila>
+        <telefonoa>650.123.2234</telefonoa>
+        <kontratazio_data>10/04/16</kontratazio_data>
+        <id_nagusi>1</id_nagusi>
+        <abatar>thumb-6.png</abatar>
+    </bulegaria>
+    <bulegaria id="21">
+        <lanpostua id="19">Stock Manager</lanpostua>
+        <izena>Jaxon</izena>
+        <abizena>Ross</abizena>
+        <emaila>jaxon.ross@example.com</emaila>
+        <telefonoa>650.123.1234</telefonoa>
+        <kontratazio_data>18/07/16</kontratazio_data>
+        <id_nagusi>1</id_nagusi>
+        <abatar>thumb-4.png</abatar>
+    </bulegaria>
+</bulegariak>

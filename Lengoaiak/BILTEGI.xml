@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<biltegiak>
+    <biltegia id="1">
+        <izena>Southlake, Texas</izena>
+        <kokalekua>
+            <helbidea postakodea="26192">2014 Jabberwocky Rd</helbidea>
+            <udalerria>Southlake</udalerria>
+            <probintzia>Texas</probintzia>
+            <herrialdea id="US">United States of America</herrialdea>
+            <kontinentea id="2">America</kontinentea>
+        </kokalekua>
+    </biltegia>
+    <biltegia id="2">
+        <izena>San Francisco</izena>
+        <kokalekua>
+            <helbidea postakodea="99236">2011 Interiors Blvd</helbidea>
+            <udalerria>South San Francisco</udalerria>
+            <probintzia>California</probintzia>
+            <herrialdea id="US">United States of America</herrialdea>
+            <kontinentea id="2">America</kontinentea>
+        </kokalekua>
+    </biltegia>
+    <biltegia id="3">
+        <izena>New Jersey</izena>
+        <kokalekua>
+            <helbidea postakodea="50090">2007 Zagora St</helbidea>
+            <udalerria>South Brunswick</udalerria>
+            <probintzia>New Jersey</probintzia>
+            <herrialdea id="US">United States of America</herrialdea>
+            <kontinentea id="2">America</kontinentea>
+        </kokalekua>
+    </biltegia>
+    <biltegia id="4">
+        <izena>Seattle, Washington</izena>
+        <kokalekua>
+            <helbidea postakodea="98199">2004 Charade Rd</helbidea>
+            <udalerria>Seattle</udalerria>
+            <probintzia>Washington</probintzia>
+            <herrialdea id="US">United States of America</herrialdea>
+            <kontinentea id="2">America</kontinentea>
+        </kokalekua>
+    </biltegia>
+    <biltegia id="5">
+        <izena>Toronto</izena>
+        <kokalekua>
+            <helbidea postakodea="M5V 2L7">147 Spadina Ave</helbidea>
+            <udalerria>Toronto</udalerria>
+            <probintzia>Ontario</probintzia>
+            <herrialdea id="CA">Canada</herrialdea>
+            <kontinentea id="2">America</kontinentea>
+        </kokalekua>
+    </biltegia>
+    <biltegia id="6">
+        <izena>Sydney</izena>
+        <kokalekua>
+            <helbidea postakodea="2901">12-98 Victoria Street</helbidea>
+            <udalerria>Sydney</udalerria>
+            <probintzia>New South Wales</probintzia>
+            <herrialdea id="AU">Australia</herrialdea>
+            <kontinentea id="3">Asia</kontinentea>
+        </kokalekua>
+    </biltegia>
+    <biltegia id="7">
+        <izena>Mexico City</izena>
+        <kokalekua>
+            <helbidea postakodea="11932">Mariano Escobedo 9991</helbidea>
+            <udalerria>Mexico City</udalerria>
+            <probintzia>Distrito Federal,</probintzia>
+            <herrialdea id="MX">Mexico</herrialdea>
+            <kontinentea id="2">America</kontinentea>
+        </kokalekua>
+    </biltegia>
+    <biltegia id="8">
+        <izena>Beijing</izena>
+        <kokalekua>
+            <helbidea postakodea="190518">40-5-12 Laogianggen</helbidea>
+            <udalerria>Beijing</udalerria>
+            <probintzia />
+            <herrialdea id="CN">China</herrialdea>
+            <kontinentea id="3">Asia</kontinentea>
+        </kokalekua>
+    </biltegia>
+    <biltegia id="9">
+        <izena>Bombay</izena>
+        <kokalekua>
+            <helbidea postakodea="490231">1298 Vileparle (E)</helbidea>
+            <udalerria>Bombay</udalerria>
+            <probintzia>Maharashtra</probintzia>
+            <herrialdea id="IN">India</herrialdea>
+            <kontinentea id="3">Asia</kontinentea>
+        </kokalekua>
+    </biltegia>
+</biltegiak>
