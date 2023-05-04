@@ -529,6 +529,206 @@ public class conexioa{
     	  }
       }
 // BULEGARIAK ------------------------------------------------------------------------------------------------------------------------------------------------------
+      public BulegariaDB bulegariKontsulta() {
+    	  BulegariaDB bdb = new BulegariaDB();
+    	  try {
+    		  Statement st = this.c.createStatement();
+    		  String kontsulta = "SELECT L.IZENA, L.ABIZENA, L.ID, L.EMAILA, TO_CHAR(L.KONTRATAZIO_DATA,'YYYY/MM/DD') AS KONTRATAZIO_DATA, L.TELEFONOA, L.ID_NAGUSI, L.SOLDATA, LA.DESKRIBAPENA FROM LANGILE L, BULEGARI B, LANPOSTU LA WHERE L.ID = B.ID AND B.LANPOSTU_ID = LA.ID ORDER BY L.ID ASC";
+    		  ResultSet rt = st.executeQuery(kontsulta);
+    		  while(rt.next()) {
+    			  Bulegaria b = new Bulegaria(rt.getString("IZENA"),rt.getString("ABIZENA"),rt.getInt("ID"),rt.getString("EMAILA"),rt.getString("KONTRATAZIO_DATA"),rt.getString("TELEFONOA"),rt.getInt("ID_NAGUSI"),rt.getDouble("SOLDATA"),rt.getString("DESKRIBAPENA"));
+    			  bdb.addBulegaria(b);
+    		  }
+    		  rt.close();
+    		  st.close();
+    		  this.c.close();
+    	  }catch(Exception e) {
+    		  String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREAK",JOptionPane.WARNING_MESSAGE);
+    	  }
+    	  return bdb;
+      }
 
+      public void bulegariInsert(int id, String izena, String abizena, String email, String k_data, String telefonoa, int id_nagusia,double soldata, String deskribapena) {
+    	  try {
+    		  String Kontsulta = "INSERT INTO LANGILE VALUES (?,?,?,?,?,TO_DATE(?,'YYYY/MM/DD'),?,?)";
+    		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
+    		  st.setInt(1, id);
+    		  st.setString(2, izena);
+    		  st.setString(3, abizena);
+    		  st.setString(4, email);
+    		  st.setString(5, telefonoa);
+    		  st.setString(6, k_data);
+    		  st.setInt(7, id_nagusia);
+    		  st.setDouble(8, soldata);
+    		  st.executeQuery();
+    		  st.close();
+    		  String Kontsulta2 = "INSERT INTO BULEGARI SELECT ?, ID FROM LANPOSTU WHERE DESKRIBAPENA = ?";
+    		  PreparedStatement st2 = this.c.prepareStatement(Kontsulta2);
+    		  st2.setInt(1, id);
+    		  st2.setString(2, deskribapena);
+    		  st2.executeQuery();
+    		  st2.close();
+    		  this.c.close();
+    	  }catch(Exception e) {
+              String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
+    	  }
+      }
+
+      public void bulegariUpdate(int id, String izena, String abizena, String email, String k_data, String telefonoa, int id_nagusia,double soldata, String deskribapena) {
+    	  try {
+    		  String Kontsulta = "UPDATE LANGILE SET IZENA = ?, ABIZENA = ?, EMAILA = ?, KONTRATAZIO_DATA = TO_DATE(?,'YYYY/MM/DD'), TELEFONOA = ?, ID_NAGUSI = ?, SOLDATA = ? WHERE ID = ?";
+    		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
+    		  st.setString(1, izena);
+    		  st.setString(2, abizena);
+    		  st.setString(3, email);
+    		  st.setString(4, k_data);
+    		  st.setString(5, telefonoa);
+    		  st.setInt(6, id_nagusia);
+    		  st.setDouble(7, soldata);
+    		  st.setInt(8, id);
+    		  st.executeUpdate();
+    		  st.close();
+    		  String Kontsulta2 = "UPDATE BULEGARI SET LANPOSTU_ID = (SELECT ID FROM LANPOSTU WHERE DESKRIBAPENA = ?) WHERE ID = ?";
+    		  PreparedStatement st2 = this.c.prepareStatement(Kontsulta2);
+    		  st2.setString(1, deskribapena);
+    		  st2.setInt(2, id);
+    		  st2.executeUpdate();
+    		  st2.close();
+    		  this.c.close();
+    	  }catch(Exception e) {
+              String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
+    	  }
+      }
+
+      public void bulegariDelete(int id) {
+    	  try {
+    		  String Kontsulta = "DELETE FROM LANGILE WHERE ID = ?";
+    		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
+    		  st.setInt(1, id);
+    		  st.executeUpdate();
+    		  st.close();
+    		  this.c.close();
+    	  }catch(Exception e) {
+              String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
+    	  }
+      }
 // BILTEGIAK ------------------------------------------------------------------------------------------------------------------------------------------------------
+      public BiltegiDB biltegiKontsulta() {
+    	  BiltegiDB bdb = new BiltegiDB();
+    	  try {
+    		  Statement st = this.c.createStatement();
+    		  String kontsulta = "SELECT B.ID, B.IZENA, K.HELBIDEA, K.POSTAKODEA, K.UDALERRIA, K.PROBINTZIA, H.IZENA AS HERRIALDE, KN.IZENA AS KONTINENTE, B.ID_KOKALEKU, K.ID_HERRIALDE, H.ID_KONTINENTE FROM BILTEGI B, KOKALEKU K, HERRIALDE H, KONTINENTE KN WHERE B.ID_KOKALEKU = K.ID AND K.ID_HERRIALDE = H.ID AND H.ID_KONTINENTE = KN.ID ORDER BY B.ID ASC";
+    		  ResultSet rt = st.executeQuery(kontsulta);
+    		  while(rt.next()) {
+    			  Biltegi b = new Biltegi(rt.getInt("ID"),rt.getString("IZENA"),rt.getString("HELBIDEA"),rt.getString("KONTINENTE"),rt.getString("HERRIALDE"),rt.getString("PROBINTZIA"),rt.getString("UDALERRIA"),rt.getString("POSTAKODEA"),rt.getString("ID_HERRIALDE"),rt.getInt("ID_KONTINENTE"),rt.getInt("ID_KOKALEKU"));
+    			  bdb.addBiltegia(b);
+    		  }
+    		  rt.close();
+    		  st.close();
+    		  this.c.close();
+    	  }catch(Exception e) {
+    		  String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREAK",JOptionPane.WARNING_MESSAGE);
+    	  }
+    	  return bdb;
+      }
+
+      public void biltegiInsert(int id, String izena, String helbidea, String kontinentea, String herrialde, String probintzia,
+  			String udalerria, String postakodea, int id_kontinente, String id_herrialde, int id_kokaleku) {
+    	  try {
+    		  String Kontsulta4 = "INSERT INTO KONTINENTE VALUES(?,?)";
+    		  PreparedStatement st4 = this.c.prepareStatement(Kontsulta4);
+    		  st4.setInt(1, id_kontinente);
+    		  st4.setString(2, kontinentea);
+    		  st4.executeQuery();
+    		  st4.close();
+    		  String Kontsulta3 = "INSERT INTO HERRIALDE VALUES(?,?,?)";
+    		  PreparedStatement st3 = this.c.prepareStatement(Kontsulta3);
+    		  st3.setString(1, id_herrialde);
+    		  st3.setString(2, herrialde);
+    		  st3.setInt(3, id_kontinente);
+    		  st3.executeQuery();
+    		  st3.close();
+    		  String Kontsulta2 = "INSERT INTO KOKALEKU VALUES(?,?,?,?,?,?)";
+    		  PreparedStatement st2 = this.c.prepareStatement(Kontsulta2);
+    		  st2.setInt(1, id_kokaleku);
+    		  st2.setString(2, helbidea);
+    		  st2.setString(3, postakodea);
+    		  st2.setString(4, udalerria);
+    		  st2.setString(5, probintzia);
+    		  st2.setString(6, id_herrialde);
+    		  st2.executeQuery();
+    		  st2.close();
+    		  String Kontsulta = "INSERT INTO BILTEGI VALUES (?,?,?)";
+    		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
+    		  st.setInt(1, id);
+    		  st.setString(2, izena);
+    		  st.setInt(3, id_kokaleku);
+    		  st.executeQuery();
+    		  st.close();
+    		  this.c.close();
+    	  }catch(Exception e) {
+              String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
+    	  }
+      }
+
+      public void biltegiUpdate(int id, String izena, String helbidea, String kontinentea, String herrialde, String probintzia,
+    			String udalerria, String postakodea, int id_kontinente, String id_herrialde, int id_kokaleku) {
+    	  try {
+    		  String Kontsulta4 = "UPDATE KONTINENTE SET IZENA = ? WHERE ID = ?";
+    		  PreparedStatement st4 = this.c.prepareStatement(Kontsulta4);
+    		  st4.setString(1, kontinentea);
+    		  st4.setInt(2, id_kontinente);
+    		  st4.executeQuery();
+    		  st4.close();
+    		  String Kontsulta3 = "UPDATE HERRIALDE SET IZENA = ?,ID_KONTINENTE = ? WHERE ID = ?";
+    		  PreparedStatement st3 = this.c.prepareStatement(Kontsulta3);
+    		  st3.setString(1, herrialde);
+    		  st3.setInt(2, id_kontinente);
+    		  st3.setString(3, id_herrialde);
+    		  st3.executeQuery();
+    		  st3.close();
+    		  String Kontsulta2 = "UPDATE KOKALEKU SET HELBIDEA = ?,POSTAKODEA = ?, UDALERRIA = ?,PROBINTZIA = ?,ID_HERRIALDE = ? WHERE ID = ?";
+    		  PreparedStatement st2 = this.c.prepareStatement(Kontsulta2);
+    		  st2.setString(1, helbidea);
+    		  st2.setString(2, postakodea);
+    		  st2.setString(3, udalerria);
+    		  st2.setString(4, probintzia);
+    		  st2.setString(5, id_herrialde);
+    		  st2.setInt(6, id_kokaleku);
+    		  st2.executeQuery();
+    		  st2.close();
+    		  String Kontsulta = "UPDATE BILTEGI SET IZENA = ?, ID_KOKALEKU = ? WHERE ID = ?";
+    		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
+    		  st.setString(1, izena);
+    		  st.setInt(2, id_kokaleku);
+    		  st.setInt(3, id);
+    		  st.executeQuery();
+    		  st.close();
+    		  this.c.close();
+    	  }catch(Exception e) {
+              String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
+    	  }
+      }
+
+      public void biltegiDelete(int id) {
+    	  try {
+    		  String Kontsulta = "DELETE FROM BILTEGI WHERE ID = ?";
+    		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
+    		  st.setInt(1, id);
+    		  st.executeUpdate();
+    		  st.close();
+    		  this.c.close();
+    	  }catch(Exception e) {
+              String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
+    	  }
+      }
+
 }

@@ -3,6 +3,9 @@ package DB;
 
 public class Biltegi {
 	private int id;
+	private String id_herrialde;
+	private int id_kontinente;
+	private int id_kokaleku;
 	private String izena;
 	private String helbidea;
 	private String kontinentea;
@@ -15,7 +18,7 @@ public class Biltegi {
 	public Biltegi () {}
 
 	public Biltegi(int id, String izena, String helbidea, String kontinentea, String herrialde, String probintzia,
-			String udalerria, String postakodea) {
+			String udalerria, String postakodea, String id_herrialde, int id_kontinente, int id_kokaleku) {
 		super();
 		this.id = id;
 		this.izena = izena;
@@ -25,6 +28,9 @@ public class Biltegi {
 		this.probintzia = probintzia;
 		this.udalerria = udalerria;
 		this.postakodea = postakodea;
+		this.id_herrialde = id_herrialde;
+		this.id_kontinente = id_kontinente;
+		this.id_kokaleku = id_kokaleku;
 	}
 
 	public int getId() {
@@ -91,10 +97,35 @@ public class Biltegi {
 		this.postakodea = postakodea;
 	}
 
+	public String getId_herrialde() {
+		return id_herrialde;
+	}
+
+	public void setId_herrialde(String id_herrialde) {
+		this.id_herrialde = id_herrialde;
+	}
+
+	public int getId_kontinente() {
+		return id_kontinente;
+	}
+
+	public void setId_kontinente(int id_kontinente) {
+		this.id_kontinente = id_kontinente;
+	}
+
+	public int getId_kokaleku() {
+		return id_kokaleku;
+	}
+
+	public void setId_kokaleku(int id_kokaleku) {
+		this.id_kokaleku = id_kokaleku;
+	}
+
 	@Override
 	public String toString() {
-		return "Biltegi [id=" + id + ", izena=" + izena + ", helbidea=" + helbidea + ", kontinentea=" + kontinentea
-				+ ", herrialde=" + herrialde + ", probintzia=" + probintzia + ", udalerria=" + udalerria
+		return "Biltegi [id=" + id + ", id_herrialde=" + id_herrialde + ", id_kontinente=" + id_kontinente
+				+ ", id_kokaleku=" + id_kokaleku + ", izena=" + izena + ", helbidea=" + helbidea + ", kontinentea="
+				+ kontinentea + ", herrialde=" + herrialde + ", probintzia=" + probintzia + ", udalerria=" + udalerria
 				+ ", postakodea=" + postakodea + "]";
 	}
 	

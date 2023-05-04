@@ -142,7 +142,7 @@ public class SaltzaileGUI extends JDialog {
 		JButton bTxertatu = new JButton("");
 		bTxertatu.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				SaltzaileTxertatuGUI sin = new SaltzaileTxertatuGUI(modelo);
+				saltzaileTxertatuGUI sin = new saltzaileTxertatuGUI(modelo);
 			}
 		});
 		bTxertatu.setContentAreaFilled(false);

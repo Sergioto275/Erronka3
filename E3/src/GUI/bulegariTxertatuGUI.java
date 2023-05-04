@@ -20,7 +20,7 @@ import java.awt.Image;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class SaltzaileTxertatuGUI extends JDialog {
+public class bulegariTxertatuGUI extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
 	private JTextField tId;
@@ -31,15 +31,14 @@ public class SaltzaileTxertatuGUI extends JDialog {
 	private JTextField tIdNag;
 	private JTextField tTelefono;
 	private JTextField tSoldata;
-	private JTextField tErabil;
-	private JTextField tPasahitza;
+	private JTextField tLanpostu;
 
 	/**
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
 		try {
-			SaltzaileTxertatuGUI dialog = new SaltzaileTxertatuGUI(null);
+			bulegariTxertatuGUI dialog = new bulegariTxertatuGUI(null);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -48,7 +47,7 @@ public class SaltzaileTxertatuGUI extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	public SaltzaileTxertatuGUI(DefaultTableModel modelo) {
+	public bulegariTxertatuGUI(DefaultTableModel modelo) {
 		setBounds(100, 100, 719, 352);
 		getContentPane().setLayout(new BorderLayout());
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
@@ -56,7 +55,7 @@ public class SaltzaileTxertatuGUI extends JDialog {
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
 		contentPanel.setLayout(null);
 		{
-			JLabel lblNewLabel = new JLabel("SALTZAILE BERRIA");
+			JLabel lblNewLabel = new JLabel("BULEGARIA BERRIA");
 			lblNewLabel.setFont(new Font("Comic Sans MS", Font.BOLD | Font.ITALIC, 30));
 			lblNewLabel.setBounds(184, 11, 304, 45);
 			contentPanel.add(lblNewLabel);
@@ -132,8 +131,8 @@ public class SaltzaileTxertatuGUI extends JDialog {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
-					c.saltzaileInsert(Integer.parseInt(tId.getText()),tIzena.getText(),tAbizena.getText(),tEmail.getText(),tKData.getText(),tTelefono.getText(),Integer.parseInt(tIdNag.getText()),Double.parseDouble(tSoldata.getText()),tErabil.getText(),tPasahitza.getText());
-					modelo.addRow(new Object[] {tId.getText(),tIzena.getText(),tAbizena.getText(),tEmail.getText(),tKData.getText(),tTelefono.getText(),tIdNag.getText(),tSoldata.getText(),tErabil.getText(),tPasahitza.getText(),null,null});
+					c.bulegariInsert(Integer.parseInt(tId.getText()),tIzena.getText(),tAbizena.getText(),tEmail.getText(),tKData.getText(),tTelefono.getText(),Integer.parseInt(tIdNag.getText()),Double.parseDouble(tSoldata.getText()),tLanpostu.getText());
+					modelo.addRow(new Object[] {tId.getText(),tIzena.getText(),tAbizena.getText(),tEmail.getText(),tKData.getText(),tTelefono.getText(),tIdNag.getText(),tSoldata.getText(),tLanpostu.getText(),null,null});
 		            JOptionPane.showMessageDialog(null,"Hilara bat txertatu da","TXERTAKETA",JOptionPane.INFORMATION_MESSAGE);
 		            dispose();
 				}catch(Exception ex) {
@@ -172,13 +171,9 @@ public class SaltzaileTxertatuGUI extends JDialog {
 		lblSoldata.setBounds(504, 141, 54, 33);
 		contentPanel.add(lblSoldata);
 		
-		JLabel lblErabiltzailea = new JLabel("Erabiltzailea");
-		lblErabiltzailea.setBounds(184, 185, 68, 33);
+		JLabel lblErabiltzailea = new JLabel("Lanpostua");
+		lblErabiltzailea.setBounds(267, 185, 68, 33);
 		contentPanel.add(lblErabiltzailea);
-		
-		JLabel lblPasahitza = new JLabel("Pasahitza");
-		lblPasahitza.setBounds(335, 185, 54, 33);
-		contentPanel.add(lblPasahitza);
 		
 		tTelefono = new JTextField();
 		tTelefono.setColumns(10);
@@ -190,15 +185,10 @@ public class SaltzaileTxertatuGUI extends JDialog {
 		tSoldata.setBounds(544, 147, 74, 20);
 		contentPanel.add(tSoldata);
 		
-		tErabil = new JTextField();
-		tErabil.setColumns(10);
-		tErabil.setBounds(251, 191, 74, 20);
-		contentPanel.add(tErabil);
-		
-		tPasahitza = new JTextField();
-		tPasahitza.setColumns(10);
-		tPasahitza.setBounds(388, 191, 74, 20);
-		contentPanel.add(tPasahitza);
+		tLanpostu = new JTextField();
+		tLanpostu.setColumns(10);
+		tLanpostu.setBounds(345, 191, 74, 20);
+		contentPanel.add(tLanpostu);
 		setVisible(true);
 	}
 }

@@ -12,7 +12,8 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 import DB.BezeroDB;
-import DB.BiltegiDB;
+import DB.BulegariaDB;
+import DB.SaltzaileDB;
 import conexioa.conexioa;
 import javax.swing.JScrollPane;
 import javax.swing.JLabel;
@@ -27,20 +28,19 @@ import javax.swing.border.BevelBorder;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class BiltegiGUI extends JDialog {
+public class BulegariGUI extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
 	private JTable table;
-	private BiltegiDB bdb;
+	private BulegariaDB bdb;
 	private DefaultTableModel modelo;
 
 	/**
 	 * Launch the application.
 	 */
-	
 	public static void main(String[] args) {
 		try {
-			BiltegiGUI dialog = new BiltegiGUI();
+			BulegariGUI dialog = new BulegariGUI();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -49,8 +49,7 @@ public class BiltegiGUI extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	
-	public BiltegiGUI() {
+	public BulegariGUI() {
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 	    setLocationRelativeTo(null);
 		setBounds(100, 100, 898, 499);
@@ -59,11 +58,9 @@ public class BiltegiGUI extends JDialog {
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
 		contentPanel.setLayout(null);
-		
-		
-		modelo = new DefaultTableModel(null,new String[] {"ID", "IZENA","ID KOKALEKU", "HELBIDEA", "UDALERRIA", "POSTAKODEA", "PROBINTZIA","ID HERRIALDE", "HERRIALDE",  "ID KONTINENTE", "KONTINENTEA", " ", "   "}) {
+		modelo = new DefaultTableModel(null,new String[] {"ID", "IZENA", "ABIZENA", "EMAIL", "KONTRATATZE DATA", "TELEFONOA", "ID NAGUSI", "SOLDATA","LANPOSTUA", " ", "   "}) {
 				boolean[] columnEditables = new boolean[] {
-					false, true, true, true, true, true, true, true, true, true, true, false, false
+					false, true, true, true, true, true, true, true, true, false, false
 				};
 				public boolean isCellEditable(int row, int column) {
 					return columnEditables[column];
@@ -82,16 +79,14 @@ public class BiltegiGUI extends JDialog {
 					conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 					int id = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 0));
 					String izena = (String)(table.getValueAt(table.getSelectedRow(), 1));
-					int id_kokaleku = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 2));
-					String helbidea = (String)(table.getValueAt(table.getSelectedRow(), 3));
-					String udalerria = (String)(table.getValueAt(table.getSelectedRow(), 4));
-					String postakodea = (String)(table.getValueAt(table.getSelectedRow(), 5));
-					String probintzia = (String)(table.getValueAt(table.getSelectedRow(), 6));
-					String id_herrialde = (String)(table.getValueAt(table.getSelectedRow(), 7));
-					String herrialde = (String)(table.getValueAt(table.getSelectedRow(), 8));
-					int id_kontinente = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 9));
-					String kontinentea = (String)(table.getValueAt(table.getSelectedRow(), 10));
-					c.biltegiUpdate(id,izena,helbidea,kontinentea,herrialde,probintzia,udalerria,postakodea, id_kontinente, id_herrialde, id_kokaleku);
+					String abizena = (String)(table.getValueAt(table.getSelectedRow(), 2));
+					String email = (String)(table.getValueAt(table.getSelectedRow(), 3));
+					String k_data = (String)(table.getValueAt(table.getSelectedRow(), 4));
+					String telefonoa = (String)(table.getValueAt(table.getSelectedRow(), 5));
+					int id_nagusi = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 6));
+					double soldata = Double.parseDouble(""+table.getValueAt(table.getSelectedRow(), 7));
+					String lanpostua = (String)(table.getValueAt(table.getSelectedRow(), 8));
+					c.bulegariUpdate(id,izena,abizena,email,k_data,telefonoa,id_nagusi,soldata,lanpostua);
 		            JOptionPane.showMessageDialog(null,"Hilara eguneratu da","EGUNERAKETA",JOptionPane.INFORMATION_MESSAGE);
 					}catch(Exception ex) {
 						String mensaje = ""+e;
@@ -102,7 +97,7 @@ public class BiltegiGUI extends JDialog {
 						try {
 							conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 							int id = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 0));
-							c.biltegiDelete(id);
+							c.bulegariDelete(id);
 							modelo.removeRow(table.getSelectedRow());
 				            JOptionPane.showMessageDialog(null,"Hilara ezabatu da","EZABAKETA",JOptionPane.INFORMATION_MESSAGE);
 						}catch(Exception ex) {
@@ -113,14 +108,12 @@ public class BiltegiGUI extends JDialog {
 				}
 			}
 		});
-		
-		
 		scrollPane.setViewportView(table);
 		table.setModel(modelo);
-		JLabel lBiltegi = new JLabel("Biltegiak");
-		lBiltegi.setFont(new Font("Times New Roman", Font.BOLD, 30));
-		lBiltegi.setBounds(364, 11, 132, 48);
-		contentPanel.add(lBiltegi);
+		JLabel lBezero = new JLabel("Bezeroak");
+		lBezero.setFont(new Font("Times New Roman", Font.BOLD, 30));
+		lBezero.setBounds(364, 11, 132, 48);
+		contentPanel.add(lBezero);
 		
 		ImageIcon at1 = new ImageIcon("imagenes\\atras1.png");
 		ImageIcon at2 = new ImageIcon("imagenes\\atras2.png");
@@ -149,7 +142,7 @@ public class BiltegiGUI extends JDialog {
 		JButton bTxertatu = new JButton("");
 		bTxertatu.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				biltegiTxertatuGUI bin = new biltegiTxertatuGUI(modelo);
+				bulegariTxertatuGUI sin = new bulegariTxertatuGUI(modelo);
 			}
 		});
 		bTxertatu.setContentAreaFilled(false);
@@ -165,9 +158,9 @@ public class BiltegiGUI extends JDialog {
 	
 	public void taulaInfo() {
 		conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
-		bdb = c.biltegiKontsulta();
-		for(int i=0;i<bdb.getBiltegiList().length;i++) {
-			modelo.addRow(new Object[] {bdb.getBiltegiList()[i].getId(),bdb.getBiltegiList()[i].getIzena(),bdb.getBiltegiList()[i].getId_kokaleku(),bdb.getBiltegiList()[i].getHelbidea(),bdb.getBiltegiList()[i].getUdalerria(),bdb.getBiltegiList()[i].getPostakodea(),bdb.getBiltegiList()[i].getProbintzia(),bdb.getBiltegiList()[i].getId_herrialde(),bdb.getBiltegiList()[i].getHerrialde(),bdb.getBiltegiList()[i].getId_kontinente(),bdb.getBiltegiList()[i].getKontinentea(),null,null});
+		bdb = c.bulegariKontsulta();
+		for(int i=0;i<bdb.getBulegariList().length;i++) {
+			modelo.addRow(new Object[] {bdb.getBulegariList()[i].getId(),bdb.getBulegariList()[i].getIzena(),bdb.getBulegariList()[i].getAbizena(),bdb.getBulegariList()[i].getEmail(),bdb.getBulegariList()[i].getKontratatze_data(),bdb.getBulegariList()[i].getTelefonoa(),bdb.getBulegariList()[i].getIdNagusia(),bdb.getBulegariList()[i].getSoldata(),bdb.getBulegariList()[i].getLanpostua(),null,null});
 		}
-	}																												
+	}
 }

@@ -44,14 +44,32 @@ public class Menua extends JFrame {
 		
 		JMenuItem mBiltegi = new JMenuItem("Biltegiak");
 		mBiltegi.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		mBiltegi.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				BiltegiGUI bezeroa = new BiltegiGUI();
+			}
+		});
 		menuBar.add(mBiltegi);
 		
 		JMenuItem mBuleari = new JMenuItem("Bulegariak");
 		mBuleari.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		mBuleari.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				BulegariGUI bezeroa = new BulegariGUI();
+			}
+		});
 		menuBar.add(mBuleari);
 		
 		JMenuItem mSaltz = new JMenuItem("Saltzaileak");
 		mSaltz.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		mSaltz.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				SaltzaileGUI bezeroa = new SaltzaileGUI();
+			}
+		});
 		menuBar.add(mSaltz);
 		
 		JMenuItem mEsk = new JMenuItem("Eskariak");
