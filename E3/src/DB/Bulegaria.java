@@ -7,9 +7,9 @@ public class Bulegaria extends Langile {
 		super();
 	}
 
-	public Bulegaria(String izena, String abizena, String id, String email, String kontratatze_data, String telefonoa, String idNagusia,
+	public Bulegaria(String izena, String abizena, int id, String email, String kontratatze_data, String telefonoa, int idNagusia, double soldata,
 			String lanpostua) {
-		super(izena, abizena, id,email, kontratatze_data, telefonoa, idNagusia);
+		super(izena, abizena, id,email, kontratatze_data, telefonoa, idNagusia, soldata);
 		this.lanpostua = lanpostua;
 	}
 

@@ -6,9 +6,9 @@ public class Saltzailea extends Langile{
 	
 	public Saltzailea() {}
 	
-	public Saltzailea(String izena, String abizena, String id, String email, String kontratatze_data, String telefonoa,
-			String idNagusia, String erabiltzaile, String pasahitza) {
-		super(izena, abizena, id, email, kontratatze_data, telefonoa, idNagusia);
+	public Saltzailea(String izena, String abizena, int id, String email, String kontratatze_data, String telefonoa,
+			int idNagusia, double soldata, String erabiltzaile, String pasahitza) {
+		super(izena, abizena, id, email, kontratatze_data, telefonoa, idNagusia, soldata);
 		this.erabiltzaile = erabiltzaile;
 		this.pasahitza = pasahitza;
 	}

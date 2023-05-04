@@ -8,6 +8,8 @@ import DB.*;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Menua extends JFrame {
 
@@ -104,6 +106,20 @@ public class Menua extends JFrame {
 		bItxi.setBorder(new EmptyBorder(0, 0, 0, 0));
 		bItxi.setBounds(531, 245, 91, 98);
 		contentPane.add(bItxi);
+		
+		JButton bDeskontua = new JButton("Deskontuak Imprimatu");
+		bDeskontua.setFont(new Font("Matura MT Script Capitals", Font.BOLD | Font.ITALIC, 25));
+		bDeskontua.setBounds(121, 66, 397, 75);
+		contentPane.add(bDeskontua);
+		
+		JButton bPrezioEguneraketa = new JButton("Prezio Eguneraketa");
+		bPrezioEguneraketa.setFont(new Font("Matura MT Script Capitals", Font.BOLD | Font.ITALIC, 25));
+		bPrezioEguneraketa.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		bPrezioEguneraketa.setBounds(121, 180, 400, 87);
+		contentPane.add(bPrezioEguneraketa);
 		setVisible(true);
 	}
 }

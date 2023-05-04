@@ -35,7 +35,7 @@ public class conexioa{
     		  st.setString(1, erab);
     		  ResultSet rt = st.executeQuery();
     		  rt.next();
-    		  s = new Saltzailea(rt.getString("IZENA"),rt.getString("ABIZENA"),rt.getString("ID"),rt.getString("EMAILA"),rt.getString("KONTRATAZIO_DATA"),rt.getString("TELEFONOA"),rt.getString("ID_NAGUSI"),rt.getString("ERABILTZAILEA"),rt.getString("PASAHITZA"));
+    		  s = new Saltzailea(rt.getString("IZENA"),rt.getString("ABIZENA"),rt.getInt("ID"),rt.getString("EMAILA"),rt.getString("KONTRATAZIO_DATA"),rt.getString("TELEFONOA"),rt.getInt("ID_NAGUSI"),rt.getDouble("SOLDATA"),rt.getString("ERABILTZAILEA"),rt.getString("PASAHITZA"));
     		  rt.close();
     		  st.close();
     		  this.c.close();
@@ -438,4 +438,97 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
     	  }
       }
+// SALTZAILEAK ------------------------------------------------------------------------------------------------------------------------------------------------------
+      public SaltzaileDB saltzaileakKontsulta() {
+    	  SaltzaileDB sdb = new SaltzaileDB();
+    	  try {
+    		  Statement st = this.c.createStatement();
+    		  String kontsulta = "SELECT L.IZENA, L.ABIZENA, L.ID, L.EMAILA, TO_CHAR(L.KONTRATAZIO_DATA,'YYYY/MM/DD') AS KONTRATAZIO_DATA, L.TELEFONOA, L.ID_NAGUSI, L.SOLDATA,  S.ERABILTZAILEA, S.PASAHITZA FROM LANGILE L, SALTZAILE S WHERE L.ID = S.ID ORDER BY L.ID ASC";
+    		  ResultSet rt = st.executeQuery(kontsulta);
+    		  while(rt.next()) {
+    			  Saltzailea s = new Saltzailea(rt.getString("IZENA"),rt.getString("ABIZENA"),rt.getInt("ID"),rt.getString("EMAILA"),rt.getString("KONTRATAZIO_DATA"),rt.getString("TELEFONOA"),rt.getInt("ID_NAGUSI"),rt.getDouble("SOLDATA"),rt.getString("ERABILTZAILEA"),rt.getString("PASAHITZA"));
+    			  sdb.addSaltzailea(s);
+    		  }
+    		  rt.close();
+    		  st.close();
+    		  this.c.close();
+    	  }catch(Exception e) {
+    		  String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREAK",JOptionPane.WARNING_MESSAGE);
+    	  }
+    	  return sdb;
+      }
+      
+      public void saltzaileInsert(int id, String izena, String abizena, String email, String k_data, String telefonoa, int id_nagusia,double soldata, String erabiltzailea, String pasahitza) {
+    	  try {
+    		  String Kontsulta = "INSERT INTO LANGILE VALUES (?,?,?,?,?,TO_DATE(?,'YYYY/MM/DD'),?,?)";
+    		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
+    		  st.setInt(1, id);
+    		  st.setString(2, izena);
+    		  st.setString(3, abizena);
+    		  st.setString(4, email);
+    		  st.setString(5, telefonoa);
+    		  st.setString(6, k_data);
+    		  st.setInt(7, id_nagusia);
+    		  st.setDouble(8, soldata);
+    		  st.executeQuery();
+    		  st.close();
+    		  String Kontsulta2 = "INSERT INTO SALTZAILE VALUES(?,?,?)";
+    		  PreparedStatement st2 = this.c.prepareStatement(Kontsulta2);
+    		  st2.setInt(1, id);
+    		  st2.setString(2, erabiltzailea);
+    		  st2.setString(3, pasahitza);
+    		  st2.executeQuery();
+    		  st2.close();
+    		  this.c.close();
+    	  }catch(Exception e) {
+              String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+    	  }
+      }
+      
+      public void saltzaileUpdate(int id, String izena, String abizena, String email, String k_data, String telefonoa, int id_nagusia,double soldata, String erabiltzailea, String pasahitza) {
+    	  try {
+    		  String Kontsulta = "UPDATE LANGILE SET IZENA = ?, ABIZENA = ?, EMAILA = ?, KONTRATAZIO_DATA = TO_DATE(?,'YYYY/MM/DD'), TELEFONOA = ?, ID_NAGUSI = ?, SOLDATA = ? WHERE ID = ?";
+    		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
+    		  st.setString(1, izena);
+    		  st.setString(2, abizena);
+    		  st.setString(3, email);
+    		  st.setString(4, k_data);
+    		  st.setString(5, telefonoa);
+    		  st.setInt(6, id_nagusia);
+    		  st.setDouble(7, soldata);
+    		  st.setInt(8, id);
+    		  st.executeUpdate();
+    		  st.close();
+    		  String Kontsulta2 = "UPDATE SALTZAILE SET ERABILTZAILEA = ?, PASAHITZA = ? WHERE ID = ?";
+    		  PreparedStatement st2 = this.c.prepareStatement(Kontsulta2);
+    		  st2.setString(1, erabiltzailea);
+    		  st2.setString(2, pasahitza);
+    		  st2.setInt(3, id);
+    		  st2.executeUpdate();
+    		  st2.close();
+    		  this.c.close();
+    	  }catch(Exception e) {
+              String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+    	  }
+      }
+      
+      public void saltzaileDelete(int id) {
+    	  try {
+    		  String Kontsulta = "DELETE FROM LANGILE WHERE ID = ?";
+    		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
+    		  st.setInt(1, id);
+    		  st.executeUpdate();
+    		  st.close();
+    		  this.c.close();
+    	  }catch(Exception e) {
+              String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+    	  }
+      }
+// BULEGARIAK ------------------------------------------------------------------------------------------------------------------------------------------------------
+      
+// BILTEGIAK ------------------------------------------------------------------------------------------------------------------------------------------------------
 }

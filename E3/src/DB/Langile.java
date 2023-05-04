@@ -3,16 +3,17 @@ package DB;
 public class Langile {
 	protected String izena;
 	protected String abizena;
-	protected String id;
+	protected int id;
 	protected String email;
 	protected String kontratatze_data;
 	protected String telefonoa;
-	protected String idNagusia;
+	protected int idNagusia;
+	protected double soldata;
 	
 	public Langile() {}
 
-	public Langile(String izena, String abizena, String id, String email, String kontratatze_data, String telefonoa,
-			String idNagusia) {
+	public Langile(String izena, String abizena, int id, String email, String kontratatze_data, String telefonoa,
+			int idNagusia, double soldata) {
 		super();
 		this.izena = izena;
 		this.abizena = abizena;
@@ -21,7 +22,10 @@ public class Langile {
 		this.kontratatze_data = kontratatze_data;
 		this.telefonoa = telefonoa;
 		this.idNagusia = idNagusia;
+		this.soldata = soldata;
 	}
+
+
 
 	public String getIzena() {
 		return izena;
@@ -39,11 +43,11 @@ public class Langile {
 		this.abizena = abizena;
 	}
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -71,12 +75,20 @@ public class Langile {
 		this.telefonoa = telefonoa;
 	}
 
-	public String getIdNagusia() {
+	public int getIdNagusia() {
 		return idNagusia;
 	}
 
-	public void setIdNagusia(String idNagusia) {
+	public void setIdNagusia(int idNagusia) {
 		this.idNagusia = idNagusia;
+	}
+
+	public double getSoldata() {
+		return soldata;
+	}
+
+	public void setSoldata(double soldata) {
+		this.soldata = soldata;
 	}
 
 	@Override
