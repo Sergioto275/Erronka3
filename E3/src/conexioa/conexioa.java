@@ -10,9 +10,9 @@ import DB.*;
 public class conexioa{
       private Connection c;
       private String url;
-      private String erabiltzailea;       
+      private String erabiltzailea;
       private String pasahitza;
-      
+
       public conexioa(){}
 
       public conexioa(String url, String erabiltzailea, String pasahitza){
@@ -23,7 +23,7 @@ public class conexioa{
             this.c = DriverManager.getConnection(url, erabiltzailea, pasahitza);
          }catch(Exception e){
             String mensaje = ""+e;
-            JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+            JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
          }
       }
 //ERABILTZAILEA ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -41,7 +41,7 @@ public class conexioa{
     		  this.c.close();
     	  }catch(Exception e) {
               String mensaje = ""+e;
-              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
     	  return s;
       }
@@ -65,7 +65,7 @@ public class conexioa{
     	  }
     	  return bdb;
       }
-      
+
       public void bezeroInsert(int id, String izena, String abizena, String email, String helbidea, String telefonoa) {
     	  try {
     		  String Kontsulta = "INSERT INTO BEZERO VALUES (?,?,?,?,?)";
@@ -86,10 +86,10 @@ public class conexioa{
     		  this.c.close();
     	  }catch(Exception e) {
               String mensaje = ""+e;
-              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       public void bezeroUpdate(int id, String izena, String abizena, String email, String helbidea, String telefonoa) {
     	  try {
     		  String Kontsulta = "UPDATE BEZERO SET IZENA = ?, ABIZENA = ?, EMAILA = ?, HELBIDEA = ? WHERE ID = ?";
@@ -110,10 +110,10 @@ public class conexioa{
     		  this.c.close();
     	  }catch(Exception e) {
               String mensaje = ""+e;
-              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       public void bezeroDelete(int id) {
     	  try {
     		  String Kontsulta = "DELETE FROM BEZERO WHERE ID = ?";
@@ -124,7 +124,7 @@ public class conexioa{
     		  this.c.close();
     	  }catch(Exception e) {
               String mensaje = ""+e;
-              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
 //PRODUKTUAK ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -148,7 +148,7 @@ public class conexioa{
     	  }
     	  return pdb;
       }
-      
+
       public Inbentario[] produktuInbKontsulta(int idProd) {
     	  Inbentario[] i = new Inbentario[0];
     	  try {
@@ -169,7 +169,7 @@ public class conexioa{
     	  }
     	  return i;
       }
-      
+
       public String[] produktuKatKontsulta() {
     	  String[] i = new String[0];
     	  try {
@@ -189,7 +189,7 @@ public class conexioa{
     	  }
     	  return i;
       }
-      
+
       public void produktuDelete(int id) {
     	  try {
     		  String Kontsulta = "DELETE FROM PRODUKTU WHERE ID = ?";
@@ -200,10 +200,10 @@ public class conexioa{
     		  this.c.close();
     	  }catch(Exception e) {
               String mensaje = ""+e;
-              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       public void produktuUpdate(int id, String izena, String deskribapena, double balioa, double salneurria, String kategoria) {
     	  try {
     		  String Kontsulta = "UPDATE PRODUKTU SET IZENA = ?, DESKRIBAPENA = ?, BALIOA = ?, SALNEURRIA = ?, ID_KATEGORIA = (SELECT ID FROM KATEGORIA WHERE IZENA = ?) WHERE ID = ?";
@@ -219,10 +219,10 @@ public class conexioa{
     		  this.c.close();
     	  }catch(Exception e) {
               String mensaje = ""+e;
-              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       public void produktuInsert(int id, String izena, String deskribapena, double balioa, double salneurria, String kategoria) {
     	  try {
     		  String Kontsulta = "INSERT INTO PRODUKTU SELECT ?,?,?,?,?,ID FROM KATEGORIA WHERE IZENA = ?";
@@ -238,10 +238,10 @@ public class conexioa{
     		  this.c.close();
     	  }catch(Exception e) {
               String mensaje = ""+e;
-              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       public void inbentarioDelete(int idProd,int idBiltegi) {
     	  try {
     		  String Kontsulta = "DELETE FROM INBENTARIO WHERE ID_PRODUKTU = ? AND ID_BILTEGI = ?";
@@ -253,10 +253,10 @@ public class conexioa{
     		  this.c.close();
     	  }catch(Exception e) {
               String mensaje = ""+e;
-              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       public void inbentarioUpdate(int kopurua, int idProd,int idBiltegi) {
     	  try {
     		  String Kontsulta = "UPDATE INBENTARIO SET KOPURUA = ? WHERE ID_PRODUKTU = ? AND ID_BILTEGI = ?";
@@ -269,10 +269,10 @@ public class conexioa{
     		  this.c.close();
     	  }catch(Exception e) {
               String mensaje = ""+e;
-              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       public void inbentarioInsert(int kopurua, int idProd,int idBiltegi) {
     	  try {
     		  String Kontsulta = "INSERT INTO INBENTARIO VALUES (?,?,?)";
@@ -290,10 +290,10 @@ public class conexioa{
     		  this.c.close();
     	  }catch(Exception e) {
               String mensaje = ""+e;
-              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
 //ESKARIAK ----------------------------------------------------------------------------------------------------------------------------------------------
       public EskariDB eskariKontsulta() {
     	  EskariDB edb = new EskariDB();
@@ -314,7 +314,7 @@ public class conexioa{
     	  }
     	  return edb;
       }
-      
+
       public Eskari_Info[] eskariInfoKontsulta(int idEsk) {
     	  Eskari_Info[] esk = new Eskari_Info[0];
     	  try {
@@ -335,7 +335,7 @@ public class conexioa{
     	  }
     	  return esk;
       }
-      
+
       public void eskariDelete(int id) {
     	  try {
     		  String Kontsulta = "DELETE FROM ESKARI WHERE ID = ?";
@@ -346,10 +346,10 @@ public class conexioa{
     		  this.c.close();
     	  }catch(Exception e) {
               String mensaje = ""+e;
-              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       public void eskariUpdate(int id, int id_bez, int id_saltzaile, String data, String deskribapena) {
     	  try {
     		  String Kontsulta = "UPDATE ESKARI SET ID_BEZERO = ?, ID_SALTZAILE = ?, ESKAERA_DATA = TO_DATE(?,'YYYY/MM/DD'), ID_EGOERA = (SELECT ID FROM ESKARI_EGOERA WHERE DESKRIBAPENA = ?) WHERE ID = ?";
@@ -364,10 +364,10 @@ public class conexioa{
     		  this.c.close();
     	  }catch(Exception e) {
               String mensaje = ""+e;
-              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       public void eskariInsert(int id, int id_bez, int id_saltzaile, String data, String deskribapena) {
     	  try {
     		  String Kontsulta = "INSERT INTO ESKARI SELECT ?,?,ID,?,TO_DATE(?,'YYYY/MM/DD') FROM ESKARI_EGOERA WHERE DESKRIBAPENA = ?";
@@ -382,10 +382,10 @@ public class conexioa{
     		  this.c.close();
     	  }catch(Exception e) {
               String mensaje = ""+e;
-              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       public String[] eskariEgKontsulta() {
     	  String[] i = new String[0];
     	  try {
@@ -405,7 +405,7 @@ public class conexioa{
     	  }
     	  return i;
       }
-      
+
       public void eskariInfoDelete(int idEsk,int id) {
     	  try {
     		  String Kontsulta = "DELETE FROM ESKARI_LERRO WHERE ID_ESKARI = ? AND ID_LERRO = ?";
@@ -417,10 +417,10 @@ public class conexioa{
     		  this.c.close();
     	  }catch(Exception e) {
               String mensaje = ""+e;
-              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       public void eskariInfoUpdate(int idEsk,int id, int idProd, int kopurua, Double salneurria) {
     	  try {
     		  String Kontsulta = "UPDATE ESKARI_LERRO SET ID_PRODUKTU = ?, SALNEURRIA = ?,KOPURUA = ? WHERE ID_ESKARI = ? AND ID_LERRO = ?";
@@ -435,7 +435,7 @@ public class conexioa{
     		  this.c.close();
     	  }catch(Exception e) {
               String mensaje = ""+e;
-              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
 // SALTZAILEAK ------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -458,7 +458,7 @@ public class conexioa{
     	  }
     	  return sdb;
       }
-      
+
       public void saltzaileInsert(int id, String izena, String abizena, String email, String k_data, String telefonoa, int id_nagusia,double soldata, String erabiltzailea, String pasahitza) {
     	  try {
     		  String Kontsulta = "INSERT INTO LANGILE VALUES (?,?,?,?,?,TO_DATE(?,'YYYY/MM/DD'),?,?)";
@@ -483,10 +483,10 @@ public class conexioa{
     		  this.c.close();
     	  }catch(Exception e) {
               String mensaje = ""+e;
-              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       public void saltzaileUpdate(int id, String izena, String abizena, String email, String k_data, String telefonoa, int id_nagusia,double soldata, String erabiltzailea, String pasahitza) {
     	  try {
     		  String Kontsulta = "UPDATE LANGILE SET IZENA = ?, ABIZENA = ?, EMAILA = ?, KONTRATAZIO_DATA = TO_DATE(?,'YYYY/MM/DD'), TELEFONOA = ?, ID_NAGUSI = ?, SOLDATA = ? WHERE ID = ?";
@@ -511,10 +511,10 @@ public class conexioa{
     		  this.c.close();
     	  }catch(Exception e) {
               String mensaje = ""+e;
-              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       public void saltzaileDelete(int id) {
     	  try {
     		  String Kontsulta = "DELETE FROM LANGILE WHERE ID = ?";
@@ -525,10 +525,10 @@ public class conexioa{
     		  this.c.close();
     	  }catch(Exception e) {
               String mensaje = ""+e;
-              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
 // BULEGARIAK ------------------------------------------------------------------------------------------------------------------------------------------------------
-      
+
 // BILTEGIAK ------------------------------------------------------------------------------------------------------------------------------------------------------
 }

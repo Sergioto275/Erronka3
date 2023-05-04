@@ -1,0 +1,3627 @@
+<?xml version="1.0"?>
+<produktuak>
+    <produktua id="211">
+        <izena>Intel Xeon E5-2650</izena>
+        <deskribapena>Speed:2.0GHz,Cores:8,TDP:95W</deskribapena>
+        <balioa>869,03</balioa>
+        <salneurria>1064,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">123</stock>
+            <stock biltegi="9">111</stock>
+            <stock biltegi="2">195</stock>
+            <stock biltegi="4">171</stock>
+            <stock biltegi="6">147</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="210">
+        <izena>Intel Core i9-7900X</izena>
+        <deskribapena>Speed:3.3GHz,Cores:10,TDP:140W</deskribapena>
+        <balioa>855,82</balioa>
+        <salneurria>1029,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">122</stock>
+            <stock biltegi="9">110</stock>
+            <stock biltegi="2">194</stock>
+            <stock biltegi="4">170</stock>
+            <stock biltegi="6">146</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="54">
+        <izena>Intel Xeon E5-1660 V3 (OEM/Tray)</izena>
+        <deskribapena>Speed:3.0GHz,Cores:8,TDP:140W</deskribapena>
+        <balioa>914,52</balioa>
+        <salneurria>1019,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">33</stock>
+            <stock biltegi="2">110</stock>
+            <stock biltegi="4">88</stock>
+            <stock biltegi="6">66</stock>
+            <stock biltegi="8">44</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="167">
+        <izena>Intel Xeon E5-2650L V3 (OEM/Tray)</izena>
+        <deskribapena>Speed:1.8GHz,Cores:12,TDP:65W</deskribapena>
+        <balioa>779,17</balioa>
+        <salneurria>1010,46</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="214">
+        <izena>Intel Core i7-5960X</izena>
+        <deskribapena>Speed:3.0GHz,Cores:8,TDP:140W</deskribapena>
+        <balioa>865,59</balioa>
+        <salneurria>1009,79</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">124</stock>
+            <stock biltegi="9">112</stock>
+            <stock biltegi="2">196</stock>
+            <stock biltegi="4">172</stock>
+            <stock biltegi="6">148</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="53">
+        <izena>Intel Core 2 Extreme QX6800</izena>
+        <deskribapena>Speed:2.93GHz,Cores:4,TDP:100W</deskribapena>
+        <balioa>787,72</balioa>
+        <salneurria>1003,98</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="59">
+        <izena>Intel Core i7-5960X (OEM/Tray)</izena>
+        <deskribapena>Speed:3.0GHz,Cores:8,TDP:140W</deskribapena>
+        <balioa>879,8</balioa>
+        <salneurria>977,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="176">
+        <izena>Intel Xeon E5-2650 V3 (OEM/Tray)</izena>
+        <deskribapena>Speed:2.3GHz,Cores:10,TDP:105W</deskribapena>
+        <balioa>799,98</balioa>
+        <salneurria>939,49</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="9">
+        <izena>Intel Xeon E5-2640 V4</izena>
+        <deskribapena>Speed:2.4GHz,Cores:10,TDP:90W</deskribapena>
+        <balioa>738,71</balioa>
+        <salneurria>899,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">36</stock>
+            <stock biltegi="2">97</stock>
+            <stock biltegi="4">67</stock>
+            <stock biltegi="6">31</stock>
+            <stock biltegi="8">50</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="119">
+        <izena>Intel Xeon E5-2640 V3</izena>
+        <deskribapena>Speed:2.6GHz,Cores:8,TDP:90W</deskribapena>
+        <balioa>668,24</balioa>
+        <salneurria>899,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">10</stock>
+            <stock biltegi="2">183</stock>
+            <stock biltegi="4">102</stock>
+            <stock biltegi="6">58</stock>
+            <stock biltegi="8">25</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="120">
+        <izena>Intel Core 2 Extreme QX9775</izena>
+        <deskribapena>Speed:3.2GHz,Cores:4,TDP:150W</deskribapena>
+        <balioa>737,68</balioa>
+        <salneurria>892</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">10</stock>
+            <stock biltegi="2">183</stock>
+            <stock biltegi="4">102</stock>
+            <stock biltegi="6">58</stock>
+            <stock biltegi="8">25</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="16">
+        <izena>Intel Core i7-6900K</izena>
+        <deskribapena>Speed:3.2GHz,Cores:8,TDP:140W</deskribapena>
+        <balioa>792,89</balioa>
+        <salneurria>889,89</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="111">
+        <izena>Intel Core i7-6900K (OEM/Tray)</izena>
+        <deskribapena>Speed:3.2GHz,Cores:8,TDP:140W</deskribapena>
+        <balioa>620,28</balioa>
+        <salneurria>827,37</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="136">
+        <izena>AMD Opteron 6378</izena>
+        <deskribapena>Speed:2.4GHz,Cores:16,TDP:115W</deskribapena>
+        <balioa>651,92</balioa>
+        <salneurria>826,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">14</stock>
+            <stock biltegi="2">186</stock>
+            <stock biltegi="4">105</stock>
+            <stock biltegi="6">61</stock>
+            <stock biltegi="8">28</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="27">
+        <izena>Intel Core i7-3960X Extreme Edition</izena>
+        <deskribapena>Speed:3.3GHz,Cores:6,TDP:130W</deskribapena>
+        <balioa>573,41</balioa>
+        <salneurria>800,74</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">5</stock>
+            <stock biltegi="2">106</stock>
+            <stock biltegi="4">73</stock>
+            <stock biltegi="6">37</stock>
+            <stock biltegi="8">6</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="73">
+        <izena>Intel Core i7-4770K</izena>
+        <deskribapena>Speed:3.5GHz,Cores:4,TDP:84W</deskribapena>
+        <balioa>714,15</balioa>
+        <salneurria>799</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">27</stock>
+            <stock biltegi="2">111</stock>
+            <stock biltegi="4">87</stock>
+            <stock biltegi="6">63</stock>
+            <stock biltegi="8">39</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="70">
+        <izena>Intel Xeon E5-2687W</izena>
+        <deskribapena>Speed:3.1GHz,Cores:8,TDP:150W</deskribapena>
+        <balioa>581,16</balioa>
+        <salneurria>710,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">35</stock>
+            <stock biltegi="2">155</stock>
+            <stock biltegi="4">76</stock>
+            <stock biltegi="6">35</stock>
+            <stock biltegi="8">50</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="74">
+        <izena>Intel Xeon E5-2680 V2</izena>
+        <deskribapena>Speed:2.8GHz,Cores:10,TDP:115W</deskribapena>
+        <balioa>567,81</balioa>
+        <salneurria>701,95</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">27</stock>
+            <stock biltegi="2">111</stock>
+            <stock biltegi="4">87</stock>
+            <stock biltegi="6">63</stock>
+            <stock biltegi="8">39</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="198">
+        <izena>Intel Core i7-980</izena>
+        <deskribapena>Speed:3.33GHz,Cores:6,TDP:130W</deskribapena>
+        <balioa>563,7</balioa>
+        <salneurria>699,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">122</stock>
+            <stock biltegi="2">175</stock>
+            <stock biltegi="4">225</stock>
+            <stock biltegi="6">176</stock>
+            <stock biltegi="8">140</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="69">
+        <izena>Intel Core i7-7820X</izena>
+        <deskribapena>Speed:3.6GHz,Cores:8,TDP:140W</deskribapena>
+        <balioa>511,1</balioa>
+        <salneurria>678,75</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">35</stock>
+            <stock biltegi="2">154</stock>
+            <stock biltegi="4">76</stock>
+            <stock biltegi="6">35</stock>
+            <stock biltegi="8">50</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="71">
+        <izena>Intel Core i7-3930K</izena>
+        <deskribapena>Speed:3.2GHz,Cores:6,TDP:130W</deskribapena>
+        <balioa>509,32</balioa>
+        <salneurria>660</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">35</stock>
+            <stock biltegi="2">155</stock>
+            <stock biltegi="4">76</stock>
+            <stock biltegi="6">35</stock>
+            <stock biltegi="8">50</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="199">
+        <izena>Intel Xeon E5-2630 V4</izena>
+        <deskribapena>Speed:2.2GHz,Cores:10,TDP:85W</deskribapena>
+        <balioa>528,95</balioa>
+        <salneurria>647,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">123</stock>
+            <stock biltegi="2">176</stock>
+            <stock biltegi="4">226</stock>
+            <stock biltegi="6">176</stock>
+            <stock biltegi="8">141</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="76">
+        <izena>Intel Xeon E5-2630 V3</izena>
+        <deskribapena>Speed:2.4GHz,Cores:8,TDP:85W</deskribapena>
+        <balioa>499,96</balioa>
+        <salneurria>629,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">28</stock>
+            <stock biltegi="2">112</stock>
+            <stock biltegi="4">88</stock>
+            <stock biltegi="6">64</stock>
+            <stock biltegi="8">40</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="75">
+        <izena>Intel Core i7-4930K</izena>
+        <deskribapena>Speed:3.4GHz,Cores:6,TDP:130W</deskribapena>
+        <balioa>527,69</balioa>
+        <salneurria>624,04</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="200">
+        <izena>Intel Core i7-4790K</izena>
+        <deskribapena>Speed:4.0GHz,Cores:4,TDP:88W</deskribapena>
+        <balioa>461,92</balioa>
+        <salneurria>620,95</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">123</stock>
+            <stock biltegi="2">176</stock>
+            <stock biltegi="4">226</stock>
+            <stock biltegi="6">177</stock>
+            <stock biltegi="8">141</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="106">
+        <izena>Intel Xeon E5-2640 V2</izena>
+        <deskribapena>Speed:2.0GHz,Cores:8,TDP:95W</deskribapena>
+        <balioa>545,19</balioa>
+        <salneurria>608,95</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">6</stock>
+            <stock biltegi="2">178</stock>
+            <stock biltegi="4">97</stock>
+            <stock biltegi="6">53</stock>
+            <stock biltegi="8">21</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="8">
+        <izena>Intel Xeon E5-1650 V4</izena>
+        <deskribapena>Speed:3.6GHz,Cores:6,TDP:140W</deskribapena>
+        <balioa>535,47</balioa>
+        <salneurria>601,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">36</stock>
+            <stock biltegi="2">97</stock>
+            <stock biltegi="4">67</stock>
+            <stock biltegi="6">30</stock>
+            <stock biltegi="8">50</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="124">
+        <izena>Intel Xeon E5-1650 V4 (OEM/Tray)</izena>
+        <deskribapena>Speed:3.6GHz,Cores:6,TDP:140W</deskribapena>
+        <balioa>453,14</balioa>
+        <salneurria>594,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">11</stock>
+            <stock biltegi="2">184</stock>
+            <stock biltegi="4">103</stock>
+            <stock biltegi="6">59</stock>
+            <stock biltegi="8">26</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="72">
+        <izena>Intel Xeon E5-2630 V3 (OEM/Tray)</izena>
+        <deskribapena>Speed:2.4GHz,Cores:8,TDP:85W</deskribapena>
+        <balioa>421,9</balioa>
+        <salneurria>589,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">35</stock>
+            <stock biltegi="2">155</stock>
+            <stock biltegi="4">77</stock>
+            <stock biltegi="6">35</stock>
+            <stock biltegi="8">50</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="155">
+        <izena>Intel Xeon E5-2630 V2</izena>
+        <deskribapena>Speed:2.6GHz,Cores:6,TDP:80W</deskribapena>
+        <balioa>493,48</balioa>
+        <salneurria>588,95</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="80">
+        <izena>Intel Xeon E5-1650 V3</izena>
+        <deskribapena>Speed:3.5GHz,Cores:6,TDP:140W</deskribapena>
+        <balioa>399,77</balioa>
+        <salneurria>564,89</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">29</stock>
+            <stock biltegi="1">125</stock>
+            <stock biltegi="2">113</stock>
+            <stock biltegi="3">101</stock>
+            <stock biltegi="4">89</stock>
+            <stock biltegi="5">77</stock>
+            <stock biltegi="6">65</stock>
+            <stock biltegi="7">53</stock>
+            <stock biltegi="8">41</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="132">
+        <izena>Intel Core i7-5930K</izena>
+        <deskribapena>Speed:3.5GHz,Cores:6,TDP:140W</deskribapena>
+        <balioa>481,56</balioa>
+        <salneurria>554,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">13</stock>
+            <stock biltegi="1">133</stock>
+            <stock biltegi="2">185</stock>
+            <stock biltegi="3">136</stock>
+            <stock biltegi="4">104</stock>
+            <stock biltegi="5">81</stock>
+            <stock biltegi="6">60</stock>
+            <stock biltegi="7">45</stock>
+            <stock biltegi="8">28</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="133">
+        <izena>PNY VCQP6000-PB</izena>
+        <deskribapena>Chipset:Quadro P6000,Memory:24GBCore Clock:1.42GHz</deskribapena>
+        <balioa>4058,99</balioa>
+        <salneurria>5499,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">13</stock>
+            <stock biltegi="1">133</stock>
+            <stock biltegi="2">185</stock>
+            <stock biltegi="3">136</stock>
+            <stock biltegi="4">104</stock>
+            <stock biltegi="5">81</stock>
+            <stock biltegi="6">60</stock>
+            <stock biltegi="7">45</stock>
+            <stock biltegi="8">28</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="206">
+        <izena>PNY VCQM6000-24GB-PB</izena>
+        <deskribapena>Chipset:Quadro M6000,Memory:24GBCore Clock:988MHz</deskribapena>
+        <balioa>3619,14</balioa>
+        <salneurria>4139</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="207">
+        <izena>PNY VCQM6000-PB</izena>
+        <deskribapena>Chipset:Quadro M6000,Memory:12GBCore Clock:988MHz</deskribapena>
+        <balioa>2505,04</balioa>
+        <salneurria>3254,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">109</stock>
+            <stock biltegi="1">205</stock>
+            <stock biltegi="2">193</stock>
+            <stock biltegi="3">181</stock>
+            <stock biltegi="4">169</stock>
+            <stock biltegi="5">157</stock>
+            <stock biltegi="6">145</stock>
+            <stock biltegi="7">133</stock>
+            <stock biltegi="8">121</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="110">
+        <izena>ATI FirePro W9000</izena>
+        <deskribapena>Chipset:FirePro W9000,Memory:6GBCore Clock:975MHz</deskribapena>
+        <balioa>2785,55</balioa>
+        <salneurria>3192,97</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">7</stock>
+            <stock biltegi="1">127</stock>
+            <stock biltegi="2">179</stock>
+            <stock biltegi="3">127</stock>
+            <stock biltegi="4">98</stock>
+            <stock biltegi="5">75</stock>
+            <stock biltegi="6">54</stock>
+            <stock biltegi="7">36</stock>
+            <stock biltegi="8">22</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="123">
+        <izena>ATI FirePro S9150</izena>
+        <deskribapena>Chipset:FirePro S9150,Memory:16GBCore Clock:900MHz</deskribapena>
+        <balioa>2628,06</balioa>
+        <salneurria>3177,44</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">11</stock>
+            <stock biltegi="1">131</stock>
+            <stock biltegi="2">184</stock>
+            <stock biltegi="3">135</stock>
+            <stock biltegi="4">103</stock>
+            <stock biltegi="5">79</stock>
+            <stock biltegi="6">59</stock>
+            <stock biltegi="7">41</stock>
+            <stock biltegi="8">26</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="142">
+        <izena>AMD FirePro W9100</izena>
+        <deskribapena>Chipset:FirePro W9100,Memory:16GBCore Clock:930MHz</deskribapena>
+        <balioa>2483,38</balioa>
+        <salneurria>2998,89</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">19</stock>
+            <stock biltegi="1">89</stock>
+            <stock biltegi="2">194</stock>
+            <stock biltegi="3">142</stock>
+            <stock biltegi="4">110</stock>
+            <stock biltegi="5">87</stock>
+            <stock biltegi="6">69</stock>
+            <stock biltegi="7">51</stock>
+            <stock biltegi="8">34</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="105">
+        <izena>EVGA 12G-P4-3992-KR</izena>
+        <deskribapena>Chipset:GeForce GTX Titan Z,Memory:12GBCore Clock:732MHz</deskribapena>
+        <balioa>2313,07</balioa>
+        <salneurria>2799,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">6</stock>
+            <stock biltegi="1">126</stock>
+            <stock biltegi="2">178</stock>
+            <stock biltegi="3">126</stock>
+            <stock biltegi="4">97</stock>
+            <stock biltegi="5">74</stock>
+            <stock biltegi="6">53</stock>
+            <stock biltegi="7">35</stock>
+            <stock biltegi="8">20</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="4">
+        <izena>AMD 100-505989</izena>
+        <deskribapena>Chipset:FirePro W9100,Memory:32GBCore Clock:930MHz</deskribapena>
+        <balioa>2128,67</balioa>
+        <salneurria>2699,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">35</stock>
+            <stock biltegi="1">106</stock>
+            <stock biltegi="2">96</stock>
+            <stock biltegi="3">88</stock>
+            <stock biltegi="4">63</stock>
+            <stock biltegi="5">46</stock>
+            <stock biltegi="6">30</stock>
+            <stock biltegi="7">63</stock>
+            <stock biltegi="8">49</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="5">
+        <izena>PNY VCQK6000-PB</izena>
+        <deskribapena>Chipset:Quadro K6000,Memory:12GBCore Clock:902MHz</deskribapena>
+        <balioa>1740,31</balioa>
+        <salneurria>2290,79</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">36</stock>
+            <stock biltegi="1">106</stock>
+            <stock biltegi="2">96</stock>
+            <stock biltegi="3">89</stock>
+            <stock biltegi="4">63</stock>
+            <stock biltegi="5">47</stock>
+            <stock biltegi="6">30</stock>
+            <stock biltegi="7">63</stock>
+            <stock biltegi="8">49</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="11">
+        <izena>PNY VCQP5000-PB</izena>
+        <deskribapena>Chipset:Quadro P5000,Memory:16GBCore Clock:1.61GHz</deskribapena>
+        <balioa>1602,21</balioa>
+        <salneurria>2015,11</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">37</stock>
+            <stock biltegi="1">108</stock>
+            <stock biltegi="2">98</stock>
+            <stock biltegi="3">90</stock>
+            <stock biltegi="4">68</stock>
+            <stock biltegi="5">48</stock>
+            <stock biltegi="6">31</stock>
+            <stock biltegi="7">65</stock>
+            <stock biltegi="8">51</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="178">
+        <izena>HP C2J95AT</izena>
+        <deskribapena>Chipset:Quadro K5000,Memory:4GBCore Clock:706MHz</deskribapena>
+        <balioa>1715,91</balioa>
+        <salneurria>1999,89</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="267">
+        <izena>EVGA 12G-P4-1999-KR</izena>
+        <deskribapena>Chipset:GeForce GTX Titan X,Memory:12GBCore Clock:1.15GHz</deskribapena>
+        <balioa>1328,03</balioa>
+        <salneurria>1799,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="177">
+        <izena>PNY VCQM5000-PB</izena>
+        <deskribapena>Chipset:Quadro M5000,Memory:8GBCore Clock:861MHz</deskribapena>
+        <balioa>1268,42</balioa>
+        <salneurria>1759,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="245">
+        <izena>ATI FirePro S9050</izena>
+        <deskribapena>Chipset:FirePro S9050,Memory:12GBCore Clock:900MHz</deskribapena>
+        <balioa>1237,04</balioa>
+        <salneurria>1699</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">137</stock>
+            <stock biltegi="9">125</stock>
+            <stock biltegi="1">221</stock>
+            <stock biltegi="2">209</stock>
+            <stock biltegi="3">197</stock>
+            <stock biltegi="4">185</stock>
+            <stock biltegi="5">173</stock>
+            <stock biltegi="6">161</stock>
+            <stock biltegi="7">149</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="161">
+        <izena>AMD 100-5056062</izena>
+        <deskribapena>Chipset:Vega Frontier Edition Liquid,Memory:16GBCore Clock:1.5GHz</deskribapena>
+        <balioa>1343,84</balioa>
+        <salneurria>1499,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">36</stock>
+            <stock biltegi="1">132</stock>
+            <stock biltegi="2">120</stock>
+            <stock biltegi="3">108</stock>
+            <stock biltegi="4">96</stock>
+            <stock biltegi="5">84</stock>
+            <stock biltegi="6">72</stock>
+            <stock biltegi="7">60</stock>
+            <stock biltegi="8">48</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="186">
+        <izena>PNY VCQK5200-PB</izena>
+        <deskribapena>Chipset:Quadro K5200,Memory:8GBCore Clock:667MHz</deskribapena>
+        <balioa>1129,39</balioa>
+        <salneurria>1449,98</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="48">
+        <izena>AMD FirePro S7000</izena>
+        <deskribapena>Chipset:FirePro S7000,Memory:4GBCore Clock:950MHz</deskribapena>
+        <balioa>936,42</balioa>
+        <salneurria>1218,5</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="184">
+        <izena>AMD 100-506061</izena>
+        <deskribapena>Chipset:Vega Frontier Edition,Memory:16GBCore Clock:1.44GHz</deskribapena>
+        <balioa>706,99</balioa>
+        <salneurria>999,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">111</stock>
+            <stock biltegi="1">175</stock>
+            <stock biltegi="2">178</stock>
+            <stock biltegi="3">246</stock>
+            <stock biltegi="4">211</stock>
+            <stock biltegi="5">184</stock>
+            <stock biltegi="6">164</stock>
+            <stock biltegi="7">143</stock>
+            <stock biltegi="8">128</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="181">
+        <izena>ATI FirePro R5000</izena>
+        <deskribapena>Chipset:FirePro R5000,Memory:2GBCore Clock:825MHz</deskribapena>
+        <balioa>760,59</balioa>
+        <salneurria>999,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="182">
+        <izena>PNY VCQK4200-PB</izena>
+        <deskribapena>Chipset:Quadro K4200,Memory:4GBCore Clock:771MHz</deskribapena>
+        <balioa>799,05</balioa>
+        <salneurria>949,89</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">110</stock>
+            <stock biltegi="1">175</stock>
+            <stock biltegi="2">177</stock>
+            <stock biltegi="3">245</stock>
+            <stock biltegi="4">210</stock>
+            <stock biltegi="5">184</stock>
+            <stock biltegi="6">163</stock>
+            <stock biltegi="7">143</stock>
+            <stock biltegi="8">128</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="183">
+        <izena>Asus GTX780TI-3GD5</izena>
+        <deskribapena>Chipset:GeForce GTX 780 Ti,Memory:3GBCore Clock:876MHz</deskribapena>
+        <balioa>781,91</balioa>
+        <salneurria>899,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="185">
+        <izena>MSI GTX 1080 TI LIGHTNING Z</izena>
+        <deskribapena>Chipset:GeForce GTX 1080 Ti,Memory:11GBCore Clock:1.61GHz</deskribapena>
+        <balioa>688,35</balioa>
+        <salneurria>873,98</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">111</stock>
+            <stock biltegi="1">176</stock>
+            <stock biltegi="2">178</stock>
+            <stock biltegi="3">246</stock>
+            <stock biltegi="4">211</stock>
+            <stock biltegi="5">185</stock>
+            <stock biltegi="6">164</stock>
+            <stock biltegi="7">144</stock>
+            <stock biltegi="8">129</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="281">
+        <izena>Asus ROG-POSEIDON-GTX1080TI-P11G-GAMING</izena>
+        <deskribapena>Chipset:GeForce GTX 1080 Ti,Memory:11GBCore Clock:1.62GHz</deskribapena>
+        <balioa>696,14</balioa>
+        <salneurria>864,98</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">167</stock>
+            <stock biltegi="9">155</stock>
+            <stock biltegi="1">251</stock>
+            <stock biltegi="2">239</stock>
+            <stock biltegi="3">227</stock>
+            <stock biltegi="4">215</stock>
+            <stock biltegi="5">203</stock>
+            <stock biltegi="6">191</stock>
+            <stock biltegi="7">179</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="216">
+        <izena>MSI GTX 1080 TI LIGHTNING X</izena>
+        <deskribapena>Chipset:GeForce GTX 1080 Ti,Memory:11GBCore Clock:1.57GHz</deskribapena>
+        <balioa>742,94</balioa>
+        <salneurria>863,98</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">125</stock>
+            <stock biltegi="9">113</stock>
+            <stock biltegi="1">209</stock>
+            <stock biltegi="2">197</stock>
+            <stock biltegi="3">185</stock>
+            <stock biltegi="4">173</stock>
+            <stock biltegi="5">161</stock>
+            <stock biltegi="6">149</stock>
+            <stock biltegi="7">137</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="6">
+        <izena>Zotac ZT-P10810A-10P</izena>
+        <deskribapena>Chipset:GeForce GTX 1080 Ti,Memory:11GBCore Clock:1.48GHz</deskribapena>
+        <balioa>702,35</balioa>
+        <salneurria>849,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">36</stock>
+            <stock biltegi="1">107</stock>
+            <stock biltegi="2">96</stock>
+            <stock biltegi="3">89</stock>
+            <stock biltegi="4">64</stock>
+            <stock biltegi="5">47</stock>
+            <stock biltegi="6">30</stock>
+            <stock biltegi="7">63</stock>
+            <stock biltegi="8">50</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="108">
+        <izena>MSI GAMING</izena>
+        <deskribapena>Chipset:GeForce GTX 780 Ti,Memory:3GBCore Clock:1.02GHz</deskribapena>
+        <balioa>753,18</balioa>
+        <salneurria>849,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">6</stock>
+            <stock biltegi="1">126</stock>
+            <stock biltegi="2">179</stock>
+            <stock biltegi="3">127</stock>
+            <stock biltegi="4">98</stock>
+            <stock biltegi="5">74</stock>
+            <stock biltegi="6">54</stock>
+            <stock biltegi="7">36</stock>
+            <stock biltegi="8">21</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="83">
+        <izena>Asus STRIX-GTX1080TI-O11G-GAMING</izena>
+        <deskribapena>Chipset:GeForce GTX 1080 Ti,Memory:11GBCore Clock:1.57GHz</deskribapena>
+        <balioa>691,13</balioa>
+        <salneurria>829,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="215">
+        <izena>PNY VCQP4000-PB</izena>
+        <deskribapena>Chipset:Quadro P4000,Memory:8GBCore Clock:1.23GHz</deskribapena>
+        <balioa>724</balioa>
+        <salneurria>829,89</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="12">
+        <izena>Gigabyte GV-N108TAORUSX W-11GD</izena>
+        <deskribapena>Chipset:GeForce GTX 1080 Ti,Memory:11GBCore Clock:1.63GHz</deskribapena>
+        <balioa>596,05</balioa>
+        <salneurria>824,98</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">37</stock>
+            <stock biltegi="1">108</stock>
+            <stock biltegi="2">98</stock>
+            <stock biltegi="3">90</stock>
+            <stock biltegi="4">68</stock>
+            <stock biltegi="5">48</stock>
+            <stock biltegi="6">32</stock>
+            <stock biltegi="7">65</stock>
+            <stock biltegi="8">51</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="114">
+        <izena>Zotac ZT-70203-10P</izena>
+        <deskribapena>Chipset:GeForce GTX 780,Memory:3GBCore Clock:1.01GHz</deskribapena>
+        <balioa>580,42</balioa>
+        <salneurria>820,61</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">8</stock>
+            <stock biltegi="1">128</stock>
+            <stock biltegi="2">180</stock>
+            <stock biltegi="3">131</stock>
+            <stock biltegi="4">99</stock>
+            <stock biltegi="5">76</stock>
+            <stock biltegi="6">55</stock>
+            <stock biltegi="7">37</stock>
+            <stock biltegi="8">23</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="103">
+        <izena>EVGA 11G-P4-6598-KR</izena>
+        <deskribapena>Chipset:GeForce GTX 1080 Ti,Memory:11GBCore Clock:1.56GHz</deskribapena>
+        <balioa>663,54</balioa>
+        <salneurria>809,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">5</stock>
+            <stock biltegi="1">125</stock>
+            <stock biltegi="2">178</stock>
+            <stock biltegi="3">126</stock>
+            <stock biltegi="4">97</stock>
+            <stock biltegi="5">73</stock>
+            <stock biltegi="6">53</stock>
+            <stock biltegi="7">35</stock>
+            <stock biltegi="8">20</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="86">
+        <izena>MSI GTX 1080 TI SEA HAWK X</izena>
+        <deskribapena>Chipset:GeForce GTX 1080 Ti,Memory:11GBCore Clock:1.57GHz</deskribapena>
+        <balioa>691,32</balioa>
+        <salneurria>804,98</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="3">
+        <izena>Corsair CB-9060011-WW</izena>
+        <deskribapena>Chipset:GeForce GTX 1080 Ti,Memory:11GBCore Clock:1.57GHz</deskribapena>
+        <balioa>573,51</balioa>
+        <salneurria>799,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">35</stock>
+            <stock biltegi="1">106</stock>
+            <stock biltegi="2">96</stock>
+            <stock biltegi="3">88</stock>
+            <stock biltegi="4">63</stock>
+            <stock biltegi="5">46</stock>
+            <stock biltegi="6">29</stock>
+            <stock biltegi="7">63</stock>
+            <stock biltegi="8">49</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="174">
+        <izena>MSI GTX 1080 TI AERO 11G OC</izena>
+        <deskribapena>Chipset:GeForce GTX 1080 Ti,Memory:11GBCore Clock:1.51GHz</deskribapena>
+        <balioa>715,72</balioa>
+        <salneurria>798,26</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">74</stock>
+            <stock biltegi="1">170</stock>
+            <stock biltegi="2">158</stock>
+            <stock biltegi="3">146</stock>
+            <stock biltegi="4">134</stock>
+            <stock biltegi="5">122</stock>
+            <stock biltegi="6">110</stock>
+            <stock biltegi="7">98</stock>
+            <stock biltegi="8">86</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="175">
+        <izena>NVIDIA VCQM4000-PB</izena>
+        <deskribapena>Chipset:Quadro M4000,Memory:8GBCore Clock:N/A</deskribapena>
+        <balioa>682,09</balioa>
+        <salneurria>790</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">74</stock>
+            <stock biltegi="1">170</stock>
+            <stock biltegi="2">158</stock>
+            <stock biltegi="3">146</stock>
+            <stock biltegi="4">134</stock>
+            <stock biltegi="5">122</stock>
+            <stock biltegi="6">110</stock>
+            <stock biltegi="7">98</stock>
+            <stock biltegi="8">86</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="58">
+        <izena>Gigabyte GV-N108TAORUS X-11GD</izena>
+        <deskribapena>Chipset:GeForce GTX 1080 Ti,Memory:11GBCore Clock:1.61GHz</deskribapena>
+        <balioa>688,35</balioa>
+        <salneurria>784,98</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="270">
+        <izena>Gigabyte GV-N1070WF2OC-8GD</izena>
+        <deskribapena>Chipset:GeForce GTX 1070,Memory:8GBCore Clock:1.56GHz</deskribapena>
+        <balioa>551,62</balioa>
+        <salneurria>769,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">178</stock>
+            <stock biltegi="9">161</stock>
+            <stock biltegi="1">222</stock>
+            <stock biltegi="2">210</stock>
+            <stock biltegi="3">304</stock>
+            <stock biltegi="4">266</stock>
+            <stock biltegi="5">237</stock>
+            <stock biltegi="6">214</stock>
+            <stock biltegi="7">196</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="223">
+        <izena>MSI GeForce GTX 1080 TI ARMOR 11G OC</izena>
+        <deskribapena>Chipset:GeForce GTX 1080 Ti,Memory:11GBCore Clock:1.48GHz</deskribapena>
+        <balioa>644,19</balioa>
+        <salneurria>764,98</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">151</stock>
+            <stock biltegi="9">136</stock>
+            <stock biltegi="1">197</stock>
+            <stock biltegi="2">185</stock>
+            <stock biltegi="3">273</stock>
+            <stock biltegi="4">236</stock>
+            <stock biltegi="5">209</stock>
+            <stock biltegi="6">186</stock>
+            <stock biltegi="7">168</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="90">
+        <izena>EVGA 11G-P4-6696-KR</izena>
+        <deskribapena>Chipset:GeForce GTX 1080 Ti,Memory:11GBCore Clock:1.56GHz</deskribapena>
+        <balioa>594,46</balioa>
+        <salneurria>759,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">8</stock>
+            <stock biltegi="1">118</stock>
+            <stock biltegi="2">167</stock>
+            <stock biltegi="3">118</stock>
+            <stock biltegi="4">86</stock>
+            <stock biltegi="5">63</stock>
+            <stock biltegi="6">45</stock>
+            <stock biltegi="7">27</stock>
+            <stock biltegi="8">13</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="220">
+        <izena>MSI GeForce GTX 1080 Ti GAMING X 11G</izena>
+        <deskribapena>Chipset:GeForce GTX 1080 Ti,Memory:11GBCore Clock:1.57GHz</deskribapena>
+        <balioa>666,59</balioa>
+        <salneurria>759,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">149</stock>
+            <stock biltegi="9">134</stock>
+            <stock biltegi="1">196</stock>
+            <stock biltegi="2">184</stock>
+            <stock biltegi="3">272</stock>
+            <stock biltegi="4">234</stock>
+            <stock biltegi="5">208</stock>
+            <stock biltegi="6">185</stock>
+            <stock biltegi="7">167</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="221">
+        <izena>Zotac ZT-P10810C-10P</izena>
+        <deskribapena>Chipset:GeForce GTX 1080 Ti,Memory:11GBCore Clock:1.65GHz</deskribapena>
+        <balioa>535,03</balioa>
+        <salneurria>759,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">150</stock>
+            <stock biltegi="9">135</stock>
+            <stock biltegi="1">197</stock>
+            <stock biltegi="2">185</stock>
+            <stock biltegi="3">273</stock>
+            <stock biltegi="4">235</stock>
+            <stock biltegi="5">209</stock>
+            <stock biltegi="6">185</stock>
+            <stock biltegi="7">168</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="269">
+        <izena>Zotac ZT-P10810D-10P</izena>
+        <deskribapena>Chipset:GeForce GTX 1080 Ti,Memory:11GBCore Clock:1.57GHz</deskribapena>
+        <balioa>580,1</balioa>
+        <salneurria>759,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">178</stock>
+            <stock biltegi="9">161</stock>
+            <stock biltegi="1">222</stock>
+            <stock biltegi="2">210</stock>
+            <stock biltegi="3">304</stock>
+            <stock biltegi="4">266</stock>
+            <stock biltegi="5">237</stock>
+            <stock biltegi="6">214</stock>
+            <stock biltegi="7">196</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="87">
+        <izena>PNY VCGGTX1080T11XGPB-OC</izena>
+        <deskribapena>Chipset:GeForce GTX 1080 Ti,Memory:11GBCore Clock:1.53GHz</deskribapena>
+        <balioa>600,92</balioa>
+        <salneurria>759,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">35</stock>
+            <stock biltegi="1">131</stock>
+            <stock biltegi="2">119</stock>
+            <stock biltegi="3">107</stock>
+            <stock biltegi="4">95</stock>
+            <stock biltegi="5">83</stock>
+            <stock biltegi="6">71</stock>
+            <stock biltegi="7">59</stock>
+            <stock biltegi="8">47</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="222">
+        <izena>Zotac ZT-P10810G-10P</izena>
+        <deskribapena>Chipset:GeForce GTX 1080 Ti,Memory:11GBCore Clock:1.51GHz</deskribapena>
+        <balioa>598,25</balioa>
+        <salneurria>754,98</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">150</stock>
+            <stock biltegi="9">135</stock>
+            <stock biltegi="1">197</stock>
+            <stock biltegi="2">185</stock>
+            <stock biltegi="3">273</stock>
+            <stock biltegi="4">235</stock>
+            <stock biltegi="5">209</stock>
+            <stock biltegi="6">186</stock>
+            <stock biltegi="7">168</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="88">
+        <izena>Gigabyte GV-N98TWF3OC-6GD</izena>
+        <deskribapena>Chipset:GeForce GTX 980 Ti,Memory:6GBCore Clock:1.06GHz</deskribapena>
+        <balioa>633,29</balioa>
+        <salneurria>749,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">7</stock>
+            <stock biltegi="1">117</stock>
+            <stock biltegi="2">167</stock>
+            <stock biltegi="3">118</stock>
+            <stock biltegi="4">86</stock>
+            <stock biltegi="5">62</stock>
+            <stock biltegi="6">44</stock>
+            <stock biltegi="7">27</stock>
+            <stock biltegi="8">12</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="89">
+        <izena>PNY VCGGTX780T3XPB-OC</izena>
+        <deskribapena>Chipset:GeForce GTX 780 Ti,Memory:3GBCore Clock:980MHz</deskribapena>
+        <balioa>592,12</balioa>
+        <salneurria>749,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">8</stock>
+            <stock biltegi="1">118</stock>
+            <stock biltegi="2">167</stock>
+            <stock biltegi="3">118</stock>
+            <stock biltegi="4">86</stock>
+            <stock biltegi="5">63</stock>
+            <stock biltegi="6">45</stock>
+            <stock biltegi="7">27</stock>
+            <stock biltegi="8">12</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="236">
+        <izena>MSI GTX 980 Ti Gaming 6G</izena>
+        <deskribapena>Chipset:GeForce GTX 980 Ti,Memory:6GBCore Clock:1.18GHz</deskribapena>
+        <balioa>539,98</balioa>
+        <salneurria>745,32</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">214</stock>
+            <stock biltegi="5">164</stock>
+            <stock biltegi="6">151</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="237">
+        <izena>Gigabyte GV-N108TAORUS-11GD</izena>
+        <deskribapena>Chipset:GeForce GTX 1080 Ti,Memory:11GBCore Clock:1.59GHz</deskribapena>
+        <balioa>605,3</balioa>
+        <salneurria>744,98</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">214</stock>
+            <stock biltegi="5">164</stock>
+            <stock biltegi="6">151</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="238">
+        <izena>EVGA 06G-P4-4998-KR</izena>
+        <deskribapena>Chipset:GeForce GTX 980 Ti,Memory:6GBCore Clock:1.19GHz</deskribapena>
+        <balioa>521,03</balioa>
+        <salneurria>741,78</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">214</stock>
+            <stock biltegi="5">165</stock>
+            <stock biltegi="6">151</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="239">
+        <izena>MSI GTX 1080 Ti DUKE 11G OC</izena>
+        <deskribapena>Chipset:GeForce GTX 1080 Ti,Memory:11GBCore Clock:1.53GHz</deskribapena>
+        <balioa>555,07</balioa>
+        <salneurria>739,99</salneurria>
+        <id_kategoria>2</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">214</stock>
+            <stock biltegi="5">165</stock>
+            <stock biltegi="6">151</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="244">
+        <izena>Crucial</izena>
+        <deskribapena>Speed:DDR4-2133,Type:288-pin DIMM,CAS:15Module:4x16GBSize:64GB</deskribapena>
+        <balioa>1139,23</balioa>
+        <salneurria>1620,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="261">
+        <izena>G.Skill TridentZ RGB</izena>
+        <deskribapena>Speed:DDR4-3200,Type:288-pin DIMM,CAS:14Module:8x16GBSize:128GB</deskribapena>
+        <balioa>1330,26</balioa>
+        <salneurria>1504,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">226</stock>
+            <stock biltegi="5">176</stock>
+            <stock biltegi="6">163</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="262">
+        <izena>Corsair Dominator Platinum</izena>
+        <deskribapena>Speed:DDR4-3200,Type:288-pin DIMM,CAS:16Module:8x16GBSize:128GB</deskribapena>
+        <balioa>1051,97</balioa>
+        <salneurria>1449,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">227</stock>
+            <stock biltegi="5">177</stock>
+            <stock biltegi="6">163</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="265">
+        <izena>G.Skill Trident Z</izena>
+        <deskribapena>Speed:DDR4-3200,Type:288-pin DIMM,CAS:14Module:8x16GBSize:128GB</deskribapena>
+        <balioa>1163,49</balioa>
+        <salneurria>1431,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">227</stock>
+            <stock biltegi="5">177</stock>
+            <stock biltegi="6">164</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="266">
+        <izena>G.Skill Trident Z RGB</izena>
+        <deskribapena>Speed:DDR4-3333,Type:288-pin DIMM,CAS:16Module:8x16GBSize:128GB</deskribapena>
+        <balioa>1174,36</balioa>
+        <salneurria>1418,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="279">
+        <izena>G.Skill Ripjaws V Series</izena>
+        <deskribapena>Speed:DDR4-3000,Type:288-pin DIMM,CAS:14Module:8x16GBSize:128GB</deskribapena>
+        <balioa>1139,87</balioa>
+        <salneurria>1318,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">244</stock>
+            <stock biltegi="5">193</stock>
+            <stock biltegi="6">180</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="35">
+        <izena>Corsair Dominator Platinum</izena>
+        <deskribapena>Speed:DDR4-2800,Type:288-pin DIMM,CAS:15Module:8x16GBSize:128GB</deskribapena>
+        <balioa>1131,68</balioa>
+        <salneurria>1314,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">118</stock>
+            <stock biltegi="5">77</stock>
+            <stock biltegi="6">66</stock>
+            <stock biltegi="7">54</stock>
+            <stock biltegi="8">42</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="36">
+        <izena>Corsair Vengeance LPX</izena>
+        <deskribapena>Speed:DDR4-3000,Type:288-pin DIMM,CAS:15Module:8x16GBSize:128GB</deskribapena>
+        <balioa>912,98</balioa>
+        <salneurria>1299,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">118</stock>
+            <stock biltegi="5">78</stock>
+            <stock biltegi="6">66</stock>
+            <stock biltegi="7">54</stock>
+            <stock biltegi="8">43</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="37">
+        <izena>Corsair Dominator Platinum</izena>
+        <deskribapena>Speed:DDR4-2666,Type:288-pin DIMM,CAS:15Module:8x16GBSize:128GB</deskribapena>
+        <balioa>1068,66</balioa>
+        <salneurria>1264,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">119</stock>
+            <stock biltegi="5">78</stock>
+            <stock biltegi="6">66</stock>
+            <stock biltegi="7">55</stock>
+            <stock biltegi="8">43</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="38">
+        <izena>Corsair Vengeance LPX</izena>
+        <deskribapena>Speed:DDR4-2400,Type:288-pin DIMM,CAS:15Module:8x16GBSize:128GB</deskribapena>
+        <balioa>1019,51</balioa>
+        <salneurria>1199,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">119</stock>
+            <stock biltegi="5">78</stock>
+            <stock biltegi="6">66</stock>
+            <stock biltegi="7">55</stock>
+            <stock biltegi="8">43</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="65">
+        <izena>Corsair Dominator Platinum</izena>
+        <deskribapena>Speed:DDR4-2400,Type:288-pin DIMM,CAS:15Module:8x16GBSize:128GB</deskribapena>
+        <balioa>1002,47</balioa>
+        <salneurria>1199,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="276">
+        <izena>Corsair Vengeance LPX</izena>
+        <deskribapena>Speed:DDR4-2666,Type:288-pin DIMM,CAS:15Module:8x16GBSize:128GB</deskribapena>
+        <balioa>867,52</balioa>
+        <salneurria>1163,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">187</stock>
+            <stock biltegi="9">169</stock>
+            <stock biltegi="2">219</stock>
+            <stock biltegi="4">275</stock>
+            <stock biltegi="6">225</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="196">
+        <izena>Corsair Vengeance LPX</izena>
+        <deskribapena>Speed:DDR4-2133,Type:288-pin DIMM,CAS:15Module:8x16GBSize:128GB</deskribapena>
+        <balioa>821,91</balioa>
+        <salneurria>1099,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">122</stock>
+            <stock biltegi="2">174</stock>
+            <stock biltegi="4">225</stock>
+            <stock biltegi="6">175</stock>
+            <stock biltegi="8">139</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="272">
+        <izena>G.Skill Ripjaws 4 Series</izena>
+        <deskribapena>Speed:DDR4-2800,Type:288-pin DIMM,CAS:15Module:8x16GBSize:128GB</deskribapena>
+        <balioa>834,06</balioa>
+        <salneurria>1073,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">184</stock>
+            <stock biltegi="9">166</stock>
+            <stock biltegi="2">216</stock>
+            <stock biltegi="4">272</stock>
+            <stock biltegi="6">222</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="195">
+        <izena>G.Skill Ripjaws 4 Series</izena>
+        <deskribapena>Speed:DDR4-2400,Type:288-pin DIMM,CAS:14Module:8x16GBSize:128GB</deskribapena>
+        <balioa>836,03</balioa>
+        <salneurria>1055,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">122</stock>
+            <stock biltegi="2">174</stock>
+            <stock biltegi="4">224</stock>
+            <stock biltegi="6">175</stock>
+            <stock biltegi="8">139</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="67">
+        <izena>Kingston HyperX Beast</izena>
+        <deskribapena>Speed:DDR3-1866,Type:240-pin DIMM,CAS:10Module:8x8GBSize:64GB</deskribapena>
+        <balioa>708,91</balioa>
+        <salneurria>863,05</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">34</stock>
+            <stock biltegi="2">154</stock>
+            <stock biltegi="4">76</stock>
+            <stock biltegi="6">34</stock>
+            <stock biltegi="8">49</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="10">
+        <izena>Crucial</izena>
+        <deskribapena>Speed:DDR4-2133,Type:288-pin DIMM,CAS:15Module:2x16GBSize:32GB</deskribapena>
+        <balioa>580,33</balioa>
+        <salneurria>811,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="112">
+        <izena>Corsair Vengeance Pro</izena>
+        <deskribapena>Speed:DDR3-2133,Type:240-pin DIMM,CAS:11Module:8x8GBSize:64GB</deskribapena>
+        <balioa>596,25</balioa>
+        <salneurria>808,92</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="282">
+        <izena>Corsair Dominator Platinum</izena>
+        <deskribapena>Speed:DDR4-3200,Type:288-pin DIMM,CAS:15Module:8x8GBSize:64GB</deskribapena>
+        <balioa>700,5</balioa>
+        <salneurria>804,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="197">
+        <izena>G.Skill Trident Z RGB</izena>
+        <deskribapena>Speed:DDR4-3600,Type:288-pin DIMM,CAS:17Module:4x16GBSize:64GB</deskribapena>
+        <balioa>622,47</balioa>
+        <salneurria>799,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="18">
+        <izena>Crucial</izena>
+        <deskribapena>Speed:DDR4-2400,Type:288-pin DIMM,CAS:17Module:1x64GBSize:64GB</deskribapena>
+        <balioa>604,04</balioa>
+        <salneurria>799</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">3</stock>
+            <stock biltegi="2">101</stock>
+            <stock biltegi="4">71</stock>
+            <stock biltegi="6">35</stock>
+            <stock biltegi="8">54</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="125">
+        <izena>G.Skill Trident Z</izena>
+        <deskribapena>Speed:DDR4-3600,Type:288-pin DIMM,CAS:17Module:4x16GBSize:64GB</deskribapena>
+        <balioa>594,04</balioa>
+        <salneurria>768,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">11</stock>
+            <stock biltegi="2">184</stock>
+            <stock biltegi="4">103</stock>
+            <stock biltegi="6">59</stock>
+            <stock biltegi="8">26</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="68">
+        <izena>Crucial</izena>
+        <deskribapena>Speed:DDR4-2133,Type:288-pin DIMM,CAS:15Module:4x16GBSize:64GB</deskribapena>
+        <balioa>590,13</balioa>
+        <salneurria>766,11</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">34</stock>
+            <stock biltegi="2">154</stock>
+            <stock biltegi="4">76</stock>
+            <stock biltegi="6">35</stock>
+            <stock biltegi="8">49</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="283">
+        <izena>G.Skill Trident Z</izena>
+        <deskribapena>Speed:DDR4-3200,Type:288-pin DIMM,CAS:14Module:8x8GBSize:64GB</deskribapena>
+        <balioa>647,83</balioa>
+        <salneurria>760,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">194</stock>
+            <stock biltegi="9">179</stock>
+            <stock biltegi="2">226</stock>
+            <stock biltegi="4">282</stock>
+            <stock biltegi="6">232</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="277">
+        <izena>G.Skill Trident Z</izena>
+        <deskribapena>Speed:DDR4-3200,Type:288-pin DIMM,CAS:14Module:8x8GBSize:64GB</deskribapena>
+        <balioa>556,8</balioa>
+        <salneurria>758,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">187</stock>
+            <stock biltegi="9">169</stock>
+            <stock biltegi="2">219</stock>
+            <stock biltegi="4">275</stock>
+            <stock biltegi="6">225</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="21">
+        <izena>Corsair Dominator Platinum</izena>
+        <deskribapena>Speed:DDR4-3466,Type:288-pin DIMM,CAS:16Module:4x16GBSize:64GB</deskribapena>
+        <balioa>609,89</balioa>
+        <salneurria>749,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">4</stock>
+            <stock biltegi="2">105</stock>
+            <stock biltegi="4">72</stock>
+            <stock biltegi="6">36</stock>
+            <stock biltegi="8">5</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="128">
+        <izena>Kingston</izena>
+        <deskribapena>Speed:DDR4-2133,Type:288-pin DIMM,CAS:15Module:4x16GBSize:64GB</deskribapena>
+        <balioa>650,48</balioa>
+        <salneurria>741,63</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">12</stock>
+            <stock biltegi="2">185</stock>
+            <stock biltegi="4">103</stock>
+            <stock biltegi="6">59</stock>
+            <stock biltegi="8">27</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="129">
+        <izena>Corsair Vengeance LPX</izena>
+        <deskribapena>Speed:DDR4-3333,Type:288-pin DIMM,CAS:15Module:4x16GBSize:64GB</deskribapena>
+        <balioa>609,53</balioa>
+        <salneurria>734,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">12</stock>
+            <stock biltegi="2">185</stock>
+            <stock biltegi="4">104</stock>
+            <stock biltegi="6">60</stock>
+            <stock biltegi="8">27</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="116">
+        <izena>G.Skill Trident Z</izena>
+        <deskribapena>Speed:DDR4-3400,Type:288-pin DIMM,CAS:16Module:4x16GBSize:64GB</deskribapena>
+        <balioa>565,39</balioa>
+        <salneurria>731,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">9</stock>
+            <stock biltegi="2">182</stock>
+            <stock biltegi="4">100</stock>
+            <stock biltegi="6">56</stock>
+            <stock biltegi="8">24</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="15">
+        <izena>G.Skill Trident Z</izena>
+        <deskribapena>Speed:DDR4-3466,Type:288-pin DIMM,CAS:16Module:4x16GBSize:64GB</deskribapena>
+        <balioa>601,56</balioa>
+        <salneurria>725,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">41</stock>
+            <stock biltegi="2">99</stock>
+            <stock biltegi="4">69</stock>
+            <stock biltegi="6">33</stock>
+            <stock biltegi="8">52</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="122">
+        <izena>G.Skill Trident Z</izena>
+        <deskribapena>Speed:DDR4-3333,Type:288-pin DIMM,CAS:16Module:4x16GBSize:64GB</deskribapena>
+        <balioa>532,27</balioa>
+        <salneurria>722,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">11</stock>
+            <stock biltegi="2">183</stock>
+            <stock biltegi="4">102</stock>
+            <stock biltegi="6">58</stock>
+            <stock biltegi="8">26</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="121">
+        <izena>G.Skill Ripjaws V Series</izena>
+        <deskribapena>Speed:DDR4-3200,Type:288-pin DIMM,CAS:14Module:8x8GBSize:64GB</deskribapena>
+        <balioa>603,22</balioa>
+        <salneurria>721,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">10</stock>
+            <stock biltegi="2">183</stock>
+            <stock biltegi="4">102</stock>
+            <stock biltegi="6">58</stock>
+            <stock biltegi="8">25</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="20">
+        <izena>Corsair Dominator Platinum</izena>
+        <deskribapena>Speed:DDR4-3200,Type:288-pin DIMM,CAS:15Module:4x16GBSize:64GB</deskribapena>
+        <balioa>616,53</balioa>
+        <salneurria>719,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">4</stock>
+            <stock biltegi="2">104</stock>
+            <stock biltegi="4">71</stock>
+            <stock biltegi="6">35</stock>
+            <stock biltegi="8">5</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="127">
+        <izena>Corsair Dominator Platinum</izena>
+        <deskribapena>Speed:DDR4-3333,Type:288-pin DIMM,CAS:15Module:4x16GBSize:64GB</deskribapena>
+        <balioa>538,55</balioa>
+        <salneurria>719,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="109">
+        <izena>G.Skill Trident Z</izena>
+        <deskribapena>Speed:DDR4-3200,Type:288-pin DIMM,CAS:14Module:4x16GBSize:64GB</deskribapena>
+        <balioa>585,26</balioa>
+        <salneurria>713,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">6</stock>
+            <stock biltegi="2">179</stock>
+            <stock biltegi="4">98</stock>
+            <stock biltegi="6">54</stock>
+            <stock biltegi="8">21</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="202">
+        <izena>G.Skill Trident Z</izena>
+        <deskribapena>Speed:DDR4-3200,Type:288-pin DIMM,CAS:14Module:4x16GBSize:64GB</deskribapena>
+        <balioa>533,21</balioa>
+        <salneurria>713,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="113">
+        <izena>G.Skill Trident Z</izena>
+        <deskribapena>Speed:DDR4-3200,Type:288-pin DIMM,CAS:15Module:4x16GBSize:64GB</deskribapena>
+        <balioa>580,21</balioa>
+        <salneurria>704,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="13">
+        <izena>G.Skill Ripjaws V Series</izena>
+        <deskribapena>Speed:DDR4-3333,Type:288-pin DIMM,CAS:16Module:4x16GBSize:64GB</deskribapena>
+        <balioa>618,63</balioa>
+        <salneurria>704,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">37</stock>
+            <stock biltegi="2">98</stock>
+            <stock biltegi="4">68</stock>
+            <stock biltegi="6">32</stock>
+            <stock biltegi="8">51</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="14">
+        <izena>G.Skill Ripjaws V Series</izena>
+        <deskribapena>Speed:DDR4-3333,Type:288-pin DIMM,CAS:16Module:4x16GBSize:64GB</deskribapena>
+        <balioa>633,65</balioa>
+        <salneurria>704,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">38</stock>
+            <stock biltegi="2">98</stock>
+            <stock biltegi="4">68</stock>
+            <stock biltegi="6">32</stock>
+            <stock biltegi="8">51</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="115">
+        <izena>Corsair Vengeance LPX</izena>
+        <deskribapena>Speed:DDR4-3200,Type:288-pin DIMM,CAS:15Module:8x8GBSize:64GB</deskribapena>
+        <balioa>565,73</balioa>
+        <salneurria>699,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">9</stock>
+            <stock biltegi="2">181</stock>
+            <stock biltegi="4">100</stock>
+            <stock biltegi="6">56</stock>
+            <stock biltegi="8">24</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="118">
+        <izena>Corsair Dominator Platinum</izena>
+        <deskribapena>Speed:DDR4-2800,Type:288-pin DIMM,CAS:15Module:8x8GBSize:64GB</deskribapena>
+        <balioa>578,46</balioa>
+        <salneurria>699,89</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="17">
+        <izena>Corsair Vengeance LPX</izena>
+        <deskribapena>Speed:DDR4-3333,Type:288-pin DIMM,CAS:15Module:4x16GBSize:64GB</deskribapena>
+        <balioa>595,42</balioa>
+        <salneurria>699,01</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">3</stock>
+            <stock biltegi="2">100</stock>
+            <stock biltegi="4">70</stock>
+            <stock biltegi="6">34</stock>
+            <stock biltegi="8">54</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="117">
+        <izena>G.Skill Ripjaws V Series</izena>
+        <deskribapena>Speed:DDR4-3200,Type:288-pin DIMM,CAS:14Module:4x16GBSize:64GB</deskribapena>
+        <balioa>617,62</balioa>
+        <salneurria>695,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">9</stock>
+            <stock biltegi="2">182</stock>
+            <stock biltegi="4">101</stock>
+            <stock biltegi="6">57</stock>
+            <stock biltegi="8">24</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="77">
+        <izena>G.Skill Ripjaws V Series</izena>
+        <deskribapena>Speed:DDR4-3200,Type:288-pin DIMM,CAS:14Module:4x16GBSize:64GB</deskribapena>
+        <balioa>577,25</balioa>
+        <salneurria>695,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="78">
+        <izena>G.Skill Ripjaws V Series</izena>
+        <deskribapena>Speed:DDR4-3200,Type:288-pin DIMM,CAS:15Module:4x16GBSize:64GB</deskribapena>
+        <balioa>517,78</balioa>
+        <salneurria>686,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">29</stock>
+            <stock biltegi="2">113</stock>
+            <stock biltegi="4">89</stock>
+            <stock biltegi="6">65</stock>
+            <stock biltegi="8">41</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="204">
+        <izena>G.Skill Ripjaws V Series</izena>
+        <deskribapena>Speed:DDR4-3200,Type:288-pin DIMM,CAS:15Module:4x16GBSize:64GB</deskribapena>
+        <balioa>546,64</balioa>
+        <salneurria>686,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">125</stock>
+            <stock biltegi="2">177</stock>
+            <stock biltegi="4">227</stock>
+            <stock biltegi="6">178</stock>
+            <stock biltegi="8">142</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="7">
+        <izena>G.Skill Ripjaws V Series</izena>
+        <deskribapena>Speed:DDR4-3200,Type:288-pin DIMM,CAS:15Module:8x8GBSize:64GB</deskribapena>
+        <balioa>602,4</balioa>
+        <salneurria>680,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">36</stock>
+            <stock biltegi="2">97</stock>
+            <stock biltegi="4">64</stock>
+            <stock biltegi="6">30</stock>
+            <stock biltegi="8">50</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="278">
+        <izena>G.Skill Ripjaws V Series</izena>
+        <deskribapena>Speed:DDR4-3000,Type:288-pin DIMM,CAS:14Module:8x8GBSize:64GB</deskribapena>
+        <balioa>546,05</balioa>
+        <salneurria>677,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">188</stock>
+            <stock biltegi="9">170</stock>
+            <stock biltegi="2">220</stock>
+            <stock biltegi="4">276</stock>
+            <stock biltegi="6">226</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="203">
+        <izena>Kingston</izena>
+        <deskribapena>Speed:DDR3-1333,Type:240-pin DIMM,CAS:9Module:4x16GBSize:64GB</deskribapena>
+        <balioa>556,84</balioa>
+        <salneurria>671,38</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">124</stock>
+            <stock biltegi="2">177</stock>
+            <stock biltegi="4">227</stock>
+            <stock biltegi="6">177</stock>
+            <stock biltegi="8">142</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="79">
+        <izena>Corsair Dominator Platinum</izena>
+        <deskribapena>Speed:DDR4-2666,Type:288-pin DIMM,CAS:15Module:8x8GBSize:64GB</deskribapena>
+        <balioa>537,63</balioa>
+        <salneurria>659,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">29</stock>
+            <stock biltegi="2">113</stock>
+            <stock biltegi="4">89</stock>
+            <stock biltegi="6">65</stock>
+            <stock biltegi="8">41</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="201">
+        <izena>Kingston</izena>
+        <deskribapena>Speed:DDR3-1600,Type:240-pin DIMM,CAS:11Module:4x8GBSize:32GB</deskribapena>
+        <balioa>566,98</balioa>
+        <salneurria>653,5</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">124</stock>
+            <stock biltegi="2">176</stock>
+            <stock biltegi="4">227</stock>
+            <stock biltegi="6">177</stock>
+            <stock biltegi="8">142</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="205">
+        <izena>G.Skill Trident X</izena>
+        <deskribapena>Speed:DDR3-3100,Type:240-pin DIMM,CAS:12Module:2x4GBSize:8GB</deskribapena>
+        <balioa>507,32</balioa>
+        <salneurria>649,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">125</stock>
+            <stock biltegi="2">177</stock>
+            <stock biltegi="4">228</stock>
+            <stock biltegi="6">178</stock>
+            <stock biltegi="8">142</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="29">
+        <izena>Corsair Vengeance LPX</izena>
+        <deskribapena>Speed:DDR4-3200,Type:288-pin DIMM,CAS:15Module:4x16GBSize:64GB</deskribapena>
+        <balioa>571,7</balioa>
+        <salneurria>645,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">6</stock>
+            <stock biltegi="2">107</stock>
+            <stock biltegi="4">74</stock>
+            <stock biltegi="6">38</stock>
+            <stock biltegi="8">7</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="138">
+        <izena>G.Skill Ripjaws V Series</izena>
+        <deskribapena>Speed:DDR4-3000,Type:288-pin DIMM,CAS:14Module:4x16GBSize:64GB</deskribapena>
+        <balioa>499,09</balioa>
+        <salneurria>645,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">16</stock>
+            <stock biltegi="2">191</stock>
+            <stock biltegi="4">107</stock>
+            <stock biltegi="6">66</stock>
+            <stock biltegi="8">31</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="30">
+        <izena>G.Skill Ripjaws V Series</izena>
+        <deskribapena>Speed:DDR4-2800,Type:288-pin DIMM,CAS:14Module:4x16GBSize:64GB</deskribapena>
+        <balioa>452,54</balioa>
+        <salneurria>645,2</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">6</stock>
+            <stock biltegi="2">107</stock>
+            <stock biltegi="4">74</stock>
+            <stock biltegi="6">38</stock>
+            <stock biltegi="8">7</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="107">
+        <izena>Kingston</izena>
+        <deskribapena>Speed:DDR3-1600,Type:240-pin DIMM,CAS:11Module:4x16GBSize:64GB</deskribapena>
+        <balioa>474,18</balioa>
+        <salneurria>644</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">6</stock>
+            <stock biltegi="2">178</stock>
+            <stock biltegi="4">97</stock>
+            <stock biltegi="6">53</stock>
+            <stock biltegi="8">21</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="126">
+        <izena>G.Skill Ripjaws V Series</izena>
+        <deskribapena>Speed:DDR4-3200,Type:288-pin DIMM,CAS:16Module:8x8GBSize:64GB</deskribapena>
+        <balioa>510,93</balioa>
+        <salneurria>640,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">12</stock>
+            <stock biltegi="2">184</stock>
+            <stock biltegi="4">103</stock>
+            <stock biltegi="6">59</stock>
+            <stock biltegi="8">26</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="1">
+        <izena>G.Skill Ripjaws V Series</izena>
+        <deskribapena>Speed:DDR4-3000,Type:288-pin DIMM,CAS:15Module:8x8GBSize:64GB</deskribapena>
+        <balioa>450,36</balioa>
+        <salneurria>640,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="101">
+        <izena>Kingston HyperX Predator</izena>
+        <deskribapena>Speed:DDR4-3000,Type:288-pin DIMM,CAS:15Module:4x16GBSize:64GB</deskribapena>
+        <balioa>471,78</balioa>
+        <salneurria>635,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">3</stock>
+            <stock biltegi="2">173</stock>
+            <stock biltegi="4">95</stock>
+            <stock biltegi="6">51</stock>
+            <stock biltegi="8">18</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="190">
+        <izena>Supermicro X10SDV-8C-TLN4F</izena>
+        <deskribapena>CPU:Xeon D-1541,Form Factor:Mini ITX,RAM Slots:4,Max RAM:64GB</deskribapena>
+        <balioa>664,29</balioa>
+        <salneurria>948,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">120</stock>
+            <stock biltegi="2">172</stock>
+            <stock biltegi="4">223</stock>
+            <stock biltegi="6">173</stock>
+            <stock biltegi="8">137</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="62">
+        <izena>Intel DP35DPM</izena>
+        <deskribapena>CPU:LGA775,Form Factor:ATX,RAM Slots:4,Max RAM:8GB</deskribapena>
+        <balioa>626,22</balioa>
+        <salneurria>789,79</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">32</stock>
+            <stock biltegi="2">149</stock>
+            <stock biltegi="4">74</stock>
+            <stock biltegi="6">30</stock>
+            <stock biltegi="8">47</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="189">
+        <izena>Asus X99-E-10G WS</izena>
+        <deskribapena>CPU:LGA2011-3,Form Factor:SSI CEB,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>582,02</balioa>
+        <salneurria>649</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">119</stock>
+            <stock biltegi="2">172</stock>
+            <stock biltegi="4">219</stock>
+            <stock biltegi="6">172</stock>
+            <stock biltegi="8">137</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="191">
+        <izena>Asus ROG MAXIMUS IX EXTREME</izena>
+        <deskribapena>CPU:LGA1151,Form Factor:EATX,RAM Slots:4,Max RAM:64GB</deskribapena>
+        <balioa>480,89</balioa>
+        <salneurria>573,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">120</stock>
+            <stock biltegi="2">173</stock>
+            <stock biltegi="4">223</stock>
+            <stock biltegi="6">173</stock>
+            <stock biltegi="8">138</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="63">
+        <izena>Asus RAMPAGE V EXTREME</izena>
+        <deskribapena>CPU:LGA2011-3,Form Factor:EATX,RAM Slots:8,Max RAM:64GB</deskribapena>
+        <balioa>459</balioa>
+        <salneurria>572,96</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">33</stock>
+            <stock biltegi="2">149</stock>
+            <stock biltegi="4">74</stock>
+            <stock biltegi="6">30</stock>
+            <stock biltegi="8">47</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="193">
+        <izena>Asus Z10PE-D8 WS</izena>
+        <deskribapena>CPU:LGA2011-3 x 2,Form Factor:SSI EEB,RAM Slots:8,Max RAM:512GB</deskribapena>
+        <balioa>504,14</balioa>
+        <salneurria>561,59</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">121</stock>
+            <stock biltegi="2">173</stock>
+            <stock biltegi="4">223</stock>
+            <stock biltegi="6">174</stock>
+            <stock biltegi="8">138</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="271">
+        <izena>MSI X99A GODLIKE GAMING CARBON</izena>
+        <deskribapena>CPU:LGA2011-3,Form Factor:EATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>415</balioa>
+        <salneurria>549,59</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">183</stock>
+            <stock biltegi="9">165</stock>
+            <stock biltegi="2">215</stock>
+            <stock biltegi="4">271</stock>
+            <stock biltegi="6">221</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="64">
+        <izena>Supermicro H8DG6-F</izena>
+        <deskribapena>CPU:G34 x 2,Form Factor:EATX,RAM Slots:16,Max RAM:512GB</deskribapena>
+        <balioa>416,64</balioa>
+        <salneurria>525,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="192">
+        <izena>Asus Rampage V Edition 10</izena>
+        <deskribapena>CPU:LGA2011-3,Form Factor:EATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>452,5</balioa>
+        <salneurria>519,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="225">
+        <izena>Gigabyte GA-Z270X-Gaming 9</izena>
+        <deskribapena>CPU:LGA1151,Form Factor:EATX,RAM Slots:4,Max RAM:64GB</deskribapena>
+        <balioa>380,05</balioa>
+        <salneurria>503,98</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="252">
+        <izena>Gigabyte X299 AORUS Gaming 9</izena>
+        <deskribapena>CPU:LGA2066,Form Factor:ATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>395,24</balioa>
+        <salneurria>499,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="274">
+        <izena>ASRock E3C224D4M-16RE</izena>
+        <deskribapena>CPU:LGA1150,Form Factor:ATX,RAM Slots:4,Max RAM:32GB</deskribapena>
+        <balioa>364,79</balioa>
+        <salneurria>499,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">160</stock>
+            <stock biltegi="9">148</stock>
+            <stock biltegi="2">232</stock>
+            <stock biltegi="4">208</stock>
+            <stock biltegi="6">184</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="61">
+        <izena>Asus PRIME X299-DELUXE</izena>
+        <deskribapena>CPU:LGA2066,Form Factor:ATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>409,92</balioa>
+        <salneurria>487,3</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="188">
+        <izena>Asus X99-E WS/USB 3.1</izena>
+        <deskribapena>CPU:LGA2011-3,Form Factor:SSI CEB,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>428,89</balioa>
+        <salneurria>482,49</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">119</stock>
+            <stock biltegi="2">171</stock>
+            <stock biltegi="4">219</stock>
+            <stock biltegi="6">172</stock>
+            <stock biltegi="8">137</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="28">
+        <izena>Supermicro X9SRH-7TF</izena>
+        <deskribapena>CPU:LGA2011,Form Factor:ATX,RAM Slots:8,Max RAM:64GB</deskribapena>
+        <balioa>411,64</balioa>
+        <salneurria>479,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="137">
+        <izena>Asus Z10PE-D16 WS</izena>
+        <deskribapena>CPU:LGA2011-3 x 2,Form Factor:SSI EEB,RAM Slots:16,Max RAM:1TB</deskribapena>
+        <balioa>332,52</balioa>
+        <salneurria>469,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">15</stock>
+            <stock biltegi="6">65</stock>
+            <stock biltegi="8">29</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="32">
+        <izena>ASRock X99 Extreme11</izena>
+        <deskribapena>CPU:LGA2011-3,Form Factor:EATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>380,55</balioa>
+        <salneurria>469,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">7</stock>
+            <stock biltegi="6">39</stock>
+            <stock biltegi="8">8</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="31">
+        <izena>Supermicro MBD-X10DAX</izena>
+        <deskribapena>CPU:LGA2011-3 x 2,Form Factor:EATX,RAM Slots:16,Max RAM:</deskribapena>
+        <balioa>385,24</balioa>
+        <salneurria>443,72</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">7</stock>
+            <stock biltegi="6">39</stock>
+            <stock biltegi="8">8</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="84">
+        <izena>Asus X99-DELUXE/U3.1</izena>
+        <deskribapena>CPU:LGA2011-3,Form Factor:ATX,RAM Slots:8,Max RAM:64GB</deskribapena>
+        <balioa>332,38</balioa>
+        <salneurria>440,3</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">33</stock>
+            <stock biltegi="6">69</stock>
+            <stock biltegi="8">45</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="141">
+        <izena>Supermicro X11SSL-CF</izena>
+        <deskribapena>CPU:LGA1151,Form Factor:Micro ATX,RAM Slots:4,Max RAM:64GB</deskribapena>
+        <balioa>317,81</balioa>
+        <salneurria>419,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">18</stock>
+            <stock biltegi="6">68</stock>
+            <stock biltegi="8">33</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="34">
+        <izena>Asus KGPE-D16</izena>
+        <deskribapena>CPU:G34 x 2,Form Factor:SSI EEB,RAM Slots:16,Max RAM:256GB</deskribapena>
+        <balioa>360,72</balioa>
+        <salneurria>417,98</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">8</stock>
+            <stock biltegi="6">39</stock>
+            <stock biltegi="8">9</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="143">
+        <izena>Asus Z10PE-D16</izena>
+        <deskribapena>CPU:LGA2011-3 Narrow x 2,Form Factor:SSI EEB,RAM Slots:16,Max RAM:1TB</deskribapena>
+        <balioa>293,3</balioa>
+        <salneurria>402,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="217">
+        <izena>ASRock C2750D4I</izena>
+        <deskribapena>CPU:Atom C2750,Form Factor:Mini ITX,RAM Slots:4,Max RAM:64GB</deskribapena>
+        <balioa>339,55</balioa>
+        <salneurria>401,98</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">125</stock>
+            <stock biltegi="9">113</stock>
+            <stock biltegi="6">149</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="66">
+        <izena>Gigabyte X299 AORUS Gaming 7</izena>
+        <deskribapena>CPU:LGA2066,Form Factor:ATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>283,91</balioa>
+        <salneurria>399,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="275">
+        <izena>MSI X99A GODLIKE GAMING</izena>
+        <deskribapena>CPU:LGA2011-3,Form Factor:EATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>302,95</balioa>
+        <salneurria>399,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="194">
+        <izena>MSI X299 GAMING M7 ACK</izena>
+        <deskribapena>CPU:LGA2066,Form Factor:ATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>278,71</balioa>
+        <salneurria>397,42</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="156">
+        <izena>Supermicro MBD-X10DRI-O</izena>
+        <deskribapena>CPU:LGA2011-3 Narrow x 2,Form Factor:EATX,RAM Slots:16,Max RAM:1TB</deskribapena>
+        <balioa>291,34</balioa>
+        <salneurria>394,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="157">
+        <izena>Asus MAXIMUS IX FORMULA</izena>
+        <deskribapena>CPU:LGA1151,Form Factor:ATX,RAM Slots:4,Max RAM:64GB</deskribapena>
+        <balioa>339,12</balioa>
+        <salneurria>388,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="6">42</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="170">
+        <izena>Asus X99-DELUXE II</izena>
+        <deskribapena>CPU:LGA2011-3,Form Factor:ATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>289,33</balioa>
+        <salneurria>383,98</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="6">81</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="171">
+        <izena>ASRock Fatal1ty X299 Professional Gaming i9</izena>
+        <deskribapena>CPU:LGA2066,Form Factor:ATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>287,5</balioa>
+        <salneurria>382,98</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="172">
+        <izena>ASRock EP2C612 WS</izena>
+        <deskribapena>CPU:LGA2011-3 x 2,Form Factor:SSI EEB,RAM Slots:8,Max RAM:</deskribapena>
+        <balioa>308,84</balioa>
+        <salneurria>358,49</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="6">85</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="173">
+        <izena>ASRock Z270 SuperCarrier</izena>
+        <deskribapena>CPU:LGA1151,Form Factor:ATX,RAM Slots:4,Max RAM:64GB</deskribapena>
+        <balioa>264,35</balioa>
+        <salneurria>353,98</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="6">94</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="187">
+        <izena>Asus MAXIMUS VIII EXTREME/ASSEMBLY</izena>
+        <deskribapena>CPU:LGA1151,Form Factor:EATX,RAM Slots:4,Max RAM:64GB</deskribapena>
+        <balioa>253,41</balioa>
+        <salneurria>353,98</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="224">
+        <izena>Asus STRIX X299-E GAMING</izena>
+        <deskribapena>CPU:LGA2066,Form Factor:ATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>306</balioa>
+        <salneurria>349,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="246">
+        <izena>Gigabyte X299 AORUS Ultra Gaming</izena>
+        <deskribapena>CPU:LGA2066,Form Factor:ATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>287,78</balioa>
+        <salneurria>343,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="247">
+        <izena>Asus TUF X299 MARK 1</izena>
+        <deskribapena>CPU:LGA2066,Form Factor:ATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>241,15</balioa>
+        <salneurria>339,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="6">148</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="250">
+        <izena>Asus Z170-WS</izena>
+        <deskribapena>CPU:LGA1151,Form Factor:ATX,RAM Slots:4,Max RAM:64GB</deskribapena>
+        <balioa>279,4</balioa>
+        <salneurria>338,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="251">
+        <izena>MSI X299 GAMING PRO CARBON AC</izena>
+        <deskribapena>CPU:LGA2066,Form Factor:ATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>238,8</balioa>
+        <salneurria>337,81</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="6">150</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="287">
+        <izena>MSI X99A XPOWER GAMING TITANIUM</izena>
+        <deskribapena>CPU:LGA2011-3,Form Factor:EATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>257,23</balioa>
+        <salneurria>329,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="6">212</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="288">
+        <izena>Asus ROG STRIX X99 GAMING</izena>
+        <deskribapena>CPU:LGA2011-3,Form Factor:ATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>255,86</balioa>
+        <salneurria>319,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="6">213</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="179">
+        <izena>Asus SABERTOOTH X99</izena>
+        <deskribapena>CPU:LGA2011-3,Form Factor:ATX,RAM Slots:8,Max RAM:64GB</deskribapena>
+        <balioa>252,57</balioa>
+        <salneurria>312,67</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="226">
+        <izena>Asus PRIME X299-A</izena>
+        <deskribapena>CPU:LGA2066,Form Factor:ATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>274,56</balioa>
+        <salneurria>309,85</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="227">
+        <izena>Gigabyte GA-X99-UD5 WIFI</izena>
+        <deskribapena>CPU:LGA2011-3,Form Factor:EATX,RAM Slots:8,Max RAM:64GB</deskribapena>
+        <balioa>217,83</balioa>
+        <salneurria>305</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">189</stock>
+            <stock biltegi="6">141</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="39">
+        <izena>ASRock EP2C602-4L/D16</izena>
+        <deskribapena>CPU:LGA2011 x 2,Form Factor:SSI EEB,RAM Slots:16,Max RAM:512GB</deskribapena>
+        <balioa>225,47</balioa>
+        <salneurria>301,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">119</stock>
+            <stock biltegi="5">78</stock>
+            <stock biltegi="6">66</stock>
+            <stock biltegi="7">55</stock>
+            <stock biltegi="8">43</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="40">
+        <izena>MSI Z170A KRAIT GAMING 3X</izena>
+        <deskribapena>CPU:LGA1151,Form Factor:ATX,RAM Slots:4,Max RAM:64GB</deskribapena>
+        <balioa>245,4</balioa>
+        <salneurria>299,89</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">119</stock>
+            <stock biltegi="5">78</stock>
+            <stock biltegi="6">67</stock>
+            <stock biltegi="7">55</stock>
+            <stock biltegi="8">44</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="41">
+        <izena>MSI Z170 Krait Gaming</izena>
+        <deskribapena>CPU:LGA1151,Form Factor:ATX,RAM Slots:4,Max RAM:64GB</deskribapena>
+        <balioa>231,58</balioa>
+        <salneurria>299,89</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">119</stock>
+            <stock biltegi="5">79</stock>
+            <stock biltegi="6">67</stock>
+            <stock biltegi="7">55</stock>
+            <stock biltegi="8">44</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="42">
+        <izena>MSI Z170A KRAIT GAMING</izena>
+        <deskribapena>CPU:LGA1151,Form Factor:ATX,RAM Slots:4,Max RAM:64GB</deskribapena>
+        <balioa>262,4</balioa>
+        <salneurria>299,89</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">122</stock>
+            <stock biltegi="5">81</stock>
+            <stock biltegi="6">69</stock>
+            <stock biltegi="7">57</stock>
+            <stock biltegi="8">46</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="43">
+        <izena>Asus MAXIMUS IX CODE</izena>
+        <deskribapena>CPU:LGA1151,Form Factor:ATX,RAM Slots:4,Max RAM:64GB</deskribapena>
+        <balioa>266,15</balioa>
+        <salneurria>298,98</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">122</stock>
+            <stock biltegi="5">81</stock>
+            <stock biltegi="6">69</stock>
+            <stock biltegi="7">58</stock>
+            <stock biltegi="8">46</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="134">
+        <izena>Asus Sabertooth 990FX</izena>
+        <deskribapena>CPU:AM3+,Form Factor:ATX,RAM Slots:4,Max RAM:32GB</deskribapena>
+        <balioa>252,31</balioa>
+        <salneurria>295,72</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">89</stock>
+            <stock biltegi="5">42</stock>
+            <stock biltegi="6">29</stock>
+            <stock biltegi="7">17</stock>
+            <stock biltegi="8">54</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="140">
+        <izena>MSI X99A WORKSTATION</izena>
+        <deskribapena>CPU:LGA2011-3,Form Factor:ATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>239,95</balioa>
+        <salneurria>289,97</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">94</stock>
+            <stock biltegi="5">47</stock>
+            <stock biltegi="6">34</stock>
+            <stock biltegi="7">21</stock>
+            <stock biltegi="8">9</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="144">
+        <izena>Intel DG43RK</izena>
+        <deskribapena>CPU:LGA775,Form Factor:Micro ATX,RAM Slots:4,Max RAM:8GB</deskribapena>
+        <balioa>219,69</balioa>
+        <salneurria>289,79</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">95</stock>
+            <stock biltegi="5">49</stock>
+            <stock biltegi="6">36</stock>
+            <stock biltegi="7">23</stock>
+            <stock biltegi="8">10</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="145">
+        <izena>Asus VANGUARD B85</izena>
+        <deskribapena>CPU:LGA1150,Form Factor:Micro ATX,RAM Slots:4,Max RAM:32GB</deskribapena>
+        <balioa>258,1</balioa>
+        <salneurria>287</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">96</stock>
+            <stock biltegi="5">49</stock>
+            <stock biltegi="6">36</stock>
+            <stock biltegi="7">23</stock>
+            <stock biltegi="8">11</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="146">
+        <izena>EVGA Z270 Classified K</izena>
+        <deskribapena>CPU:LGA1151,Form Factor:EATX,RAM Slots:4,Max RAM:64GB</deskribapena>
+        <balioa>234,26</balioa>
+        <salneurria>283,98</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">96</stock>
+            <stock biltegi="5">50</stock>
+            <stock biltegi="6">37</stock>
+            <stock biltegi="7">24</stock>
+            <stock biltegi="8">11</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="147">
+        <izena>EVGA Classified</izena>
+        <deskribapena>CPU:LGA2011-3,Form Factor:EATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>240,62</balioa>
+        <salneurria>283,98</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">96</stock>
+            <stock biltegi="5">50</stock>
+            <stock biltegi="6">37</stock>
+            <stock biltegi="7">24</stock>
+            <stock biltegi="8">11</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="148">
+        <izena>MSI Z270 XPOWER GAMING TITANIUM</izena>
+        <deskribapena>CPU:LGA1151,Form Factor:ATX,RAM Slots:4,Max RAM:64GB</deskribapena>
+        <balioa>212,69</balioa>
+        <salneurria>282,98</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">97</stock>
+            <stock biltegi="5">50</stock>
+            <stock biltegi="6">37</stock>
+            <stock biltegi="7">24</stock>
+            <stock biltegi="8">12</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="149">
+        <izena>ASRock X299 Taichi</izena>
+        <deskribapena>CPU:LGA2066,Form Factor:ATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>214,36</balioa>
+        <salneurria>282,98</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">97</stock>
+            <stock biltegi="5">50</stock>
+            <stock biltegi="6">37</stock>
+            <stock biltegi="7">24</stock>
+            <stock biltegi="8">12</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="150">
+        <izena>MSI X299 TOMAHAWK ARCTIC</izena>
+        <deskribapena>CPU:LGA2066,Form Factor:ATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>223,92</balioa>
+        <salneurria>281,98</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">101</stock>
+            <stock biltegi="5">54</stock>
+            <stock biltegi="6">41</stock>
+            <stock biltegi="7">28</stock>
+            <stock biltegi="8">15</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="151">
+        <izena>Supermicro X10SAT-O</izena>
+        <deskribapena>CPU:LGA1150,Form Factor:ATX,RAM Slots:4,Max RAM:32GB</deskribapena>
+        <balioa>207,08</balioa>
+        <salneurria>281,97</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">101</stock>
+            <stock biltegi="5">54</stock>
+            <stock biltegi="6">41</stock>
+            <stock biltegi="7">28</stock>
+            <stock biltegi="8">15</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="152">
+        <izena>Gigabyte X299 AORUS Gaming 3</izena>
+        <deskribapena>CPU:LGA2066,Form Factor:ATX,RAM Slots:8,Max RAM:128GB</deskribapena>
+        <balioa>227,48</balioa>
+        <salneurria>280,98</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">101</stock>
+            <stock biltegi="5">54</stock>
+            <stock biltegi="6">41</stock>
+            <stock biltegi="7">28</stock>
+            <stock biltegi="8">15</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="180">
+        <izena>Supermicro MBD-X10DAL-I-O</izena>
+        <deskribapena>CPU:LGA2011-3 x 2,Form Factor:ATX,RAM Slots:8,Max RAM:512GB</deskribapena>
+        <balioa>239,28</balioa>
+        <salneurria>279,99</salneurria>
+        <id_kategoria>4</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="268">
+        <izena>Western Digital WD10EZEX</izena>
+        <deskribapena>Series:Caviar Blue,Type:7200RPM,Capacity:1TB,Cache:64MB</deskribapena>
+        <balioa>35,83</balioa>
+        <salneurria>47,88</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="24">
+        <izena>Seagate ST2000DM006</izena>
+        <deskribapena>Series:Barracuda,Type:7200RPM,Capacity:2TB,Cache:64MB</deskribapena>
+        <balioa>47,93</balioa>
+        <salneurria>66,89</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">115</stock>
+            <stock biltegi="5">74</stock>
+            <stock biltegi="6">62</stock>
+            <stock biltegi="7">50</stock>
+            <stock biltegi="8">39</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="25">
+        <izena>Samsung MZ-75E250B/AM</izena>
+        <deskribapena>Series:850 EVO-Series,Type:SSD,Capacity:250GB,Cache:N/A</deskribapena>
+        <balioa>87,98</balioa>
+        <salneurria>104,88</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">115</stock>
+            <stock biltegi="5">74</stock>
+            <stock biltegi="6">62</stock>
+            <stock biltegi="7">51</stock>
+            <stock biltegi="8">39</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="26">
+        <izena>Samsung MZ-75E500B/AM</izena>
+        <deskribapena>Series:850 EVO-Series,Type:SSD,Capacity:500GB,Cache:N/A</deskribapena>
+        <balioa>157,81</balioa>
+        <salneurria>178,09</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">115</stock>
+            <stock biltegi="5">74</stock>
+            <stock biltegi="6">63</stock>
+            <stock biltegi="7">51</stock>
+            <stock biltegi="8">39</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="104">
+        <izena>SanDisk SDSSDA-240G-G26</izena>
+        <deskribapena>Series:SSD PLUS,Type:SSD,Capacity:240GB,Cache:N/A</deskribapena>
+        <balioa>61,1</balioa>
+        <salneurria>83,88</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">81</stock>
+            <stock biltegi="5">84</stock>
+            <stock biltegi="6">71</stock>
+            <stock biltegi="7">58</stock>
+            <stock biltegi="8">46</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="135">
+        <izena>Samsung MZ-V6E250</izena>
+        <deskribapena>Series:960 EVO,Type:SSD,Capacity:250GB,Cache:512MB</deskribapena>
+        <balioa>92,98</balioa>
+        <salneurria>127,88</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">89</stock>
+            <stock biltegi="5">43</stock>
+            <stock biltegi="6">29</stock>
+            <stock biltegi="7">17</stock>
+            <stock biltegi="8">54</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="284">
+        <izena>Kingston SA400S37/120G</izena>
+        <deskribapena>Series:A400,Type:SSD,Capacity:120GB,Cache:N/A</deskribapena>
+        <balioa>40,63</balioa>
+        <salneurria>54,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">268</stock>
+            <stock biltegi="2">353</stock>
+            <stock biltegi="5">220</stock>
+            <stock biltegi="6">320</stock>
+            <stock biltegi="7">294</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="285">
+        <izena>Samsung MZ-75E1T0B/AM</izena>
+        <deskribapena>Series:850 EVO-Series,Type:SSD,Capacity:1TB,Cache:N/A</deskribapena>
+        <balioa>260,23</balioa>
+        <salneurria>339,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">176</stock>
+            <stock biltegi="2">267</stock>
+            <stock biltegi="5">216</stock>
+            <stock biltegi="6">202</stock>
+            <stock biltegi="7">189</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="286">
+        <izena>Samsung MZ-V6E500</izena>
+        <deskribapena>Series:960 EVO,Type:SSD,Capacity:500GB,Cache:512MB</deskribapena>
+        <balioa>209,62</balioa>
+        <salneurria>234</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">177</stock>
+            <stock biltegi="2">267</stock>
+            <stock biltegi="5">216</stock>
+            <stock biltegi="6">203</stock>
+            <stock biltegi="7">189</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="22">
+        <izena>Seagate ST3000DM008</izena>
+        <deskribapena>Series:Barracuda,Type:7200RPM,Capacity:3TB,Cache:64MB</deskribapena>
+        <balioa>61,63</balioa>
+        <salneurria>83,61</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">114</stock>
+            <stock biltegi="5">73</stock>
+            <stock biltegi="6">62</stock>
+            <stock biltegi="7">50</stock>
+            <stock biltegi="8">38</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="23">
+        <izena>Western Digital WDS250G1B0A</izena>
+        <deskribapena>Series:Blue,Type:SSD,Capacity:250GB,Cache:N/A</deskribapena>
+        <balioa>72,54</balioa>
+        <salneurria>89,89</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">114</stock>
+            <stock biltegi="5">74</stock>
+            <stock biltegi="6">62</stock>
+            <stock biltegi="7">50</stock>
+            <stock biltegi="8">39</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="33">
+        <izena>ADATA ASU800SS-128GT-C</izena>
+        <deskribapena>Series:Ultimate SU800,Type:SSD,Capacity:128GB,Cache:N/A</deskribapena>
+        <balioa>37,78</balioa>
+        <salneurria>52,65</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">117</stock>
+            <stock biltegi="5">77</stock>
+            <stock biltegi="6">65</stock>
+            <stock biltegi="7">53</stock>
+            <stock biltegi="8">42</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="44">
+        <izena>Seagate ST1000DM010</izena>
+        <deskribapena>Series:BarraCuda,Type:7200RPM,Capacity:1TB,Cache:64MB</deskribapena>
+        <balioa>42,18</balioa>
+        <salneurria>49,37</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">122</stock>
+            <stock biltegi="5">82</stock>
+            <stock biltegi="6">70</stock>
+            <stock biltegi="7">58</stock>
+            <stock biltegi="8">47</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="49">
+        <izena>Samsung MZ-75E4T0B</izena>
+        <deskribapena>Series:850 EVO,Type:SSD,Capacity:4TB,Cache:4GB</deskribapena>
+        <balioa>1153,64</balioa>
+        <salneurria>1499,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="50">
+        <izena>Intel SSDPECME040T401</izena>
+        <deskribapena>Series:DC P3608,Type:SSD,Capacity:4TB,Cache:N/A</deskribapena>
+        <balioa>7123,66</balioa>
+        <salneurria>8867,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">117</stock>
+            <stock biltegi="5">69</stock>
+            <stock biltegi="6">84</stock>
+            <stock biltegi="7">58</stock>
+            <stock biltegi="8">32</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="130">
+        <izena>Western Digital WD2003FZEX</izena>
+        <deskribapena>Series:BLACK SERIES,Type:7200RPM,Capacity:2TB,Cache:64MB</deskribapena>
+        <balioa>91,76</balioa>
+        <salneurria>117,45</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">88</stock>
+            <stock biltegi="5">42</stock>
+            <stock biltegi="6">78</stock>
+            <stock biltegi="7">66</stock>
+            <stock biltegi="8">53</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="131">
+        <izena>Samsung MZ-V6P512BW</izena>
+        <deskribapena>Series:960 PRO,Type:SSD,Capacity:512GB,Cache:512MB</deskribapena>
+        <balioa>223,99</balioa>
+        <salneurria>279,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">88</stock>
+            <stock biltegi="5">42</stock>
+            <stock biltegi="6">29</stock>
+            <stock biltegi="7">66</stock>
+            <stock biltegi="8">53</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="139">
+        <izena>Hitachi HUS724030ALE641</izena>
+        <deskribapena>Series:Ultrastar 7K4000,Type:7200RPM,Capacity:3TB,Cache:64MB</deskribapena>
+        <balioa>54,03</balioa>
+        <salneurria>65,92</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">93</stock>
+            <stock biltegi="5">47</stock>
+            <stock biltegi="6">34</stock>
+            <stock biltegi="7">21</stock>
+            <stock biltegi="8">8</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="208">
+        <izena>Samsung MZ-V6P2T0BW</izena>
+        <deskribapena>Series:960 Pro,Type:SSD,Capacity:2TB,Cache:2GB</deskribapena>
+        <balioa>840,11</balioa>
+        <salneurria>1199,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="229">
+        <izena>Seagate ST10000DM0004</izena>
+        <deskribapena>Series:BarraCuda Pro,Type:7200RPM,Capacity:10TB,Cache:256MB</deskribapena>
+        <balioa>284,23</balioa>
+        <salneurria>399,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">123</stock>
+            <stock biltegi="2">212</stock>
+            <stock biltegi="5">163</stock>
+            <stock biltegi="6">149</stock>
+            <stock biltegi="7">136</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="230">
+        <izena>ADATA ASU800SS-512GT-C</izena>
+        <deskribapena>Series:Ultimate SU800,Type:SSD,Capacity:512GB,Cache:N/A</deskribapena>
+        <balioa>113,29</balioa>
+        <salneurria>136,69</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">124</stock>
+            <stock biltegi="2">213</stock>
+            <stock biltegi="5">163</stock>
+            <stock biltegi="6">149</stock>
+            <stock biltegi="7">136</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="231">
+        <izena>Samsung MZ-V6E1T0</izena>
+        <deskribapena>Series:960 EVO,Type:SSD,Capacity:1TB,Cache:1000MB</deskribapena>
+        <balioa>358,06</balioa>
+        <salneurria>449,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">124</stock>
+            <stock biltegi="2">213</stock>
+            <stock biltegi="5">163</stock>
+            <stock biltegi="6">150</stock>
+            <stock biltegi="7">136</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="232">
+        <izena>Western Digital WD1003FZEX</izena>
+        <deskribapena>Series:BLACK SERIES,Type:7200RPM,Capacity:1TB,Cache:64MB</deskribapena>
+        <balioa>61,76</balioa>
+        <salneurria>70,89</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">124</stock>
+            <stock biltegi="2">213</stock>
+            <stock biltegi="5">163</stock>
+            <stock biltegi="6">150</stock>
+            <stock biltegi="7">137</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="233">
+        <izena>SanDisk SDSSDA-120G-G26</izena>
+        <deskribapena>Series:SSD PLUS,Type:SSD,Capacity:120GB,Cache:N/A</deskribapena>
+        <balioa>52,7</balioa>
+        <salneurria>59,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">124</stock>
+            <stock biltegi="2">213</stock>
+            <stock biltegi="5">164</stock>
+            <stock biltegi="6">150</stock>
+            <stock biltegi="7">137</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="234">
+        <izena>Crucial CT525MX300SSD1</izena>
+        <deskribapena>Series:MX300,Type:SSD,Capacity:525GB,Cache:N/A</deskribapena>
+        <balioa>135,59</balioa>
+        <salneurria>150,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">124</stock>
+            <stock biltegi="2">213</stock>
+            <stock biltegi="5">164</stock>
+            <stock biltegi="6">150</stock>
+            <stock biltegi="7">137</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="235">
+        <izena>Hitachi A7K1000-1000</izena>
+        <deskribapena>Series:Ultrastar,Type:7200RPM,Capacity:1TB,Cache:32MB</deskribapena>
+        <balioa>29,94</balioa>
+        <salneurria>41,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">125</stock>
+            <stock biltegi="2">214</stock>
+            <stock biltegi="5">164</stock>
+            <stock biltegi="6">150</stock>
+            <stock biltegi="7">137</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="253">
+        <izena>Samsung MZ-V6P1T0BW</izena>
+        <deskribapena>Series:960 Pro,Type:SSD,Capacity:1TB,Cache:1GB</deskribapena>
+        <balioa>466,49</balioa>
+        <salneurria>579,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="254">
+        <izena>Samsung MZ-7KE256BW</izena>
+        <deskribapena>Series:850 Pro Series,Type:SSD,Capacity:256GB,Cache:N/A</deskribapena>
+        <balioa>97,19</balioa>
+        <salneurria>119,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">136</stock>
+            <stock biltegi="2">225</stock>
+            <stock biltegi="5">175</stock>
+            <stock biltegi="6">161</stock>
+            <stock biltegi="7">148</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="255">
+        <izena>Seagate ST2000DX002</izena>
+        <deskribapena>Series:FireCuda,Type:Hybrid,Capacity:2TB,Cache:64MB</deskribapena>
+        <balioa>64,48</balioa>
+        <salneurria>90,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">136</stock>
+            <stock biltegi="2">225</stock>
+            <stock biltegi="5">175</stock>
+            <stock biltegi="6">162</stock>
+            <stock biltegi="7">148</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="256">
+        <izena>Western Digital WD5000AACS</izena>
+        <deskribapena>Series:Caviar Green,Type:5400RPM,Capacity:500GB,Cache:16MB</deskribapena>
+        <balioa>20,14</balioa>
+        <salneurria>26,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">136</stock>
+            <stock biltegi="2">225</stock>
+            <stock biltegi="5">175</stock>
+            <stock biltegi="6">162</stock>
+            <stock biltegi="7">149</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="257">
+        <izena>SanDisk SDSSDHII-240G-G25</izena>
+        <deskribapena>Series:Ultra II,Type:SSD,Capacity:240GB,Cache:N/A</deskribapena>
+        <balioa>73,39</balioa>
+        <salneurria>84,95</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">136</stock>
+            <stock biltegi="2">226</stock>
+            <stock biltegi="5">176</stock>
+            <stock biltegi="6">162</stock>
+            <stock biltegi="7">149</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="258">
+        <izena>PNY SSD7CS1311-120-RB</izena>
+        <deskribapena>Series:CS1311,Type:SSD,Capacity:120GB,Cache:N/A</deskribapena>
+        <balioa>50,59</balioa>
+        <salneurria>57,98</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">136</stock>
+            <stock biltegi="2">226</stock>
+            <stock biltegi="5">176</stock>
+            <stock biltegi="6">162</stock>
+            <stock biltegi="7">149</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="259">
+        <izena>PNY SSD9SC240GMDA-RB</izena>
+        <deskribapena>Series:XLR8,Type:SSD,Capacity:240GB,Cache:N/A</deskribapena>
+        <balioa>58,4</balioa>
+        <salneurria>80,72</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">137</stock>
+            <stock biltegi="2">226</stock>
+            <stock biltegi="5">176</stock>
+            <stock biltegi="6">162</stock>
+            <stock biltegi="7">149</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="260">
+        <izena>Crucial CT1050MX300SSD1</izena>
+        <deskribapena>Series:MX300,Type:SSD,Capacity:1.1TB,Cache:N/A</deskribapena>
+        <balioa>192,52</balioa>
+        <salneurria>267,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">137</stock>
+            <stock biltegi="2">226</stock>
+            <stock biltegi="5">176</stock>
+            <stock biltegi="6">163</stock>
+            <stock biltegi="7">149</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="263">
+        <izena>Western Digital WDS250G1B0B</izena>
+        <deskribapena>Series:Blue,Type:SSD,Capacity:250GB,Cache:N/A</deskribapena>
+        <balioa>70,71</balioa>
+        <salneurria>89,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">137</stock>
+            <stock biltegi="2">227</stock>
+            <stock biltegi="5">177</stock>
+            <stock biltegi="6">163</stock>
+            <stock biltegi="7">150</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="264">
+        <izena>Samsung MZ-75E120B/AM</izena>
+        <deskribapena>Series:850 EVO-Series,Type:SSD,Capacity:120GB,Cache:N/A</deskribapena>
+        <balioa>74,41</balioa>
+        <salneurria>88,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">137</stock>
+            <stock biltegi="2">227</stock>
+            <stock biltegi="5">177</stock>
+            <stock biltegi="6">163</stock>
+            <stock biltegi="7">150</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="280">
+        <izena>Western Digital WDS500G1B0B</izena>
+        <deskribapena>Series:Blue,Type:SSD,Capacity:500GB,Cache:N/A</deskribapena>
+        <balioa>106,89</balioa>
+        <salneurria>149,88</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">154</stock>
+            <stock biltegi="2">244</stock>
+            <stock biltegi="5">194</stock>
+            <stock biltegi="6">180</stock>
+            <stock biltegi="7">167</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="60">
+        <izena>Hitachi HUA723020ALA640</izena>
+        <deskribapena>Series:Ultrastar 7K3000,Type:7200RPM,Capacity:2TB,Cache:64MB</deskribapena>
+        <balioa>45,18</balioa>
+        <salneurria>59,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="94">
+        <izena>Western Digital WD2500AVVS</izena>
+        <deskribapena>Series:AV-GP,Type:5400RPM,Capacity:250GB,Cache:8MB</deskribapena>
+        <balioa>12,63</balioa>
+        <salneurria>15,55</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">91</stock>
+            <stock biltegi="5">85</stock>
+            <stock biltegi="6">71</stock>
+            <stock biltegi="7">57</stock>
+            <stock biltegi="8">44</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="99">
+        <izena>Seagate ST1000DX002</izena>
+        <deskribapena>Series:FireCuda,Type:Hybrid,Capacity:1TB,Cache:64MB</deskribapena>
+        <balioa>55,41</balioa>
+        <salneurria>68,06</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">94</stock>
+            <stock biltegi="5">88</stock>
+            <stock biltegi="6">73</stock>
+            <stock biltegi="7">60</stock>
+            <stock biltegi="8">47</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="100">
+        <izena>Crucial CT275MX300SSD1</izena>
+        <deskribapena>Series:MX300,Type:SSD,Capacity:275GB,Cache:N/A</deskribapena>
+        <balioa>79,21</balioa>
+        <salneurria>97,88</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">94</stock>
+            <stock biltegi="5">88</stock>
+            <stock biltegi="6">74</stock>
+            <stock biltegi="7">60</stock>
+            <stock biltegi="8">47</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="168">
+        <izena>Seagate ST31000340NS - FFP</izena>
+        <deskribapena>Series:Barracuda ES,Type:7200RPM,Capacity:1TB,Cache:32MB</deskribapena>
+        <balioa>34,4</balioa>
+        <salneurria>43,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">128</stock>
+            <stock biltegi="5">92</stock>
+            <stock biltegi="6">80</stock>
+            <stock biltegi="7">68</stock>
+            <stock biltegi="8">56</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="273">
+        <izena>Western Digital WD101KRYZ</izena>
+        <deskribapena>Series:Gold,Type:7200RPM,Capacity:10TB,Cache:256MB</deskribapena>
+        <balioa>313,96</balioa>
+        <salneurria>443,64</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">156</stock>
+            <stock biltegi="2">264</stock>
+            <stock biltegi="5">199</stock>
+            <stock biltegi="6">184</stock>
+            <stock biltegi="7">170</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="55">
+        <izena>Crucial CT525MX300SSD4</izena>
+        <deskribapena>Series:MX300,Type:SSD,Capacity:525GB,Cache:N/A</deskribapena>
+        <balioa>121,92</balioa>
+        <salneurria>150,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="56">
+        <izena>Western Digital WD2500AAJS</izena>
+        <deskribapena>Series:Caviar Blue,Type:7200RPM,Capacity:250GB,Cache:8MB</deskribapena>
+        <balioa>15,23</balioa>
+        <salneurria>16,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="6">58</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="57">
+        <izena>Western Digital WD20EZRZ</izena>
+        <deskribapena>Series:Blue,Type:5400RPM,Capacity:2TB,Cache:64MB</deskribapena>
+        <balioa>58,01</balioa>
+        <salneurria>67,34</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="6">66</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="95">
+        <izena>Western Digital WDS256G1X0C</izena>
+        <deskribapena>Series:Black PCIe,Type:SSD,Capacity:256GB,Cache:N/A</deskribapena>
+        <balioa>85,87</balioa>
+        <salneurria>109,99</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="6">60</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="96">
+        <izena>SanDisk SDSSDHII-480G-G25</izena>
+        <deskribapena>Series:Ultra II,Type:SSD,Capacity:480GB,Cache:N/A</deskribapena>
+        <balioa>102,62</balioa>
+        <salneurria>141,56</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario>
+            <stock biltegi="6">60</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="97">
+        <izena>Kingston SV300S37A/120G</izena>
+        <deskribapena>Series:SSDNow V300 Series,Type:SSD,Capacity:120GB,Cache:N/A</deskribapena>
+        <balioa>45,93</balioa>
+        <salneurria>59,87</salneurria>
+        <id_kategoria>5</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="228">
+        <izena>Intel Xeon E5-2699 V3 (OEM/Tray)</izena>
+        <deskribapena>Speed:2.3GHz,Cores:18,TDP:145W</deskribapena>
+        <balioa>2867,51</balioa>
+        <salneurria>3410,46</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="2">189</stock>
+            <stock biltegi="6">141</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="248">
+        <izena>Intel Xeon E5-2697 V3</izena>
+        <deskribapena>Speed:2.6GHz,Cores:14,TDP:145W</deskribapena>
+        <balioa>2326,27</balioa>
+        <salneurria>2774,98</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="249">
+        <izena>Intel Xeon E5-2698 V3 (OEM/Tray)</izena>
+        <deskribapena>Speed:2.3GHz,Cores:16,TDP:135W</deskribapena>
+        <balioa>2035,18</balioa>
+        <salneurria>2660,72</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="2">
+        <izena>Intel Xeon E5-2697 V4</izena>
+        <deskribapena>Speed:2.3GHz,Cores:18,TDP:145W</deskribapena>
+        <balioa>2144,4</balioa>
+        <salneurria>2554,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">23</stock>
+            <stock biltegi="3">100</stock>
+            <stock biltegi="5">71</stock>
+            <stock biltegi="6">58</stock>
+            <stock biltegi="7">46</stock>
+            <stock biltegi="8">34</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="45">
+        <izena>Intel Xeon E5-2685 V3 (OEM/Tray)</izena>
+        <deskribapena>Speed:2.6GHz,Cores:12,TDP:120W</deskribapena>
+        <balioa>2012,11</balioa>
+        <salneurria>2501,69</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="46">
+        <izena>Intel Xeon E5-2695 V3 (OEM/Tray)</izena>
+        <deskribapena>Speed:2.3GHz,Cores:14,TDP:120W</deskribapena>
+        <balioa>1925,13</balioa>
+        <salneurria>2431,95</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">6</stock>
+            <stock biltegi="3">112</stock>
+            <stock biltegi="5">90</stock>
+            <stock biltegi="6">29</stock>
+            <stock biltegi="7">18</stock>
+            <stock biltegi="8">7</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="47">
+        <izena>Intel Xeon E5-2697 V2</izena>
+        <deskribapena>Speed:2.7GHz,Cores:12,TDP:130W</deskribapena>
+        <balioa>2101,59</balioa>
+        <salneurria>2377,09</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">0</stock>
+            <stock biltegi="3">66</stock>
+            <stock biltegi="5">44</stock>
+            <stock biltegi="6">33</stock>
+            <stock biltegi="7">22</stock>
+            <stock biltegi="8">11</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="51">
+        <izena>Intel Xeon E5-2695 V4</izena>
+        <deskribapena>Speed:2.1GHz,Cores:18,TDP:120W</deskribapena>
+        <balioa>1780,35</balioa>
+        <salneurria>2269,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="91">
+        <izena>Intel Xeon E5-2695 V2</izena>
+        <deskribapena>Speed:2.4GHz,Cores:12,TDP:115W</deskribapena>
+        <balioa>1793,53</balioa>
+        <salneurria>2259,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">22</stock>
+            <stock biltegi="3">94</stock>
+            <stock biltegi="5">70</stock>
+            <stock biltegi="6">58</stock>
+            <stock biltegi="7">46</stock>
+            <stock biltegi="8">34</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="92">
+        <izena>Intel Xeon E5-2643 V2 (OEM/Tray)</izena>
+        <deskribapena>Speed:3.5GHz,Cores:6,TDP:130W</deskribapena>
+        <balioa>1940,18</balioa>
+        <salneurria>2200</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="93">
+        <izena>Intel Xeon E5-2690 (OEM/Tray)</izena>
+        <deskribapena>Speed:2.9GHz,Cores:8,TDP:135W</deskribapena>
+        <balioa>1888,33</balioa>
+        <salneurria>2116,72</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="98">
+        <izena>Intel Xeon E5-2687W V3</izena>
+        <deskribapena>Speed:3.1GHz,Cores:10,TDP:160W</deskribapena>
+        <balioa>1781,47</balioa>
+        <salneurria>2064,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">32</stock>
+            <stock biltegi="3">69</stock>
+            <stock biltegi="5">86</stock>
+            <stock biltegi="6">72</stock>
+            <stock biltegi="7">58</stock>
+            <stock biltegi="8">45</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="102">
+        <izena>Intel Xeon E5-2687W V4</izena>
+        <deskribapena>Speed:3.0GHz,Cores:12,TDP:160W</deskribapena>
+        <balioa>1723,83</balioa>
+        <salneurria>2042,69</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">36</stock>
+            <stock biltegi="3">73</stock>
+            <stock biltegi="5">90</stock>
+            <stock biltegi="6">76</stock>
+            <stock biltegi="7">62</stock>
+            <stock biltegi="8">49</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="158">
+        <izena>Intel Xeon E5-2667 V3 (OEM/Tray)</izena>
+        <deskribapena>Speed:3.2GHz,Cores:8,TDP:135W</deskribapena>
+        <balioa>1504,08</balioa>
+        <salneurria>2009,46</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="159">
+        <izena>Intel Xeon E5-2690 V4</izena>
+        <deskribapena>Speed:2.6GHz,Cores:14,TDP:135W</deskribapena>
+        <balioa>1499,26</balioa>
+        <salneurria>1994,49</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">15</stock>
+            <stock biltegi="3">87</stock>
+            <stock biltegi="5">63</stock>
+            <stock biltegi="6">51</stock>
+            <stock biltegi="7">39</stock>
+            <stock biltegi="8">27</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="160">
+        <izena>Intel Xeon E5-2690 V3</izena>
+        <deskribapena>Speed:2.6GHz,Cores:12,TDP:135W</deskribapena>
+        <balioa>1540,35</balioa>
+        <salneurria>1908,73</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">21</stock>
+            <stock biltegi="3">93</stock>
+            <stock biltegi="5">69</stock>
+            <stock biltegi="6">57</stock>
+            <stock biltegi="7">45</stock>
+            <stock biltegi="8">33</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="162">
+        <izena>Intel Xeon E5-2470V2</izena>
+        <deskribapena>Speed:2.4GHz,Cores:10,TDP:95W</deskribapena>
+        <balioa>1671,95</balioa>
+        <salneurria>1904,7</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="163">
+        <izena>Intel Xeon E5-2683 V4</izena>
+        <deskribapena>Speed:2.1GHz,Cores:16,TDP:120W</deskribapena>
+        <balioa>1706,95</balioa>
+        <salneurria>1899,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">35</stock>
+            <stock biltegi="3">107</stock>
+            <stock biltegi="5">83</stock>
+            <stock biltegi="6">71</stock>
+            <stock biltegi="7">59</stock>
+            <stock biltegi="8">47</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="164">
+        <izena>Intel Xeon E5-2637 V2 (OEM/Tray)</izena>
+        <deskribapena>Speed:3.5GHz,Cores:4,TDP:130W</deskribapena>
+        <balioa>1323,12</balioa>
+        <salneurria>1850</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="169">
+        <izena>Intel Xeon E5-2683 V4 (OEM/Tray)</izena>
+        <deskribapena>Speed:2.1GHz,Cores:16,TDP:120W</deskribapena>
+        <balioa>1369,83</balioa>
+        <salneurria>1844,89</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="240">
+        <izena>Intel Core i7-4960X Extreme Edition</izena>
+        <deskribapena>Speed:3.6GHz,Cores:6,TDP:130W</deskribapena>
+        <balioa>1496,43</balioa>
+        <salneurria>1805,97</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="241">
+        <izena>Intel Xeon E5-2699 V4 (OEM/Tray)</izena>
+        <deskribapena>Speed:2.2GHz,Cores:22,TDP:145W</deskribapena>
+        <balioa>1535,62</balioa>
+        <salneurria>1756</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">121</stock>
+            <stock biltegi="9">109</stock>
+            <stock biltegi="3">181</stock>
+            <stock biltegi="5">157</stock>
+            <stock biltegi="6">145</stock>
+            <stock biltegi="7">133</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="242">
+        <izena>Intel Xeon E5-1680 V3 (OEM/Tray)</izena>
+        <deskribapena>Speed:3.2GHz,Cores:8,TDP:140W</deskribapena>
+        <balioa>1519,85</balioa>
+        <salneurria>1751,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">121</stock>
+            <stock biltegi="9">109</stock>
+            <stock biltegi="3">181</stock>
+            <stock biltegi="5">157</stock>
+            <stock biltegi="6">145</stock>
+            <stock biltegi="7">133</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="243">
+        <izena>Intel Xeon E5-2643 V4 (OEM/Tray)</izena>
+        <deskribapena>Speed:3.4GHz,Cores:6,TDP:135W</deskribapena>
+        <balioa>1225,59</balioa>
+        <salneurria>1708,86</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">121</stock>
+            <stock biltegi="9">109</stock>
+            <stock biltegi="3">181</stock>
+            <stock biltegi="5">157</stock>
+            <stock biltegi="6">145</stock>
+            <stock biltegi="7">133</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="19">
+        <izena>Intel Core i7-6950X (OEM/Tray)</izena>
+        <deskribapena>Speed:3.0GHz,Cores:10,TDP:140W</deskribapena>
+        <balioa>1479,56</balioa>
+        <salneurria>1704,37</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">3</stock>
+            <stock biltegi="2">101</stock>
+            <stock biltegi="4">71</stock>
+            <stock biltegi="6">35</stock>
+            <stock biltegi="8">54</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="52">
+        <izena>Intel Xeon E5-2670 V3</izena>
+        <deskribapena>Speed:2.3GHz,Cores:12,TDP:120W</deskribapena>
+        <balioa>1453,94</balioa>
+        <salneurria>1676,98</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="165">
+        <izena>Intel Xeon E5-2680</izena>
+        <deskribapena>Speed:2.7GHz,Cores:8,TDP:130W</deskribapena>
+        <balioa>1479,95</balioa>
+        <salneurria>1666,61</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="212">
+        <izena>Intel Xeon E5-2680 V4</izena>
+        <deskribapena>Speed:2.4GHz,Cores:14,TDP:120W</deskribapena>
+        <balioa>1365,13</balioa>
+        <salneurria>1639,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">123</stock>
+            <stock biltegi="9">111</stock>
+            <stock biltegi="2">195</stock>
+            <stock biltegi="4">171</stock>
+            <stock biltegi="6">147</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="166">
+        <izena>Intel Xeon E5-2680 V3 (OEM/Tray)</izena>
+        <deskribapena>Speed:2.5GHz,Cores:12,TDP:120W</deskribapena>
+        <balioa>1166,89</balioa>
+        <salneurria>1638,89</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="9">54</stock>
+            <stock biltegi="2">138</stock>
+            <stock biltegi="4">114</stock>
+            <stock biltegi="6">90</stock>
+            <stock biltegi="8">66</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="82">
+        <izena>Intel Core i7-6950X</izena>
+        <deskribapena>Speed:3.0GHz,Cores:10,TDP:140W</deskribapena>
+        <balioa>1052,92</balioa>
+        <salneurria>1499,89</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="213">
+        <izena>Intel Xeon E5-2643 V3 (OEM/Tray)</izena>
+        <deskribapena>Speed:3.4GHz,Cores:6,TDP:135W</deskribapena>
+        <balioa>1266,37</balioa>
+        <salneurria>1469,96</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="218">
+        <izena>Intel Xeon E5-2660 V4</izena>
+        <deskribapena>Speed:2.0GHz,Cores:14,TDP:105W</deskribapena>
+        <balioa>1194,03</balioa>
+        <salneurria>1388,89</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario>
+            <stock biltegi="8">126</stock>
+            <stock biltegi="9">114</stock>
+            <stock biltegi="2">198</stock>
+            <stock biltegi="4">174</stock>
+            <stock biltegi="6">150</stock>
+        </inbentario>
+    </produktua>
+    <produktua id="219">
+        <izena>Intel Xeon E5-2660 V3</izena>
+        <deskribapena>Speed:2.6GHz,Cores:10,TDP:105W</deskribapena>
+        <balioa>1041,99</balioa>
+        <salneurria>1299,73</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="85">
+        <izena>Intel Xeon E5-2660 V3 (OEM/Tray)</izena>
+        <deskribapena>Speed:2.6GHz,Cores:10,TDP:105W</deskribapena>
+        <balioa>902,18</balioa>
+        <salneurria>1274,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="153">
+        <izena>Intel Xeon E5-2650 V2</izena>
+        <deskribapena>Speed:2.6GHz,Cores:8,TDP:95W</deskribapena>
+        <balioa>961,11</balioa>
+        <salneurria>1249</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="154">
+        <izena>Intel Xeon E5-2650 V3</izena>
+        <deskribapena>Speed:2.3GHz,Cores:10,TDP:105W</deskribapena>
+        <balioa>906,63</balioa>
+        <salneurria>1204,98</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="209">
+        <izena>Intel Core i7-990X Extreme Edition</izena>
+        <deskribapena>Speed:3.47GHz,Cores:6,TDP:130W</deskribapena>
+        <balioa>1072,79</balioa>
+        <salneurria>1199,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+    <produktua id="81">
+        <izena>Intel Xeon E5-2650 V4</izena>
+        <deskribapena>Speed:2.2GHz,Cores:12,TDP:105W</deskribapena>
+        <balioa>945,11</balioa>
+        <salneurria>1099,99</salneurria>
+        <id_kategoria>1</id_kategoria>
+        <inbentario />
+    </produktua>
+</produktuak>

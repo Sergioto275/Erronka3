@@ -1,0 +1,106 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img {
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+.shadow {
+    box-shadow: 0px 0px 0.5em 0px rgba(0,0,0,0.2);
+}
+
+.bullet {
+    border-radius: 20px;
+    height: 20px;
+    color: white;
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+.yellow-bullet {
+    background: orange;
+}
+
+.red-bullet {
+    background: red;
+}
+
+.shipped-bullet {
+    background: green;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.user {
+    flex: 1;
+    padding: 0.5em;
+}
+
+.user .header {
+    background-color: #95A5A6;                                          
+    color: #EEE;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 0.5em 1em;
+    margin-top: 0;
+}
+
+.employee {
+    margin-right: 1em;
+}
+
+.text-muted {
+    font-size: 0.8em;
+    color: gray;
+    margin: 0 0.5em;
+}
+
+ul.table-items {
+    padding: 0;
+} 
+
+ul.table-items li {
+    border-radius: 3px;
+    padding: 0.5em 1em;
+    margin-bottom: 0.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.table-items li.table-header {
+    background-color: #95A5A6;                                          
+    color: #EEE;
+    font-weight: bold;
+}
+
+ul.table-items .col-name {
+    flex-basis: 50%;
+}
+ul.table-items .col-category {
+    flex-basis: 10%;
+}
+
+ul.table-items .col-price {
+    flex-basis: 10%;
+    text-align: center;
+}
+
+ul.table-items .col-amount {
+    flex-basis: 10%;
+    text-align: center;
+}
+
+ul.table-items .col-total {
+    flex-basis: 10%;
+}
+
+ul.table-items .col-op {
+    flex-basis: 5%;
+    text-align: center;
+    color: gray;
+}
