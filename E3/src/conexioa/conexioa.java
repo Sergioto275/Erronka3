@@ -1,11 +1,13 @@
 package conexioa;
 
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 import javax.swing.*;
 
 import DB.*;
+import oracle.sql.ArrayDescriptor;
 
 public class conexioa{
       private Connection c;
@@ -730,5 +732,26 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-
+// FUNTZIOEI ETA PROZEDUREN DEIAK ---------------------------------------------------------------------------------------------------------------------------------
+      public String[] updateProd() {
+    	  String[] deskontuak = null;;
+    	  try{
+    		  ArrayDescriptor des = ArrayDescriptor.createDescriptor("LISTAMAXIMO", c);
+    		  CallableStatement call = this.c.prepareCall("{call DESKONTUA(?)}"); 
+              call.registerOutParameter(1, oracle.jdbc.OracleTypes.ARRAY,"LISTAMAXIMO");
+              call.execute();
+              Array arr = call.getArray(1);
+              if (arr != null) {
+            	  deskontuak = (String[]) arr.getArray();
+              }
+              this.c.close();
+          }catch(SQLException e) {
+              System.out.println("Errorea "+ e);
+          }
+    	  return deskontuak;
+      }
+      
+      public void deskontuak() {
+    	  
+      }
 }

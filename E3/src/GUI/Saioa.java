@@ -18,6 +18,7 @@ public class Saioa extends JDialog {
 	private JTextField txtErabil;
 	private JPasswordField passwordField;
 	private Saltzailea s;
+	private boolean vis;
 
 	/**
 	 * Launch the application.
@@ -62,6 +63,7 @@ public class Saioa extends JDialog {
 		
 		passwordField = new JPasswordField();
 		passwordField.setBounds(120, 157, 229, 26);
+    	passwordField.setEchoChar('*');
 		panel.add(passwordField);
 		ImageIcon ap1 = new ImageIcon("imagenes\\apagar1.png");
 		ImageIcon ap2 = new ImageIcon("imagenes\\apagar2.png");
@@ -116,11 +118,22 @@ public class Saioa extends JDialog {
 		bAmaitu.setBorder(new EmptyBorder(0, 0, 0, 0));
 		bAmaitu.setBounds(0, 199, 106, 83);
 		panel.add(bAmaitu);
-		
+		vis = false;
 		JButton visible = new JButton("New button");
+		visible.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (!vis) {
+					passwordField.setEchoChar((char) 0);
+					vis = true;
+	            } else {
+	            	passwordField.setEchoChar('*');
+	            	vis =false;
+	            }
+			}
+		});
+	
 		visible.setBounds(359, 159, 21, 23);
 		panel.add(visible);
-		visible.addActionListener(e -> passwordField.setVisible(true));
 		setVisible(true);
 	}
 }
