@@ -1,21 +1,40 @@
 package conexioa;
 
+/**
+ * Behar ditugun import conexioa egiteko
+ */
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Arrays;
-
 import javax.swing.*;
-
 import DB.*;
 import oracle.sql.ArrayDescriptor;
+
+/**
+ * conexioa Klasea
+ * @author ikasle
+ * @version 05/05
+ */
 
 public class conexioa{
       private Connection c;
       private String url;
       private String erabiltzailea;
       private String pasahitza;
+      
+      /**
+       * Defektuzko eraikitzailea
+       */
 
       public conexioa(){}
+      
+      /**
+       * Parametroekin eraikitzailea
+       * @param url
+       * @param erabiltzailea
+       * @param pasahitza
+       */
 
       public conexioa(String url, String erabiltzailea, String pasahitza){
          this.url = url;
@@ -28,7 +47,14 @@ public class conexioa{
             JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
          }
       }
+      
 //ERABILTZAILEA ----------------------------------------------------------------------------------------------------------------------------------------------
+      /**
+       * Saltzaile mota funtzioa
+       * @param erab
+       * @return saltzailea
+       */
+      
       public Saltzailea erabiltzaileKontsulta(String erab) {
     	  Saltzailea s = null;
     	  try {
@@ -48,6 +74,11 @@ public class conexioa{
     	  return s;
       }
 //BEZEROAK ----------------------------------------------------------------------------------------------------------------------------------------------
+      /**
+       * BezeroDB mota funtzioa
+       * @return bezeroen arraya
+       */
+      
       public BezeroDB bezeroKontsulta() {
     	  BezeroDB bdb = new BezeroDB();
     	  try {
@@ -67,6 +98,16 @@ public class conexioa{
     	  }
     	  return bdb;
       }
+      
+      /**
+       * Bezeroak txertatzeko funtzioa
+       * @param id
+       * @param izena
+       * @param abizena
+       * @param email
+       * @param helbidea
+       * @param telefonoa
+       */
 
       public void bezeroInsert(int id, String izena, String abizena, String email, String helbidea, String telefonoa) {
     	  try {
@@ -91,6 +132,16 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
+      
+      /**
+       * Bezeroen ezaugarriak aldatzeko funtzioa
+       * @param id
+       * @param izena
+       * @param abizena
+       * @param email
+       * @param helbidea
+       * @param telefonoa
+       */
 
       public void bezeroUpdate(int id, String izena, String abizena, String email, String helbidea, String telefonoa) {
     	  try {
@@ -115,6 +166,11 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
+      
+      /**
+       * Bezeroak ezabatzeko funtzioa
+       * @param id
+       */
 
       public void bezeroDelete(int id) {
     	  try {
@@ -130,7 +186,11 @@ public class conexioa{
     	  }
       }
 //PRODUKTUAK ----------------------------------------------------------------------------------------------------------------------------------------------
-
+      
+      /**
+       * Produktuak bueltatzeko funtzioa
+       * @return produktuen arraya
+       */
       public ProduktuDB produktuKontsulta() {
     	  ProduktuDB pdb = new ProduktuDB();
     	  try {
