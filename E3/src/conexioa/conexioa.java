@@ -1025,6 +1025,12 @@ public class conexioa{
       }
 
 // FUNTZIOEI ETA PROZEDUREN DEIAK ---------------------------------------------------------------------------------------------------------------------------------
+      
+      /**
+       * Deskontuak egiteko funtzioa String motakoa
+       * @return deskontuak
+       */
+      
       public String[] deskontuak() {
     	  String[] deskontuak = null;;
     	  try{
@@ -1042,6 +1048,11 @@ public class conexioa{
           }
     	  return deskontuak;
       }
+      
+      /**
+       * Produktuen prezioak eguneratzeko funtzioa
+       * @param datuak
+       */
 
       public void updateProd(String datuak) {
     	  try{
