@@ -20,7 +20,7 @@ import java.awt.Image;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class saltzaileTxertatuGUI extends JDialog {
+public class SaltzaileTxertatuGUI extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
 	private JTextField tId;
@@ -39,7 +39,7 @@ public class saltzaileTxertatuGUI extends JDialog {
 	 */
 	public static void main(String[] args) {
 		try {
-			saltzaileTxertatuGUI dialog = new saltzaileTxertatuGUI(null);
+			SaltzaileTxertatuGUI dialog = new SaltzaileTxertatuGUI(null);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -48,7 +48,7 @@ public class saltzaileTxertatuGUI extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	public saltzaileTxertatuGUI(DefaultTableModel modelo) {
+	public SaltzaileTxertatuGUI(DefaultTableModel modelo) {
 		setTitle("Saltzaileak Txertatu");
 		setBounds(100, 100, 719, 352);
 		getContentPane().setLayout(new BorderLayout());
@@ -62,61 +62,61 @@ public class saltzaileTxertatuGUI extends JDialog {
 			lblNewLabel.setBounds(184, 11, 304, 45);
 			contentPanel.add(lblNewLabel);
 		}
-		
+
 		JLabel lblId = new JLabel("Id:");
 		lblId.setBounds(41, 97, 54, 33);
 		contentPanel.add(lblId);
-		
+
 		JLabel lblIzena = new JLabel("Izena:");
 		lblIzena.setBounds(184, 91, 54, 39);
 		contentPanel.add(lblIzena);
-		
+
 		JLabel lblAbizena = new JLabel("Abizena:");
 		lblAbizena.setBounds(330, 97, 54, 33);
 		contentPanel.add(lblAbizena);
-		
+
 		JLabel lblEmaila = new JLabel("Emaila:");
 		lblEmaila.setBounds(484, 97, 41, 33);
 		contentPanel.add(lblEmaila);
-		
+
 		JLabel lblKData = new JLabel("Kontratatze Data");
 		lblKData.setBounds(27, 141, 91, 33);
 		contentPanel.add(lblKData);
-		
+
 		JLabel lblTelefonoa = new JLabel("Telefonoa:");
 		lblTelefonoa.setBounds(221, 141, 68, 33);
 		contentPanel.add(lblTelefonoa);
-		
+
 		tId = new JTextField();
 		tId.setBounds(62, 103, 86, 20);
 		contentPanel.add(tId);
 		tId.setColumns(10);
-		
+
 		tIzena = new JTextField();
 		tIzena.setColumns(10);
 		tIzena.setBounds(221, 103, 86, 20);
 		contentPanel.add(tIzena);
-		
+
 		tAbizena = new JTextField();
 		tAbizena.setColumns(10);
 		tAbizena.setBounds(380, 103, 86, 20);
 		contentPanel.add(tAbizena);
-		
+
 		tKData = new JTextField();
 		tKData.setColumns(10);
 		tKData.setBounds(116, 147, 74, 20);
 		contentPanel.add(tKData);
-		
+
 		tEmail = new JTextField();
 		tEmail.setColumns(10);
 		tEmail.setBounds(532, 103, 86, 20);
 		contentPanel.add(tEmail);
-		
+
 		tIdNag = new JTextField();
 		tIdNag.setColumns(10);
 		tIdNag.setBounds(425, 147, 68, 20);
 		contentPanel.add(tIdNag);
-		
+
 		ImageIcon insert1 = new ImageIcon("imagenes\\insertar1.png");
 		ImageIcon insert2 = new ImageIcon("imagenes\\insertar2.png");
 	    insert1 = new ImageIcon(insert1.getImage().getScaledInstance(60,60,Image.SCALE_DEFAULT));
@@ -128,7 +128,7 @@ public class saltzaileTxertatuGUI extends JDialog {
 		bGorde.setRolloverIcon(insert3);
 		bGorde.setPressedIcon(insert2);
 		bGorde.setIcon(insert1);
-		
+
 		bGorde.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
@@ -137,13 +137,13 @@ public class saltzaileTxertatuGUI extends JDialog {
 		            dispose();
 				}catch(Exception ex) {
 					String mensaje = ""+e;
-		            JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
+		            JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
 				}
 			}
 		});
 		bGorde.setBounds(555, 204, 148, 109);
 		contentPanel.add(bGorde);
-		
+
 		ImageIcon at1 = new ImageIcon("imagenes\\atras1.png");
 		ImageIcon at2 = new ImageIcon("imagenes\\atras2.png");
 	    at1 = new ImageIcon(at1.getImage().getScaledInstance(40,40,Image.SCALE_DEFAULT));
@@ -162,38 +162,38 @@ public class saltzaileTxertatuGUI extends JDialog {
 		});
 		bAtzera.setBounds(0, 222, 103, 80);
 		contentPanel.add(bAtzera);
-		
+
 		JLabel lblIdNagusi = new JLabel("Id Nagusi");
 		lblIdNagusi.setBounds(365, 141, 54, 33);
 		contentPanel.add(lblIdNagusi);
-		
+
 		JLabel lblSoldata = new JLabel("Soldata");
 		lblSoldata.setBounds(504, 141, 54, 33);
 		contentPanel.add(lblSoldata);
-		
+
 		JLabel lblErabiltzailea = new JLabel("Erabiltzailea");
 		lblErabiltzailea.setBounds(184, 185, 68, 33);
 		contentPanel.add(lblErabiltzailea);
-		
+
 		JLabel lblPasahitza = new JLabel("Pasahitza");
 		lblPasahitza.setBounds(335, 185, 54, 33);
 		contentPanel.add(lblPasahitza);
-		
+
 		tTelefono = new JTextField();
 		tTelefono.setColumns(10);
 		tTelefono.setBounds(281, 147, 74, 20);
 		contentPanel.add(tTelefono);
-		
+
 		tSoldata = new JTextField();
 		tSoldata.setColumns(10);
 		tSoldata.setBounds(544, 147, 74, 20);
 		contentPanel.add(tSoldata);
-		
+
 		tErabil = new JTextField();
 		tErabil.setColumns(10);
 		tErabil.setBounds(251, 191, 74, 20);
 		contentPanel.add(tErabil);
-		
+
 		tPasahitza = new JTextField();
 		tPasahitza.setColumns(10);
 		tPasahitza.setBounds(388, 191, 74, 20);
