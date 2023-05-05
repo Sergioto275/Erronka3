@@ -1056,8 +1056,10 @@ public class conexioa{
             	  deskontuak = (String[]) arr.getArray();
               }
               this.c.close();
+	          JOptionPane.showMessageDialog(null,"Deskontu ticket-ak sortu dira","TXERTAKETA",JOptionPane.INFORMATION_MESSAGE);
           }catch(SQLException e) {
-              System.out.println("Errorea "+ e);
+              String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
           }
     	  return deskontuak;
       }
@@ -1073,8 +1075,9 @@ public class conexioa{
        		  call.setString(1,datuak);
               call.execute();
               this.c.close();
+	          JOptionPane.showMessageDialog(null,"Produktuak eguneratu dira","TXERTAKETA",JOptionPane.INFORMATION_MESSAGE);
           }catch(SQLException e) {
-              System.out.println("Errorea "+ e);
-          }
+        	  String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);          }
       }
 }
