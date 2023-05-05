@@ -7,6 +7,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/ikasle/eclipse/java-2022-09/eclipse/plugins/ojdbc8.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ikasle/eclipse/java-2022-09/eclipse/plugins/jcalendar-1.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
