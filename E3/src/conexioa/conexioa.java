@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import javax.swing.*;
 import DB.*;
-import oracle.sql.ArrayDescriptor;
 
 /**
  * conexioa Klasea
@@ -22,13 +21,13 @@ public class conexioa{
       private String url;
       private String erabiltzailea;
       private String pasahitza;
-      
+
       /**
        * Defektuzko eraikitzailea
        */
 
       public conexioa(){}
-      
+
       /**
        * Parametroekin eraikitzailea
        * @param url
@@ -47,14 +46,14 @@ public class conexioa{
             JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
          }
       }
-      
+
 //ERABILTZAILEA ----------------------------------------------------------------------------------------------------------------------------------------------
       /**
        * Saltzaile mota funtzioa
        * @param erab
        * @return saltzailea
        */
-      
+
       public Saltzailea erabiltzaileKontsulta(String erab) {
     	  Saltzailea s = null;
     	  try {
@@ -78,7 +77,7 @@ public class conexioa{
        * BezeroDB mota funtzioa
        * @return bezeroen arraya
        */
-      
+
       public BezeroDB bezeroKontsulta() {
     	  BezeroDB bdb = new BezeroDB();
     	  try {
@@ -98,7 +97,7 @@ public class conexioa{
     	  }
     	  return bdb;
       }
-      
+
       /**
        * Bezeroak txertatzeko funtzioa
        * @param id
@@ -132,7 +131,7 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       /**
        * Bezeroen ezaugarriak aldatzeko funtzioa
        * @param id
@@ -166,7 +165,7 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       /**
        * Bezeroak ezabatzeko funtzioa
        * @param id
@@ -186,7 +185,7 @@ public class conexioa{
     	  }
       }
 //PRODUKTUAK ----------------------------------------------------------------------------------------------------------------------------------------------
-      
+
       /**
        * Produktuak bueltatzeko funtzioa
        * @return produktuen arraya
@@ -210,7 +209,7 @@ public class conexioa{
     	  }
     	  return pdb;
       }
-      
+
       /**
        * Inbentarioan dauden produktuak kontsultatzeko funtzioa
        * @param idProd
@@ -237,7 +236,7 @@ public class conexioa{
     	  }
     	  return i;
       }
-      
+
       /**
        * Produktuen kategoria kontsultatzeko funtzioa
        * @return arraya String
@@ -262,7 +261,7 @@ public class conexioa{
     	  }
     	  return i;
       }
-      
+
       /**
        * Produktuak ezabatzeko funtzioa
        * @param id
@@ -281,7 +280,7 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       /**
        * Produktuak aldatzeko funtzioa
        * @param id
@@ -310,7 +309,7 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       /**
        * Produktuak txertatzeko funtzioa
        * @param id
@@ -339,7 +338,7 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       /**
        * Inbentarioa ezabatzeko funtzioa
        * @param idProd
@@ -360,7 +359,7 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       /**
        * Inbentarioa aldatzeko funtzioa
        * @param kopurua
@@ -383,7 +382,7 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       /**
        * Inbentarioa txertatzeko funtzioa
        * @param kopurua
@@ -413,12 +412,12 @@ public class conexioa{
       }
 
 //ESKARIAK ----------------------------------------------------------------------------------------------------------------------------------------------
-      
+
       /**
        * EskariDB motako funtzioa eskariak kontsultatzeko
        * @return eskarien arraya
        */
-      
+
       public EskariDB eskariKontsulta() {
     	  EskariDB edb = new EskariDB();
     	  try {
@@ -438,7 +437,7 @@ public class conexioa{
     	  }
     	  return edb;
       }
-      
+
       /**
        * Eskari infoirmazio array mota kontsultatzeko funtzioa
        * @param idEsk
@@ -465,7 +464,7 @@ public class conexioa{
     	  }
     	  return esk;
       }
-      
+
       /**
        * Eskariak ezabatzeko funtzioa
        * @param id
@@ -484,7 +483,7 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       /**
        * Eskariak aldatzeko funtzioa parametroekin
        * @param id
@@ -511,7 +510,7 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       /**
        * Eskariak txertatzeko funtzioa
        * @param id
@@ -538,7 +537,7 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       /**
        * Eskari arraya string mota kontsultatzeko funtzioa
        * @return eskaria
@@ -563,7 +562,7 @@ public class conexioa{
     	  }
     	  return i;
       }
-      
+
       /**
        * Eskarien informazioa exabatzeko funtzioa
        * @param idEsk
@@ -584,7 +583,7 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       /**
        * Eskarien informazioa aldatzeko funtzioa
        * @param idEsk
@@ -611,14 +610,14 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
 // SALTZAILEAK ------------------------------------------------------------------------------------------------------------------------------------------------------
-      
+
       /**
        * SaltzaileDB array mota saltzaileak kontsultatzeko funtzioa
        * @return saltzaileen arraya
        */
-      
+
       public SaltzaileDB saltzaileakKontsulta() {
     	  SaltzaileDB sdb = new SaltzaileDB();
     	  try {
@@ -638,7 +637,7 @@ public class conexioa{
     	  }
     	  return sdb;
       }
-      
+
 
       /**
        * Saltzaileak txertatzeko funtzioa
@@ -653,7 +652,7 @@ public class conexioa{
        * @param erabiltzailea
        * @param pasahitza
        */
-      
+
       public void saltzaileInsert(int id, String izena, String abizena, String email, String k_data, String telefonoa, int id_nagusia,double soldata, String erabiltzailea, String pasahitza) {
     	  try {
     		  String Kontsulta = "INSERT INTO LANGILE VALUES (?,?,?,?,?,TO_DATE(?,'YYYY/MM/DD'),?,?)";
@@ -681,7 +680,7 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       /**
        * Saltzaileak aldatzeko funtzioa
        * @param id
@@ -723,7 +722,7 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       /**
        * Saltzaileak ezabatzeko funtzioa
        * @param id
@@ -742,14 +741,14 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
 // BULEGARIAK ------------------------------------------------------------------------------------------------------------------------------------------------------
-      
+
       /**
        * BulegariDB motako funtzioa konstultatzeko
        * @return bulegarien arraya
        */
-      
+
       public BulegariaDB bulegariKontsulta() {
     	  BulegariaDB bdb = new BulegariaDB();
     	  try {
@@ -769,7 +768,7 @@ public class conexioa{
     	  }
     	  return bdb;
       }
-      
+
       /**
        * Bulegariak txertatzeko funtzioa
        * @param id
@@ -809,7 +808,7 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       /**
        * Bulegariak aldatzeko funtzioa
        * @param id
@@ -849,7 +848,7 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       /**
        * Bulegariak ezabatzeko funtzioa
        * @param id
@@ -868,14 +867,14 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
 // BILTEGIAK ------------------------------------------------------------------------------------------------------------------------------------------------------
-      
+
       /**
        * BiltegiDB motako funtzioa biltegiak kontsultatzeko
        * @return biltegien arraya
        */
-      
+
       public BiltegiDB biltegiKontsulta() {
     	  BiltegiDB bdb = new BiltegiDB();
     	  try {
@@ -895,7 +894,7 @@ public class conexioa{
     	  }
     	  return bdb;
       }
-      
+
       /**
        * Biltegiak txertatzeko funtzioa
        * @param id
@@ -950,7 +949,7 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       /**
        * Biltegiak aldatzeko funtzioa
        * @param id
@@ -1005,7 +1004,7 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
       /**
        * Biltegiak ezabatzeko funtzioa
        * @param id
@@ -1024,15 +1023,13 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
-      
+
 // FUNTZIOEI ETA PROZEDUREN DEIAK ---------------------------------------------------------------------------------------------------------------------------------
-      
-      
-      public String[] updateProd() {
+      public String[] deskontuak() {
     	  String[] deskontuak = null;;
     	  try{
-    		  ArrayDescriptor des = ArrayDescriptor.createDescriptor("LISTAMAXIMO", c);
-    		  CallableStatement call = this.c.prepareCall("{call DESKONTUA(?)}"); 
+    		  //ArrayDescriptor des = ArrayDescriptor.createDescriptor("LISTAMAXIMO", c);
+    		  CallableStatement call = this.c.prepareCall("{call DESKONTUA(?)}");
               call.registerOutParameter(1, oracle.jdbc.OracleTypes.ARRAY,"LISTAMAXIMO");
               call.execute();
               Array arr = call.getArray(1);
@@ -1045,8 +1042,15 @@ public class conexioa{
           }
     	  return deskontuak;
       }
-      
-      public void deskontuak() {
-    	  
+
+      public void updateProd(String datuak) {
+    	  try{
+    		  CallableStatement call = this.c.prepareCall("{call UPDATEPROD(?)}");
+       		  call.setString(1,datuak);
+              call.execute();
+              this.c.close();
+          }catch(SQLException e) {
+              System.out.println("Errorea "+ e);
+          }
       }
 }
