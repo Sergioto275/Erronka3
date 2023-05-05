@@ -56,7 +56,7 @@ public class bulegariTxertatuGUI extends JDialog {
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
 		contentPanel.setLayout(null);
 		{
-			JLabel lblNewLabel = new JLabel("BULEGARIA BERRIA");
+			JLabel lblNewLabel = new JLabel("BULEGARI BERRIA");
 			lblNewLabel.setFont(new Font("Comic Sans MS", Font.BOLD | Font.ITALIC, 30));
 			lblNewLabel.setBounds(184, 11, 304, 45);
 			contentPanel.add(lblNewLabel);

@@ -128,7 +128,7 @@ public class EskariGUI extends JDialog {
 						int id_bez = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 1));
 						int id_saltzaile = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 3));
 						String data = (String)(table.getValueAt(table.getSelectedRow(), 4).toString());
-						String deskribapena = (String)(table.getValueAt(table.getSelectedRow(), 4).toString());
+						String deskribapena = (String)(table.getValueAt(table.getSelectedRow(), 2).toString());
 						c.eskariUpdate(id,id_bez,id_saltzaile,data,deskribapena);
 			            JOptionPane.showMessageDialog(null,"Hilara eguneratu da","EGUNERAKETA",JOptionPane.INFORMATION_MESSAGE);
 					}catch(Exception ex) {

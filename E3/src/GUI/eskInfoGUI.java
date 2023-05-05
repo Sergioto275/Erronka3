@@ -78,24 +78,25 @@ public class eskInfoGUI extends JDialog {
 		bAtzera.setBounds(740, 362, 112, 86);
 		contentPanel.add(bAtzera);
 		
-		JLabel lblProduktu = new JLabel("Produktuak");
+		JLabel lblProduktu = new JLabel("Eskari Informazioa");
 		lblProduktu.setFont(new Font("Comic Sans MS", Font.BOLD, 30));
-		lblProduktu.setBounds(361, 11, 167, 65);
+		lblProduktu.setBounds(280, 21, 288, 65);
 		contentPanel.add(lblProduktu);
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(81, 108, 715, 207);
 		contentPanel.add(scrollPane);
 		
-		modelo = new DefaultTableModel(null,new String[] {"ID","ID_PRODUKTU","KOPURUA","SALNEURRIA"," ", "   "}) {
+		modelo = new DefaultTableModel(null,new String[] {"ID","ID_PRODUKTU","KOPURUA","SALNEURRIA","  "," ", "   "}) {
 			boolean[] columnEditables = new boolean[] {
-				false, true, true, true, false, false
+				false, true, true, true, false, false, false
 			};
 			public boolean isCellEditable(int row, int column) {
 				return columnEditables[column];
 			}};
 		table = new DTable();
 		table.setRowHeight(25);
+		//table.getColumnModel().getColumn(4).setPreferredWidth(20);
 		taulaInfo();
 		table.setModel(modelo);
 		scrollPane.setViewportView(table);
@@ -127,6 +128,11 @@ public class eskInfoGUI extends JDialog {
 							String mensaje = ""+e;
 				            JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
 						}
+					}else {
+						if(table.getColumnName(table.getSelectedColumn()).equals("  ")) {
+							int index = (int)(table.getValueAt(table.getSelectedRow(), 1));
+							InbentarioGUI inb = new InbentarioGUI(index);
+						}
 					}
 				}
 			}
@@ -138,7 +144,7 @@ public class eskInfoGUI extends JDialog {
 		conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 		edb = c.eskariKontsulta();
 		for(int i=0;i<edb.getEskariList()[this.eskId].getProduktu_kop().length;i++) {
-			modelo.addRow(new Object[] {edb.getEskariList()[this.eskId].getProduktu_kop()[i].getId(),edb.getEskariList()[this.eskId].getProduktu_kop()[i].getIdProd(),edb.getEskariList()[this.eskId].getProduktu_kop()[i].getKopurua(),edb.getEskariList()[this.eskId].getProduktu_kop()[i].getSalneurria(),null,null});
+			modelo.addRow(new Object[] {edb.getEskariList()[this.eskId].getProduktu_kop()[i].getId(),edb.getEskariList()[this.eskId].getProduktu_kop()[i].getIdProd(),edb.getEskariList()[this.eskId].getProduktu_kop()[i].getKopurua(),edb.getEskariList()[this.eskId].getProduktu_kop()[i].getSalneurria(),null,null,null});
 		}
 	}
 }

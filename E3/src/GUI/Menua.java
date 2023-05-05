@@ -126,17 +126,17 @@ public class Menua extends JFrame {
 			}
 		});
 		bItxi.setBorder(new EmptyBorder(0, 0, 0, 0));
-		bItxi.setBounds(531, 245, 91, 98);
+		bItxi.setBounds(555, 271, 91, 98);
 		contentPane.add(bItxi);
 		
 		JButton bDeskontua = new JButton("Deskontuak Imprimatu");
 		bDeskontua.addActionListener(e -> deskontuak_imprimatu());
-		bDeskontua.setFont(new Font("Matura MT Script Capitals", Font.BOLD | Font.ITALIC, 25));
+		bDeskontua.setFont(new Font("Segoe UI", Font.PLAIN, 25));
 		bDeskontua.setBounds(121, 66, 397, 75);
 		contentPane.add(bDeskontua);
 		
 		JButton bPrezioEguneraketa = new JButton("Prezio Eguneraketa");
-		bPrezioEguneraketa.setFont(new Font("Matura MT Script Capitals", Font.BOLD | Font.ITALIC, 25));
+		bPrezioEguneraketa.setFont(new Font("Segoe UI", Font.PLAIN, 25));
 		bPrezioEguneraketa.addActionListener(e -> new produktuak_Eguneratu());
 		bPrezioEguneraketa.setBounds(121, 180, 400, 87);
 		contentPane.add(bPrezioEguneraketa);

@@ -111,9 +111,9 @@ public class BulegariGUI extends JDialog {
 		});
 		scrollPane.setViewportView(table);
 		table.setModel(modelo);
-		JLabel lBezero = new JLabel("Bezeroak");
+		JLabel lBezero = new JLabel("Bulegariak");
 		lBezero.setFont(new Font("Times New Roman", Font.BOLD, 30));
-		lBezero.setBounds(364, 11, 132, 48);
+		lBezero.setBounds(349, 11, 178, 48);
 		contentPanel.add(lBezero);
 		
 		ImageIcon at1 = new ImageIcon("imagenes\\atras1.png");
