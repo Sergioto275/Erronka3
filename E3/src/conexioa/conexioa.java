@@ -7,7 +7,6 @@ import java.util.Arrays;
 import javax.swing.*;
 
 import DB.*;
-import oracle.sql.ArrayDescriptor;
 
 public class conexioa{
       private Connection c;
@@ -733,10 +732,10 @@ public class conexioa{
     	  }
       }
 // FUNTZIOEI ETA PROZEDUREN DEIAK ---------------------------------------------------------------------------------------------------------------------------------
-      public String[] updateProd() {
+      public String[] deskontuak() {
     	  String[] deskontuak = null;;
     	  try{
-    		  ArrayDescriptor des = ArrayDescriptor.createDescriptor("LISTAMAXIMO", c);
+    		  //ArrayDescriptor des = ArrayDescriptor.createDescriptor("LISTAMAXIMO", c);
     		  CallableStatement call = this.c.prepareCall("{call DESKONTUA(?)}"); 
               call.registerOutParameter(1, oracle.jdbc.OracleTypes.ARRAY,"LISTAMAXIMO");
               call.execute();
@@ -751,7 +750,14 @@ public class conexioa{
     	  return deskontuak;
       }
       
-      public void deskontuak() {
-    	  
+      public void updateProd(String datuak) {
+    	  try{
+    		  CallableStatement call = this.c.prepareCall("{call UPDATEPROD(?)}"); 
+       		  call.setString(1,datuak);
+              call.execute();
+              this.c.close();
+          }catch(SQLException e) {
+              System.out.println("Errorea "+ e);
+          }
       }
 }
