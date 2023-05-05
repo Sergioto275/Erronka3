@@ -136,7 +136,7 @@ public class Menua extends JFrame {
 		
 		JButton bPrezioEguneraketa = new JButton("Prezio Eguneraketa");
 		bPrezioEguneraketa.setFont(new Font("Matura MT Script Capitals", Font.BOLD | Font.ITALIC, 25));
-		bPrezioEguneraketa.addActionListener(e -> update_produktuak());
+		bPrezioEguneraketa.addActionListener(e -> new produktuak_Eguneratu());
 		bPrezioEguneraketa.setBounds(121, 180, 400, 87);
 		contentPane.add(bPrezioEguneraketa);
 		setVisible(true);
@@ -172,15 +172,6 @@ public class Menua extends JFrame {
 					System.out.println("ERROREA");
 				}
 			}
-		}catch(Exception ex) {
-			System.out.println("NO FURRULA ");
-		}
-	}
-	
-	public void update_produktuak() {
-		try {
-			conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
-			c.updateProd();
 		}catch(Exception ex) {
 			System.out.println("NO FURRULA ");
 		}
