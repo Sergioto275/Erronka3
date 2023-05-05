@@ -34,10 +34,6 @@ public class InbentarioGUI extends JDialog {
 	private ProduktuDB pdb;
 	private int prodId;
 
-	/**
-	 * Launch the application.
-	 */
-
 
 	/**
 	 * Create the dialog.

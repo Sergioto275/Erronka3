@@ -35,18 +35,6 @@ public class BiltegiGUI extends JDialog {
 	private DefaultTableModel modelo;
 
 	/**
-	 * Launch the application.
-	 */
-	
-	public static void main(String[] args) {
-		try {
-			BiltegiGUI dialog = new BiltegiGUI();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
 	 * Create the dialog.
 	 */
 	

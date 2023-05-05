@@ -35,17 +35,6 @@ public class EskariGUI extends JDialog {
 	private EskariDB edb;
 
 	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		try {
-			EskariGUI dialog = new EskariGUI();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
 	 * Create the dialog.
 	 */
 	public EskariGUI() {

@@ -31,18 +31,6 @@ public class eskTxertatuGUI extends JDialog {
 	private String[] kat;
 	JComboBox<String> comboBox;
 
-
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		try {
-			eskTxertatuGUI dialog = new eskTxertatuGUI(null);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
 	/**
 	 * Create the dialog.
 	 */

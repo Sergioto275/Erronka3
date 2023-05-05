@@ -31,19 +31,7 @@ public class prodTxertatuGUI extends JDialog {
 	private JTextField tDeskribapena;
 	private String[] kat;
 	JComboBox<String> comboBox;
-
-
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		try {
-			prodTxertatuGUI dialog = new prodTxertatuGUI(null);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
+	
 	/**
 	 * Create the dialog.
 	 */

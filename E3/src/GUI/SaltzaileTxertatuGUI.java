@@ -35,17 +35,6 @@ public class SaltzaileTxertatuGUI extends JDialog {
 	private JTextField tPasahitza;
 
 	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		try {
-			SaltzaileTxertatuGUI dialog = new SaltzaileTxertatuGUI(null);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
 	 * Create the dialog.
 	 */
 	public SaltzaileTxertatuGUI(DefaultTableModel modelo) {

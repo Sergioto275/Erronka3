@@ -27,19 +27,7 @@ public class inbTxertatuGUI extends JDialog {
 	private JTextField tBil;
 	private JTextField tKop;
 	private String[] kat;
-
-
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		try {
-			inbTxertatuGUI dialog = new inbTxertatuGUI(null,0);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
+	
 	/**
 	 * Create the dialog.
 	 */

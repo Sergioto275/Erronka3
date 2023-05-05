@@ -36,11 +36,6 @@ public class eskInfoGUI extends JDialog {
 	private int eskId;
 
 	/**
-	 * Launch the application.
-	 */
-
-
-	/**
 	 * Create the dialog.
 	 */
 	public eskInfoGUI(int id) {

@@ -30,17 +30,6 @@ public class produktuak_Eguneratu extends JDialog {
 
 
 	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		try {
-			produktuak_Eguneratu dialog = new produktuak_Eguneratu();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
 	 * Create the dialog.
 	 */
 	public produktuak_Eguneratu() {

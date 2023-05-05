@@ -36,17 +36,6 @@ public class biltegiTxertatuGUI extends JDialog {
 	private JTextField tId_Kon;
 
 	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		try {
-			biltegiTxertatuGUI dialog = new biltegiTxertatuGUI(null);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
 	 * Create the dialog.
 	 */
 	public biltegiTxertatuGUI(DefaultTableModel modelo) {
@@ -69,15 +58,15 @@ public class biltegiTxertatuGUI extends JDialog {
 		contentPanel.add(lblId);
 		
 		JLabel lblIzena = new JLabel("Izena:");
-		lblIzena.setBounds(184, 91, 54, 39);
+		lblIzena.setBounds(177, 94, 54, 39);
 		contentPanel.add(lblIzena);
 		
 		JLabel lblHerrialde = new JLabel("Herrialde:");
-		lblHerrialde.setBounds(91, 185, 54, 33);
+		lblHerrialde.setBounds(75, 185, 61, 33);
 		contentPanel.add(lblHerrialde);
 		
 		JLabel lblKontinentea = new JLabel("Kontinentea:");
-		lblKontinentea.setBounds(419, 185, 68, 33);
+		lblKontinentea.setBounds(444, 185, 68, 33);
 		contentPanel.add(lblKontinentea);
 		
 		JLabel lblId_Kok = new JLabel("Kokaleku Id:");
@@ -85,15 +74,15 @@ public class biltegiTxertatuGUI extends JDialog {
 		contentPanel.add(lblId_Kok);
 		
 		JLabel lblProbintzia = new JLabel("Probintzia:");
-		lblProbintzia.setBounds(341, 141, 68, 33);
+		lblProbintzia.setBounds(344, 141, 54, 33);
 		contentPanel.add(lblProbintzia);
 		
 		JLabel lblUdalerria = new JLabel("Udalerria:");
-		lblUdalerria.setBounds(194, 141, 54, 33);
+		lblUdalerria.setBounds(177, 141, 54, 33);
 		contentPanel.add(lblUdalerria);
 		
 		JLabel lblPostakodea = new JLabel("Postakodea:");
-		lblPostakodea.setBounds(30, 141, 68, 33);
+		lblPostakodea.setBounds(10, 141, 82, 33);
 		contentPanel.add(lblPostakodea);
 		
 		tId = new JTextField();
@@ -108,32 +97,32 @@ public class biltegiTxertatuGUI extends JDialog {
 		
 		tId_Kok = new JTextField();
 		tId_Kok.setColumns(10);
-		tId_Kok.setBounds(379, 103, 86, 20);
+		tId_Kok.setBounds(393, 103, 86, 20);
 		contentPanel.add(tId_Kok);
 		
 		tHerrialde = new JTextField();
 		tHerrialde.setColumns(10);
-		tHerrialde.setBounds(143, 191, 77, 20);
+		tHerrialde.setBounds(129, 191, 77, 20);
 		contentPanel.add(tHerrialde);
 		
 		tKontinentea = new JTextField();
 		tKontinentea.setColumns(10);
-		tKontinentea.setBounds(486, 191, 105, 20);
+		tKontinentea.setBounds(522, 191, 105, 20);
 		contentPanel.add(tKontinentea);
 		
 		tProbintzia = new JTextField();
 		tProbintzia.setColumns(10);
-		tProbintzia.setBounds(393, 147, 86, 20);
+		tProbintzia.setBounds(405, 147, 86, 20);
 		contentPanel.add(tProbintzia);
 		
 		tUdalerria = new JTextField();
-		tUdalerria.setBounds(244, 147, 86, 20);
+		tUdalerria.setBounds(241, 147, 86, 20);
 		contentPanel.add(tUdalerria);
 		tUdalerria.setColumns(10);
 		
 		tPostakodea = new JTextField();
 		tPostakodea.setColumns(10);
-		tPostakodea.setBounds(108, 145, 77, 20);
+		tPostakodea.setBounds(93, 147, 77, 20);
 		contentPanel.add(tPostakodea);
 		
 		ImageIcon insert1 = new ImageIcon("imagenes\\insertar1.png");
@@ -189,12 +178,12 @@ public class biltegiTxertatuGUI extends JDialog {
 		
 		tHelbidea = new JTextField();
 		tHelbidea.setColumns(10);
-		tHelbidea.setBounds(539, 103, 86, 20);
+		tHelbidea.setBounds(555, 103, 86, 20);
 		contentPanel.add(tHelbidea);
 		
 		tId_Herri = new JTextField();
 		tId_Herri.setColumns(10);
-		tId_Herri.setBounds(564, 147, 77, 20);
+		tId_Herri.setBounds(576, 147, 77, 20);
 		contentPanel.add(tId_Herri);
 		
 		JLabel lblId_Herrialde = new JLabel("Herrialde Id:");
@@ -203,7 +192,7 @@ public class biltegiTxertatuGUI extends JDialog {
 		
 		tId_Kon = new JTextField();
 		tId_Kon.setColumns(10);
-		tId_Kon.setBounds(304, 191, 105, 20);
+		tId_Kon.setBounds(317, 191, 105, 20);
 		contentPanel.add(tId_Kon);
 		
 		JLabel lblId_Kontinentea = new JLabel("Kontinente Id:");

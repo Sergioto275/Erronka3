@@ -18,10 +18,6 @@ public class Menua extends JFrame {
 
 	private JPanel contentPane;
 	private Saltzailea s;
-	
-	public static void main(String[] args) {
-		Menua m = new Menua(null);
-	}
 
 	/**
 	 * Create the frame.

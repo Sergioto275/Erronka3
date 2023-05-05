@@ -32,17 +32,6 @@ public class bezeroTxertatuGUI extends JDialog {
 	private DefaultTableModel modelo;;
 
 	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		try {
-			bezeroTxertatuGUI dialog = new bezeroTxertatuGUI(null);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
 	 * Create the dialog.
 	 */
 	public bezeroTxertatuGUI(DefaultTableModel modelo) {

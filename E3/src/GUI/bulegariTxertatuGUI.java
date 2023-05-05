@@ -34,17 +34,6 @@ public class bulegariTxertatuGUI extends JDialog {
 	private JTextField tLanpostu;
 
 	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		try {
-			bulegariTxertatuGUI dialog = new bulegariTxertatuGUI(null);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
 	 * Create the dialog.
 	 */
 	public bulegariTxertatuGUI(DefaultTableModel modelo) {

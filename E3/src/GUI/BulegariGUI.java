@@ -36,17 +36,6 @@ public class BulegariGUI extends JDialog {
 	private DefaultTableModel modelo;
 
 	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		try {
-			BulegariGUI dialog = new BulegariGUI();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
 	 * Create the dialog.
 	 */
 	public BulegariGUI() {

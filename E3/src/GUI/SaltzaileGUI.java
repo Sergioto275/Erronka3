@@ -35,17 +35,6 @@ public class SaltzaileGUI extends JDialog {
 	private DefaultTableModel modelo;
 
 	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		try {
-			SaltzaileGUI dialog = new SaltzaileGUI();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
 	 * Create the dialog.
 	 */
 	public SaltzaileGUI() {
