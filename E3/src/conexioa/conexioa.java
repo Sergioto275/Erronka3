@@ -57,7 +57,7 @@ public class conexioa{
       public Saltzailea erabiltzaileKontsulta(String erab) {
     	  Saltzailea s = null;
     	  try {
-    		  String Kontsulta = "SELECT L.IZENA, L.ABIZENA, L.ID, L.EMAILA, L.KONTRATAZIO_DATA, L.TELEFONOA, L.ID_NAGUSI, S.ERABILTZAILEA, S.PASAHITZA FROM LANGILE L, SALTZAILE S WHERE ERABILTZAILEA = ? AND L.ID = S.ID";
+    		  String Kontsulta = "SELECT L.IZENA, L.ABIZENA, L.ID, L.EMAILA, L.KONTRATAZIO_DATA, L.TELEFONOA, L.ID_NAGUSI, L.SOLDATA, S.ERABILTZAILEA, S.PASAHITZA FROM LANGILE L, SALTZAILE S WHERE ERABILTZAILEA = ? AND L.ID = S.ID";
     		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
     		  st.setString(1, erab);
     		  ResultSet rt = st.executeQuery();
