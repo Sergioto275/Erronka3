@@ -1,5 +1,7 @@
 package GUI;
-
+/**
+ * Behar ditugun importak ezarri.
+ */
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.FlowLayout;
@@ -26,6 +28,11 @@ import javax.swing.border.BevelBorder;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+/**
+ * BezeroGUI Klasea
+ * @author ikasle
+ * @version 05/05
+ */
 public class BezeroGUI extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
