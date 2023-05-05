@@ -210,6 +210,12 @@ public class conexioa{
     	  }
     	  return pdb;
       }
+      
+      /**
+       * Inbentarioan dauden produktuak kontsultatzeko funtzioa
+       * @param idProd
+       * @return inbentarioa
+       */
 
       public Inbentario[] produktuInbKontsulta(int idProd) {
     	  Inbentario[] i = new Inbentario[0];
@@ -231,6 +237,11 @@ public class conexioa{
     	  }
     	  return i;
       }
+      
+      /**
+       * Produktuen kategoria kontsultatzeko funtzioa
+       * @return arraya String
+       */
 
       public String[] produktuKatKontsulta() {
     	  String[] i = new String[0];
@@ -251,6 +262,11 @@ public class conexioa{
     	  }
     	  return i;
       }
+      
+      /**
+       * Produktuak ezabatzeko funtzioa
+       * @param id
+       */
 
       public void produktuDelete(int id) {
     	  try {
@@ -265,6 +281,16 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
+      
+      /**
+       * Produktuak aldatzeko funtzioa
+       * @param id
+       * @param izena
+       * @param deskribapena
+       * @param balioa
+       * @param salneurria
+       * @param kategoria
+       */
 
       public void produktuUpdate(int id, String izena, String deskribapena, double balioa, double salneurria, String kategoria) {
     	  try {
@@ -284,6 +310,16 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
+      
+      /**
+       * Produktuak txertatzeko funtzioa
+       * @param id
+       * @param izena
+       * @param deskribapena
+       * @param balioa
+       * @param salneurria
+       * @param kategoria
+       */
 
       public void produktuInsert(int id, String izena, String deskribapena, double balioa, double salneurria, String kategoria) {
     	  try {
@@ -303,6 +339,12 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
+      
+      /**
+       * Inbentarioa ezabatzeko funtzioa
+       * @param idProd
+       * @param idBiltegi
+       */
 
       public void inbentarioDelete(int idProd,int idBiltegi) {
     	  try {
@@ -318,6 +360,13 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
+      
+      /**
+       * Inbentarioa aldatzeko funtzioa
+       * @param kopurua
+       * @param idProd
+       * @param idBiltegi
+       */
 
       public void inbentarioUpdate(int kopurua, int idProd,int idBiltegi) {
     	  try {
@@ -334,6 +383,13 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
+      
+      /**
+       * Inbentarioa txertatzeko funtzioa
+       * @param kopurua
+       * @param idProd
+       * @param idBiltegi
+       */
 
       public void inbentarioInsert(int kopurua, int idProd,int idBiltegi) {
     	  try {
@@ -357,6 +413,12 @@ public class conexioa{
       }
 
 //ESKARIAK ----------------------------------------------------------------------------------------------------------------------------------------------
+      
+      /**
+       * EskariDB motako funtzioa eskariak kontsultatzeko
+       * @return eskarien arraya
+       */
+      
       public EskariDB eskariKontsulta() {
     	  EskariDB edb = new EskariDB();
     	  try {
@@ -376,6 +438,12 @@ public class conexioa{
     	  }
     	  return edb;
       }
+      
+      /**
+       * Eskari infoirmazio array mota kontsultatzeko funtzioa
+       * @param idEsk
+       * @return eskariak
+       */
 
       public Eskari_Info[] eskariInfoKontsulta(int idEsk) {
     	  Eskari_Info[] esk = new Eskari_Info[0];
@@ -397,6 +465,11 @@ public class conexioa{
     	  }
     	  return esk;
       }
+      
+      /**
+       * Eskariak ezabatzeko funtzioa
+       * @param id
+       */
 
       public void eskariDelete(int id) {
     	  try {
@@ -411,6 +484,15 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
+      
+      /**
+       * Eskariak aldatzeko funtzioa parametroekin
+       * @param id
+       * @param id_bez
+       * @param id_saltzaile
+       * @param data
+       * @param deskribapena
+       */
 
       public void eskariUpdate(int id, int id_bez, int id_saltzaile, String data, String deskribapena) {
     	  try {
@@ -429,6 +511,15 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
+      
+      /**
+       * Eskariak txertatzeko funtzioa
+       * @param id
+       * @param id_bez
+       * @param id_saltzaile
+       * @param data
+       * @param deskribapena
+       */
 
       public void eskariInsert(int id, int id_bez, int id_saltzaile, String data, String deskribapena) {
     	  try {
@@ -447,6 +538,11 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
+      
+      /**
+       * Eskari arraya string mota kontsultatzeko funtzioa
+       * @return eskaria
+       */
 
       public String[] eskariEgKontsulta() {
     	  String[] i = new String[0];
@@ -467,6 +563,12 @@ public class conexioa{
     	  }
     	  return i;
       }
+      
+      /**
+       * Eskarien informazioa exabatzeko funtzioa
+       * @param idEsk
+       * @param id
+       */
 
       public void eskariInfoDelete(int idEsk,int id) {
     	  try {
@@ -482,6 +584,15 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
+      
+      /**
+       * Eskarien informazioa aldatzeko funtzioa
+       * @param idEsk
+       * @param id
+       * @param idProd
+       * @param kopurua
+       * @param salneurria
+       */
 
       public void eskariInfoUpdate(int idEsk,int id, int idProd, int kopurua, Double salneurria) {
     	  try {
@@ -500,7 +611,14 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
+      
 // SALTZAILEAK ------------------------------------------------------------------------------------------------------------------------------------------------------
+      
+      /**
+       * SaltzaileDB array mota saltzaileak kontsultatzeko funtzioa
+       * @return saltzaileen arraya
+       */
+      
       public SaltzaileDB saltzaileakKontsulta() {
     	  SaltzaileDB sdb = new SaltzaileDB();
     	  try {
@@ -520,7 +638,22 @@ public class conexioa{
     	  }
     	  return sdb;
       }
+      
 
+      /**
+       * Saltzaileak txertatzeko funtzioa
+       * @param id
+       * @param izena
+       * @param abizena
+       * @param email
+       * @param k_data
+       * @param telefonoa
+       * @param id_nagusia
+       * @param soldata
+       * @param erabiltzailea
+       * @param pasahitza
+       */
+      
       public void saltzaileInsert(int id, String izena, String abizena, String email, String k_data, String telefonoa, int id_nagusia,double soldata, String erabiltzailea, String pasahitza) {
     	  try {
     		  String Kontsulta = "INSERT INTO LANGILE VALUES (?,?,?,?,?,TO_DATE(?,'YYYY/MM/DD'),?,?)";
@@ -548,6 +681,20 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
+      
+      /**
+       * Saltzaileak aldatzeko funtzioa
+       * @param id
+       * @param izena
+       * @param abizena
+       * @param email
+       * @param k_data
+       * @param telefonoa
+       * @param id_nagusia
+       * @param soldata
+       * @param erabiltzailea
+       * @param pasahitza
+       */
 
       public void saltzaileUpdate(int id, String izena, String abizena, String email, String k_data, String telefonoa, int id_nagusia,double soldata, String erabiltzailea, String pasahitza) {
     	  try {
@@ -576,6 +723,11 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
+      
+      /**
+       * Saltzaileak ezabatzeko funtzioa
+       * @param id
+       */
 
       public void saltzaileDelete(int id) {
     	  try {
@@ -590,7 +742,14 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
+      
 // BULEGARIAK ------------------------------------------------------------------------------------------------------------------------------------------------------
+      
+      /**
+       * BulegariDB motako funtzioa konstultatzeko
+       * @return bulegarien arraya
+       */
+      
       public BulegariaDB bulegariKontsulta() {
     	  BulegariaDB bdb = new BulegariaDB();
     	  try {
@@ -610,6 +769,19 @@ public class conexioa{
     	  }
     	  return bdb;
       }
+      
+      /**
+       * Bulegariak txertatzeko funtzioa
+       * @param id
+       * @param izena
+       * @param abizena
+       * @param email
+       * @param k_data
+       * @param telefonoa
+       * @param id_nagusia
+       * @param soldata
+       * @param deskribapena
+       */
 
       public void bulegariInsert(int id, String izena, String abizena, String email, String k_data, String telefonoa, int id_nagusia,double soldata, String deskribapena) {
     	  try {
@@ -637,6 +809,19 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
+      
+      /**
+       * Bulegariak aldatzeko funtzioa
+       * @param id
+       * @param izena
+       * @param abizena
+       * @param email
+       * @param k_data
+       * @param telefonoa
+       * @param id_nagusia
+       * @param soldata
+       * @param deskribapena
+       */
 
       public void bulegariUpdate(int id, String izena, String abizena, String email, String k_data, String telefonoa, int id_nagusia,double soldata, String deskribapena) {
     	  try {
@@ -664,6 +849,11 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
+      
+      /**
+       * Bulegariak ezabatzeko funtzioa
+       * @param id
+       */
 
       public void bulegariDelete(int id) {
     	  try {
@@ -678,7 +868,14 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
+      
 // BILTEGIAK ------------------------------------------------------------------------------------------------------------------------------------------------------
+      
+      /**
+       * BiltegiDB motako funtzioa biltegiak kontsultatzeko
+       * @return biltegien arraya
+       */
+      
       public BiltegiDB biltegiKontsulta() {
     	  BiltegiDB bdb = new BiltegiDB();
     	  try {
@@ -698,6 +895,21 @@ public class conexioa{
     	  }
     	  return bdb;
       }
+      
+      /**
+       * Biltegiak txertatzeko funtzioa
+       * @param id
+       * @param izena
+       * @param helbidea
+       * @param kontinentea
+       * @param herrialde
+       * @param probintzia
+       * @param udalerria
+       * @param postakodea
+       * @param id_kontinente
+       * @param id_herrialde
+       * @param id_kokaleku
+       */
 
       public void biltegiInsert(int id, String izena, String helbidea, String kontinentea, String herrialde, String probintzia,
   			String udalerria, String postakodea, int id_kontinente, String id_herrialde, int id_kokaleku) {
@@ -738,6 +950,21 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
+      
+      /**
+       * Biltegiak aldatzeko funtzioa
+       * @param id
+       * @param izena
+       * @param helbidea
+       * @param kontinentea
+       * @param herrialde
+       * @param probintzia
+       * @param udalerria
+       * @param postakodea
+       * @param id_kontinente
+       * @param id_herrialde
+       * @param id_kokaleku
+       */
 
       public void biltegiUpdate(int id, String izena, String helbidea, String kontinentea, String herrialde, String probintzia,
     			String udalerria, String postakodea, int id_kontinente, String id_herrialde, int id_kokaleku) {
@@ -778,6 +1005,11 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
+      
+      /**
+       * Biltegiak ezabatzeko funtzioa
+       * @param id
+       */
 
       public void biltegiDelete(int id) {
     	  try {
@@ -792,7 +1024,10 @@ public class conexioa{
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
     	  }
       }
+      
 // FUNTZIOEI ETA PROZEDUREN DEIAK ---------------------------------------------------------------------------------------------------------------------------------
+      
+      
       public String[] updateProd() {
     	  String[] deskontuak = null;;
     	  try{
