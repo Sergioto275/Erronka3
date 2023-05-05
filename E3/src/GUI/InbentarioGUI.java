@@ -91,7 +91,7 @@ public class InbentarioGUI extends JDialog {
 		bAtzera.setBounds(740, 362, 112, 86);
 		contentPanel.add(bAtzera);
 		
-		JLabel lblProduktu = new JLabel("Produktuak");
+		JLabel lblProduktu = new JLabel("Inbentario");
 		lblProduktu.setFont(new Font("Comic Sans MS", Font.BOLD, 30));
 		lblProduktu.setBounds(361, 11, 167, 65);
 		contentPanel.add(lblProduktu);
