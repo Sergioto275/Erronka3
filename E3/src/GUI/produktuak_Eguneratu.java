@@ -35,8 +35,6 @@ public class produktuak_Eguneratu extends JDialog {
 	public static void main(String[] args) {
 		try {
 			produktuak_Eguneratu dialog = new produktuak_Eguneratu();
-			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-			dialog.setVisible(true);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -50,6 +48,7 @@ public class produktuak_Eguneratu extends JDialog {
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
+		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 		contentPanel.setLayout(null);
 		{
 			JButton bGehitu = new JButton("Gehitu");
@@ -114,6 +113,8 @@ public class produktuak_Eguneratu extends JDialog {
 		});
 		bEguneratu.setBounds(335, 227, 89, 23);
 		contentPanel.add(bEguneratu);
+		setVisible(true);
+
 	}
 	
 	public void comboBoxKargatu() {
