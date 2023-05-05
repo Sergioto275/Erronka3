@@ -44,7 +44,8 @@ public class produktuak_Eguneratu extends JDialog {
 	 * Create the dialog.
 	 */
 	public produktuak_Eguneratu() {
-		setBounds(100, 100, 450, 300);
+		setTitle("Produktu Prezioa Eguneratu");
+		setBounds(100, 100, 517, 336);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
@@ -56,26 +57,26 @@ public class produktuak_Eguneratu extends JDialog {
 				public void actionPerformed(ActionEvent e) {
 					if(datuak == null) {
 						datuak = ""+comboBox.getItemAt(comboBox.getSelectedIndex())+"|"+deskontuaKalkulatu();
-						String dat = "Kategoria: "+comboBox.getItemAt(comboBox.getSelectedIndex())+" Deskontua: "+deskontua.getValue();
+						String dat = "Kategoria: "+comboBox.getItemAt(comboBox.getSelectedIndex())+" Deskontua: "+deskontua();
 						tInfo.setText(dat);
 					}else {
 						datuak = datuak+"_"+comboBox.getItemAt(comboBox.getSelectedIndex())+"|"+deskontuaKalkulatu();
-						String dat = "Kategoria: "+comboBox.getItemAt(comboBox.getSelectedIndex())+" Deskontua: "+deskontua.getValue();
+						String dat = "Kategoria: "+comboBox.getItemAt(comboBox.getSelectedIndex())+" Deskontua: "+deskontua();
 						tInfo.setText(tInfo.getText()+"\n"+dat);
 					}
 				}
 			});
-			bGehitu.setBounds(318, 92, 89, 23);
+			bGehitu.setBounds(409, 92, 82, 23);
 			contentPanel.add(bGehitu);
 		}
 		
 		tInfo = new JTextField();
-		tInfo.setBounds(10, 121, 414, 95);
+		tInfo.setBounds(10, 126, 481, 126);
 		contentPanel.add(tInfo);
 		tInfo.setColumns(10);
 		
 		tDeskontu = new JTextField();
-		tDeskontu.setBounds(278, 93, 30, 20);
+		tDeskontu.setBounds(345, 93, 58, 20);
 		contentPanel.add(tDeskontu);
 		tDeskontu.setColumns(10);
 		
@@ -85,19 +86,19 @@ public class produktuak_Eguneratu extends JDialog {
 			kat = c.produktuKatKontsulta();
 		}catch(Exception e) {}
 		comboBoxKargatu();
-		comboBox.setBounds(22, 92, 60, 22);
+		comboBox.setBounds(10, 92, 95, 22);
 		contentPanel.add(comboBox);
 		
 		deskontua = new JSlider();
-		
+		deskontua.addChangeListener(e -> tDeskontu.setText(deskontua()));
 		deskontua.setValue(0);
 		deskontua.setMinimum(-100);
-		deskontua.setBounds(87, 92, 180, 26);
+		deskontua.setBounds(115, 92, 220, 26);
 		contentPanel.add(deskontua);
 		
 		JLabel lblNewLabel = new JLabel("PRODUKTUAK EGUNERATU");
-		lblNewLabel.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 17));
-		lblNewLabel.setBounds(97, 27, 226, 36);
+		lblNewLabel.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 24));
+		lblNewLabel.setBounds(78, 23, 346, 42);
 		contentPanel.add(lblNewLabel);
 		
 		JButton bEguneratu = new JButton("Eguneratu");
@@ -111,7 +112,7 @@ public class produktuak_Eguneratu extends JDialog {
 				}
 			}
 		});
-		bEguneratu.setBounds(335, 227, 89, 23);
+		bEguneratu.setBounds(402, 263, 89, 23);
 		contentPanel.add(bEguneratu);
 		setVisible(true);
 
@@ -132,6 +133,18 @@ public class produktuak_Eguneratu extends JDialog {
 				deskontu = "0,"+(-deskontua.getValue());
 			}else {
 				deskontu = "1";
+			}
+		}
+		return deskontu;
+	}
+	
+	public String deskontua() {
+		String deskontu=null;
+		if(deskontua.getValue()>=0) {
+			deskontu = "+"+deskontua.getValue()+"%";
+		}else {
+			if(deskontua.getValue()<0) {
+				deskontu = deskontua.getValue()+"%";
 			}
 		}
 		return deskontu;

@@ -50,6 +50,7 @@ public class BulegariGUI extends JDialog {
 	 * Create the dialog.
 	 */
 	public BulegariGUI() {
+		setTitle("Bulegariak");
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 	    setLocationRelativeTo(null);
 		setBounds(100, 100, 898, 499);

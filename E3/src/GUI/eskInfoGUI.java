@@ -44,6 +44,7 @@ public class eskInfoGUI extends JDialog {
 	 * Create the dialog.
 	 */
 	public eskInfoGUI(int id) {
+		setTitle("Eskariaren Informazioa");
 		this.eskId = id;
 		setBounds(100, 100, 897, 498);
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);

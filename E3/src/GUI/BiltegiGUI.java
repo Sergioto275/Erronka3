@@ -51,6 +51,7 @@ public class BiltegiGUI extends JDialog {
 	 */
 	
 	public BiltegiGUI() {
+		setTitle("Biltegiak");
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 	    setLocationRelativeTo(null);
 		setBounds(100, 100, 898, 499);

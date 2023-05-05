@@ -50,6 +50,7 @@ public class biltegiTxertatuGUI extends JDialog {
 	 * Create the dialog.
 	 */
 	public biltegiTxertatuGUI(DefaultTableModel modelo) {
+		setTitle("Biltegiak Txertatu");
 		setBounds(100, 100, 719, 352);
 		getContentPane().setLayout(new BorderLayout());
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
@@ -151,9 +152,7 @@ public class biltegiTxertatuGUI extends JDialog {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
-					c.biltegiInsert(Integer.parseInt(tId.getText()),tIzena.getText(),tHelbidea.getText(),tKontinentea.getText(),tHerrialde.getText(),tProbintzia.getText(),tUdalerria.getText(),tPostakodea.getText(),Integer.parseInt(tId_Kon.getText()),tId_Herri.getText(),Integer.parseInt(tId_Kok.getText()));
-					modelo.addRow(new Object[] {tId.getText(),tIzena.getText(),tId_Kok.getText(),tHerrialde.getText(),tUdalerria.getText(),tPostakodea.getDragEnabled(),tProbintzia.getText(),tId_Herri.getDragEnabled(),tHerrialde.getText(),tId_Kok.getText(),tKontinentea.getText(),null,null});
-		            JOptionPane.showMessageDialog(null,"Hilara bat txertatu da","TXERTAKETA",JOptionPane.INFORMATION_MESSAGE);
+					c.biltegiInsert(Integer.parseInt(tId.getText()),tIzena.getText(),tHelbidea.getText(),tKontinentea.getText(),tHerrialde.getText(),tProbintzia.getText(),tUdalerria.getText(),tPostakodea.getText(),Integer.parseInt(tId_Kon.getText()),tId_Herri.getText(),Integer.parseInt(tId_Kok.getText()),modelo);
 		            dispose();
 				}catch(Exception ex) {
 					String mensaje = ""+e;

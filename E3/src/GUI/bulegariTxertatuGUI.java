@@ -48,6 +48,7 @@ public class bulegariTxertatuGUI extends JDialog {
 	 * Create the dialog.
 	 */
 	public bulegariTxertatuGUI(DefaultTableModel modelo) {
+		setTitle("Bulegariak Txertatu");
 		setBounds(100, 100, 719, 352);
 		getContentPane().setLayout(new BorderLayout());
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
@@ -131,9 +132,7 @@ public class bulegariTxertatuGUI extends JDialog {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
-					c.bulegariInsert(Integer.parseInt(tId.getText()),tIzena.getText(),tAbizena.getText(),tEmail.getText(),tKData.getText(),tTelefono.getText(),Integer.parseInt(tIdNag.getText()),Double.parseDouble(tSoldata.getText()),tLanpostu.getText());
-					modelo.addRow(new Object[] {tId.getText(),tIzena.getText(),tAbizena.getText(),tEmail.getText(),tKData.getText(),tTelefono.getText(),tIdNag.getText(),tSoldata.getText(),tLanpostu.getText(),null,null});
-		            JOptionPane.showMessageDialog(null,"Hilara bat txertatu da","TXERTAKETA",JOptionPane.INFORMATION_MESSAGE);
+					c.bulegariInsert(Integer.parseInt(tId.getText()),tIzena.getText(),tAbizena.getText(),tEmail.getText(),tKData.getText(),tTelefono.getText(),Integer.parseInt(tIdNag.getText()),Double.parseDouble(tSoldata.getText()),tLanpostu.getText(),modelo);
 		            dispose();
 				}catch(Exception ex) {
 					String mensaje = ""+e;

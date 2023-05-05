@@ -49,6 +49,7 @@ public class SaltzaileGUI extends JDialog {
 	 * Create the dialog.
 	 */
 	public SaltzaileGUI() {
+		setTitle("Saltzaileak");
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 	    setLocationRelativeTo(null);
 		setBounds(100, 100, 898, 499);
