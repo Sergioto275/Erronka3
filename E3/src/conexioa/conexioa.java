@@ -8,7 +8,10 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+
 import DB.*;
+import GUI.*;
 
 /**
  * conexioa Klasea
@@ -108,7 +111,7 @@ public class conexioa{
        * @param telefonoa
        */
 
-      public void bezeroInsert(int id, String izena, String abizena, String email, String helbidea, String telefonoa) {
+      public void bezeroInsert(int id, String izena, String abizena, String email, String helbidea, String telefonoa, DefaultTableModel modelo) {
     	  try {
     		  String Kontsulta = "INSERT INTO BEZERO VALUES (?,?,?,?,?)";
     		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
@@ -126,6 +129,8 @@ public class conexioa{
     		  st2.executeQuery();
     		  st2.close();
     		  this.c.close();
+			  modelo.addRow(new Object[] {id,izena,abizena,helbidea,email,telefonoa,null,null});
+			  JOptionPane.showMessageDialog(null,"Hilara bat txertatu da","TXERTAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -320,7 +325,7 @@ public class conexioa{
        * @param kategoria
        */
 
-      public void produktuInsert(int id, String izena, String deskribapena, double balioa, double salneurria, String kategoria) {
+      public void produktuInsert(int id, String izena, String deskribapena, double balioa, double salneurria, String kategoria, DefaultTableModel modelo) {
     	  try {
     		  String Kontsulta = "INSERT INTO PRODUKTU SELECT ?,?,?,?,?,ID FROM KATEGORIA WHERE IZENA = ?";
     		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
@@ -333,6 +338,8 @@ public class conexioa{
     		  st.executeUpdate();
     		  st.close();
     		  this.c.close();
+    		  modelo.addRow(new Object[] {id,izena,deskribapena,salneurria,balioa,kategoria,null,null});
+	          JOptionPane.showMessageDialog(null,"Hilara bat txertatu da","TXERTAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -390,21 +397,19 @@ public class conexioa{
        * @param idBiltegi
        */
 
-      public void inbentarioInsert(int kopurua, int idProd,int idBiltegi) {
+      public void inbentarioInsert(int kopurua, int idProd,int idBiltegi, DefaultTableModel modelo) {
     	  try {
     		  String Kontsulta = "INSERT INTO INBENTARIO VALUES (?,?,?)";
     		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
-    		  System.out.println(idProd);
     		  st.setInt(1, idProd);
     		  System.out.println(idBiltegi);
-
     		  st.setInt(2, idBiltegi);
-    		  System.out.println(kopurua);
-
     		  st.setInt(3, kopurua);
     		  st.executeUpdate();
     		  st.close();
     		  this.c.close();
+    		  modelo.addRow(new Object[] {idBiltegi,kopurua,null,null});
+	          JOptionPane.showMessageDialog(null,"Hilara bat txertatu da","TXERTAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -520,7 +525,7 @@ public class conexioa{
        * @param deskribapena
        */
 
-      public void eskariInsert(int id, int id_bez, int id_saltzaile, String data, String deskribapena) {
+      public void eskariInsert(int id, int id_bez, int id_saltzaile, String data, String deskribapena,DefaultTableModel modelo) {
     	  try {
     		  String Kontsulta = "INSERT INTO ESKARI SELECT ?,?,ID,?,TO_DATE(?,'YYYY/MM/DD') FROM ESKARI_EGOERA WHERE DESKRIBAPENA = ?";
     		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
@@ -532,6 +537,8 @@ public class conexioa{
     		  st.executeUpdate();
     		  st.close();
     		  this.c.close();
+    		  modelo.addRow(new Object[] {id,id_bez,deskribapena,id_saltzaile,data,null,null});
+    		  JOptionPane.showMessageDialog(null,"Hilara bat txertatu da","TXERTAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -653,7 +660,7 @@ public class conexioa{
        * @param pasahitza
        */
 
-      public void saltzaileInsert(int id, String izena, String abizena, String email, String k_data, String telefonoa, int id_nagusia,double soldata, String erabiltzailea, String pasahitza) {
+      public void saltzaileInsert(int id, String izena, String abizena, String email, String k_data, String telefonoa, int id_nagusia,double soldata, String erabiltzailea, String pasahitza, DefaultTableModel modelo) {
     	  try {
     		  String Kontsulta = "INSERT INTO LANGILE VALUES (?,?,?,?,?,TO_DATE(?,'YYYY/MM/DD'),?,?)";
     		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
@@ -675,6 +682,8 @@ public class conexioa{
     		  st2.executeQuery();
     		  st2.close();
     		  this.c.close();
+    		  modelo.addRow(new Object[] {id,izena,abizena,email,k_data,telefonoa,id_nagusia,soldata,erabiltzailea,pasahitza,null,null});
+	          JOptionPane.showMessageDialog(null,"Hilara bat txertatu da","TXERTAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -782,7 +791,7 @@ public class conexioa{
        * @param deskribapena
        */
 
-      public void bulegariInsert(int id, String izena, String abizena, String email, String k_data, String telefonoa, int id_nagusia,double soldata, String deskribapena) {
+      public void bulegariInsert(int id, String izena, String abizena, String email, String k_data, String telefonoa, int id_nagusia,double soldata, String deskribapena, DefaultTableModel modelo) {
     	  try {
     		  String Kontsulta = "INSERT INTO LANGILE VALUES (?,?,?,?,?,TO_DATE(?,'YYYY/MM/DD'),?,?)";
     		  PreparedStatement st = this.c.prepareStatement(Kontsulta);
@@ -803,6 +812,8 @@ public class conexioa{
     		  st2.executeQuery();
     		  st2.close();
     		  this.c.close();
+    		  modelo.addRow(new Object[] {id,izena,abizena,email,k_data,telefonoa,id_nagusia,soldata,deskribapena,null,null});
+	          JOptionPane.showMessageDialog(null,"Hilara bat txertatu da","TXERTAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -911,7 +922,7 @@ public class conexioa{
        */
 
       public void biltegiInsert(int id, String izena, String helbidea, String kontinentea, String herrialde, String probintzia,
-  			String udalerria, String postakodea, int id_kontinente, String id_herrialde, int id_kokaleku) {
+  			String udalerria, String postakodea, int id_kontinente, String id_herrialde, int id_kokaleku, DefaultTableModel modelo) {
     	  try {
     		  String Kontsulta4 = "INSERT INTO KONTINENTE VALUES(?,?)";
     		  PreparedStatement st4 = this.c.prepareStatement(Kontsulta4);
@@ -944,6 +955,8 @@ public class conexioa{
     		  st.executeQuery();
     		  st.close();
     		  this.c.close();
+    		  modelo.addRow(new Object[] {id,izena,id_kokaleku,herrialde,udalerria,postakodea,probintzia,id_herrialde,herrialde,id_kontinente,kontinentea,null,null});
+	          JOptionPane.showMessageDialog(null,"Hilara bat txertatu da","TXERTAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);

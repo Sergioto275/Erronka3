@@ -31,6 +31,7 @@ public class Saioa extends JDialog {
 	 * Create the dialog.
 	 */
 	public Saioa() {
+		setTitle("Saioa Ireki");
 		setBounds(100, 100, 431, 321);
 		getContentPane().setLayout(new BorderLayout());
 	    setLocationRelativeTo(null);

@@ -55,6 +55,7 @@ public class BezeroGUI extends JDialog {
 	 * Create the dialog.
 	 */
 	public BezeroGUI() {
+		setTitle("Bezeroak");
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 	    setLocationRelativeTo(null);
 		setBounds(100, 100, 898, 499);

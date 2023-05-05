@@ -44,6 +44,7 @@ public class produktuak_Eguneratu extends JDialog {
 	 * Create the dialog.
 	 */
 	public produktuak_Eguneratu() {
+		setTitle("Produktu Prezioa Eguneratu");
 		setBounds(100, 100, 450, 300);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));

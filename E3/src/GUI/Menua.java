@@ -27,6 +27,7 @@ public class Menua extends JFrame {
 	 * Create the frame.
 	 */
 	public Menua(Saltzailea s) {
+		setTitle("Menua");
 		this.s = s;
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 672, 447);

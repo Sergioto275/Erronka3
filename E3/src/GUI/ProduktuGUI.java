@@ -48,6 +48,7 @@ public class ProduktuGUI extends JDialog {
 	 * Create the dialog.
 	 */
 	public ProduktuGUI() {
+		setTitle("Produktuak");
 		setBounds(100, 100, 897, 498);
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 		getContentPane().setLayout(new BorderLayout());

@@ -43,6 +43,7 @@ public class InbentarioGUI extends JDialog {
 	 * Create the dialog.
 	 */
 	public InbentarioGUI(int id) {
+		setTitle("Inbentarioak");
 		this.prodId = id;
 		setBounds(100, 100, 897, 498);
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);

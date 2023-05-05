@@ -49,6 +49,7 @@ public class EskariGUI extends JDialog {
 	 * Create the dialog.
 	 */
 	public EskariGUI() {
+		setTitle("Eskariak");
 		setBounds(100, 100, 897, 498);
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 		getContentPane().setLayout(new BorderLayout());
