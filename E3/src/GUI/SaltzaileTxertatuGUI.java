@@ -20,7 +20,7 @@ import java.awt.Image;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class saltzaileTxertatuGUI extends JDialog {
+public class SaltzaileTxertatuGUI extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
 	private JTextField tId;
@@ -39,7 +39,7 @@ public class saltzaileTxertatuGUI extends JDialog {
 	 */
 	public static void main(String[] args) {
 		try {
-			saltzaileTxertatuGUI dialog = new saltzaileTxertatuGUI(null);
+			SaltzaileTxertatuGUI dialog = new SaltzaileTxertatuGUI(null);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -48,7 +48,7 @@ public class saltzaileTxertatuGUI extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	public saltzaileTxertatuGUI(DefaultTableModel modelo) {
+	public SaltzaileTxertatuGUI(DefaultTableModel modelo) {
 		setBounds(100, 100, 719, 352);
 		getContentPane().setLayout(new BorderLayout());
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
