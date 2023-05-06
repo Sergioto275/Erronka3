@@ -31,23 +31,12 @@ public class prodTxertatuGUI extends JDialog {
 	private JTextField tDeskribapena;
 	private String[] kat;
 	JComboBox<String> comboBox;
-
-
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		try {
-			prodTxertatuGUI dialog = new prodTxertatuGUI(null);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
+	
 	/**
 	 * Create the dialog.
 	 */
 	public prodTxertatuGUI(DefaultTableModel modelo) {
+		setTitle("Produktuak Txertatu");
 		setBounds(100, 100, 719, 352);
 		getContentPane().setLayout(new BorderLayout());
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
@@ -127,9 +116,7 @@ public class prodTxertatuGUI extends JDialog {
 				try {
 				conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 				String kategoria = comboBox.getItemAt(comboBox.getSelectedIndex());
-				c.produktuInsert(Integer.parseInt(tId.getText()),tIzena.getText(),tDeskribapena.getText(),Double.parseDouble(tBalioa.getText()),Double.parseDouble(tSalneurria.getText()),kategoria);
-				modelo.addRow(new Object[] {tId.getText(),tIzena.getText(),tDeskribapena.getText(),tSalneurria.getText(),tBalioa.getText(),comboBox.getItemAt(comboBox.getSelectedIndex()),null,null});
-	            JOptionPane.showMessageDialog(null,"Hilara bat txertatu da","TXERTAKETA",JOptionPane.INFORMATION_MESSAGE);
+				c.produktuInsert(Integer.parseInt(tId.getText()),tIzena.getText(),tDeskribapena.getText(),Double.parseDouble(tBalioa.getText()),Double.parseDouble(tSalneurria.getText()),kategoria,modelo);
 	            dispose();
 				}catch(Exception ex) {
 					String mensaje = ""+e;

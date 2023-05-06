@@ -1,25 +1,61 @@
 package DB;
+/**
+ * Bulegaria klasea
+ * @author ikasle
+ * @version 05/05
+ */
 
 public class Bulegaria extends Langile {
 	private String lanpostua;
 	
+	/**
+	 * Eraikitzailea defektuz
+	 */
+	
 	public Bulegaria() {
 		super();
 	}
+	
+	/**
+	 * Eraikitzailea parametroekin
+	 * @param izena
+	 * @param abizena
+	 * @param id
+	 * @param email
+	 * @param kontratatze_data
+	 * @param telefonoa
+	 * @param idNagusia
+	 * @param soldata
+	 * @param lanpostua
+	 */
 
-	public Bulegaria(String izena, String abizena, String id, String email, String kontratatze_data, String telefonoa, String idNagusia,
+	public Bulegaria(String izena, String abizena, int id, String email, String kontratatze_data, String telefonoa, int idNagusia, double soldata,
 			String lanpostua) {
-		super(izena, abizena, id,email, kontratatze_data, telefonoa, idNagusia);
+		super(izena, abizena, id,email, kontratatze_data, telefonoa, idNagusia, soldata);
 		this.lanpostua = lanpostua;
 	}
+	
+	/**
+	 * Lanpostuaren getterra
+	 * @return lanpostua
+	 */
 
 	public String getLanpostua() {
 		return this.lanpostua;
 	}
+	
+	/**
+	 * Lanpostua aldatzeko setterra
+	 * @param lanpostua
+	 */
 
 	public void setLanpostua(String lanpostua) {
 		this.lanpostua = lanpostua;
 	}
+	
+	/*
+	 * toString funtzioa datuak bistaratzeko
+	 */
 
 	@Override
 	public String toString() {

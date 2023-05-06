@@ -29,22 +29,14 @@ public class bezeroTxertatuGUI extends JDialog {
 	private JTextField tHelbide;
 	private JTextField tEmail;
 	private JTextField tTelefono;
-
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		try {
-			bezeroTxertatuGUI dialog = new bezeroTxertatuGUI(null);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
+	private DefaultTableModel modelo;;
 
 	/**
 	 * Create the dialog.
 	 */
 	public bezeroTxertatuGUI(DefaultTableModel modelo) {
+		//this.modelo=modelo;
+		setTitle("Bezeroak Txertatu");
 		setBounds(100, 100, 719, 352);
 		getContentPane().setLayout(new BorderLayout());
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
@@ -128,9 +120,8 @@ public class bezeroTxertatuGUI extends JDialog {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
-					c.bezeroInsert(Integer.parseInt(tId.getText()),tIzena.getText(),tAbizena.getText(),tEmail.getText(),tHelbide.getText(),tTelefono.getText());
-					modelo.addRow(new Object[] {tId.getText(),tIzena.getText(),tAbizena.getText(),tHelbide.getText(),tEmail.getText(),tTelefono.getText(),null,null});
-		            JOptionPane.showMessageDialog(null,"Hilara bat txertatu da","TXERTAKETA",JOptionPane.INFORMATION_MESSAGE);
+					c.bezeroInsert(Integer.parseInt(tId.getText()),tIzena.getText(),tAbizena.getText(),tEmail.getText(),tHelbide.getText(),tTelefono.getText(),modelo);
+					//modelo.addRow(new Object[] {tId.getText(),tIzena.getText(),tAbizena.getText(),tHelbide.getText(),tEmail.getText(),tTelefono.getText(),null,null});
 		            dispose();
 				}catch(Exception ex) {
 					String mensaje = ""+e;

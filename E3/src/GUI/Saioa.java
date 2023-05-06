@@ -18,6 +18,8 @@ public class Saioa extends JDialog {
 	private JTextField txtErabil;
 	private JPasswordField passwordField;
 	private Saltzailea s;
+	private boolean vis;
+	
 
 	/**
 	 * Launch the application.
@@ -30,7 +32,8 @@ public class Saioa extends JDialog {
 	 * Create the dialog.
 	 */
 	public Saioa() {
-		setBounds(100, 100, 431, 321);
+		setTitle("Saioa Ireki");
+		setBounds(100, 100, 433, 321);
 		getContentPane().setLayout(new BorderLayout());
 	    setLocationRelativeTo(null);
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
@@ -62,6 +65,7 @@ public class Saioa extends JDialog {
 		
 		passwordField = new JPasswordField();
 		passwordField.setBounds(120, 157, 229, 26);
+    	passwordField.setEchoChar('*');
 		panel.add(passwordField);
 		ImageIcon ap1 = new ImageIcon("imagenes\\apagar1.png");
 		ImageIcon ap2 = new ImageIcon("imagenes\\apagar2.png");
@@ -116,11 +120,31 @@ public class Saioa extends JDialog {
 		bAmaitu.setBorder(new EmptyBorder(0, 0, 0, 0));
 		bAmaitu.setBounds(0, 199, 106, 83);
 		panel.add(bAmaitu);
-		
-		JButton visible = new JButton("New button");
-		visible.setBounds(359, 159, 21, 23);
+		vis = false;
+		JButton visible = new JButton("");
+		visible.setContentAreaFilled(false);
+		visible.setBorder(new EmptyBorder(0, 0, 0, 0));
+		ImageIcon vis1 = new ImageIcon("imagenes\\ikusi1.png");
+		ImageIcon vis2 = new ImageIcon("imagenes\\ikusi2.png");
+		ImageIcon vis3 = new ImageIcon(vis1.getImage().getScaledInstance(35,20,Image.SCALE_DEFAULT));
+		ImageIcon vis4 = new ImageIcon(vis2.getImage().getScaledInstance(35,20,Image.SCALE_DEFAULT));
+		visible.setIcon(vis3);
+		visible.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (!vis) {
+					passwordField.setEchoChar((char) 0);
+					vis = true;
+					visible.setIcon(vis3);
+	            } else {
+	            	passwordField.setEchoChar('*');
+	            	vis =false;
+	        		visible.setIcon(vis4);
+	            }
+			}
+		});
+	
+		visible.setBounds(359, 156, 48, 26);
 		panel.add(visible);
-		visible.addActionListener(e -> passwordField.setVisible(true));
 		setVisible(true);
 	}
 }

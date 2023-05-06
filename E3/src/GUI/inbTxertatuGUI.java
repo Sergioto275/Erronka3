@@ -27,23 +27,12 @@ public class inbTxertatuGUI extends JDialog {
 	private JTextField tBil;
 	private JTextField tKop;
 	private String[] kat;
-
-
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		try {
-			inbTxertatuGUI dialog = new inbTxertatuGUI(null,0);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
+	
 	/**
 	 * Create the dialog.
 	 */
 	public inbTxertatuGUI(DefaultTableModel modelo, int idProd) {
+		setTitle("Inbentarioa Txertatu");
 		setBounds(100, 100, 449, 287);
 		getContentPane().setLayout(new BorderLayout());
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
@@ -91,9 +80,7 @@ public class inbTxertatuGUI extends JDialog {
 			public void actionPerformed(ActionEvent e) {
 				try {
 				conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
-				c.inbentarioInsert(Integer.parseInt(tKop.getText()), idProd, Integer.parseInt(tBil.getText()));
-				modelo.addRow(new Object[] {tBil.getText(),tKop.getText(),null,null});
-	            JOptionPane.showMessageDialog(null,"Hilara bat txertatu da","TXERTAKETA",JOptionPane.INFORMATION_MESSAGE);
+				c.inbentarioInsert(Integer.parseInt(tKop.getText()), idProd, Integer.parseInt(tBil.getText()),modelo);
 	            dispose();
 				}catch(Exception ex) {
 					String mensaje = ""+e;

@@ -33,21 +33,12 @@ public class ProduktuGUI extends JDialog {
 	private DefaultTableModel modelo;
 	private ProduktuDB pdb;
 
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		try {
-			ProduktuGUI dialog = new ProduktuGUI();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
 
 	/**
 	 * Create the dialog.
 	 */
 	public ProduktuGUI() {
+		setTitle("Produktuak");
 		setBounds(100, 100, 897, 498);
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 		getContentPane().setLayout(new BorderLayout());

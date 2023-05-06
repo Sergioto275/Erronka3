@@ -31,22 +31,11 @@ public class eskTxertatuGUI extends JDialog {
 	private String[] kat;
 	JComboBox<String> comboBox;
 
-
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		try {
-			eskTxertatuGUI dialog = new eskTxertatuGUI(null);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
 	/**
 	 * Create the dialog.
 	 */
 	public eskTxertatuGUI(DefaultTableModel modelo) {
+		setTitle("Eskaria Txertatu");
 		setBounds(100, 100, 537, 350);
 		getContentPane().setLayout(new BorderLayout());
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
@@ -117,9 +106,7 @@ public class eskTxertatuGUI extends JDialog {
 				try {
 				conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 				String egoera = comboBox.getItemAt(comboBox.getSelectedIndex());
-				c.eskariInsert(Integer.parseInt(tId.getText()),Integer.parseInt(tId_bezero.getText()),Integer.parseInt(tId_Saltzaile.getText()),tData.getText(),egoera);
-				modelo.addRow(new Object[] {tId.getText(),tId_bezero.getText(),comboBox.getItemAt(comboBox.getSelectedIndex()),tId_Saltzaile.getText(),tData.getText(),null,null});
-	            JOptionPane.showMessageDialog(null,"Hilara bat txertatu da","TXERTAKETA",JOptionPane.INFORMATION_MESSAGE);
+				c.eskariInsert(Integer.parseInt(tId.getText()),Integer.parseInt(tId_bezero.getText()),Integer.parseInt(tId_Saltzaile.getText()),tData.getText(),egoera,modelo);
 	            dispose();
 				}catch(Exception ex) {
 					String mensaje = ""+e;

@@ -1,5 +1,7 @@
 package GUI;
-
+/**
+ * Behar ditugun importak ezarri.
+ */
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.FlowLayout;
@@ -26,6 +28,11 @@ import javax.swing.border.BevelBorder;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+/**
+ * BezeroGUI Klasea
+ * @author ikasle
+ * @version 05/05
+ */
 public class BezeroGUI extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
@@ -34,20 +41,10 @@ public class BezeroGUI extends JDialog {
 	private DefaultTableModel modelo;
 
 	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		try {
-			BezeroGUI dialog = new BezeroGUI();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
 	 * Create the dialog.
 	 */
 	public BezeroGUI() {
+		setTitle("Bezeroak");
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 	    setLocationRelativeTo(null);
 		setBounds(100, 100, 898, 499);

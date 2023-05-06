@@ -35,20 +35,10 @@ public class EskariGUI extends JDialog {
 	private EskariDB edb;
 
 	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		try {
-			EskariGUI dialog = new EskariGUI();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
 	 * Create the dialog.
 	 */
 	public EskariGUI() {
+		setTitle("Eskariak");
 		setBounds(100, 100, 897, 498);
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 		getContentPane().setLayout(new BorderLayout());
@@ -127,7 +117,7 @@ public class EskariGUI extends JDialog {
 						int id_bez = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 1));
 						int id_saltzaile = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 3));
 						String data = (String)(table.getValueAt(table.getSelectedRow(), 4).toString());
-						String deskribapena = (String)(table.getValueAt(table.getSelectedRow(), 4).toString());
+						String deskribapena = (String)(table.getValueAt(table.getSelectedRow(), 2).toString());
 						c.eskariUpdate(id,id_bez,id_saltzaile,data,deskribapena);
 			            JOptionPane.showMessageDialog(null,"Hilara eguneratu da","EGUNERAKETA",JOptionPane.INFORMATION_MESSAGE);
 					}catch(Exception ex) {
