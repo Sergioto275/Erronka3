@@ -20,7 +20,11 @@ import java.awt.Image;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JComboBox;
-
+/**
+ * 
+ * @author ikasle
+ * @version 06/05
+ */
 public class eskTxertatuGUI extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();

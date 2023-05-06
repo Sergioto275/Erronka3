@@ -26,7 +26,11 @@ import javax.swing.JTable;
 import javax.swing.JScrollPane;
 import java.awt.Font;
 import java.awt.Image;
-
+/**
+ * EskariGUI klasea
+ * @author ikasle
+ * @version 06/05
+ */ 
 public class EskariGUI extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
@@ -35,7 +39,7 @@ public class EskariGUI extends JDialog {
 	private EskariDB edb;
 
 	/**
-	 * Create the dialog.
+	 * "EskariGUI" JDialog-aren diseinua egiten du
 	 */
 	public EskariGUI() {
 		setTitle("Eskariak");
@@ -109,6 +113,10 @@ public class EskariGUI extends JDialog {
 		scrollPane.setViewportView(table);
 		table.addMouseListener(new MouseAdapter() {
 			@Override
+			/**
+			 * Conexioa egiten du datu basearekin taulan sartutako datuak eguneratu edo ezabatuko ditu datu basean.
+			 * @param e
+			 */
 			public void mouseClicked(MouseEvent e) {
 				if(table.getColumnName(table.getSelectedColumn()).equals(" ")) {
 					try {
@@ -148,7 +156,9 @@ public class EskariGUI extends JDialog {
 		});
 		setVisible(true);
 	}
-	
+	/**
+	 * Taulan bulegarien informazioa ateratzeko, datu basearekin conexioa egin eta gero
+	 */
 	public void taulaInfo() {
 		conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 		edb = c.eskariKontsulta();

@@ -1,5 +1,7 @@
 package GUI;
-
+/**
+ * Beharrezko import guztiak jarri
+ */
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 
@@ -19,6 +21,11 @@ import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+/**
+ * bezeroTxertatuGUI klasea
+ * @author ikasle
+ * @version 06/05
+ */
 
 public class bezeroTxertatuGUI extends JDialog {
 
@@ -32,7 +39,8 @@ public class bezeroTxertatuGUI extends JDialog {
 	private DefaultTableModel modelo;;
 
 	/**
-	 * Create the dialog.
+	 * "bezeroTxertatuGUI" JDialog-aren diseinua egiten du
+	 * @param modelo
 	 */
 	public bezeroTxertatuGUI(DefaultTableModel modelo) {
 		//this.modelo=modelo;
@@ -117,6 +125,10 @@ public class bezeroTxertatuGUI extends JDialog {
 		bGorde.setIcon(insert1);
 		
 		bGorde.addActionListener(new ActionListener() {
+			/**
+			 *  Conexioa egiten du datu basearekin taulan sartutako datuak sartuko ditu datu basean bezero berri bezala
+			 * @param e
+			 */
 			public void actionPerformed(ActionEvent e) {
 				try {
 					conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");

@@ -19,7 +19,11 @@ import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-
+/**
+ * biltegiTxertatuGUI klasea
+ * @author ikasle
+ * @version 06/05
+ */
 public class biltegiTxertatuGUI extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
@@ -36,7 +40,8 @@ public class biltegiTxertatuGUI extends JDialog {
 	private JTextField tId_Kon;
 
 	/**
-	 * Create the dialog.
+	 * "biltegiTxertatuGUI" JDialog-aren diseinua egiten du
+	 * @param modelo
 	 */
 	public biltegiTxertatuGUI(DefaultTableModel modelo) {
 		setTitle("Biltegiak Txertatu");
@@ -138,6 +143,10 @@ public class biltegiTxertatuGUI extends JDialog {
 		bGorde.setIcon(insert1);
 		
 		bGorde.addActionListener(new ActionListener() {
+			/**
+			 * Conexioa egiten du datu basearekin taulan sartutako datuak sartuko ditu datu basean biltegi berri bezala
+			 * @param e
+			 */
 			public void actionPerformed(ActionEvent e) {
 				try {
 					conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");

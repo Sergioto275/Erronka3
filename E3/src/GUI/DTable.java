@@ -6,7 +6,11 @@ import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.border.*;
 import javax.swing.table.*;
-
+/**
+ * DTable klasea
+ * @author ikasle
+ * @version 06/05
+ */
 public class DTable extends JTable{
 	public DTable() {
 	}

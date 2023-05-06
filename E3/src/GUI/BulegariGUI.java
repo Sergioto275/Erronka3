@@ -27,7 +27,11 @@ import javax.swing.ImageIcon;
 import javax.swing.border.BevelBorder;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-
+/**
+ * BulegariGUI klasea
+ * @author ikasle
+ * @version 06/05
+ */
 public class BulegariGUI extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
@@ -36,7 +40,7 @@ public class BulegariGUI extends JDialog {
 	private DefaultTableModel modelo;
 
 	/**
-	 * Create the dialog.
+	 * "BulegariGUI" JDialog-aren diseinua egiten du
 	 */
 	public BulegariGUI() {
 		setTitle("Bulegariak");
@@ -63,6 +67,10 @@ public class BulegariGUI extends JDialog {
 		table.setRowHeight(25);
 		table.addMouseListener(new MouseAdapter() {
 			@Override
+			/**
+			 * Conexioa egiten du datu basearekin taulan sartutako datuak eguneratu edo ezabatuko ditu datu basean.
+			 * @param e
+			 */
 			public void mouseClicked(MouseEvent e) {
 				if(table.getColumnName(table.getSelectedColumn()).equals(" ")) {
 					try {
@@ -145,7 +153,9 @@ public class BulegariGUI extends JDialog {
 		contentPanel.add(bTxertatu);
 		setVisible(true);
 	}
-	
+	/**
+	 * Taulan bulegarien informazioa ateratzeko, datu basearekin conexioa egin eta gero
+	 */
 	public void taulaInfo() {
 		conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 		bdb = c.bulegariKontsulta();

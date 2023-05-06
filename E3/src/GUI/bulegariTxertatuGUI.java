@@ -19,7 +19,11 @@ import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-
+/**
+ * bulegariTxertatuGUI klasea
+ * @author ikasle
+ * @version 06/05
+ */
 public class bulegariTxertatuGUI extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
@@ -34,7 +38,8 @@ public class bulegariTxertatuGUI extends JDialog {
 	private JTextField tLanpostu;
 
 	/**
-	 * Create the dialog.
+	 * "bulegariTxertatuGUI" JDialog-aren diseinua egiten du
+	 * @param modelo
 	 */
 	public bulegariTxertatuGUI(DefaultTableModel modelo) {
 		setTitle("Bulegariak Txertatu");
@@ -118,6 +123,10 @@ public class bulegariTxertatuGUI extends JDialog {
 		bGorde.setIcon(insert1);
 		
 		bGorde.addActionListener(new ActionListener() {
+			/**
+			 * Conexioa egiten du datu basearekin taulan sartutako datuak sartuko ditu datu basean bulegari berri bezala
+			 * @param e
+			 */
 			public void actionPerformed(ActionEvent e) {
 				try {
 					conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
