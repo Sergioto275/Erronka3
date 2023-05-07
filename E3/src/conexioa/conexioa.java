@@ -1,9 +1,5 @@
 package conexioa;
 
-/**
- * Behar ditugun import conexioa egiteko
- */
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,7 +11,7 @@ import GUI.*;
 
 /**
  * conexioa Klasea
- * @author ikasle
+ * @author T1
  * @version 05/05
  */
 
@@ -43,7 +39,7 @@ public class conexioa{
          this.erabiltzailea = erabiltzailea;
          this.pasahitza = pasahitza;
          try{
-            this.c = DriverManager.getConnection(url, erabiltzailea, pasahitza);
+            this.c = DriverManager.getConnection("jdbc:oracle:thin:@//localhost:1521/XEPDB1","E2","E2");
          }catch(Exception e){
             String mensaje = ""+e;
             JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -55,6 +51,7 @@ public class conexioa{
        * Saltzaile mota funtzioa
        * @param erab
        * @return saltzailea
+       * {@link Saltzailea}
        */
 
       public Saltzailea erabiltzaileKontsulta(String erab) {
@@ -79,6 +76,7 @@ public class conexioa{
       /**
        * BezeroDB mota funtzioa
        * @return bezeroen arraya
+       * {@link BezeroDB}
        */
 
       public BezeroDB bezeroKontsulta() {
@@ -165,6 +163,7 @@ public class conexioa{
     		  st2.executeUpdate();
     		  st2.close();
     		  this.c.close();
+	          JOptionPane.showMessageDialog(null,"Hilara eguneratu da","EGUNERAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -184,6 +183,7 @@ public class conexioa{
     		  st.executeUpdate();
     		  st.close();
     		  this.c.close();
+	          JOptionPane.showMessageDialog(null,"Hilara ezabatu da","EZABAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -194,6 +194,7 @@ public class conexioa{
       /**
        * Produktuak bueltatzeko funtzioa
        * @return produktuen arraya
+       * {@link ProduktuDB}
        */
       public ProduktuDB produktuKontsulta() {
     	  ProduktuDB pdb = new ProduktuDB();
@@ -219,6 +220,7 @@ public class conexioa{
        * Inbentarioan dauden produktuak kontsultatzeko funtzioa
        * @param idProd
        * @return inbentarioa
+       * {@link Inbentario}
        */
 
       public Inbentario[] produktuInbKontsulta(int idProd) {
@@ -280,6 +282,7 @@ public class conexioa{
     		  st.executeUpdate();
     		  st.close();
     		  this.c.close();
+	          JOptionPane.showMessageDialog(null,"Hilara ezabatu da","EZABAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -309,6 +312,7 @@ public class conexioa{
     		  st.executeUpdate();
     		  st.close();
     		  this.c.close();
+	          JOptionPane.showMessageDialog(null,"Hilara eguneratu da","EGUNERAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -361,6 +365,7 @@ public class conexioa{
     		  st.executeUpdate();
     		  st.close();
     		  this.c.close();
+	          JOptionPane.showMessageDialog(null,"Hilara ezabatu da","EZABAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -384,6 +389,7 @@ public class conexioa{
     		  st.executeUpdate();
     		  st.close();
     		  this.c.close();
+	          JOptionPane.showMessageDialog(null,"Hilara eguneratu da","EGUNERAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -421,6 +427,7 @@ public class conexioa{
       /**
        * EskariDB motako funtzioa eskariak kontsultatzeko
        * @return eskarien arraya
+       * {@link EskariDB}
        */
 
       public EskariDB eskariKontsulta() {
@@ -447,6 +454,7 @@ public class conexioa{
        * Eskari infoirmazio array mota kontsultatzeko funtzioa
        * @param idEsk
        * @return eskariak
+       * {@link Eskari_Info}
        */
 
       public Eskari_Info[] eskariInfoKontsulta(int idEsk) {
@@ -483,6 +491,7 @@ public class conexioa{
     		  st.executeUpdate();
     		  st.close();
     		  this.c.close();
+	          JOptionPane.showMessageDialog(null,"Hilara ezabatu da","EZABAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -510,6 +519,7 @@ public class conexioa{
     		  st.executeUpdate();
     		  st.close();
     		  this.c.close();
+	          JOptionPane.showMessageDialog(null,"Hilara eguneratu da","EGUNERAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -585,6 +595,7 @@ public class conexioa{
     		  st.executeUpdate();
     		  st.close();
     		  this.c.close();
+	          JOptionPane.showMessageDialog(null,"Hilara ezabatu da","EZABAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -612,6 +623,7 @@ public class conexioa{
     		  st.executeUpdate();
     		  st.close();
     		  this.c.close();
+	          JOptionPane.showMessageDialog(null,"Hilara eguneratu da","EGUNERAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -623,6 +635,7 @@ public class conexioa{
       /**
        * SaltzaileDB array mota saltzaileak kontsultatzeko funtzioa
        * @return saltzaileen arraya
+       * {@link SaltzaileDB}
        */
 
       public SaltzaileDB saltzaileakKontsulta() {
@@ -726,6 +739,7 @@ public class conexioa{
     		  st2.executeUpdate();
     		  st2.close();
     		  this.c.close();
+	          JOptionPane.showMessageDialog(null,"Hilara eguneratu da","EGUNERAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -745,6 +759,7 @@ public class conexioa{
     		  st.executeUpdate();
     		  st.close();
     		  this.c.close();
+	          JOptionPane.showMessageDialog(null,"Hilara ezabatu da","EZABAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -756,6 +771,7 @@ public class conexioa{
       /**
        * BulegariDB motako funtzioa konstultatzeko
        * @return bulegarien arraya
+       * {@link BulegariaDB}
        */
 
       public BulegariaDB bulegariKontsulta() {
@@ -854,6 +870,7 @@ public class conexioa{
     		  st2.executeUpdate();
     		  st2.close();
     		  this.c.close();
+	          JOptionPane.showMessageDialog(null,"Hilara eguneratu da","EGUNERAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -873,6 +890,7 @@ public class conexioa{
     		  st.executeUpdate();
     		  st.close();
     		  this.c.close();
+	          JOptionPane.showMessageDialog(null,"Hilara ezabatu da","EZABAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -884,6 +902,7 @@ public class conexioa{
       /**
        * BiltegiDB motako funtzioa biltegiak kontsultatzeko
        * @return biltegien arraya
+       * {@link BiltegiDB}
        */
 
       public BiltegiDB biltegiKontsulta() {
@@ -1012,6 +1031,7 @@ public class conexioa{
     		  st.executeQuery();
     		  st.close();
     		  this.c.close();
+	          JOptionPane.showMessageDialog(null,"Hilara eguneratu da","EGUNERAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -1031,6 +1051,7 @@ public class conexioa{
     		  st.executeUpdate();
     		  st.close();
     		  this.c.close();
+	          JOptionPane.showMessageDialog(null,"Hilara ezabatu da","EZABAKETA",JOptionPane.INFORMATION_MESSAGE);
     	  }catch(Exception e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -1047,7 +1068,6 @@ public class conexioa{
       public String[] deskontuak() {
     	  String[] deskontuak = null;;
     	  try{
-    		  //ArrayDescriptor des = ArrayDescriptor.createDescriptor("LISTAMAXIMO", c);
     		  CallableStatement call = this.c.prepareCall("{call DESKONTUA(?)}");
               call.registerOutParameter(1, oracle.jdbc.OracleTypes.ARRAY,"LISTAMAXIMO");
               call.execute();

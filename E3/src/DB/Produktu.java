@@ -4,8 +4,9 @@ import java.util.Arrays;
 
 /**
  * Produktu klasea
- * @author ikasle
+ * @author T1
  * @version 05/05
+ * @see Inbentario
  */
 
 public class Produktu {
@@ -32,6 +33,7 @@ public class Produktu {
 		 * @param salneurria
 		 * @param kategoria
 		 * @param inbentario
+		 * @see Inbentario
 		 */
 
 		public Produktu(int id,String izena, String deskribapena, double balioa, double salneurria, String kategoria, Inbentario[] inbentario) {
@@ -156,6 +158,7 @@ public class Produktu {
 		/**
 		 * inbentarioaren getterra
 		 * @return inbentario
+		 * @see Inbentario
 		 */
 
 		public Inbentario[] getInbentario() {
@@ -165,6 +168,7 @@ public class Produktu {
 		/**
 		 * inbentario aldatzeko setterra
 		 * @param inbentario
+		 * @see Inbentario
 		 */
 
 		public void setInbentario(Inbentario[] inbentario) {

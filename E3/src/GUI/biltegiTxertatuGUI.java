@@ -21,8 +21,9 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 /**
  * biltegiTxertatuGUI klasea
- * @author ikasle
+ * @author T1
  * @version 06/05
+ * @see conexioa
  */
 public class biltegiTxertatuGUI extends JDialog {
 
@@ -146,6 +147,7 @@ public class biltegiTxertatuGUI extends JDialog {
 			/**
 			 * Conexioa egiten du datu basearekin taulan sartutako datuak sartuko ditu datu basean biltegi berri bezala
 			 * @param e
+			 * @see conexioa#biltegiInsert(int, String, String, String, String, String, String, String, int, String, int, DefaultTableModel)
 			 */
 			public void actionPerformed(ActionEvent e) {
 				try {
@@ -163,6 +165,10 @@ public class biltegiTxertatuGUI extends JDialog {
 		
 		JButton bAtzera = new JButton("");
 		bAtzera.addActionListener(new ActionListener() {
+			/**
+			 * JDialog-a ixten du
+			 * @param e
+			 */
 			public void actionPerformed(ActionEvent e) {
 				dispose();
 			}

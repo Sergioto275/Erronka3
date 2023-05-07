@@ -2,7 +2,7 @@ package DB;
 
 /**
  * Inbentario klasea
- * @author ikasle
+ * @author T1
  * @version 05/05
  */
 

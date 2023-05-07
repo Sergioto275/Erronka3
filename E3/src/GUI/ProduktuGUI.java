@@ -11,6 +11,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 
+import DB.EskariDB;
 import DB.Inbentario;
 import DB.ProduktuDB;
 import conexioa.conexioa;
@@ -26,6 +27,12 @@ import javax.swing.JScrollPane;
 import java.awt.Font;
 import java.awt.Image;
 
+/**
+ * ProduktuGUI klasea
+ * @author T1
+ * @version 06/05
+ * @see conexioa
+ */
 public class ProduktuGUI extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
@@ -35,7 +42,7 @@ public class ProduktuGUI extends JDialog {
 
 
 	/**
-	 * Create the dialog.
+	 * "ProduktuGUI" diseinua ematen dio
 	 */
 	public ProduktuGUI() {
 		setTitle("Produktuak");
@@ -59,6 +66,11 @@ public class ProduktuGUI extends JDialog {
 		bTxertatu.setPressedIcon(insert2);
 		bTxertatu.setIcon(insert1);
 		bTxertatu.addActionListener(new ActionListener() {
+			/**
+			 * "prodTxertatuGUI" irekitzen du
+			 * @param e
+			 * {@link prodTxertatuGUI}
+			 */
 			public void actionPerformed(ActionEvent e) {
 				prodTxertatuGUI p = new prodTxertatuGUI(modelo);
 			}
@@ -73,6 +85,10 @@ public class ProduktuGUI extends JDialog {
 	    ImageIcon at3 = new ImageIcon(at1.getImage().getScaledInstance(60,63,Image.SCALE_DEFAULT));
 		JButton bAtzera = new JButton("");
 		bAtzera.addActionListener(new ActionListener() {
+			/**
+			 * JDialog-a ixten du
+			 * @param e
+			 */
 			public void actionPerformed(ActionEvent e) {
 				dispose();
 			}
@@ -109,6 +125,13 @@ public class ProduktuGUI extends JDialog {
 		scrollPane.setViewportView(table);
 		table.addMouseListener(new MouseAdapter() {
 			@Override
+			/**
+			 * Conexioa egiten du datu basearekin taulan sartutako datuak eguneratu edo ezabatuko ditu datu basean, edo inbentarioa irekitzen du
+			 * @param e
+			 * @see conexioa#produktuDelete(int)
+			 * @see conexioa#produktuUpdate(int, String, String, double, double, String)
+			 * {@link InbentarioGUI}
+			 */
 			public void mouseClicked(MouseEvent e) {
 				if(table.getColumnName(table.getSelectedColumn()).equals(" ")) {
 					try {
@@ -153,6 +176,11 @@ public class ProduktuGUI extends JDialog {
 		setVisible(true);
 	}
 	
+	/**
+	 * Taulan produktuen informazioa ateratzeko, datu basearekin conexioa egin eta gero
+	 * @see conexioa#produktuKontsulta()
+	 * {@link ProduktuDB}
+	 */
 	public void taulaInfo() {
 		conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 		pdb = c.produktuKontsulta();
@@ -161,13 +189,4 @@ public class ProduktuGUI extends JDialog {
 		}
 	}
 	
-	public int index(int id) {
-		int x = 0;
-		for(int i=0;i<pdb.getProduktuList().length;i++) {
-			if(id == pdb.getProduktuList()[i].getId()) {
-				x=i;
-			}
-		}
-		return x;
-	}
 }

@@ -16,8 +16,16 @@ import javax.swing.JTextField;
 import javax.swing.JComboBox;
 import javax.swing.JSlider;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
 
+/**
+ * produktuak_Eguneratu klasea
+ * @author T1
+ * @see conexioa
+ * @version 06/05
+ */
 public class produktuak_Eguneratu extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
@@ -30,7 +38,7 @@ public class produktuak_Eguneratu extends JDialog {
 
 
 	/**
-	 * Create the dialog.
+	 * "produktuak_Eguneratu" diseinua ematen dio
 	 */
 	public produktuak_Eguneratu() {
 		setTitle("Produktu Prezioa Eguneratu");
@@ -43,6 +51,10 @@ public class produktuak_Eguneratu extends JDialog {
 		{
 			JButton bGehitu = new JButton("Gehitu");
 			bGehitu.addActionListener(new ActionListener() {
+				/**
+				 * Zein kategoriak eguneratuko diren eta zenbateko prezio igoera edo jaitsiera izango duen gordetzen du String batean
+				 * @param e
+				 */
 				public void actionPerformed(ActionEvent e) {
 					if(datuak == null) {
 						datuak = ""+comboBox.getItemAt(comboBox.getSelectedIndex())+"|"+deskontuaKalkulatu();
@@ -92,10 +104,17 @@ public class produktuak_Eguneratu extends JDialog {
 		
 		JButton bEguneratu = new JButton("Eguneratu");
 		bEguneratu.addActionListener(new ActionListener() {
+			/**
+			 * Gordetako eguneraketak exekutatzen dira datu basean
+			 * @param e
+			 * @see conexioa#updateProd(String)
+			 */
 			public void actionPerformed(ActionEvent e) {
 				try {
 					conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 					c.updateProd(datuak);
+		            JOptionPane.showMessageDialog(null, "Hautatutako kategorien produktuen prezioa eguneratu dira","EGUNERAKETA",JOptionPane.INFORMATION_MESSAGE);        
+					dispose();
 				}catch(Exception ex) {
 					
 				}
@@ -107,12 +126,19 @@ public class produktuak_Eguneratu extends JDialog {
 
 	}
 	
+	/**
+	 * Produktuen kategoriak ComboBox-ean kargatzen ditu
+	 */
 	public void comboBoxKargatu() {
 		for(int i=0;i<kat.length;i++) {
 			this.comboBox.addItem(kat[i]);
 		}
 	}
 	
+	/**
+	 * Zenbateko deskontua egin behar den kalkulatzen du
+	 * @return deskontu
+	 */
 	public String deskontuaKalkulatu() {
 		String deskontu=null;
 		if(deskontua.getValue()>0) {
@@ -127,6 +153,10 @@ public class produktuak_Eguneratu extends JDialog {
 		return deskontu;
 	}
 	
+	/**
+	 * Zenbateko deskontua pantailaratzeko formatua ematen dio
+	 * @return deskontu
+	 */
 	public String deskontua() {
 		String deskontu=null;
 		if(deskontua.getValue()>=0) {

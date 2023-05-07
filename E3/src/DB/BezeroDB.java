@@ -1,9 +1,5 @@
 package DB;
 
-/**
- * importa
- */
-
 import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
@@ -12,8 +8,9 @@ import java.util.Scanner;
 
 /**
  * BezeroDB klasea
- * @author ikasle
+ * @author T1
  * @version 05/05
+ * @see Bezeroa
  */
 
 public class BezeroDB {
@@ -48,6 +45,7 @@ public class BezeroDB {
 	/**
 	 * Bezeroak gehitzeko arrayari funtzioa
 	 * @param b
+	 * @see Bezeroa
 	 */
 
 	public void addBezero(Bezeroa b) {

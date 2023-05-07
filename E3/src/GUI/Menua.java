@@ -14,13 +14,20 @@ import java.io.PrintWriter;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+/**
+ * Menua klasea
+ * @author T1
+ * @version 06/05
+ * @see conexioa
+ * {@link Saltzailea}
+ */
 public class Menua extends JFrame {
 
 	private JPanel contentPane;
 	private Saltzailea s;
 
 	/**
-	 * Create the frame.
+	 * "InbentarioGUI" diseinua ematen dio
 	 */
 	public Menua(Saltzailea s) {
 		setTitle("Menua");
@@ -36,8 +43,13 @@ public class Menua extends JFrame {
 		mBezero.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mBezero.addMouseListener(new MouseAdapter() {
 			@Override
+			/**
+			 * BezeroGUI irekitzen du
+			 * {@link BezeroGUI}
+			 * @param e
+			 */
 			public void mouseClicked(MouseEvent e) {
-				BezeroGUI bezeroa = new BezeroGUI();
+				new BezeroGUI();
 			}
 		});
 		menuBar.add(mBezero);
@@ -46,8 +58,13 @@ public class Menua extends JFrame {
 		mBiltegi.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mBiltegi.addMouseListener(new MouseAdapter() {
 			@Override
+			/**
+			 * BiltegiGUI irekitzen du
+			 * {@link BiltegiGUI}
+			 * @param e
+			 */
 			public void mouseClicked(MouseEvent e) {
-				BiltegiGUI bezeroa = new BiltegiGUI();
+				new BiltegiGUI();
 			}
 		});
 		menuBar.add(mBiltegi);
@@ -56,8 +73,13 @@ public class Menua extends JFrame {
 		mBuleari.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mBuleari.addMouseListener(new MouseAdapter() {
 			@Override
+			/**
+			 * BulegariGUI irekitzen du
+			 * {@link BulegariGUI}
+			 * @param e
+			 */
 			public void mouseClicked(MouseEvent e) {
-				BulegariGUI bezeroa = new BulegariGUI();
+				new BulegariGUI();
 			}
 		});
 		menuBar.add(mBuleari);
@@ -66,8 +88,13 @@ public class Menua extends JFrame {
 		mSaltz.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mSaltz.addMouseListener(new MouseAdapter() {
 			@Override
+			/**
+			 * SaltzaileGUI irekitzen du
+			 * {@link SaltzaileGUI}
+			 * @param e
+			 */
 			public void mouseClicked(MouseEvent e) {
-				SaltzaileGUI bezeroa = new SaltzaileGUI();
+				new SaltzaileGUI();
 			}
 		});
 		menuBar.add(mSaltz);
@@ -76,8 +103,13 @@ public class Menua extends JFrame {
 		mEsk.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mEsk.addMouseListener(new MouseAdapter() {
 			@Override
+			/**
+			 * EskariGUI irekitzen du
+			 * {@link EskariGUI}
+			 * @param e
+			 */
 			public void mouseClicked(MouseEvent e) {
-				EskariGUI bezeroa = new EskariGUI();
+				new EskariGUI();
 			}
 		});
 		menuBar.add(mEsk);
@@ -86,8 +118,13 @@ public class Menua extends JFrame {
 		mProd.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		mProd.addMouseListener(new MouseAdapter() {
 			@Override
+			/**
+			 * ProduktuGUI irekitzen du
+			 * {@link ProduktuGUI}
+			 * @param e
+			 */
 			public void mouseClicked(MouseEvent e) {
-				ProduktuGUI bezeroa = new ProduktuGUI();
+				new ProduktuGUI();
 			}
 		});
 		menuBar.add(mProd);
@@ -116,9 +153,14 @@ public class Menua extends JFrame {
 		bItxi.setIcon(at1);
 		bItxi.addMouseListener(new MouseAdapter() {
 			@Override
+			/**
+			 * Menua ixten du eta Saioa irekitzen du
+			 * {@link Saioa}
+			 * @param e
+			 */
 			public void mouseClicked(MouseEvent e) {
 				dispose();
-				Saioa saioa = new Saioa();
+				new Saioa();
 			}
 		});
 		bItxi.setBorder(new EmptyBorder(0, 0, 0, 0));
@@ -133,13 +175,28 @@ public class Menua extends JFrame {
 		
 		JButton bPrezioEguneraketa = new JButton("Prezio Eguneraketa");
 		bPrezioEguneraketa.setFont(new Font("Segoe UI", Font.PLAIN, 25));
-		bPrezioEguneraketa.addActionListener(e -> new produktuak_Eguneratu());
+		bPrezioEguneraketa.addMouseListener(new MouseAdapter() {
+			@Override
+			/**
+			 * produktuak_Eguneratu irekitzen du
+			 * {@link produktuak_Eguneratu}
+			 * @param e
+			 */
+			public void mouseClicked(MouseEvent e) {
+				new produktuak_Eguneratu();
+			}
+		});
 		bPrezioEguneraketa.setBounds(121, 180, 400, 87);
 		contentPane.add(bPrezioEguneraketa);
 		setVisible(true);
 	}
 	
+	/**
+	 * Bezeroentzako deskontuak imprimatzen ditu
+	 * @see conexioa#deskontuak() 
+	 */
 	public void deskontuak_imprimatu() {
+		int kont =0;
 		try {
 			conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 			String[] deskontuak = c.deskontuak();
@@ -168,7 +225,10 @@ public class Menua extends JFrame {
 				}catch(Exception ex) {
 					System.out.println("ERROREA");
 				}
+				kont = i;
 			}
+			String mensaje = kont+" deskontu imprimatu dira";
+            JOptionPane.showMessageDialog(null, mensaje,"IMPRIMAKETA",JOptionPane.INFORMATION_MESSAGE);        
 		}catch(Exception ex) {
 			System.out.println("NO FURRULA ");
 		}

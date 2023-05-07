@@ -29,8 +29,9 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 /**
  * BulegariGUI klasea
- * @author ikasle
+ * @author T1
  * @version 06/05
+ * @see conexioa
  */
 public class BulegariGUI extends JDialog {
 
@@ -70,6 +71,8 @@ public class BulegariGUI extends JDialog {
 			/**
 			 * Conexioa egiten du datu basearekin taulan sartutako datuak eguneratu edo ezabatuko ditu datu basean.
 			 * @param e
+			 * @see conexioa#bulegariUpdate(int, String, String, String, String, String, int, double, String)
+			 * @see conexioa#bulegariDelete(int)
 			 */
 			public void mouseClicked(MouseEvent e) {
 				if(table.getColumnName(table.getSelectedColumn()).equals(" ")) {
@@ -126,6 +129,10 @@ public class BulegariGUI extends JDialog {
 		bAtzera.setIcon(at1);
 		bAtzera.addMouseListener(new MouseAdapter() {
 			@Override
+			/**
+			 * JDialog-a ixten du
+			 * @param e
+			 */
 			public void mouseClicked(MouseEvent e) {
 				dispose();
 			}
@@ -139,6 +146,11 @@ public class BulegariGUI extends JDialog {
 	    ImageIcon insert3 = new ImageIcon(insert1.getImage().getScaledInstance(80,80,Image.SCALE_DEFAULT));
 		JButton bTxertatu = new JButton("");
 		bTxertatu.addActionListener(new ActionListener() {
+			/**
+			 * "bulegariTxertatuGUI" irekitzen du
+			 * {@link bulegariTxertatuGUI}
+			 * @param e
+			 */
 			public void actionPerformed(ActionEvent e) {
 				bulegariTxertatuGUI sin = new bulegariTxertatuGUI(modelo);
 			}
@@ -155,6 +167,8 @@ public class BulegariGUI extends JDialog {
 	}
 	/**
 	 * Taulan bulegarien informazioa ateratzeko, datu basearekin conexioa egin eta gero
+	 * @see conexioa#bulegariKontsulta()
+	 * {@link BulegariaDB}
 	 */
 	public void taulaInfo() {
 		conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");

@@ -1,7 +1,5 @@
 package GUI;
-/**
- * Behar ditugun importak ezarri.
- */
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.FlowLayout;
@@ -14,6 +12,7 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 import DB.BezeroDB;
+import DB.Bezeroa;
 import conexioa.conexioa;
 import javax.swing.JScrollPane;
 import javax.swing.JLabel;
@@ -30,8 +29,10 @@ import java.awt.event.ActionEvent;
 
 /**
  * BezeroGUI Klasea
- * @author ikasle
+ * @author T1
  * @version 06/05
+ * @see BezeroDB
+ * @see conexioa
  */
 public class BezeroGUI extends JDialog {
 
@@ -71,6 +72,8 @@ public class BezeroGUI extends JDialog {
 			/**
 			 * Conexioa egiten du datu basearekin taulan sartutako datuak eguneratu edo ezabatuko ditu datu basean.
 			 * @param e
+			 * @see conexioa#bezeroUpdate(int, String, String, String, String, String)
+			 * @see conexioa#bezeroDelete(int)
 			 */
 			public void mouseClicked(MouseEvent e) {
 				if(table.getColumnName(table.getSelectedColumn()).equals(" ")) {
@@ -83,7 +86,6 @@ public class BezeroGUI extends JDialog {
 					String email = (String)(table.getValueAt(table.getSelectedRow(), 4));
 					String telefonoa = (String)(table.getValueAt(table.getSelectedRow(), 5));
 					c.bezeroUpdate(id,izena,abizena,email,helbidea,telefonoa);
-		            JOptionPane.showMessageDialog(null,"Hilara eguneratu da","EGUNERAKETA",JOptionPane.INFORMATION_MESSAGE);
 					}catch(Exception ex) {
 						String mensaje = ""+e;
 						JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
@@ -95,7 +97,6 @@ public class BezeroGUI extends JDialog {
 							int id = Integer.parseInt(""+table.getValueAt(table.getSelectedRow(), 0));
 							c.bezeroDelete(id);
 							modelo.removeRow(table.getSelectedRow());
-				            JOptionPane.showMessageDialog(null,"Hilara ezabatu da","EZABAKETA",JOptionPane.INFORMATION_MESSAGE);
 						}catch(Exception ex) {
 							String mensaje = ""+e;
 				            JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);        
@@ -124,6 +125,10 @@ public class BezeroGUI extends JDialog {
 		bAtzera.setIcon(at1);
 		bAtzera.addMouseListener(new MouseAdapter() {
 			@Override
+			/**
+			 * JDialog-a ixten du
+			 * @param e
+			 */
 			public void mouseClicked(MouseEvent e) {
 				dispose();
 			}
@@ -137,6 +142,12 @@ public class BezeroGUI extends JDialog {
 	    ImageIcon insert3 = new ImageIcon(insert1.getImage().getScaledInstance(80,80,Image.SCALE_DEFAULT));
 		JButton bTxertatu = new JButton("");
 		bTxertatu.addActionListener(new ActionListener() {
+			/**
+			 * "bezeroTxertatuGUI" irekitzen du
+			 * {@link bezeroTxertatuGUI}
+			 * @param e
+			 * @see bezeroTxertatuGUI
+			 */
 			public void actionPerformed(ActionEvent e) {
 				bezeroTxertatuGUI bin = new bezeroTxertatuGUI(modelo);
 			}
@@ -153,6 +164,8 @@ public class BezeroGUI extends JDialog {
 	}
 	/**
 	 * Taulan bezeroen informazioa ateratzeko, datu basearekin conexioa egin eta gero
+	 * {@link BezeroDB}
+	 * @see conexioa#bezeroKontsulta()
 	 */
 	public void taulaInfo() {
 		conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");

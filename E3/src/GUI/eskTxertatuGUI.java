@@ -21,9 +21,10 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JComboBox;
 /**
- * 
- * @author ikasle
+ * eskTxertatuGUI klasea
+ * @author T1
  * @version 06/05
+ * @see conexioa
  */
 public class eskTxertatuGUI extends JDialog {
 
@@ -106,6 +107,11 @@ public class eskTxertatuGUI extends JDialog {
 		bGorde.setIcon(insert1);
 		
 		bGorde.addActionListener(new ActionListener() {
+			/**
+			 * Conexioa egiten du datu basearekin taulan sartutako datuak sartuko ditu datu basean eskari berri bezala
+			 * @param e
+			 * @see conexioa#eskariInsert(int, int, int, String, String, DefaultTableModel)
+			 */
 			public void actionPerformed(ActionEvent e) {
 				try {
 				conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
@@ -133,6 +139,9 @@ public class eskTxertatuGUI extends JDialog {
 		bAtzera.setPressedIcon(at2);
 		bAtzera.setIcon(at1);
 		bAtzera.addActionListener(new ActionListener() {
+			/**
+			 * JDialog-a ixten du
+			 */
 			public void actionPerformed(ActionEvent e) {
 				dispose();
 			}
@@ -152,6 +161,9 @@ public class eskTxertatuGUI extends JDialog {
 		setVisible(true);
 	}
 	
+	/**
+	 * ComboBox-ean eskarien egoerak kargatzen ditu
+	 */
 	public void comboBoxKargatu() {
 		for(int i=0;i<kat.length;i++) {
 			this.comboBox.addItem(kat[i]);

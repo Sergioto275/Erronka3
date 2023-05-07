@@ -2,8 +2,9 @@ package DB;
 
 /**
  * Saltzailea klasea (langiletik abiarazita)
- * @author ikasle
+ * @author T1
  * @version 05/05
+ * @see Langile
  */
 public class Saltzailea extends Langile{
 	/**
@@ -29,6 +30,7 @@ public class Saltzailea extends Langile{
 	 * @param soldata
 	 * @param erabiltzaile
 	 * @param pasahitza
+	 * @see Langile
 	 */
 	
 	public Saltzailea(String izena, String abizena, int id, String email, String kontratatze_data, String telefonoa,

@@ -26,6 +26,12 @@ import javax.swing.JScrollPane;
 import java.awt.Font;
 import java.awt.Image;
 
+/**
+ * InbentarioGUI klasea
+ * @author T1
+ * @version 06/05
+ * @see conexioa
+ */
 public class InbentarioGUI extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
@@ -36,7 +42,7 @@ public class InbentarioGUI extends JDialog {
 
 
 	/**
-	 * Create the dialog.
+	 * "InbentarioGUI" diseinua ematen dio
 	 */
 	public InbentarioGUI(int id) {
 		setTitle("Inbentarioak");
@@ -61,6 +67,11 @@ public class InbentarioGUI extends JDialog {
 		bTxertatu.setPressedIcon(insert2);
 		bTxertatu.setIcon(insert1);
 		bTxertatu.addActionListener(new ActionListener() {
+			/**
+			 * "inbTxertatuGUI" irekitzen du
+			 * {@link inbTxertatuGUI}
+			 * @param e
+			 */
 			public void actionPerformed(ActionEvent e) {
 				inbTxertatuGUI p = new inbTxertatuGUI(modelo,prodId);
 			}
@@ -75,6 +86,10 @@ public class InbentarioGUI extends JDialog {
 	    ImageIcon at3 = new ImageIcon(at1.getImage().getScaledInstance(60,63,Image.SCALE_DEFAULT));
 		JButton bAtzera = new JButton("");
 		bAtzera.addActionListener(new ActionListener() {
+			/***
+			 * JDialog-a ixten du
+			 * @param e
+			 */
 			public void actionPerformed(ActionEvent e) {
 				dispose();
 			}
@@ -110,6 +125,12 @@ public class InbentarioGUI extends JDialog {
 		scrollPane.setViewportView(table);
 		table.addMouseListener(new MouseAdapter() {
 			@Override
+			/**
+			 * Conexioa egiten du datu basearekin taulan sartutako datuak eguneratu edo ezabatuko ditu datu basean.
+			 * @param e
+			 * @see conexioa#inbentarioDelete(int, int)
+			 * @see conexioa#inbentarioUpdate(int, int, int)
+			 */
 			public void mouseClicked(MouseEvent e) {
 				if(table.getColumnName(table.getSelectedColumn()).equals(" ")) {
 					try {
@@ -141,6 +162,11 @@ public class InbentarioGUI extends JDialog {
 		setVisible(true);
 	}
 	
+	/**
+	 * Taulan hautatutako produktuaren informazioa ateratzeko, datu basearekin conexioa egin eta gero
+	 * @see conexioa#produktuKontsulta()
+	 * {@link ProduktuDB}
+	 */
 	public void taulaInfo() {
 		conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 		pdb = c.produktuKontsulta();

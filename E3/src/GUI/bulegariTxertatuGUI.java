@@ -21,8 +21,9 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 /**
  * bulegariTxertatuGUI klasea
- * @author ikasle
+ * @author T1
  * @version 06/05
+ * @see conexioa
  */
 public class bulegariTxertatuGUI extends JDialog {
 
@@ -126,6 +127,7 @@ public class bulegariTxertatuGUI extends JDialog {
 			/**
 			 * Conexioa egiten du datu basearekin taulan sartutako datuak sartuko ditu datu basean bulegari berri bezala
 			 * @param e
+			 * @see conexioa#bulegariInsert(int, String, String, String, String, String, int, double, String, DefaultTableModel)
 			 */
 			public void actionPerformed(ActionEvent e) {
 				try {
@@ -153,6 +155,9 @@ public class bulegariTxertatuGUI extends JDialog {
 		bAtzera.setPressedIcon(at2);
 		bAtzera.setIcon(at1);
 		bAtzera.addActionListener(new ActionListener() {
+			/**
+			 * JDialog-a ixten du
+			 */
 			public void actionPerformed(ActionEvent e) {
 				dispose();
 			}

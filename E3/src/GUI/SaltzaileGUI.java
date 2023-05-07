@@ -12,6 +12,7 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 import DB.BezeroDB;
+import DB.EskariDB;
 import DB.SaltzaileDB;
 import conexioa.conexioa;
 import javax.swing.JScrollPane;
@@ -27,6 +28,12 @@ import javax.swing.border.BevelBorder;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+/**
+ * SaltzaileGUI klasea
+ * @author T1
+ * @version 06/05
+ * @see conexioa
+ */
 public class SaltzaileGUI extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
@@ -35,7 +42,7 @@ public class SaltzaileGUI extends JDialog {
 	private DefaultTableModel modelo;
 
 	/**
-	 * Create the dialog.
+	 * "SaltzaileGUI" JDialog-aren diseinua egiten du
 	 */
 	public SaltzaileGUI() {
 		setTitle("Saltzaileak");
@@ -62,6 +69,12 @@ public class SaltzaileGUI extends JDialog {
 		table.setRowHeight(25);
 		table.addMouseListener(new MouseAdapter() {
 			@Override
+			/**
+			 * Conexioa egiten du datu basearekin taulan sartutako datuak eguneratu edo ezabatuko ditu datu basean.
+			 * @param e
+			 * @see conexioa#saltzaileDelete(int)
+			 * @see conexioa#saltzaileUpdate(int, String, String, String, String, String, int, double, String, String)
+			 */
 			public void mouseClicked(MouseEvent e) {
 				if(table.getColumnName(table.getSelectedColumn()).equals(" ")) {
 					try {
@@ -131,8 +144,13 @@ public class SaltzaileGUI extends JDialog {
 	    ImageIcon insert3 = new ImageIcon(insert1.getImage().getScaledInstance(80,80,Image.SCALE_DEFAULT));
 		JButton bTxertatu = new JButton("");
 		bTxertatu.addActionListener(new ActionListener() {
+			/**
+			 * SaltzaileTxertatuGUI irekitzen du
+			 * @param e
+			 * {@link SaltzaileTxertatuGUI}
+			 */
 			public void actionPerformed(ActionEvent e) {
-				SaltzaileTxertatuGUI sin = new SaltzaileTxertatuGUI(modelo);
+				new SaltzaileTxertatuGUI(modelo);
 			}
 		});
 		bTxertatu.setContentAreaFilled(false);
@@ -146,6 +164,11 @@ public class SaltzaileGUI extends JDialog {
 		setVisible(true);
 	}
 	
+	/**
+	 * Taulan saltzaileen informazioa ateratzeko, datu basearekin conexioa egin eta gero
+	 * @see conexioa#saltzaileakKontsulta()
+	 * {@link SaltzaileDB}
+	 */
 	public void taulaInfo() {
 		conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 		sdb = c.saltzaileakKontsulta();

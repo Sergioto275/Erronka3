@@ -8,8 +8,9 @@ import java.util.Scanner;
 
 /**
  * BulegariaDB klasea
- * @author ikasle
+ * @author T1
  * @version 05/05
+ * @see Bulegaria
  */
 public class BulegariaDB {
 	private Bulegaria[] bulegariList;
@@ -43,6 +44,7 @@ public class BulegariaDB {
 	/**
 	 * arrayari bulegariak gehitzeko
 	 * @param b
+	 * @see Bulegaria
 	 */
 
 	public void addBulegaria(Bulegaria b) {

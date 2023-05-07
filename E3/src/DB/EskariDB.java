@@ -8,8 +8,9 @@ import java.util.Scanner;
 
 /**
  * EskariDB klasea
- * @author ikasle
+ * @author T1
  * @version 05/05
+ * @see Eskari
  */
 
 public class EskariDB {
@@ -44,6 +45,7 @@ public class EskariDB {
 	/**
 	 * eskariak gehitzeko arrayari
 	 * @param eskaria
+	 * @see Eskari
 	 */
 
 	public void addEskaria (Eskaria e) {

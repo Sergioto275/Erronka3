@@ -28,8 +28,9 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 /**
  * BiltegiGUI klasea
- * @author ikasle
+ * @author T1
  * @version 06/05
+ * @see conexioa
  */
 public class BiltegiGUI extends JDialog {
 
@@ -71,6 +72,8 @@ public class BiltegiGUI extends JDialog {
 			/**
 			 * Conexioa egiten du datu basearekin taulan sartutako datuak eguneratu edo ezabatuko ditu datu basean.
 			 * @param e
+			 * @see conexioa#biltegiUpdate(int, String, String, String, String, String, String, String, int, String, int)
+			 * @see conexioa#biltegiDelete(int)
 			 */
 			public void mouseClicked(MouseEvent e) {
 				if(table.getColumnName(table.getSelectedColumn()).equals(" ")) {
@@ -131,6 +134,10 @@ public class BiltegiGUI extends JDialog {
 		bAtzera.setIcon(at1);
 		bAtzera.addMouseListener(new MouseAdapter() {
 			@Override
+			/**
+			 * JDialog-a ixten du
+			 * @param e
+			 */
 			public void mouseClicked(MouseEvent e) {
 				dispose();
 			}
@@ -144,6 +151,11 @@ public class BiltegiGUI extends JDialog {
 	    ImageIcon insert3 = new ImageIcon(insert1.getImage().getScaledInstance(80,80,Image.SCALE_DEFAULT));
 		JButton bTxertatu = new JButton("");
 		bTxertatu.addActionListener(new ActionListener() {
+			/**
+			 * "biltegiTxertatuGUI" irekitzen du
+			 * {@link biltegiTxertatuGUI}
+			 * @param e
+			 */
 			public void actionPerformed(ActionEvent e) {
 				biltegiTxertatuGUI bin = new biltegiTxertatuGUI(modelo);
 			}
@@ -160,6 +172,8 @@ public class BiltegiGUI extends JDialog {
 	}
 	/**
 	 * Taulan biltegien informazioa ateratzeko, datu basearekin conexioa egin eta gero
+	 * @see conexioa#biltegiKontsulta()
+	 * {@link BiltegiDB}
 	 */
 	public void taulaInfo() {
 		conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");

@@ -21,15 +21,20 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JComboBox;
 
+/**
+ * inbTxertatuGUI klasea
+ * @author T1
+ * @version 06/05
+ * @see conexioa
+ */
 public class inbTxertatuGUI extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
 	private JTextField tBil;
 	private JTextField tKop;
-	private String[] kat;
 	
 	/**
-	 * Create the dialog.
+	 * "inbTxertatuGUI" diseinua ematen dio
 	 */
 	public inbTxertatuGUI(DefaultTableModel modelo, int idProd) {
 		setTitle("Inbentarioa Txertatu");
@@ -77,6 +82,11 @@ public class inbTxertatuGUI extends JDialog {
 		bGorde.setIcon(insert1);
 		
 		bGorde.addActionListener(new ActionListener() {
+			/**
+			 * Conexioa egiten du datu basearekin taulan sartutako datuak sartuko ditu datu basean inbentario berri bezala
+			 * @param e
+			 * @see conexioa#inbentarioInsert(int, int, int, DefaultTableModel)
+			 */
 			public void actionPerformed(ActionEvent e) {
 				try {
 				conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
@@ -103,17 +113,16 @@ public class inbTxertatuGUI extends JDialog {
 		bAtzera.setPressedIcon(at2);
 		bAtzera.setIcon(at1);
 		bAtzera.addActionListener(new ActionListener() {
+			/**
+			 * JDialog-a ixten du
+			 * @param e
+			 */
 			public void actionPerformed(ActionEvent e) {
 				dispose();
 			}
 		});
 		bAtzera.setBounds(0, 144, 118, 95);
 		contentPanel.add(bAtzera);
-		
-		try {
-			conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
-			kat = c.produktuKatKontsulta();
-		}catch(Exception e) {}
 		setVisible(true);
 	}
 }

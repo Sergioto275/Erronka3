@@ -28,8 +28,9 @@ import java.awt.Font;
 import java.awt.Image;
 /**
  * EskariGUI klasea
- * @author ikasle
+ * @author T1
  * @version 06/05
+ * @see conexioa
  */ 
 public class EskariGUI extends JDialog {
 
@@ -63,6 +64,11 @@ public class EskariGUI extends JDialog {
 		bTxertatu.setPressedIcon(insert2);
 		bTxertatu.setIcon(insert1);
 		bTxertatu.addActionListener(new ActionListener() {
+			/**
+			 * "eskTxertatuGUI" irekitzen du
+			 * {@link eskTxertatuGUI}
+			 * @param e
+			 */
 			public void actionPerformed(ActionEvent e) {
 				eskTxertatuGUI p = new eskTxertatuGUI(modelo);
 			}
@@ -77,6 +83,10 @@ public class EskariGUI extends JDialog {
 	    ImageIcon at3 = new ImageIcon(at1.getImage().getScaledInstance(60,63,Image.SCALE_DEFAULT));
 		JButton bAtzera = new JButton("");
 		bAtzera.addActionListener(new ActionListener() {
+			/**
+			 * JDialog-a ixten du
+			 * @param e
+			 */
 			public void actionPerformed(ActionEvent e) {
 				dispose();
 			}
@@ -114,8 +124,11 @@ public class EskariGUI extends JDialog {
 		table.addMouseListener(new MouseAdapter() {
 			@Override
 			/**
-			 * Conexioa egiten du datu basearekin taulan sartutako datuak eguneratu edo ezabatuko ditu datu basean.
+			 * Conexioa egiten du datu basearekin taulan sartutako datuak eguneratu edo ezabatuko ditu datu basean, edo eskariInfo irekitzen esakriaren informazioa erakusteko
 			 * @param e
+			 * @see conexioa#eskariUpdate(int, int, int, String, String)
+			 * @see conexioa#eskariDelete(int)
+			 * {@link eskInfoGUI}
 			 */
 			public void mouseClicked(MouseEvent e) {
 				if(table.getColumnName(table.getSelectedColumn()).equals(" ")) {
@@ -157,7 +170,9 @@ public class EskariGUI extends JDialog {
 		setVisible(true);
 	}
 	/**
-	 * Taulan bulegarien informazioa ateratzeko, datu basearekin conexioa egin eta gero
+	 * Taulan eskarien informazioa ateratzeko, datu basearekin conexioa egin eta gero
+	 * @see conexioa#eskariKontsulta()
+	 * {@link EskariDB}
 	 */
 	public void taulaInfo() {
 		conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");

@@ -4,8 +4,9 @@ import java.util.Arrays;
 
 /**
  * Eskaria klasea
- * @author ikasle
+ * @author T1
  * @version 05/05
+ * @see Eskari_info
  */
 public class Eskaria {
 	private int id;
@@ -29,6 +30,7 @@ public class Eskaria {
 	 * @param egoera
 	 * @param data
 	 * @param info
+	 * @see Eskari_info
 	 */
 
 	public Eskaria(int id, int bezero_izena, int saltzaile_izena, String egoera, String data,
