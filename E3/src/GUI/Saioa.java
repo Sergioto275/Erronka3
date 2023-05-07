@@ -104,8 +104,9 @@ public class Saioa extends JDialog {
 				conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 				s = c.erabiltzaileKontsulta(txtErabil.getText());
 				if(passwordField.getText().equals(s.getPasahitza())) {
-					Menua m = new Menua(s);
 					dispose();
+					welcome dialog = new welcome();
+					dialog.setLocationRelativeTo(null);
 				}else {
 		              JOptionPane.showMessageDialog(null, "Pasahitza okerra","ERROREA",JOptionPane.WARNING_MESSAGE);        
 				}
@@ -143,7 +144,7 @@ public class Saioa extends JDialog {
 		ImageIcon vis2 = new ImageIcon("imagenes\\ikusi2.png");
 		ImageIcon vis3 = new ImageIcon(vis1.getImage().getScaledInstance(35,20,Image.SCALE_DEFAULT));
 		ImageIcon vis4 = new ImageIcon(vis2.getImage().getScaledInstance(35,20,Image.SCALE_DEFAULT));
-		visible.setIcon(vis3);
+		visible.setIcon(vis4);
 		visible.addActionListener(new ActionListener() {
 			/**
 			 * pasahitza ikusten bada izkutatzen du eta izkutatuta badago pasahitza erakusten du
