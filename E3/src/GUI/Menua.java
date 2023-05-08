@@ -19,7 +19,7 @@ import java.awt.event.ActionEvent;
  * @author T1
  * @version 06/05
  * @see conexioa
- * @see BiltegiGUI
+ * {@link BiltegiGUI}
  */
 public class Menua extends JFrame {
 
