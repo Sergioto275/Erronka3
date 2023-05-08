@@ -8,8 +8,9 @@ import java.util.Scanner;
 
 /**
  * Produktuen arraya klasea
- * @author ikasle
+ * @author T1
  * @version 05/05
+ * @see Produktu
  */
 
 public class ProduktuDB {
@@ -44,6 +45,7 @@ public class ProduktuDB {
 	/**
 	 * arrayari produktuak gehitzeko
 	 * @param p
+	 * @see Produktu
 	 */
 	
 	public void addProduktua(Produktu p) {

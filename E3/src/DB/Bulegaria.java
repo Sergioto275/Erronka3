@@ -1,8 +1,9 @@
 package DB;
 /**
  * Bulegaria klasea
- * @author ikasle
+ * @author T1
  * @version 05/05
+ * @see Langile
  */
 
 public class Bulegaria extends Langile {
@@ -27,6 +28,7 @@ public class Bulegaria extends Langile {
 	 * @param idNagusia
 	 * @param soldata
 	 * @param lanpostua
+	 * @see Langile
 	 */
 
 	public Bulegaria(String izena, String abizena, int id, String email, String kontratatze_data, String telefonoa, int idNagusia, double soldata,

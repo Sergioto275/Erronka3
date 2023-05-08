@@ -20,6 +20,12 @@ import java.awt.Image;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+/**
+ * SaltzaileTxertatuGUI klasea
+ * @author T1
+ * @version 06/05
+ * @see conexioa
+ */
 public class SaltzaileTxertatuGUI extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
@@ -35,7 +41,7 @@ public class SaltzaileTxertatuGUI extends JDialog {
 	private JTextField tPasahitza;
 
 	/**
-	 * Create the dialog.
+	 * "SaltzaileTxertatuGUI" JDialog-aren diseinua egiten du
 	 */
 	public SaltzaileTxertatuGUI(DefaultTableModel modelo) {
 		setTitle("Saltzaileak Txertatu");
@@ -119,6 +125,11 @@ public class SaltzaileTxertatuGUI extends JDialog {
 		bGorde.setIcon(insert1);
 
 		bGorde.addActionListener(new ActionListener() {
+			/**
+			 * Conexioa egiten du datu basearekin taulan sartutako datuak sartuko ditu datu basean saltzaile berri bezala
+			 * @param e
+			 * @see conexioa#saltzaileInsert(int, String, String, String, String, String, int, double, String, String, DefaultTableModel)
+			 */
 			public void actionPerformed(ActionEvent e) {
 				try {
 					conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
@@ -145,6 +156,10 @@ public class SaltzaileTxertatuGUI extends JDialog {
 		bAtzera.setPressedIcon(at2);
 		bAtzera.setIcon(at1);
 		bAtzera.addActionListener(new ActionListener() {
+			/**
+			 * JDialog-a ixten du
+			 * @param e
+			 */			
 			public void actionPerformed(ActionEvent e) {
 				dispose();
 			}

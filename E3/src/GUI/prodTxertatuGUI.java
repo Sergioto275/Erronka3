@@ -21,6 +21,12 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JComboBox;
 
+/**
+ * prodTxertatuGUI klasea
+ * @author T1
+ * @version 06/05
+ * @see conexioa
+ */
 public class prodTxertatuGUI extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
@@ -33,7 +39,7 @@ public class prodTxertatuGUI extends JDialog {
 	JComboBox<String> comboBox;
 	
 	/**
-	 * Create the dialog.
+	 * "prodTxertatuGUI" diseinua ematen dio
 	 */
 	public prodTxertatuGUI(DefaultTableModel modelo) {
 		setTitle("Produktuak Txertatu");
@@ -112,6 +118,11 @@ public class prodTxertatuGUI extends JDialog {
 		bGorde.setIcon(insert1);
 		
 		bGorde.addActionListener(new ActionListener() {
+			/**
+			 * Conexioa egiten du datu basearekin taulan sartutako datuak sartuko ditu datu basean produktu berri bezala
+			 * @param e
+			 * @see conexioa#produktuInsert(int, String, String, double, double, String, DefaultTableModel)
+			 */
 			public void actionPerformed(ActionEvent e) {
 				try {
 				conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
@@ -139,6 +150,9 @@ public class prodTxertatuGUI extends JDialog {
 		bAtzera.setPressedIcon(at2);
 		bAtzera.setIcon(at1);
 		bAtzera.addActionListener(new ActionListener() {
+			/**
+			 * JDialog-a ixten du
+			 */
 			public void actionPerformed(ActionEvent e) {
 				dispose();
 			}
@@ -158,6 +172,9 @@ public class prodTxertatuGUI extends JDialog {
 		setVisible(true);
 	}
 	
+	/**
+	 * ComboBox-ean produktuen kategoriak kargatzen ditu
+	 */
 	public void comboBoxKargatu() {
 		for(int i=0;i<kat.length;i++) {
 			this.comboBox.addItem(kat[i]);

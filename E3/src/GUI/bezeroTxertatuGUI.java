@@ -19,6 +19,12 @@ import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+/**
+ * bezeroTxertatuGUI klasea
+ * @author T1
+ * @version 06/05
+ * @see conexioa
+ */
 
 public class bezeroTxertatuGUI extends JDialog {
 
@@ -32,10 +38,10 @@ public class bezeroTxertatuGUI extends JDialog {
 	private DefaultTableModel modelo;;
 
 	/**
-	 * Create the dialog.
+	 * "bezeroTxertatuGUI" JDialog-aren diseinua egiten du
+	 * @param modelo
 	 */
 	public bezeroTxertatuGUI(DefaultTableModel modelo) {
-		//this.modelo=modelo;
 		setTitle("Bezeroak Txertatu");
 		setBounds(100, 100, 719, 352);
 		getContentPane().setLayout(new BorderLayout());
@@ -117,11 +123,15 @@ public class bezeroTxertatuGUI extends JDialog {
 		bGorde.setIcon(insert1);
 		
 		bGorde.addActionListener(new ActionListener() {
+			/**
+			 * Conexioa egiten du datu basearekin taulan sartutako datuak sartuko ditu datu basean bezero berri bezala
+			 * @param e
+			 * @see conexioa#bezeroInsert(int, String, String, String, String, String, DefaultTableModel)
+			 */
 			public void actionPerformed(ActionEvent e) {
 				try {
 					conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 					c.bezeroInsert(Integer.parseInt(tId.getText()),tIzena.getText(),tAbizena.getText(),tEmail.getText(),tHelbide.getText(),tTelefono.getText(),modelo);
-					//modelo.addRow(new Object[] {tId.getText(),tIzena.getText(),tAbizena.getText(),tHelbide.getText(),tEmail.getText(),tTelefono.getText(),null,null});
 		            dispose();
 				}catch(Exception ex) {
 					String mensaje = ""+e;
@@ -144,6 +154,9 @@ public class bezeroTxertatuGUI extends JDialog {
 		bAtzera.setPressedIcon(at2);
 		bAtzera.setIcon(at1);
 		bAtzera.addActionListener(new ActionListener() {
+			/**
+			 * JDialog-a ixten du
+			 */
 			public void actionPerformed(ActionEvent e) {
 				dispose();
 			}

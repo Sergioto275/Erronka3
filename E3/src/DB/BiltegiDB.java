@@ -5,8 +5,9 @@ import java.util.*;
 
 /**
  * BiltegiDB klasea
- * @author ikasle
+ * @author T1
  * @version 05/05
+ * @see Biltegi
  */
 
 public class BiltegiDB {
@@ -41,6 +42,7 @@ public class BiltegiDB {
 	/**
 	 * Biltegiak arrayari gehitzeko funtzioa
 	 * @param b
+	 * @see Biltegi
 	 */
 
 	public void addBiltegia(Biltegi b) {

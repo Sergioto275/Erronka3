@@ -12,6 +12,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+/**
+ * Saioa klasea
+ * @author T1
+ * @version 06/05
+ * @see conexioa
+ */
 public class Saioa extends JDialog {
 
 	private final JPanel panel = new JPanel();
@@ -22,14 +28,14 @@ public class Saioa extends JDialog {
 	
 
 	/**
-	 * Launch the application.
+	 * Aplikazioa abiarazten du.
 	 */
 	public static void main(String[] args) {
 			Saioa dialog = new Saioa();
 	}
 
 	/**
-	 * Create the dialog.
+	 * Saioa lehioari bere konponenteak sartzen dizkio
 	 */
 	public Saioa() {
 		setTitle("Saioa Ireki");
@@ -89,12 +95,19 @@ public class Saioa extends JDialog {
 		bLogin.setIcon(in1);
 		bLogin.setBorder(new EmptyBorder(0, 0, 0, 0));
 		bLogin.addActionListener(new ActionListener() {
+			/**
+			 * Pasahitza eta erabiltzailea zuzenak diren edo ez konprobatzen du datu basearekin konexioa egiten, eta zuzenak badira Menua irekitzen du
+			 * @param e
+			 * @see conexioa#erabiltzaileKontsulta(String)
+			 */
 			public void actionPerformed(ActionEvent e) {
 				conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 				s = c.erabiltzaileKontsulta(txtErabil.getText());
+				int id = s.getId();
 				if(passwordField.getText().equals(s.getPasahitza())) {
-					Menua m = new Menua(s);
 					dispose();
+					welcome dialog = new welcome(id);
+					dialog.setLocationRelativeTo(null);
 				}else {
 		              JOptionPane.showMessageDialog(null, "Pasahitza okerra","ERROREA",JOptionPane.WARNING_MESSAGE);        
 				}
@@ -110,6 +123,10 @@ public class Saioa extends JDialog {
 		bAmaitu.setBackground(Color.LIGHT_GRAY);
 		bAmaitu.addMouseListener(new MouseAdapter() {
 			@Override
+			/**
+			 * Jdialog-a ixten du, eta aplikazioa amaitzen da
+			 * @param e
+			 */
 			public void mouseClicked(MouseEvent e) {
 				dispose();
 			}
@@ -128,8 +145,12 @@ public class Saioa extends JDialog {
 		ImageIcon vis2 = new ImageIcon("imagenes\\ikusi2.png");
 		ImageIcon vis3 = new ImageIcon(vis1.getImage().getScaledInstance(35,20,Image.SCALE_DEFAULT));
 		ImageIcon vis4 = new ImageIcon(vis2.getImage().getScaledInstance(35,20,Image.SCALE_DEFAULT));
-		visible.setIcon(vis3);
+		visible.setIcon(vis4);
 		visible.addActionListener(new ActionListener() {
+			/**
+			 * pasahitza ikusten bada izkutatzen du eta izkutatuta badago pasahitza erakusten du
+			 * @param e
+			 */
 			public void actionPerformed(ActionEvent e) {
 				if (!vis) {
 					passwordField.setEchoChar((char) 0);
@@ -142,7 +163,6 @@ public class Saioa extends JDialog {
 	            }
 			}
 		});
-	
 		visible.setBounds(359, 156, 48, 26);
 		panel.add(visible);
 		setVisible(true);

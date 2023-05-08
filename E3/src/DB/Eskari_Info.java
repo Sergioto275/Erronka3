@@ -2,7 +2,7 @@ package DB;
 
 /**
  * Eskari_info klasea
- * @author ikasle
+ * @author T1
  * @version 05/05
  */
 

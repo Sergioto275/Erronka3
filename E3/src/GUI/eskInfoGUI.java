@@ -26,7 +26,12 @@ import javax.swing.JTable;
 import javax.swing.JScrollPane;
 import java.awt.Font;
 import java.awt.Image;
-
+/**
+ * eskInfoGUI klasea
+ * @author T1
+ * @version 06/05
+ * @see conexioa
+ */ 
 public class eskInfoGUI extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
@@ -36,7 +41,7 @@ public class eskInfoGUI extends JDialog {
 	private int eskId;
 
 	/**
-	 * Create the dialog.
+	 * "eskInfoGUI" diseinua ematen dio
 	 */
 	public eskInfoGUI(int id) {
 		setTitle("Eskariaren Informazioa");
@@ -61,6 +66,10 @@ public class eskInfoGUI extends JDialog {
 	    ImageIcon at3 = new ImageIcon(at1.getImage().getScaledInstance(60,63,Image.SCALE_DEFAULT));
 		JButton bAtzera = new JButton("");
 		bAtzera.addActionListener(new ActionListener() {
+			/**
+			 * JDialog-a ixten du
+			 * @param e
+			 */
 			public void actionPerformed(ActionEvent e) {
 				dispose();
 			}
@@ -97,6 +106,12 @@ public class eskInfoGUI extends JDialog {
 		scrollPane.setViewportView(table);
 		table.addMouseListener(new MouseAdapter() {
 			@Override
+			/**
+			 * Conexioa egiten du datu basearekin taulan sartutako datuak eguneratu edo ezabatuko ditu datu basean, edo inbemtario klasea irekitzen du produktuaren informazioa erakusteko
+			 * @param e
+			 * @see conexioa#eskariInfoDelete(int, int)
+			 * @see conexioa#eskariInfoUpdate(int, int, int, int, Double)
+			 */
 			public void mouseClicked(MouseEvent e) {
 				if(table.getColumnName(table.getSelectedColumn()).equals(" ")) {
 					try {
@@ -134,7 +149,11 @@ public class eskInfoGUI extends JDialog {
 		});
 		setVisible(true);
 	}
-	
+	/**
+	 * Taulan hautatutako eskariaren informazioa ateratzeko, datu basearekin conexioa egin eta gero
+	 * @see conexioa#eskariInfoKontsulta(int)
+	 * {@link EskariDB}
+	 */
 	public void taulaInfo() {
 		conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 		edb = c.eskariKontsulta();

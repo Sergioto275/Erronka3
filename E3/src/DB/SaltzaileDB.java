@@ -8,8 +8,9 @@ import java.util.Scanner;
 
 /**
  * Saltzaileen arrayaren klasea
- * @author ikasle
+ * @author T1
  * @version 05/05
+ * @see Saltzailea
  */
 
 public class SaltzaileDB {
@@ -44,6 +45,7 @@ public class SaltzaileDB {
 	/**
 	 * saltzaile lista aldatzeko setterra
 	 * @param saltzaileList
+	 * @see Saltzailea
 	 */
 
 	public void setSaltzaileList(Saltzailea[] saltzaileList) {

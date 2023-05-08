@@ -6,7 +6,12 @@ import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.border.*;
 import javax.swing.table.*;
-
+/**
+ * DTable klasea da, JTable-ei renderer bat emateko, haien barruan JButon bat sartzea ahalbidetzen duena
+ * @author T1
+ * @version 06/05
+ * {@link imgTabla}
+ */
 public class DTable extends JTable{
 	public DTable() {
 	}

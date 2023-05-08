@@ -1,14 +1,10 @@
 package DB;
 
-/**
- * importa
- */
-
 import java.util.Arrays;
 
 /**
  * Bezeroa klasea
- * @author ikasle
+ * @author T1
  * @version 05/05
  */
 
