@@ -75,7 +75,7 @@ public class welcome extends JDialog {
 	}
 	
 	/**
-	 * funtzio honen videz kargatzen hasten da
+	 * funtzio honen bidez kargatzen hasten da
 	 * @param evt
 	 */
 	private void formWindowActivated(java.awt.event.WindowEvent evt) {
