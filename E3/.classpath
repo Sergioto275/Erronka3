@@ -6,6 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/sergi/eclipse/java-2023-03/eclipse/plugins/ojdbc8.jar"/>
+	<classpathentry kind="lib" path="D:/Clase/programacion/Erronka 3/E3T1 aplikazioa/Erronka3/E3/Libraries/ojdbc8.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
