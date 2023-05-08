@@ -39,7 +39,7 @@ public class conexioa{
          this.erabiltzailea = erabiltzailea;
          this.pasahitza = pasahitza;
          try{
-            this.c = DriverManager.getConnection("jdbc:oracle:thin:@//localhost:1521/XEPDB1","E2","E2");
+        	 this.c = DriverManager.getConnection(url,erabiltzailea,pasahitza);
          }catch(Exception e){
             String mensaje = ""+e;
             JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -1076,7 +1076,6 @@ public class conexioa{
             	  deskontuak = (String[]) arr.getArray();
               }
               this.c.close();
-	          JOptionPane.showMessageDialog(null,"Deskontu ticket-ak sortu dira","TXERTAKETA",JOptionPane.INFORMATION_MESSAGE);
           }catch(SQLException e) {
               String mensaje = ""+e;
               JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);
@@ -1098,6 +1097,34 @@ public class conexioa{
 	          JOptionPane.showMessageDialog(null,"Produktuak eguneratu dira","TXERTAKETA",JOptionPane.INFORMATION_MESSAGE);
           }catch(SQLException e) {
         	  String mensaje = ""+e;
-              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);          }
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREA",JOptionPane.WARNING_MESSAGE);          
+          }
+      }
+      
+      /**
+       * Funtzio hau saltzailea nagusia den edo ez bueltatzen du
+       * @param id
+       * @return
+       */
+      public boolean langileNagusia(int id) {
+    	  boolean nagusi;
+    	  int aux = 0;
+    	  try{
+    		  CallableStatement call = this.c.prepareCall("{? = call NAGUSIA_ALA_EZ(?)}");
+    		  call.registerOutParameter(1, Types.INTEGER);
+       		  call.setInt(2,id);
+              call.execute();
+              aux = call.getInt(1);
+              this.c.close();
+          }catch(SQLException e) {
+        	  String mensaje = ""+e;
+              JOptionPane.showMessageDialog(null, mensaje,"ERROREAk",JOptionPane.WARNING_MESSAGE);          
+          }
+    	  if(aux == 1) {
+    		  nagusi = true;
+    	  }else {
+    		  nagusi = false;
+    	  }
+    	  return nagusi;
       }
 }

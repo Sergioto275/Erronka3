@@ -9,12 +9,20 @@ import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import DB.Saltzailea;
+
 import java.awt.Cursor;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.awt.Color;
 import javax.swing.JProgressBar;
 
+/**
+ * welcome klasea
+ * @author T1
+ * @version 08/05
+ */
 public class welcome extends JDialog {
 	
 	private int auxiliar = 0;
@@ -24,22 +32,13 @@ public class welcome extends JDialog {
 	private JLabel text;
 	private JProgressBar barra;
 	private JLabel logo;
+	private int s;
 
 	/**
-	 * Launch the application.
+	 * Klase honekin aplikazioari karga pantalla bet eratzen diogu
+	 * @param saltz 
 	 */
-	public static void main(String[] args) {
-		try {
-			welcome dialog = new welcome();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
-	 * Create the dialog.
-	 */
-	public welcome() {
+	public welcome(int saltz) {
 		setUndecorated(true);
 		setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
 		setAlwaysOnTop(true);
@@ -72,55 +71,65 @@ public class welcome extends JDialog {
             }
         });
 		setVisible(true);
+		this.s = saltz;
 	}
 	
+	/**
+	 * funtzio honen videz kargatzen hasten da
+	 * @param evt
+	 */
 	private void formWindowActivated(java.awt.event.WindowEvent evt) {
         if(realizado == false){
-        realizado = true;
-        barra.setMaximum(99);
-        barra.setMinimum(0);
-        barra.setStringPainted(true);
-        ejecutar.start();
+	        realizado = true;
+	        barra.setMaximum(99);
+	        barra.setMinimum(0);
+	        barra.setStringPainted(true);
+	        ejecutar.start();
         }
     }
 	
+	/**
+	 * hilo klasearekin karga progresua kudeatzen dugu
+	 * @author T1
+	 * @version 08/05
+	 */
 	private class hilo extends Thread{
 		public void run() {
 			int auxiliar=0;
 			try {
-			while(true) {
-				auxiliar++;
-				barra.setValue(auxiliar);
-				repaint();
-				switch(auxiliar) {
-				case 1:
-					text.setText("Bezeroak kargatzen ...");
-					break;
-				case 15:
-					text.setText("Biltegiak kargatzen ...");
-					break;
-				case 30:
-					text.setText("Bulegariak kargatzen ...");
-					break;
-				case 45:
-					text.setText("Saltzaileak kargatzen ...");
-					break;
-				case 60:
-					text.setText("Eskariak kargatzen ...");
-					break;
-				case 75:
-					text.setText("Produktuak kargatzen ...");
-					break;
-				case 90:
-					text.setText("Saioa Irekitzen ...");
-					break;
-				case 100:
-					new Menua(null);
-					dispose();
-					break;
+				while(true) {
+					auxiliar++;
+					barra.setValue(auxiliar);
+					repaint();
+					switch(auxiliar) {
+					case 1:
+						text.setText("Bezeroak kargatzen ...");
+						break;
+					case 15:
+						text.setText("Biltegiak kargatzen ...");
+						break;
+					case 30:
+						text.setText("Bulegariak kargatzen ...");
+						break;
+					case 45:
+						text.setText("Saltzaileak kargatzen ...");
+						break;
+					case 60:
+						text.setText("Eskariak kargatzen ...");
+						break;
+					case 75:
+						text.setText("Produktuak kargatzen ...");
+						break;
+					case 90:
+						text.setText("Saioa Irekitzen ...");
+						break;
+					case 100:
+						dispose();
+						new Menua(s);
+						break;
+					}
+					Thread.sleep(100);
 				}
-				Thread.sleep(100);
-			}
 			}catch(InterruptedException ex) {
 				
 			}

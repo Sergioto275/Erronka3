@@ -19,19 +19,21 @@ import java.awt.event.ActionEvent;
  * @author T1
  * @version 06/05
  * @see conexioa
- * {@link Saltzailea}
+ * @see BiltegiGUI
  */
 public class Menua extends JFrame {
 
 	private JPanel contentPane;
-	private Saltzailea s;
+	private int s;
+	private boolean nagusia;
 
 	/**
 	 * "InbentarioGUI" diseinua ematen dio
 	 */
-	public Menua(Saltzailea s) {
+	public Menua(int s) {
 		setTitle("Menua");
 		this.s = s;
+		nagusi();
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 672, 447);
 	    setLocationRelativeTo(null);
@@ -64,7 +66,11 @@ public class Menua extends JFrame {
 			 * @param e
 			 */
 			public void mouseClicked(MouseEvent e) {
-				new BiltegiGUI();
+				if(nagusia) {
+					new BiltegiGUI();
+				}else {
+					JOptionPane.showMessageDialog(null, "Ez zara nagusia","ERROREA",JOptionPane.WARNING_MESSAGE);        
+				}
 			}
 		});
 		menuBar.add(mBiltegi);
@@ -79,7 +85,11 @@ public class Menua extends JFrame {
 			 * @param e
 			 */
 			public void mouseClicked(MouseEvent e) {
-				new BulegariGUI();
+				if(nagusia) {
+					new BulegariGUI();
+				}else {
+					JOptionPane.showMessageDialog(null, "Ez zara nagusia","ERROREA",JOptionPane.WARNING_MESSAGE);        
+				}
 			}
 		});
 		menuBar.add(mBuleari);
@@ -94,7 +104,11 @@ public class Menua extends JFrame {
 			 * @param e
 			 */
 			public void mouseClicked(MouseEvent e) {
-				new SaltzaileGUI();
+				if(nagusia) {
+					new SaltzaileGUI();
+				}else {
+					JOptionPane.showMessageDialog(null, "Ez zara nagusia","ERROREA",JOptionPane.WARNING_MESSAGE);        
+				}
 			}
 		});
 		menuBar.add(mSaltz);
@@ -183,7 +197,11 @@ public class Menua extends JFrame {
 			 * @param e
 			 */
 			public void mouseClicked(MouseEvent e) {
-				new produktuak_Eguneratu();
+				if(nagusia) {
+					new produktuak_Eguneratu();
+				}else {
+					JOptionPane.showMessageDialog(null, "Ez zara nagusia","ERROREA",JOptionPane.WARNING_MESSAGE);        
+				}
 			}
 		});
 		bPrezioEguneraketa.setBounds(121, 180, 400, 87);
@@ -231,6 +249,19 @@ public class Menua extends JFrame {
             JOptionPane.showMessageDialog(null, mensaje,"IMPRIMAKETA",JOptionPane.INFORMATION_MESSAGE);        
 		}catch(Exception ex) {
 			System.out.println("NO FURRULA ");
+		}
+	}
+	
+	/**
+	 * funtzio honen bitartez logeatu den saltzailea nagusia den edo ez konprobatzen du
+	 * @see conexioa#langileNagusia(int)
+	 */
+	public void nagusi() {
+		try {
+			conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
+			this.nagusia = c.langileNagusia(this.s); 
+		}catch(Exception ex) {
+			System.out.println("NO FURRULA "+ex);
 		}
 	}
 }

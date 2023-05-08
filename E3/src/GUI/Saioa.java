@@ -28,14 +28,14 @@ public class Saioa extends JDialog {
 	
 
 	/**
-	 * Aplikazioa hasieratzen du.
+	 * Aplikazioa abiarazten du.
 	 */
 	public static void main(String[] args) {
 			Saioa dialog = new Saioa();
 	}
 
 	/**
-	 * Create the dialog.
+	 * Saioa lehioari bere konponenteak sartzen dizkio
 	 */
 	public Saioa() {
 		setTitle("Saioa Ireki");
@@ -103,9 +103,10 @@ public class Saioa extends JDialog {
 			public void actionPerformed(ActionEvent e) {
 				conexioa c = new conexioa("jdbc:oracle:thin:@//192.168.101.11:1521/XEPDB1","ERRONKA2","ERRONKA2");
 				s = c.erabiltzaileKontsulta(txtErabil.getText());
+				int id = s.getId();
 				if(passwordField.getText().equals(s.getPasahitza())) {
 					dispose();
-					welcome dialog = new welcome();
+					welcome dialog = new welcome(id);
 					dialog.setLocationRelativeTo(null);
 				}else {
 		              JOptionPane.showMessageDialog(null, "Pasahitza okerra","ERROREA",JOptionPane.WARNING_MESSAGE);        
